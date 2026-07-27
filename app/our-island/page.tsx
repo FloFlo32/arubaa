@@ -78,7 +78,7 @@ function SplitRow({
               alt={alt}
               loading="lazy"
               decoding="async"
-              className="aspect-[5/4] w-full object-cover"
+              className="aspect-[5/4] w-full object-cover object-top"
             />
           </div>
         </Reveal>
@@ -130,14 +130,14 @@ export default function OurIslandPage() {
             <Reveal delay={0.1}>
               <div className="relative overflow-hidden rounded-3xl border border-border shadow-xl shadow-primary/10">
                 <Image
-                  src="/ingested/arubaa/img-004.webp"
-                  alt="A couple silhouetted on the dunes of Aruba at sunset"
+                  src="/ingested/arubaa/img-042.webp"
+                  alt="A family walking together holding hands on an Aruba beach"
                   width={900}
                   height={1050}
                   priority
                   quality={75}
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className="aspect-[6/7] w-full object-cover"
+                  className="aspect-[6/7] w-full object-cover object-top"
                 />
               </div>
             </Reveal>
@@ -200,15 +200,15 @@ export default function OurIslandPage() {
               eyebrow="South & West"
               title="Resorts, shopping and nightlife"
               body="The south and west coasts are alive with resorts, boutiques and beach bars, all facing the island's calmest water."
-              src="/ingested/arubaa/img-005.webp"
-              alt="A woman in a red dress waves on a turquoise beach"
+              src="/ingested/arubaa/img-029.webp"
+              alt="Aerial view of beachgoers wading in Aruba's turquoise water"
             />
             <SplitRow
               icon={Compass}
               eyebrow="North coast"
               title="Rugged, wind-sculpted shores"
               body="Waves and wind carve the north coast into limestone cliffs, sea caves and natural rock arches."
-              src="/ingested/arubaa/img-014.webp"
+              src="/ingested/arubaa/img-027.webp"
               alt="A couple explores a sea cave and natural rock arch on Aruba's north coast"
               reverse
             />
@@ -217,8 +217,8 @@ export default function OurIslandPage() {
               eyebrow="The interior"
               title="Desert sand and towering cacti"
               body="At the island's heart, Arikok National Park protects a landscape of desert trails, cacti and quiet farmland."
-              src="/ingested/arubaa/img-020.webp"
-              alt="A farmer in a wide hat harvests an aloe field in Aruba's interior"
+              src="/ingested/arubaa/img-033.webp"
+              alt="A group of friends gathered together on an Aruba beach"
             />
           </div>
         </section>
@@ -234,7 +234,7 @@ export default function OurIslandPage() {
                   alt="A family walks together holding hands along the Aruban shoreline"
                   loading="lazy"
                   decoding="async"
-                  className="aspect-[5/4] w-full object-cover"
+                  className="aspect-[5/4] w-full object-cover object-top"
                 />
               </div>
             </Reveal>

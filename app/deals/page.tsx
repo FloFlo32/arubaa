@@ -20,8 +20,8 @@ export const metadata: Metadata = {
 const featured = [
   {
     title: "One Happy Workation",
-    src: "/ingested/arubaa/img-022.webp",
-    alt: "A woman doing yoga on a cliff overlook in Aruba, working remotely between sessions",
+    src: "/ingested/arubaa/img-031.webp",
+    alt: "A woman standing alone on sandy terrain overlooking the sea in Aruba",
     description:
       "In Aruba, we're in the business of happiness, so we're offering visitors a chance to work right from paradise.",
   },
@@ -69,7 +69,7 @@ export default function DealsPage() {
                   priority
                   sizes="(max-width: 1024px) 100vw, 45vw"
                   quality={80}
-                  className="object-cover"
+                  className="object-cover object-top"
                 />
               </div>
             </Reveal>

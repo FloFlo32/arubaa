@@ -19,8 +19,8 @@ export const metadata: Metadata = {
 const updates = [
   {
     title: "Autentico Aruba Culinary Festival",
-    src: "/ingested/arubaa/img-024.webp",
-    alt: "Friends toasting drinks over a dinner table at an Aruba culinary event",
+    src: "/ingested/arubaa/img-036.webp",
+    alt: "A couple relaxing together on the coastal rocks in Aruba",
     description:
       "Autentico returns this October for another unforgettable celebration of Aruba's culinary scene.",
   },
@@ -32,8 +32,8 @@ const updates = [
   },
   {
     title: "Tap Water Campaign",
-    src: "/ingested/arubaa/img-005.webp",
-    alt: "A woman in a red dress on a turquoise Aruba beach",
+    src: "/ingested/arubaa/img-029.webp",
+    alt: "Aerial view of beachgoers wading in Aruba's turquoise water",
     description: "Aruba is known for its pristine beaches and turquoise waters.",
   },
   {
@@ -77,13 +77,13 @@ export default function NewsPage() {
             <Reveal delay={0.2}>
               <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border shadow-2xl shadow-primary/10 sm:aspect-[5/6]">
                 <Image
-                  src="/ingested/arubaa/img-004.webp"
-                  alt="A couple silhouetted on the dunes of Aruba at sunset"
+                  src="/ingested/arubaa/img-042.webp"
+                  alt="A family walking together holding hands on an Aruba beach"
                   fill
                   priority
                   sizes="(max-width: 1024px) 100vw, 45vw"
                   quality={80}
-                  className="object-cover"
+                  className="object-cover object-top"
                 />
               </div>
             </Reveal>

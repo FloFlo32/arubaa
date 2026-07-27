@@ -9,7 +9,7 @@ const effects = [
     description:
       "Endless white sand and crystal blue water. Lay in the sun, float in ecstasy, and fill up on some much-needed Aruban warmth for your trip home.",
     href: "/things-to-do#beaches-coves",
-    src: "/ingested/arubaa/img-005.webp",
+    src: "/ingested/arubaa/img-029.webp",
   },
   {
     eyebrow: "Effect 02",
@@ -17,7 +17,7 @@ const effects = [
     description:
       "With over a hundred nationalities on island, Aruba is filled with flavors from every corner of the globe. Don't be surprised if you leave with a new favorite dish.",
     href: "/things-to-do#dining",
-    src: "/ingested/arubaa/img-024.webp",
+    src: "/ingested/arubaa/img-036.webp",
   },
   {
     eyebrow: "Effect 03",
@@ -25,7 +25,7 @@ const effects = [
     description:
       "We don't really do indoors in Aruba. There's no wrong way to be one with nature here, but we have a few suggestions to get you started.",
     href: "/things-to-do#natural-wonders",
-    src: "/ingested/arubaa/img-022.webp",
+    src: "/ingested/arubaa/img-031.webp",
   },
   {
     eyebrow: "Effect 04",
@@ -49,7 +49,7 @@ const effects = [
     description:
       "All it takes is a few minutes on Aruba to feel like a local yourself. Pull up a seat at a rum shop, or find the best local swimming spot: either way you'll feel at home.",
     href: "/why-aruba#culture",
-    src: "/ingested/arubaa/img-020.webp",
+    src: "/ingested/arubaa/img-033.webp",
   },
 ];
 

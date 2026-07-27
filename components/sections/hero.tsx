@@ -50,13 +50,13 @@ export function Hero() {
           <div className="relative">
             <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border shadow-2xl shadow-primary/10 sm:aspect-[5/6]">
               <Image
-                src="/ingested/arubaa/img-023.webp"
-                alt="A dancer leaping on the beach rocks of Aruba at sunset"
+                src="/ingested/arubaa/img-040.webp"
+                alt="A traveler smiling on a sandy beach in Aruba"
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 45vw"
-                quality={80}
-                className="object-cover"
+                quality={90}
+                className="object-cover object-top"
               />
             </div>
             <div className="absolute -bottom-6 -left-6 hidden w-48 rounded-2xl border border-border bg-card p-4 shadow-xl shadow-black/10 sm:block">

@@ -92,13 +92,13 @@ export default function LiveWebcamsPage() {
               <div className="relative">
                 <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border shadow-2xl shadow-primary/10 sm:aspect-[5/6]">
                   <Image
-                    src="/ingested/arubaa/img-005.webp"
-                    alt="A woman in a red dress waves on a turquoise Aruba beach"
+                    src="/ingested/arubaa/img-029.webp"
+                    alt="Aerial view of beachgoers wading in Aruba's turquoise water"
                     fill
                     priority
                     sizes="(max-width: 1024px) 100vw, 45vw"
                     quality={80}
-                    className="object-cover"
+                    className="object-cover object-top"
                   />
                 </div>
                 <div className="absolute -bottom-6 -left-6 hidden items-center gap-2 rounded-2xl border border-border bg-card px-4 py-3 shadow-xl shadow-black/10 sm:flex">

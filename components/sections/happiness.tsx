@@ -8,7 +8,7 @@ const cells = [
     description:
       "More than 20 public beaches and coves, ranging from calm, family-friendly bays to wild, wind-kissed shores.",
     href: "/things-to-do#beaches-coves",
-    src: "/ingested/arubaa/img-005.webp",
+    src: "/ingested/arubaa/img-029.webp",
     span: "sm:col-span-2",
     ratio: "aspect-[16/9]",
   },
@@ -33,7 +33,7 @@ const cells = [
     description:
       "Is it really a vacation if you feel like you need another one by the end of it? Good news: Aruba isn't that kind of trip.",
     href: "/why-aruba#wellness",
-    src: "/ingested/arubaa/img-022.webp",
+    src: "/ingested/arubaa/img-031.webp",
     span: "",
     ratio: "aspect-[4/3]",
   },
@@ -42,7 +42,7 @@ const cells = [
     description:
       "Rich in history, culture and architecture, a true reflection of the inhabitants of San Nicolas and their daily lives.",
     href: "/things-to-do#arts-culture",
-    src: "/ingested/arubaa/img-020.webp",
+    src: "/ingested/arubaa/img-033.webp",
     span: "sm:col-span-2",
     ratio: "aspect-[16/9]",
   },

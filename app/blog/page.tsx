@@ -22,7 +22,7 @@ const topics = [
   {
     title: "Adventure",
     href: "/why-aruba#adventure",
-    src: "/ingested/arubaa/img-014.webp",
+    src: "/ingested/arubaa/img-027.webp",
     alt: "A couple exploring a sea cave and rock arch on Aruba's coastline",
     teaser: "Sea caves, rock arches and off road trails for the restless traveler.",
   },
@@ -36,8 +36,8 @@ const topics = [
   {
     title: "Culture",
     href: "/why-aruba#culture",
-    src: "/ingested/arubaa/img-020.webp",
-    alt: "A farmer harvesting aloe in an Aruban aloe field",
+    src: "/ingested/arubaa/img-033.webp",
+    alt: "A group gathered together on an Aruba beach",
     teaser: "The traditions and industries that make the island's identity.",
   },
   {
@@ -50,8 +50,8 @@ const topics = [
   {
     title: "Eat & Drink",
     href: "/why-aruba#eat-drink",
-    src: "/ingested/arubaa/img-024.webp",
-    alt: "Friends toasting drinks over a dinner table in Aruba",
+    src: "/ingested/arubaa/img-036.webp",
+    alt: "A couple relaxing together on the coastal rocks in Aruba",
     teaser: "Local flavor, fresh seafood and the tables worth lingering at.",
   },
   {
@@ -71,8 +71,8 @@ const topics = [
   {
     title: "Itineraries",
     href: "/things-to-do#itineraries",
-    src: "/ingested/arubaa/img-017.webp",
-    alt: "An aerial view of a couple on a sailboat deck off Aruba",
+    src: "/ingested/arubaa/img-047.webp",
+    alt: "A couple in wedding attire running through the shallows on an Aruba beach",
     teaser: "Ready made day plans, whether you have three days or ten.",
   },
 ];
@@ -108,13 +108,13 @@ export default function BlogPage() {
             <Reveal delay={0.2}>
               <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border shadow-2xl shadow-primary/10 sm:aspect-[5/6]">
                 <Image
-                  src="/ingested/arubaa/img-018.webp"
-                  alt="An aerial view of a couple on a sailboat deck off the coast of Aruba"
+                  src="/ingested/arubaa/img-051.webp"
+                  alt="A newlywed couple holding hands on an Aruba beach"
                   fill
                   priority
                   sizes="(max-width: 1024px) 100vw, 45vw"
                   quality={80}
-                  className="object-cover"
+                  className="object-cover object-top"
                 />
               </div>
             </Reveal>

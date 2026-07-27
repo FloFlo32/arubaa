@@ -67,7 +67,7 @@ function SplitRow({
               alt={alt}
               loading="lazy"
               decoding="async"
-              className="aspect-[5/4] w-full object-cover"
+              className="aspect-[5/4] w-full object-cover object-top"
             />
           </div>
         </Reveal>
@@ -153,14 +153,14 @@ export default function PlanYourVisitPage() {
             <Reveal delay={0.1}>
               <div className="relative overflow-hidden rounded-3xl border border-border shadow-xl shadow-primary/10">
                 <Image
-                  src="/ingested/arubaa/img-026.webp"
-                  alt="A woman relaxes in a beach lounge chair at sunset"
+                  src="/ingested/arubaa/img-039.webp"
+                  alt="Two travelers seated together on an Aruba beach"
                   width={900}
                   height={1050}
                   priority
-                  quality={75}
+                  quality={90}
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className="aspect-[6/7] w-full object-cover"
+                  className="aspect-[6/7] w-full object-cover object-top"
                 />
               </div>
             </Reveal>
@@ -173,8 +173,8 @@ export default function PlanYourVisitPage() {
           eyebrow="Where to stay"
           title="Hotels & Resorts"
           body="From boutique hideaways to beachfront towers, Aruba's hotels and resorts range from intimate to full-service, all within reach of the water."
-          src="/ingested/arubaa/img-009.webp"
-          alt="A couple relaxes under a thatched beach umbrella at a resort at sunset"
+          src="/ingested/arubaa/img-057.webp"
+          alt="A couple chats poolside together at a resort in Aruba"
         />
 
         <SplitRow
@@ -223,8 +223,8 @@ export default function PlanYourVisitPage() {
           eyebrow="A day on the island"
           title="Aruba by Cruise"
           body="Cruise ships dock right in Oranjestad, putting beaches, shopping and dining within a short walk or taxi ride of the pier."
-          src="/ingested/arubaa/img-018.webp"
-          alt="Aerial view of a couple on a sailboat deck near the Aruban coast"
+          src="/ingested/arubaa/img-051.webp"
+          alt="A bride and groom holding hands on an Aruba beach"
         />
 
         {/* Aruba Vacations */}

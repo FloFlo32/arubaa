@@ -8,7 +8,7 @@ const updates = [
     title: "Autentico Aruba Culinary Festival",
     body: "Autentico returns this October for another unforgettable celebration of Aruba's culinary scene.",
     href: "/things-to-do#dining",
-    img: "/ingested/arubaa/img-024.webp",
+    img: "/ingested/arubaa/img-036.webp",
   },
   {
     eyebrow: "Plan smarter",

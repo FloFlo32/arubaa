@@ -84,7 +84,7 @@ function SplitRow({
               alt={alt}
               loading="lazy"
               decoding="async"
-              className="aspect-[5/4] w-full object-cover"
+              className="aspect-[5/4] w-full object-cover object-top"
             />
           </div>
         </Reveal>
@@ -164,14 +164,14 @@ export default function WhyArubaPage() {
             <Reveal delay={0.1}>
               <div className="relative overflow-hidden rounded-3xl border border-border shadow-xl shadow-primary/10">
                 <Image
-                  src="/ingested/arubaa/img-023.webp"
-                  alt="A dancer leaps across the beach rocks at sunset in Aruba"
+                  src="/ingested/arubaa/img-040.webp"
+                  alt="A traveler smiling on a sandy beach in Aruba"
                   width={900}
                   height={1050}
                   priority
                   quality={75}
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className="aspect-[6/7] w-full object-cover"
+                  className="aspect-[6/7] w-full object-cover object-top"
                 />
               </div>
             </Reveal>
@@ -210,7 +210,7 @@ export default function WhyArubaPage() {
           eyebrow="Kaweta"
           title="Adventure"
           body="Kaweta. It means curious in Papiamento, and it's the perfect word to describe Aruba's spirit of exploration."
-          src="/ingested/arubaa/img-014.webp"
+          src="/ingested/arubaa/img-027.webp"
           alt="A couple explores a sea cave and rock arch along Aruba's coastline"
         />
 
@@ -220,8 +220,8 @@ export default function WhyArubaPage() {
           eyebrow="Together"
           title="Romance"
           body="Escape the world together. Aruba's beautiful scenery makes it an ideal destination for a romantic getaway."
-          src="/ingested/arubaa/img-013.webp"
-          alt="A couple relaxes under a thatched beach umbrella as the sun sets"
+          src="/ingested/arubaa/img-057.webp"
+          alt="A couple chats poolside together at a resort in Aruba"
           reverse
         />
 
@@ -231,8 +231,8 @@ export default function WhyArubaPage() {
           eyebrow="One hundred flavors"
           title="Culture"
           body="One hundred nationalities. One hundred flavors. Aruba's diverse population lives in harmony, and it shows in every corner of the island."
-          src="/ingested/arubaa/img-020.webp"
-          alt="A farmer in a wide hat harvests aloe in an Aruban field"
+          src="/ingested/arubaa/img-033.webp"
+          alt="A group of friends gathered together on an Aruba beach"
         />
 
         <SliderSection
@@ -243,10 +243,10 @@ export default function WhyArubaPage() {
           body="Aruba is made to help you disconnect from the world and discover yourself."
           items={[
             {
-              src: "/ingested/arubaa/img-022.webp",
-              alt: "A woman practices yoga on a cliff overlook above the sea",
+              src: "/ingested/arubaa/img-031.webp",
+              alt: "A woman standing alone on sandy terrain overlooking the sea in Aruba",
               title: "Cliffside stillness",
-              description: "Sunrise yoga on the bluffs, with the Caribbean stretched out below.",
+              description: "Quiet moments on the bluffs, with the Caribbean stretched out below.",
             },
             {
               src: "/ingested/arubaa/img-019.webp",
@@ -263,8 +263,8 @@ export default function WhyArubaPage() {
           eyebrow="Every craving"
           title="Eat & Drink"
           body="Aruba's culinary scene reflects its multicultural population, with diverse offerings for every craving."
-          src="/ingested/arubaa/img-024.webp"
-          alt="Friends raise their glasses over a dinner table"
+          src="/ingested/arubaa/img-036.webp"
+          alt="A couple relaxing together on the coastal rocks in Aruba"
           reverse
         />
 

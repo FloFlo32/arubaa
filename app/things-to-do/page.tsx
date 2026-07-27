@@ -72,7 +72,7 @@ function SplitRow({
               alt={alt}
               loading="lazy"
               decoding="async"
-              className="aspect-[5/4] w-full object-cover"
+              className="aspect-[5/4] w-full object-cover object-top"
             />
           </div>
         </Reveal>
@@ -155,7 +155,7 @@ export default function ThingsToDoPage() {
                   priority
                   quality={75}
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className="aspect-[5/4] w-full object-cover"
+                  className="aspect-[5/4] w-full object-cover object-top"
                 />
               </div>
             </Reveal>
@@ -216,8 +216,8 @@ export default function ThingsToDoPage() {
           eyebrow="Wind and water"
           title="On the Water"
           body="From calm, protected bays to some of the best windsurfing spots in the world, Aruba's coastline puts every kind of water sport within reach."
-          src="/ingested/arubaa/img-017.webp"
-          alt="Aerial shot of a couple on a sailboat deck off the Aruban coast"
+          src="/ingested/arubaa/img-047.webp"
+          alt="A couple in wedding attire running through the shallows on an Aruba beach"
         />
 
         <SplitRow
@@ -237,8 +237,8 @@ export default function ThingsToDoPage() {
           eyebrow="Every flavor"
           title="Dining"
           body="Aruba's restaurant scene spans European classics, South Asian spice and the freshest local seafood, often served just steps from the water."
-          src="/ingested/arubaa/img-024.webp"
-          alt="Friends raise their glasses over a dinner table"
+          src="/ingested/arubaa/img-036.webp"
+          alt="A couple relaxing together on the coastal rocks in Aruba"
         />
 
         <SplitRow

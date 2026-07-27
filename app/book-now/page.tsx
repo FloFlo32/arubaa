@@ -27,8 +27,8 @@ const starters = [
   {
     title: "Vacation Packages",
     href: "/plan-your-visit#vacations",
-    src: "/ingested/arubaa/img-017.webp",
-    alt: "An aerial view of a couple on a sailboat deck off Aruba",
+    src: "/ingested/arubaa/img-047.webp",
+    alt: "A couple in wedding attire running through the shallows on an Aruba beach",
     description: "Flights, stays and experiences bundled together for an easier trip.",
   },
   {
@@ -78,7 +78,7 @@ export default function BookNowPage() {
                   priority
                   sizes="(max-width: 1024px) 100vw, 45vw"
                   quality={80}
-                  className="object-cover"
+                  className="object-cover object-top"
                 />
               </div>
             </Reveal>
