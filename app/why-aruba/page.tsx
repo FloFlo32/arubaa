@@ -1,28 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import {
-  Compass,
-  Heart,
-  Users,
-  Flower2,
-  Utensils,
-  Baby,
-  Gem,
-  Plane,
-  Globe,
-  MapPin,
-  ArrowRight,
-} from "lucide-react";
+import { Compass, Heart, Users, Flower2, Utensils, Baby, Gem, Plane, Globe, MapPin, ArrowRight } from "lucide-react";
 import { Navbar } from "@/components/sections/navbar";
 import { Footer } from "@/components/sections/footer";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { GridPattern } from "@/components/magic/grid-pattern";
 import { ImageCard } from "@/components/magic/image-card";
 import { HeroVideo } from "@/components/magic/hero-video";
 import { AutoSlider } from "@/components/magic/auto-slider";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
-import { cn } from "@/lib/utils";
+import { Badge } from "@/components/ui/badge";
 
 export const metadata: Metadata = {
   title: "Why Aruba",
@@ -31,112 +18,69 @@ export const metadata: Metadata = {
 };
 
 const effectStats = [
-  {
-    icon: Plane,
-    label: "Easy",
-    body: "Over 100 direct flights from major U.S. and Canadian cities.",
-  },
-  {
-    icon: Globe,
-    label: "Convenient",
-    body: "Four languages spoken, and more sunny days than any other Caribbean island.",
-  },
-  {
-    icon: MapPin,
-    label: "Discoverable",
-    body: "Small, safe and modern, so you can make the entire island your playground.",
-  },
+  { icon: Plane, label: "Easy", body: "Over 100 direct flights from major U.S. and Canadian cities." },
+  { icon: Globe, label: "Convenient", body: "Four languages spoken, and more sunny days than any other Caribbean island." },
+  { icon: MapPin, label: "Discoverable", body: "Small, safe and modern, so you can make the entire island your playground." },
 ];
 
-function SplitRow({
-  id,
-  icon: Icon,
-  eyebrow,
-  title,
-  body,
-  src,
-  alt,
-  reverse = false,
-}: {
-  id: string;
-  icon: React.ComponentType<{ className?: string }>;
-  eyebrow: string;
-  title: string;
-  body: string;
-  src: string;
-  alt: string;
-  reverse?: boolean;
-}) {
-  return (
-    <section id={id} className="container-px mx-auto max-w-6xl py-16 sm:py-20">
-      <div
-        className={cn(
-          "grid items-center gap-10 md:grid-cols-2 md:gap-14",
-          reverse && "md:[&>*:first-child]:order-2"
-        )}
-      >
-        <Reveal>
-          <div className="overflow-hidden rounded-3xl border border-border bg-muted">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={src}
-              alt={alt}
-              loading="lazy"
-              decoding="async"
-              className="aspect-[5/4] w-full object-cover object-top"
-            />
-          </div>
-        </Reveal>
-        <Reveal delay={0.08}>
-          <span className="grid size-11 place-items-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/15">
-            <Icon className="size-5" />
-          </span>
-          <p className="mt-4 text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground">
-            {eyebrow}
-          </p>
-          <h2 className="mt-2 text-balance text-3xl font-bold sm:text-4xl">{title}</h2>
-          <p className="mt-4 max-w-lg text-pretty text-muted-foreground">{body}</p>
-        </Reveal>
-      </div>
-    </section>
-  );
-}
-
-function SliderSection({
-  id,
-  icon: Icon,
-  eyebrow,
-  title,
-  body,
-  items,
-}: {
-  id: string;
-  icon: React.ComponentType<{ className?: string }>;
-  eyebrow: string;
-  title: string;
-  body: string;
-  items: { src: string; alt: string; title: string; description: string }[];
-}) {
-  return (
-    <section id={id} className="container-px mx-auto max-w-6xl py-16 sm:py-20">
-      <Reveal className="max-w-2xl">
-        <span className="grid size-11 place-items-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/15">
-          <Icon className="size-5" />
-        </span>
-        <p className="mt-4 text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground">
-          {eyebrow}
-        </p>
-        <h2 className="mt-2 text-balance text-3xl font-bold sm:text-4xl">{title}</h2>
-        <p className="mt-4 text-pretty text-muted-foreground">{body}</p>
-      </Reveal>
-      <AutoSlider className="mt-10" itemClassName="w-[82%] sm:w-[55%] lg:w-[32%]">
-        {items.map((it) => (
-          <ImageCard key={it.src} {...it} />
-        ))}
-      </AutoSlider>
-    </section>
-  );
-}
+const effects = [
+  {
+    icon: Compass,
+    title: "Adventure",
+    href: "/why-aruba/adventure",
+    teaser: "Cave arches, off-road trails and windsurf-ready coastlines for the curious.",
+    src: "/ingested/arubaa/img-079.webp",
+    alt: "Two people kayaking together off the Aruba coast",
+  },
+  {
+    icon: Heart,
+    title: "Romance",
+    href: "/why-aruba/romance",
+    teaser: "Sunset walks, private dinners and quiet coves made for two.",
+    src: "/ingested/arubaa/img-078.webp",
+    alt: "A couple standing together near a palm tree on an Aruba beach",
+  },
+  {
+    icon: Users,
+    title: "Culture",
+    href: "/why-aruba/culture",
+    teaser: "One hundred nationalities, one island, endless stories to hear.",
+    src: "/ingested/arubaa/img-060.webp",
+    alt: "A group of friends gathered together on an Aruba beach",
+  },
+  {
+    icon: Flower2,
+    title: "Wellness",
+    href: "/why-aruba/wellness",
+    teaser: "Cliffside stillness and slow, quiet luxury at your own pace.",
+    src: "/ingested/arubaa/img-031.webp",
+    alt: "A woman standing alone on sandy terrain overlooking the sea in Aruba",
+  },
+  {
+    icon: Utensils,
+    title: "Eat & Drink",
+    href: "/why-aruba/eat-and-drink",
+    teaser: "A hundred flavors on one island, from rum shacks to fine dining.",
+    src: "/ingested/arubaa/img-067.webp",
+    alt: "Friends holding wine glasses together outdoors",
+  },
+  {
+    icon: Baby,
+    title: "Families",
+    href: "/why-aruba/families",
+    teaser: "Calm, shallow water and easy days built for every age.",
+    src: "/ingested/arubaa/img-071.webp",
+    alt: "Two boys running together on an Aruba beach",
+  },
+  {
+    icon: Gem,
+    title: "Weddings",
+    href: "/why-aruba/weddings",
+    teaser: "Barefoot ceremonies and golden-hour vows by the sea.",
+    src: "/ingested/arubaa/img-046.webp",
+    alt: "A couple celebrates their wedding on an Aruban beach",
+  },
+];
 
 export default function WhyArubaPage() {
   return (
@@ -180,10 +124,7 @@ export default function WhyArubaPage() {
           </Reveal>
           <RevealGroup className="mt-10 grid gap-5 sm:grid-cols-3">
             {effectStats.map((s) => (
-              <RevealItem
-                key={s.label}
-                className="rounded-2xl border border-border bg-card p-6"
-              >
+              <RevealItem key={s.label} className="rounded-2xl border border-border bg-card p-6">
                 <span className="grid size-11 place-items-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/15">
                   <s.icon className="size-5" />
                 </span>
@@ -194,125 +135,35 @@ export default function WhyArubaPage() {
           </RevealGroup>
         </section>
 
-        <SplitRow
-          id="adventure"
-          icon={Compass}
-          eyebrow="Kaweta"
-          title="Adventure"
-          body="Kaweta. It means curious in Papiamento, and it's the perfect word to describe Aruba's spirit of exploration."
-          src="/ingested/arubaa/img-027.webp"
-          alt="A couple explores a sea cave and rock arch along Aruba's coastline"
-        />
-
-        <SplitRow
-          id="romance"
-          icon={Heart}
-          eyebrow="Together"
-          title="Romance"
-          body="Escape the world together. Aruba's beautiful scenery makes it an ideal destination for a romantic getaway."
-          src="/ingested/arubaa/img-057.webp"
-          alt="A couple chats poolside together at a resort in Aruba"
-          reverse
-        />
-
-        <SplitRow
-          id="culture"
-          icon={Users}
-          eyebrow="One hundred flavors"
-          title="Culture"
-          body="One hundred nationalities. One hundred flavors. Aruba's diverse population lives in harmony, and it shows in every corner of the island."
-          src="/ingested/arubaa/img-033.webp"
-          alt="A group of friends gathered together on an Aruba beach"
-        />
-
-        <SliderSection
-          id="wellness"
-          icon={Flower2}
-          eyebrow="Disconnect"
-          title="Wellness"
-          body="Aruba is made to help you disconnect from the world and discover yourself."
-          items={[
-            {
-              src: "/ingested/arubaa/img-031.webp",
-              alt: "A woman standing alone on sandy terrain overlooking the sea in Aruba",
-              title: "Cliffside stillness",
-              description: "Quiet moments on the bluffs, with the Caribbean stretched out below.",
-            },
-            {
-              src: "/ingested/arubaa/img-019.webp",
-              alt: "A woman in a spa robe relaxes by a candlelit tub",
-              title: "Slow, quiet luxury",
-              description: "Spa rituals designed to help you unwind at your own pace.",
-            },
-          ]}
-        />
-
-        <SplitRow
-          id="eat-drink"
-          icon={Utensils}
-          eyebrow="Every craving"
-          title="Eat & Drink"
-          body="Aruba's culinary scene reflects its multicultural population, with diverse offerings for every craving."
-          src="/ingested/arubaa/img-036.webp"
-          alt="A couple relaxing together on the coastal rocks in Aruba"
-          reverse
-        />
-
-        <SliderSection
-          id="families"
-          icon={Baby}
-          eyebrow="For every age"
-          title="Families"
-          body="Aruba has activities for guests of all ages, making it an ideal destination for a family vacation."
-          items={[
-            {
-              src: "/ingested/arubaa/img-037.webp",
-              alt: "A family poses together for a photo on the sand",
-              title: "Beach days, together",
-              description: "Sand, shallows and shade for every member of the family.",
-            },
-            {
-              src: "/ingested/arubaa/img-042.webp",
-              alt: "A family walks together holding hands along the shoreline",
-              title: "Slow strolls",
-              description: "Easy, flat coastline that's kind to little legs.",
-            },
-            {
-              src: "/ingested/arubaa/img-035.webp",
-              alt: "A caregiver carries a young child along the beach",
-              title: "Built for little ones",
-              description: "Calm bays and warm, shallow water made for small swimmers.",
-            },
-          ]}
-        />
-
-        <SliderSection
-          id="weddings"
-          icon={Gem}
-          eyebrow="Say I do"
-          title="Weddings"
-          body="Consistent sunny weather and stunning natural beauty make Aruba the ideal place for a dream wedding."
-          items={[
-            {
-              src: "/ingested/arubaa/img-046.webp",
-              alt: "A couple celebrates their wedding on an Aruban beach",
-              title: "Barefoot ceremonies",
-              description: "Say your vows with your toes in the sand and the sea as a backdrop.",
-            },
-            {
-              src: "/ingested/arubaa/img-048.webp",
-              alt: "A newly married couple holds hands on the shoreline",
-              title: "Golden hour vows",
-              description: "Sunset light turns every ceremony photo into a keepsake.",
-            },
-            {
-              src: "/ingested/arubaa/img-050.webp",
-              alt: "A couple runs through the shallows on their wedding day",
-              title: "Joy, in motion",
-              description: "Aruba's calm shallows make room for a little celebration.",
-            },
-          ]}
-        />
+        {/* Seven reasons */}
+        <section className="container-px mx-auto max-w-6xl py-16 sm:py-20">
+          <Reveal className="max-w-2xl">
+            <p className="text-xs font-medium uppercase tracking-[0.2em] text-primary">
+              Seven reasons, one island
+            </p>
+            <h2 className="mt-2 text-balance text-3xl font-bold sm:text-4xl">
+              Explore the Aruba Effect
+            </h2>
+            <p className="mt-4 text-pretty text-muted-foreground">
+              Every visitor finds their own reason to fall for Aruba. Pick yours below for
+              real activities, real people, and a full itinerary starter.
+            </p>
+          </Reveal>
+          <AutoSlider className="mt-10" itemClassName="w-[85%] sm:w-[55%] lg:w-[31%]">
+            {effects.map((e) => (
+              <ImageCard
+                key={e.title}
+                src={e.src}
+                alt={e.alt}
+                eyebrow={e.title}
+                title={e.title}
+                description={e.teaser}
+                href={e.href}
+                className="h-full"
+              />
+            ))}
+          </AutoSlider>
+        </section>
 
         {/* CTA */}
         <section className="container-px mx-auto max-w-6xl py-20">
