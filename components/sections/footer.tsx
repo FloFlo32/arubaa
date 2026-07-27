@@ -16,13 +16,13 @@ const socials = [
 
 export function Footer() {
   return (
-    <footer className="mt-auto border-t border-border/70 bg-secondary/40">
+    <footer className="mt-auto border-t border-white/10 bg-neutral-950 text-neutral-300">
       <div className="container-px mx-auto max-w-7xl py-14">
         <div className="grid gap-10 lg:grid-cols-[1.3fr_1fr_1fr_1fr_1fr]">
           <div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/aruba-logo.svg" alt="Aruba" className="h-10 w-auto" />
-            <p className="mt-4 max-w-xs text-sm text-muted-foreground">
+            <p className="mt-4 max-w-xs text-sm text-neutral-400">
               One happy island in the southern Caribbean. Find out everything you need to know
               about Aruba right here.
             </p>
@@ -34,17 +34,17 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={s.label}
-                  className="grid size-9 cursor-pointer place-items-center rounded-full border border-border text-muted-foreground transition-colors hover:border-primary/40 hover:bg-primary/10 hover:text-primary"
+                  className="grid size-9 cursor-pointer place-items-center rounded-full border border-white/15 text-neutral-400 transition-colors hover:border-primary/50 hover:bg-primary/15 hover:text-primary"
                 >
                   <s.Icon className="size-4" />
                 </a>
               ))}
             </div>
             <div className="mt-5 space-y-2">
-              <a href={`tel:${brand.contact.phone}`} className="flex cursor-pointer items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground">
+              <a href={`tel:${brand.contact.phone}`} className="flex cursor-pointer items-center gap-2 text-sm text-neutral-400 transition-colors hover:text-white">
                 <Phone className="size-4 text-primary" /> 1-800-862-7822
               </a>
-              <a href={`mailto:${brand.social.email}`} className="flex cursor-pointer items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground">
+              <a href={`mailto:${brand.social.email}`} className="flex cursor-pointer items-center gap-2 text-sm text-neutral-400 transition-colors hover:text-white">
                 <Mail className="size-4 text-primary" /> {brand.social.email}
               </a>
             </div>
@@ -52,13 +52,13 @@ export function Footer() {
 
           {primaryNav.map((section) => (
             <div key={section.label}>
-              <Link href={section.href} className="cursor-pointer font-display text-sm font-semibold transition-colors hover:text-primary">
+              <Link href={section.href} className="cursor-pointer font-display text-sm font-semibold text-white transition-colors hover:text-primary">
                 {section.label}
               </Link>
               <ul className="mt-4 space-y-2.5">
                 {section.children.map((l) => (
                   <li key={l.label}>
-                    <Link href={l.href} className="cursor-pointer text-sm text-muted-foreground transition-colors hover:text-foreground">
+                    <Link href={l.href} className="cursor-pointer text-sm text-neutral-400 transition-colors hover:text-white">
                       {l.label}
                     </Link>
                   </li>
@@ -68,11 +68,11 @@ export function Footer() {
           ))}
 
           <div>
-            <span className="font-display text-sm font-semibold">More</span>
+            <span className="font-display text-sm font-semibold text-white">More</span>
             <ul className="mt-4 space-y-2.5">
               {secondaryNav.map((l) => (
                 <li key={l.href}>
-                  <Link href={l.href} className="cursor-pointer text-sm text-muted-foreground transition-colors hover:text-foreground">
+                  <Link href={l.href} className="cursor-pointer text-sm text-neutral-400 transition-colors hover:text-white">
                     {l.label}
                   </Link>
                 </li>
@@ -86,14 +86,14 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className="border-t border-border/70">
+      <div className="border-t border-white/10">
         <div className="container-px mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 py-6 sm:flex-row">
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-neutral-500">
             &copy; Aruba Tourism Authority. All rights reserved.
           </p>
           <div className="flex gap-5">
             {legalNav.map((l) => (
-              <Link key={l.href} href={l.href} className="cursor-pointer text-sm text-muted-foreground transition-colors hover:text-foreground">
+              <Link key={l.href} href={l.href} className="cursor-pointer text-sm text-neutral-500 transition-colors hover:text-white">
                 {l.label}
               </Link>
             ))}
