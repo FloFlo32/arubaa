@@ -55,7 +55,7 @@ export default function PrivacyPolicyPage() {
     <>
       <Navbar />
       <main className="flex-1">
-        <section className="container-px mx-auto max-w-3xl pt-16 pb-8 text-center">
+        <section className="container-px mx-auto max-w-3xl pt-28 pb-8 text-center">
           <Reveal>
             <Badge variant="accent">
               <ShieldCheck className="size-3.5" /> Legal

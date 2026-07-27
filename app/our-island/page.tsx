@@ -106,7 +106,7 @@ export default function OurIslandPage() {
         <section className="relative overflow-hidden">
           <AuroraBackground />
           <GridPattern />
-          <div className="container-px mx-auto grid max-w-6xl items-center gap-12 pt-16 pb-16 sm:pt-24 sm:pb-24 md:grid-cols-[1.05fr_1fr]">
+          <div className="container-px mx-auto grid max-w-6xl items-center gap-12 pt-28 pb-16 sm:pt-32 sm:pb-24 md:grid-cols-[1.05fr_1fr]">
             <Reveal>
               <Badge variant="accent">Our happy island</Badge>
               <h1 className="mt-5 text-balance text-5xl font-bold leading-[1.05] sm:text-6xl md:text-7xl">

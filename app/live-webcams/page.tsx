@@ -67,7 +67,7 @@ export default function LiveWebcamsPage() {
       <main className="flex-1">
         <section className="relative overflow-hidden">
           <AuroraBackground />
-          <div className="container-px mx-auto grid max-w-7xl gap-10 pt-14 pb-16 sm:pt-20 sm:pb-24 lg:grid-cols-[1.05fr_1fr] lg:items-center">
+          <div className="container-px mx-auto grid max-w-7xl gap-10 pt-28 pb-16 sm:pt-32 sm:pb-24 lg:grid-cols-[1.05fr_1fr] lg:items-center">
             <div>
               <Reveal>
                 <Badge variant="accent">

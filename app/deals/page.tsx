@@ -59,7 +59,7 @@ export default function DealsPage() {
       <main className="flex-1">
         <section className="relative overflow-hidden">
           <AuroraBackground />
-          <div className="container-px mx-auto grid max-w-7xl gap-10 pt-14 pb-16 sm:pt-20 sm:pb-24 lg:grid-cols-[1fr_1.05fr] lg:items-center">
+          <div className="container-px mx-auto grid max-w-7xl gap-10 pt-28 pb-16 sm:pt-32 sm:pb-24 lg:grid-cols-[1fr_1.05fr] lg:items-center">
             <Reveal delay={0.2} className="order-2 lg:order-1">
               <div className="relative aspect-[5/6] overflow-hidden rounded-3xl border border-border shadow-2xl shadow-primary/10">
                 <Image

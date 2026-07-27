@@ -57,7 +57,7 @@ export default function BrandGuide() {
     <>
       <Navbar />
       <main className="flex-1">
-        <div className="container-px mx-auto max-w-5xl py-16">
+        <div className="container-px mx-auto max-w-5xl pt-28 pb-16">
           <header className="flex flex-wrap items-end justify-between gap-6">
             <div>
               <p className="font-mono text-sm text-muted-foreground">Brand guide</p>

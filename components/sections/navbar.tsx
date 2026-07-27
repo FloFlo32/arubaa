@@ -45,7 +45,7 @@ export function Navbar() {
   const isActive = (href: string) => pathname === href;
 
   return (
-    <header className="sticky top-0 z-50 w-full pt-3">
+    <header className="fixed inset-x-0 top-0 z-50 w-full pt-3">
       <div className="container-px mx-auto max-w-7xl">
         <nav
           className={cn(
