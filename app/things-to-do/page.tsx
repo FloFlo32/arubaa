@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import {
   Waves,
@@ -24,9 +23,9 @@ import { Navbar } from "@/components/sections/navbar";
 import { Footer } from "@/components/sections/footer";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { AuroraBackground } from "@/components/magic/aurora-background";
 import { GridPattern } from "@/components/magic/grid-pattern";
 import { ImageCard } from "@/components/magic/image-card";
+import { HeroVideo } from "@/components/magic/hero-video";
 import { AutoSlider } from "@/components/magic/auto-slider";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
 import { cn } from "@/lib/utils";
@@ -141,30 +140,21 @@ export default function ThingsToDoPage() {
       <Navbar />
       <main className="flex-1">
         {/* Hero */}
-        <section className="relative overflow-hidden">
-          <AuroraBackground />
-          <GridPattern />
-          <div className="container-px mx-auto grid max-w-6xl items-center gap-12 pt-16 pb-16 sm:pt-24 sm:pb-24 md:grid-cols-[1fr_1.05fr]">
+        <section className="relative flex min-h-[70vh] items-center overflow-hidden">
+          <HeroVideo
+            src="https://aruba.bynder.com/asset/1c987a2c-afe4-4348-b459-383e6ac9916e/mp4/CORTO-PT-HERO-ANIMATION.mp4"
+            poster="/ingested/arubaa/img-029.webp"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/30 to-black/70" />
+          <div className="container-px relative z-10 mx-auto max-w-2xl py-20 text-center text-white">
             <Reveal>
-              <div className="relative overflow-hidden rounded-3xl border border-border shadow-xl shadow-primary/10">
-                <Image
-                  src="/ingested/arubaa/img-029.webp"
-                  alt="Aerial view of beachgoers wading in Aruba's turquoise water"
-                  width={1000}
-                  height={800}
-                  priority
-                  quality={75}
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="aspect-[5/4] w-full object-cover object-top"
-                />
-              </div>
-            </Reveal>
-            <Reveal delay={0.1}>
-              <Badge variant="accent">One Happy Island</Badge>
+              <Badge variant="accent" className="mx-auto border-white/25 bg-white/10 text-white">
+                One Happy Island
+              </Badge>
               <h1 className="mt-5 text-balance text-5xl font-bold leading-[1.05] sm:text-6xl md:text-7xl">
                 Things to Do in Aruba
               </h1>
-              <p className="mt-6 max-w-lg text-pretty text-lg text-muted-foreground">
+              <p className="mx-auto mt-6 max-w-lg text-pretty text-lg text-white/85">
                 Aruba offers a wide range of experiences for every pace. From calm
                 beaches and natural landscapes to cultural sites and local experiences,
                 the island invites you to explore thoughtfully and enjoy meaningful

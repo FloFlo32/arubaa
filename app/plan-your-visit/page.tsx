@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import {
   BedDouble,
@@ -19,9 +18,9 @@ import { Navbar } from "@/components/sections/navbar";
 import { Footer } from "@/components/sections/footer";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { AuroraBackground } from "@/components/magic/aurora-background";
 import { GridPattern } from "@/components/magic/grid-pattern";
 import { ImageCard } from "@/components/magic/image-card";
+import { HeroVideo } from "@/components/magic/hero-video";
 import { AutoSlider } from "@/components/magic/auto-slider";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
 import { cn } from "@/lib/utils";
@@ -134,35 +133,26 @@ export default function PlanYourVisitPage() {
       <Navbar />
       <main className="flex-1">
         {/* Hero */}
-        <section className="relative overflow-hidden">
-          <AuroraBackground />
-          <GridPattern />
-          <div className="container-px mx-auto grid max-w-6xl items-center gap-12 pt-16 pb-16 sm:pt-24 sm:pb-24 md:grid-cols-[1.05fr_1fr]">
+        <section className="relative flex min-h-[70vh] items-center overflow-hidden">
+          <HeroVideo
+            src="https://aruba.bynder.com/asset/6923a03a-c228-4ba6-a03d-5530a8311041/mp4/FINAL-ANIMATION-VIDEO-HERO-HOME.mp4"
+            poster="/ingested/arubaa/img-039.webp"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/30 to-black/70" />
+          <div className="container-px relative z-10 mx-auto max-w-2xl py-20 text-center text-white">
             <Reveal>
-              <Badge variant="accent">Plan ahead</Badge>
+              <Badge variant="accent" className="mx-auto border-white/25 bg-white/10 text-white">
+                Plan ahead
+              </Badge>
               <h1 className="mt-5 text-balance text-5xl font-bold leading-[1.05] sm:text-6xl md:text-7xl">
                 Plan Your Visit to Aruba
               </h1>
-              <p className="mt-6 max-w-lg text-pretty text-lg text-muted-foreground">
+              <p className="mx-auto mt-6 max-w-lg text-pretty text-lg text-white/85">
                 Planning your vacation to Aruba is easy, especially with a whole island
                 of friendly faces happy to share suggestions. Convenient transportation,
                 safe island access and comfortable resorts make it simple to relax and
                 explore.
               </p>
-            </Reveal>
-            <Reveal delay={0.1}>
-              <div className="relative overflow-hidden rounded-3xl border border-border shadow-xl shadow-primary/10">
-                <Image
-                  src="/ingested/arubaa/img-039.webp"
-                  alt="Two travelers seated together on an Aruba beach"
-                  width={900}
-                  height={1050}
-                  priority
-                  quality={90}
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="aspect-[6/7] w-full object-cover object-top"
-                />
-              </div>
             </Reveal>
           </div>
         </section>
