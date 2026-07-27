@@ -30,7 +30,7 @@ export const brand = {
     "What makes Aruba the best island vacation destination on the planet? Find out everything you need to know about the One Happy Island right here.",
 
   /** Primary domain WITHOUT protocol. `/build` sets this to <project>.getyetti.com. */
-  domain: "arubaa.getyetti.com",
+  domain: "aruba.getyetti.com",
 
   /** Theme — drives the whole color system. Run `npm run brand` after editing. */
   theme: {
