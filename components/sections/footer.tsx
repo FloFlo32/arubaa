@@ -1,96 +1,104 @@
 import Link from "next/link";
-import { Mail } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { brand } from "@/brand.config";
-import { GitHubIcon, XIcon } from "@/components/icons";
+import { XIcon, PinterestIcon, TikTokIcon, TripAdvisorIcon, FacebookIcon, InstagramIcon, YouTubeIcon } from "@/components/icons";
+import { primaryNav, secondaryNav, legalNav, bookNow } from "@/lib/site-nav";
 
-const cols = [
-  {
-    title: "Product",
-    links: [
-      { label: "Features", href: "#features" },
-      { label: "Why us", href: "#bento" },
-      { label: "Results", href: "#stats" },
-    ],
-  },
-  {
-    title: "Resources",
-    links: [
-      { label: "Get started", href: "#cta" },
-      { label: "Brand guide", href: "/brand-guide" },
-      { label: "Changelog", href: "#" },
-    ],
-  },
-  {
-    title: "Company",
-    links: [
-      { label: "About", href: "#" },
-      { label: "Privacy", href: "#" },
-      { label: "Terms", href: "#" },
-    ],
-  },
+const socials = [
+  { href: brand.social.facebook, label: "Facebook", Icon: FacebookIcon },
+  { href: brand.social.x, label: "X", Icon: XIcon },
+  { href: brand.social.instagram, label: "Instagram", Icon: InstagramIcon },
+  { href: brand.social.pinterest, label: "Pinterest", Icon: PinterestIcon },
+  { href: brand.social.youtube, label: "YouTube", Icon: YouTubeIcon },
+  { href: brand.social.tripadvisor, label: "TripAdvisor", Icon: TripAdvisorIcon },
+  { href: brand.social.tiktok, label: "TikTok", Icon: TikTokIcon },
 ];
 
 export function Footer() {
   return (
-    <footer className="mt-auto border-t border-border/60">
-      <div className="container-px mx-auto grid max-w-6xl gap-10 py-14 md:grid-cols-[1.5fr_1fr_1fr_1fr]">
-        <div>
-          <Link href="/" className="flex items-center gap-2 font-display text-lg font-bold">
-            <span className="grid size-8 place-items-center rounded-lg bg-primary text-primary-foreground">
-              {brand.name.charAt(0)}
-            </span>
-            {brand.name}
-          </Link>
-          <p className="mt-4 max-w-xs text-sm text-muted-foreground">
-            {brand.tagline}
-          </p>
-          <div className="mt-5 flex gap-2">
-            <Link
-              href={`https://github.com/${brand.social.github}`}
-              aria-label="GitHub"
-              className="grid size-9 place-items-center rounded-lg border border-border/60 text-muted-foreground transition-colors hover:border-primary/40 hover:text-foreground"
-            >
-              <GitHubIcon className="size-4" />
-            </Link>
-            <Link
-              href={`https://x.com/${brand.social.x}`}
-              aria-label="X"
-              className="grid size-9 place-items-center rounded-lg border border-border/60 text-muted-foreground transition-colors hover:border-primary/40 hover:text-foreground"
-            >
-              <XIcon className="size-4" />
-            </Link>
-            <Link
-              href={`mailto:${brand.social.email}`}
-              aria-label="Email"
-              className="grid size-9 place-items-center rounded-lg border border-border/60 text-muted-foreground transition-colors hover:border-primary/40 hover:text-foreground"
-            >
-              <Mail className="size-4" />
-            </Link>
+    <footer className="mt-auto border-t border-border/70 bg-secondary/40">
+      <div className="container-px mx-auto max-w-7xl py-14">
+        <div className="grid gap-10 lg:grid-cols-[1.3fr_1fr_1fr_1fr_1fr]">
+          <div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/aruba-logo.svg" alt="Aruba" className="h-10 w-auto" />
+            <p className="mt-4 max-w-xs text-sm text-muted-foreground">
+              One happy island in the southern Caribbean. Find out everything you need to know
+              about Aruba right here.
+            </p>
+            <div className="mt-5 flex flex-wrap gap-2">
+              {socials.map((s) => (
+                <a
+                  key={s.label}
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={s.label}
+                  className="grid size-9 cursor-pointer place-items-center rounded-full border border-border text-muted-foreground transition-colors hover:border-primary/40 hover:bg-primary/10 hover:text-primary"
+                >
+                  <s.Icon className="size-4" />
+                </a>
+              ))}
+            </div>
+            <div className="mt-5 space-y-2">
+              <a href={`tel:${brand.contact.phone}`} className="flex cursor-pointer items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground">
+                <Phone className="size-4 text-primary" /> 1-800-862-7822
+              </a>
+              <a href={`mailto:${brand.social.email}`} className="flex cursor-pointer items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground">
+                <Mail className="size-4 text-primary" /> {brand.social.email}
+              </a>
+            </div>
           </div>
-        </div>
 
-        {cols.map((col) => (
-          <div key={col.title}>
-            <h4 className="font-display text-sm font-semibold">{col.title}</h4>
+          {primaryNav.map((section) => (
+            <div key={section.label}>
+              <Link href={section.href} className="cursor-pointer font-display text-sm font-semibold transition-colors hover:text-primary">
+                {section.label}
+              </Link>
+              <ul className="mt-4 space-y-2.5">
+                {section.children.map((l) => (
+                  <li key={l.label}>
+                    <Link href={l.href} className="cursor-pointer text-sm text-muted-foreground transition-colors hover:text-foreground">
+                      {l.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+
+          <div>
+            <span className="font-display text-sm font-semibold">More</span>
             <ul className="mt-4 space-y-2.5">
-              {col.links.map((l) => (
-                <li key={l.label}>
-                  <Link
-                    href={l.href}
-                    className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-                  >
+              {secondaryNav.map((l) => (
+                <li key={l.href}>
+                  <Link href={l.href} className="cursor-pointer text-sm text-muted-foreground transition-colors hover:text-foreground">
                     {l.label}
                   </Link>
                 </li>
               ))}
+              <li>
+                <Link href={bookNow.href} className="cursor-pointer text-sm font-medium text-primary transition-colors hover:text-primary/80">
+                  {bookNow.label}
+                </Link>
+              </li>
             </ul>
           </div>
-        ))}
+        </div>
       </div>
-      <div className="border-t border-border/60 py-6">
-        <p className="container-px mx-auto max-w-6xl text-sm text-muted-foreground">
-          © {brand.name}. Built on the {brand.name} starter pack.
-        </p>
+      <div className="border-t border-border/70">
+        <div className="container-px mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 py-6 sm:flex-row">
+          <p className="text-sm text-muted-foreground">
+            &copy; Aruba Tourism Authority. All rights reserved.
+          </p>
+          <div className="flex gap-5">
+            {legalNav.map((l) => (
+              <Link key={l.href} href={l.href} className="cursor-pointer text-sm text-muted-foreground transition-colors hover:text-foreground">
+                {l.label}
+              </Link>
+            ))}
+          </div>
+        </div>
       </div>
     </footer>
   );

@@ -1,80 +1,67 @@
 import Link from "next/link";
-import { ArrowRight, Palette, Zap, Rocket } from "lucide-react";
-import { brand } from "@/brand.config";
+import Image from "next/image";
+import { ArrowRight, PlayCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { GridPattern } from "@/components/magic/grid-pattern";
-import { BorderBeam } from "@/components/magic/border-beam";
-import { AuroraBackground } from "@/components/magic/aurora-background";
 import { Reveal } from "@/components/magic/reveal";
-
-const previews = [
-  { icon: Palette, title: "Design system", body: "OKLCH tokens, one hue, full dark mode." },
-  { icon: Zap, title: "Motion built-in", body: "Reveals and beams, reduced-motion safe." },
-  { icon: Rocket, title: "One-command deploy", body: "GitHub + Vercel + domain from a script." },
-];
 
 export function Hero() {
   return (
     <section className="relative overflow-hidden">
-      <AuroraBackground />
-      <GridPattern />
+      <div className="container-px mx-auto grid max-w-7xl gap-10 pt-14 pb-16 sm:pt-20 sm:pb-24 lg:grid-cols-[1.05fr_1fr] lg:items-center">
+        <div>
+          <Reveal>
+            <Badge variant="accent">One Happy Island</Badge>
+          </Reveal>
+          <Reveal delay={0.06}>
+            <h1 className="mt-6 max-w-xl text-balance text-5xl font-bold leading-[0.98] sm:text-6xl md:text-7xl">
+              Love Aruba.
+              <br />
+              <span className="text-gradient">Feel it back.</span>
+            </h1>
+          </Reveal>
+          <Reveal delay={0.12}>
+            <p className="mt-6 max-w-md text-lg text-muted-foreground">
+              When you arrive with curiosity and openness, Aruba responds in kind. Discover
+              the connections, culture and quiet moments that turn visitors into family.
+            </p>
+          </Reveal>
+          <Reveal delay={0.18}>
+            <div className="mt-9 flex flex-wrap items-center gap-3">
+              <Button asChild size="lg">
+                <Link href="/why-aruba">
+                  Discover the Aruba Effect <ArrowRight className="size-4" />
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="outline">
+                <a
+                  href="https://www.youtube.com/watch?v=GJYpiOU2mM0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <PlayCircle className="size-4" /> Watch the video
+                </a>
+              </Button>
+            </div>
+          </Reveal>
+        </div>
 
-      <div className="container-px mx-auto max-w-6xl pt-20 pb-16 sm:pt-28 sm:pb-24 text-center">
-        <Reveal>
-          <Badge variant="accent" className="mx-auto">
-            <span className="font-mono">{brand.social.github}</span>
-          </Badge>
-        </Reveal>
-
-        <Reveal delay={0.06}>
-          <h1 className="mx-auto mt-6 max-w-4xl text-balance text-5xl font-bold leading-[1.05] sm:text-6xl md:text-7xl">
-            Ship a website that looks{" "}
-            <span className="text-gradient">designed</span>, not generated.
-          </h1>
-        </Reveal>
-
-        <Reveal delay={0.12}>
-          <p className="mx-auto mt-6 max-w-xl text-lg text-muted-foreground">
-            {brand.description}
-          </p>
-        </Reveal>
-
-        <Reveal delay={0.18}>
-          <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Button asChild size="lg">
-              <Link href="#cta">
-                Start building <ArrowRight className="size-4" />
-              </Link>
-            </Button>
-            <Button asChild size="lg" variant="outline">
-              <Link href="#features">See what's inside</Link>
-            </Button>
-          </div>
-        </Reveal>
-
-        {/* Product preview — flat surface, one traveling beam as the single featured motion */}
-        <Reveal delay={0.26}>
-          <div className="relative mx-auto mt-16 max-w-4xl">
-            <div className="relative overflow-hidden rounded-2xl border border-border bg-card text-left shadow-xl shadow-primary/5">
-              <BorderBeam />
-              <div className="flex items-center gap-1.5 border-b border-border px-4 py-3">
-                <span className="size-3 rounded-full bg-muted-foreground/30" />
-                <span className="size-3 rounded-full bg-muted-foreground/30" />
-                <span className="size-3 rounded-full bg-muted-foreground/30" />
-                <span className="ml-3 font-mono text-xs text-muted-foreground">
-                  {brand.domain}
-                </span>
-              </div>
-              <div className="grid gap-px bg-border sm:grid-cols-3">
-                {previews.map((p) => (
-                  <div key={p.title} className="bg-card p-5">
-                    <p.icon className="size-5 text-primary" />
-                    <p className="mt-3 font-medium">{p.title}</p>
-                    <p className="mt-1 text-sm text-muted-foreground">{p.body}</p>
-                  </div>
-                ))}
-              </div>
+        <Reveal delay={0.2}>
+          <div className="relative">
+            <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border shadow-2xl shadow-primary/10 sm:aspect-[5/6]">
+              <Image
+                src="/ingested/arubaa/img-023.webp"
+                alt="A dancer leaping on the beach rocks of Aruba at sunset"
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 45vw"
+                quality={80}
+                className="object-cover"
+              />
+            </div>
+            <div className="absolute -bottom-6 -left-6 hidden w-48 rounded-2xl border border-border bg-card p-4 shadow-xl shadow-black/10 sm:block">
+              <p className="font-display text-3xl font-bold text-primary">300+</p>
+              <p className="mt-1 text-sm text-muted-foreground">sunny days a year, more than any other Caribbean island</p>
             </div>
           </div>
         </Reveal>

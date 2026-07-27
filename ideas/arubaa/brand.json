@@ -1,0 +1,630 @@
+{
+  "source": "https://www.aruba.com/us/why-aruba/adventure",
+  "ingestedFromHost": "aruba.com",
+  "pagesCrawled": 12,
+  "name": "Exploration & Experiences in Aruba",
+  "tagline": "Exploration & Experiences in Aruba | Aruba.com",
+  "description": "Looking for a more active and engaging vacation? Aruba offers tons of excursions like skydiving and diving. Discover our many offerings!",
+  "domain": "aruba.com",
+  "brandColor": {
+    "hex": "#ffffff",
+    "src": "theme-color",
+    "oklchHue": 90
+  },
+  "theme": {
+    "hue": 90
+  },
+  "fonts": [],
+  "logo": "assets/logo.svg",
+  "logoNote": null,
+  "favicon": "https://dq4bh2q7nd2al.cloudfront.net/webfiles/1738149069042/img/ata/favicon/apple-touch-icon.png",
+  "images": [
+    "/ingested/arubaa/img-001.svg",
+    "/ingested/arubaa/img-003.webp",
+    "/ingested/arubaa/img-004.svg",
+    "/ingested/arubaa/img-005.webp",
+    "/ingested/arubaa/img-006.webp",
+    "/ingested/arubaa/img-007.webp",
+    "/ingested/arubaa/img-008.webp",
+    "/ingested/arubaa/img-009.webp",
+    "/ingested/arubaa/img-010.webp",
+    "/ingested/arubaa/img-011.webp",
+    "/ingested/arubaa/img-012.webp",
+    "/ingested/arubaa/img-014.webp",
+    "/ingested/arubaa/img-015.webp",
+    "/ingested/arubaa/img-016.webp",
+    "/ingested/arubaa/img-017.webp",
+    "/ingested/arubaa/img-018.webp",
+    "/ingested/arubaa/img-019.webp",
+    "/ingested/arubaa/img-020.webp",
+    "/ingested/arubaa/img-021.webp",
+    "/ingested/arubaa/img-022.webp",
+    "/ingested/arubaa/img-023.webp",
+    "/ingested/arubaa/img-024.webp",
+    "/ingested/arubaa/img-025.webp",
+    "/ingested/arubaa/img-026.webp"
+  ],
+  "imageCount": 24,
+  "social": {
+    "x": "https://twitter.com/intent/tweet?url=https://www.aruba.com/us/why-aruba/adventure&text=Kaweta.%20It%20means%20%E2%80%9Ccurious%E2%80%9D%20in%20Papiamento%2C%20and%20it%E2%80%99s%20the%20perfect%20word%20to%20describe%20Aruba%E2%80%99s%20spirit%20of%20exploration.",
+    "email": "support@aruba.com",
+    "instagram": "https://instagram.com/arubatourism"
+  },
+  "whatsapp": null,
+  "phone": "18008627822",
+  "location": null,
+  "sectionOrder": [
+    "Exploration & Experiences in Aruba",
+    "Outdoor Experiences in Aruba: Feel the Aruba Effect",
+    "Indulge your daring side",
+    "Featured Experiences",
+    "Start Booking Your Trip To Aruba"
+  ],
+  "navItems": [
+    {
+      "text": "●Live",
+      "url": "https://www.aruba.com/us/live-webcams-and-channels",
+      "path": "/us/live-webcams-and-channels"
+    },
+    {
+      "text": "Deals & Offers",
+      "url": "https://www.aruba.com/us/deal-or-offer",
+      "path": "/us/deal-or-offer"
+    },
+    {
+      "text": "Blog",
+      "url": "https://www.aruba.com/us/blog",
+      "path": "/us/blog"
+    },
+    {
+      "text": "News",
+      "url": "https://www.aruba.com/us/news",
+      "path": "/us/news"
+    },
+    {
+      "text": "Book Now",
+      "url": "https://www.aruba.com/us/book-your-stay",
+      "path": "/us/book-your-stay"
+    },
+    {
+      "text": "Why Aruba",
+      "url": "https://www.aruba.com/us/why-aruba",
+      "path": "/us/why-aruba"
+    },
+    {
+      "text": "Adventure",
+      "url": "https://www.aruba.com/us/why-aruba/adventure",
+      "path": "/us/why-aruba/adventure"
+    },
+    {
+      "text": "Romance",
+      "url": "https://www.aruba.com/us/why-aruba/romance",
+      "path": "/us/why-aruba/romance"
+    },
+    {
+      "text": "Culture",
+      "url": "https://www.aruba.com/us/why-aruba/culture",
+      "path": "/us/why-aruba/culture"
+    },
+    {
+      "text": "Wellness",
+      "url": "https://www.aruba.com/us/why-aruba/wellness",
+      "path": "/us/why-aruba/wellness"
+    },
+    {
+      "text": "Eat & Drink",
+      "url": "https://www.aruba.com/us/why-aruba/eat-and-drink",
+      "path": "/us/why-aruba/eat-and-drink"
+    },
+    {
+      "text": "Families",
+      "url": "https://www.aruba.com/us/why-aruba/families",
+      "path": "/us/why-aruba/families"
+    },
+    {
+      "text": "Weddings",
+      "url": "https://www.aruba.com/us/weddings",
+      "path": "/us/weddings"
+    },
+    {
+      "text": "Discover Aruba",
+      "url": "https://www.aruba.com/us/the-aruba-effect",
+      "path": "/us/the-aruba-effect"
+    },
+    {
+      "text": "Things To Do",
+      "url": "https://www.aruba.com/us/things-to-do",
+      "path": "/us/things-to-do"
+    },
+    {
+      "text": "Beaches & coves",
+      "url": "https://www.aruba.com/us/things-to-do/beaches-and-coves",
+      "path": "/us/things-to-do/beaches-and-coves"
+    },
+    {
+      "text": "On the water",
+      "url": "https://www.aruba.com/us/things-to-do/on-the-water",
+      "path": "/us/things-to-do/on-the-water"
+    },
+    {
+      "text": "Natural Wonders",
+      "url": "https://www.aruba.com/us/things-to-do/natural-wonders",
+      "path": "/us/things-to-do/natural-wonders"
+    },
+    {
+      "text": "Dining",
+      "url": "https://www.aruba.com/us/things-to-do/dining",
+      "path": "/us/things-to-do/dining"
+    },
+    {
+      "text": "Nightlife",
+      "url": "https://www.aruba.com/us/things-to-do/nightlife",
+      "path": "/us/things-to-do/nightlife"
+    },
+    {
+      "text": "Arts & Culture",
+      "url": "https://www.aruba.com/us/things-to-do/arts-and-culture",
+      "path": "/us/things-to-do/arts-and-culture"
+    },
+    {
+      "text": "Sightseeing & Tours",
+      "url": "https://www.aruba.com/us/things-to-do/sightseeing-and-tours",
+      "path": "/us/things-to-do/sightseeing-and-tours"
+    },
+    {
+      "text": "Shopping",
+      "url": "https://www.aruba.com/us/things-to-do/shopping",
+      "path": "/us/things-to-do/shopping"
+    },
+    {
+      "text": "Wellbeing",
+      "url": "https://www.aruba.com/us/things-to-do/wellbeing",
+      "path": "/us/things-to-do/wellbeing"
+    },
+    {
+      "text": "Sports & Golf",
+      "url": "https://www.aruba.com/us/things-to-do/sports-and-golf",
+      "path": "/us/things-to-do/sports-and-golf"
+    },
+    {
+      "text": "Calendar of events",
+      "url": "https://www.aruba.com/us/calendar",
+      "path": "/us/calendar"
+    },
+    {
+      "text": "Itineraries",
+      "url": "https://www.aruba.com/us/things-to-do/itineraries",
+      "path": "/us/things-to-do/itineraries"
+    },
+    {
+      "text": "Plan Your Visit",
+      "url": "https://www.aruba.com/us/plan-your-visit",
+      "path": "/us/plan-your-visit"
+    },
+    {
+      "text": "Hotels & Resorts",
+      "url": "https://www.aruba.com/us/plan-your-visit/hotels-and-resorts",
+      "path": "/us/plan-your-visit/hotels-and-resorts"
+    },
+    {
+      "text": "Vacation Rentals",
+      "url": "https://www.aruba.com/us/plan-your-visit/vacation-rental",
+      "path": "/us/plan-your-visit/vacation-rental"
+    },
+    {
+      "text": "Timeshares",
+      "url": "https://www.aruba.com/us/plan-your-visit/timeshares",
+      "path": "/us/plan-your-visit/timeshares"
+    },
+    {
+      "text": "All-inclusive",
+      "url": "https://www.aruba.com/us/plan-your-visit/all-inclusive",
+      "path": "/us/plan-your-visit/all-inclusive"
+    },
+    {
+      "text": "Getting to Aruba",
+      "url": "https://www.aruba.com/us/plan-your-visit/getting-to-aruba",
+      "path": "/us/plan-your-visit/getting-to-aruba"
+    },
+    {
+      "text": "Getting around Aruba",
+      "url": "https://www.aruba.com/us/plan-your-visit/getting-around-aruba",
+      "path": "/us/plan-your-visit/getting-around-aruba"
+    },
+    {
+      "text": "Aruba by cruise",
+      "url": "https://www.aruba.com/us/aruba-by-cruise",
+      "path": "/us/aruba-by-cruise"
+    },
+    {
+      "text": "Aruba vacations",
+      "url": "https://www.aruba.com/us/plan-your-visit/aruba-vacations",
+      "path": "/us/plan-your-visit/aruba-vacations"
+    },
+    {
+      "text": "Tips for visitors",
+      "url": "https://www.aruba.com/us/plan-your-visit/tips-for-visitors",
+      "path": "/us/plan-your-visit/tips-for-visitors"
+    },
+    {
+      "text": "Guest Services",
+      "url": "https://www.aruba.com/us/plan-your-visit/guest-services",
+      "path": "/us/plan-your-visit/guest-services"
+    },
+    {
+      "text": "Our Island",
+      "url": "https://www.aruba.com/us/our-island",
+      "path": "/us/our-island"
+    },
+    {
+      "text": "History & culture",
+      "url": "https://www.aruba.com/us/our-island/history-and-culture",
+      "path": "/us/our-island/history-and-culture"
+    },
+    {
+      "text": "Island facts",
+      "url": "https://www.aruba.com/us/our-island/island-facts",
+      "path": "/us/our-island/island-facts"
+    },
+    {
+      "text": "Regions",
+      "url": "https://www.aruba.com/us/our-island/regions",
+      "path": "/us/our-island/regions"
+    },
+    {
+      "text": "Meet Our Locals",
+      "url": "https://www.aruba.com/us/local-stories-travel-guide",
+      "path": "/us/local-stories-travel-guide"
+    },
+    {
+      "text": "Organizations",
+      "url": "https://www.aruba.com/us/organization",
+      "path": "/us/organization"
+    },
+    {
+      "text": "Local Partners",
+      "url": "https://www.aruba.com/us/partner",
+      "path": "/us/partner"
+    },
+    {
+      "text": "Terms & Conditions",
+      "url": "https://www.aruba.com/us/terms-and-conditions",
+      "path": "/us/terms-and-conditions"
+    },
+    {
+      "text": "Privacy Policy",
+      "url": "https://www.aruba.com/us/privacy-policy",
+      "path": "/us/privacy-policy"
+    }
+  ],
+  "footerItems": [
+    {
+      "text": "Why Aruba",
+      "url": "https://www.aruba.com/us/why-aruba",
+      "path": "/us/why-aruba"
+    },
+    {
+      "text": "Adventure",
+      "url": "https://www.aruba.com/us/why-aruba/adventure",
+      "path": "/us/why-aruba/adventure"
+    },
+    {
+      "text": "Romance",
+      "url": "https://www.aruba.com/us/why-aruba/romance",
+      "path": "/us/why-aruba/romance"
+    },
+    {
+      "text": "Culture",
+      "url": "https://www.aruba.com/us/why-aruba/culture",
+      "path": "/us/why-aruba/culture"
+    },
+    {
+      "text": "Wellness",
+      "url": "https://www.aruba.com/us/why-aruba/wellness",
+      "path": "/us/why-aruba/wellness"
+    },
+    {
+      "text": "Eat & Drink",
+      "url": "https://www.aruba.com/us/why-aruba/eat-and-drink",
+      "path": "/us/why-aruba/eat-and-drink"
+    },
+    {
+      "text": "Families",
+      "url": "https://www.aruba.com/us/why-aruba/families",
+      "path": "/us/why-aruba/families"
+    },
+    {
+      "text": "Weddings",
+      "url": "https://www.aruba.com/us/weddings",
+      "path": "/us/weddings"
+    },
+    {
+      "text": "Things To Do",
+      "url": "https://www.aruba.com/us/things-to-do",
+      "path": "/us/things-to-do"
+    },
+    {
+      "text": "Beaches & coves",
+      "url": "https://www.aruba.com/us/things-to-do/beaches-and-coves",
+      "path": "/us/things-to-do/beaches-and-coves"
+    },
+    {
+      "text": "On the water",
+      "url": "https://www.aruba.com/us/things-to-do/on-the-water",
+      "path": "/us/things-to-do/on-the-water"
+    },
+    {
+      "text": "Natural Wonders",
+      "url": "https://www.aruba.com/us/things-to-do/natural-wonders",
+      "path": "/us/things-to-do/natural-wonders"
+    },
+    {
+      "text": "Dining",
+      "url": "https://www.aruba.com/us/things-to-do/dining",
+      "path": "/us/things-to-do/dining"
+    },
+    {
+      "text": "Nightlife",
+      "url": "https://www.aruba.com/us/things-to-do/nightlife",
+      "path": "/us/things-to-do/nightlife"
+    },
+    {
+      "text": "Arts & Culture",
+      "url": "https://www.aruba.com/us/things-to-do/arts-and-culture",
+      "path": "/us/things-to-do/arts-and-culture"
+    },
+    {
+      "text": "Sightseeing & Tours",
+      "url": "https://www.aruba.com/us/things-to-do/sightseeing-and-tours",
+      "path": "/us/things-to-do/sightseeing-and-tours"
+    },
+    {
+      "text": "Shopping",
+      "url": "https://www.aruba.com/us/things-to-do/shopping",
+      "path": "/us/things-to-do/shopping"
+    },
+    {
+      "text": "Wellbeing",
+      "url": "https://www.aruba.com/us/things-to-do/wellbeing",
+      "path": "/us/things-to-do/wellbeing"
+    },
+    {
+      "text": "Sports & Golf",
+      "url": "https://www.aruba.com/us/things-to-do/sports-and-golf",
+      "path": "/us/things-to-do/sports-and-golf"
+    },
+    {
+      "text": "Itineraries",
+      "url": "https://www.aruba.com/us/things-to-do/itineraries",
+      "path": "/us/things-to-do/itineraries"
+    },
+    {
+      "text": "Calendar of events",
+      "url": "https://www.aruba.com/us/calendar",
+      "path": "/us/calendar"
+    },
+    {
+      "text": "Plan Your Visit",
+      "url": "https://www.aruba.com/us/plan-your-visit",
+      "path": "/us/plan-your-visit"
+    },
+    {
+      "text": "Hotels & Resorts",
+      "url": "https://www.aruba.com/us/plan-your-visit/hotels-and-resorts",
+      "path": "/us/plan-your-visit/hotels-and-resorts"
+    },
+    {
+      "text": "Vacation Rentals",
+      "url": "https://www.aruba.com/us/plan-your-visit/vacation-rental",
+      "path": "/us/plan-your-visit/vacation-rental"
+    },
+    {
+      "text": "Timeshares",
+      "url": "https://www.aruba.com/us/plan-your-visit/timeshares",
+      "path": "/us/plan-your-visit/timeshares"
+    },
+    {
+      "text": "All-inclusive",
+      "url": "https://www.aruba.com/us/plan-your-visit/all-inclusive",
+      "path": "/us/plan-your-visit/all-inclusive"
+    },
+    {
+      "text": "Getting to Aruba",
+      "url": "https://www.aruba.com/us/plan-your-visit/getting-to-aruba",
+      "path": "/us/plan-your-visit/getting-to-aruba"
+    },
+    {
+      "text": "Getting around Aruba",
+      "url": "https://www.aruba.com/us/plan-your-visit/getting-around-aruba",
+      "path": "/us/plan-your-visit/getting-around-aruba"
+    },
+    {
+      "text": "Aruba by cruise",
+      "url": "https://www.aruba.com/us/aruba-by-cruise",
+      "path": "/us/aruba-by-cruise"
+    },
+    {
+      "text": "Aruba vacations",
+      "url": "https://www.aruba.com/us/plan-your-visit/aruba-vacations",
+      "path": "/us/plan-your-visit/aruba-vacations"
+    },
+    {
+      "text": "Tips for visitors",
+      "url": "https://www.aruba.com/us/plan-your-visit/tips-for-visitors",
+      "path": "/us/plan-your-visit/tips-for-visitors"
+    },
+    {
+      "text": "Guest Services",
+      "url": "https://www.aruba.com/us/plan-your-visit/guest-services",
+      "path": "/us/plan-your-visit/guest-services"
+    },
+    {
+      "text": "Our Island",
+      "url": "https://www.aruba.com/us/our-island",
+      "path": "/us/our-island"
+    },
+    {
+      "text": "History & culture",
+      "url": "https://www.aruba.com/us/our-island/history-and-culture",
+      "path": "/us/our-island/history-and-culture"
+    },
+    {
+      "text": "Island facts",
+      "url": "https://www.aruba.com/us/our-island/island-facts",
+      "path": "/us/our-island/island-facts"
+    },
+    {
+      "text": "Regions",
+      "url": "https://www.aruba.com/us/our-island/regions",
+      "path": "/us/our-island/regions"
+    },
+    {
+      "text": "Organizations",
+      "url": "https://www.aruba.com/us/organization",
+      "path": "/us/organization"
+    },
+    {
+      "text": "News",
+      "url": "https://www.aruba.com/us/news",
+      "path": "/us/news"
+    },
+    {
+      "text": "Local Partners",
+      "url": "https://www.aruba.com/us/partner",
+      "path": "/us/partner"
+    },
+    {
+      "text": "Terms & Conditions",
+      "url": "https://www.aruba.com/us/terms-and-conditions",
+      "path": "/us/terms-and-conditions"
+    },
+    {
+      "text": "Privacy Policy",
+      "url": "https://www.aruba.com/us/privacy-policy",
+      "path": "/us/privacy-policy"
+    }
+  ],
+  "innerPages": [
+    {
+      "path": "/us/why-aruba/adventure",
+      "title": "Exploration & Experiences in Aruba | Aruba.com",
+      "sections": [
+        "Exploration & Experiences in Aruba",
+        "Outdoor Experiences in Aruba: Feel the Aruba Effect",
+        "Indulge your daring side",
+        "Featured Experiences",
+        "Start Booking Your Trip To Aruba"
+      ]
+    },
+    {
+      "path": "/us/live-webcams-and-channels",
+      "title": "Aruba Webcams, Live Channels and Live Event",
+      "sections": [
+        "Live from Aruba"
+      ]
+    },
+    {
+      "path": "/us/deal-or-offer",
+      "title": "Aruba Vacation Deals | The best Caribbean Travel Deals",
+      "sections": [
+        "Aruba Vacation & Travel Deals"
+      ]
+    },
+    {
+      "path": "/us/blog",
+      "title": "Travel Blog: Tips, Culture, and Experiences | Aruba.com",
+      "sections": [
+        "Travel Blog - Tips, Culture, and Experiences"
+      ]
+    },
+    {
+      "path": "/us/news",
+      "title": "Aruba News | Latest News & Updates from Aruba",
+      "sections": [
+        "Aruba - Island Tourism News"
+      ]
+    },
+    {
+      "path": "/us/book-your-stay",
+      "title": "Book your Vacation to Aruba - Plan your Next Trip!",
+      "sections": [
+        "Book your Vacation to Aruba",
+        "We can’t wait to see you!"
+      ]
+    },
+    {
+      "path": "/us",
+      "title": "Aruba, One happy island - Travel & Tourism Information",
+      "sections": [
+        "Love Aruba. Feel it back.",
+        "Love Aruba. Feel it back.",
+        "More Ways to Discover the Aruba Effect",
+        "Countless Ways to Find Happiness",
+        "Next Stop, One happy island.",
+        "Things to Do in Aruba",
+        "Sun, sand, serenity",
+        "Savor it all",
+        "Your Aruba Escape",
+        "Happy Kids, Happy Vacation",
+        "In the Lap of Luxury",
+        "Riding Solo"
+      ]
+    },
+    {
+      "path": "/us/why-aruba",
+      "title": "Why Go to Aruba? Reasons to Visit The One Happy Island",
+      "sections": [
+        "Why Aruba",
+        "More Ways to Feel the Aruba Effect",
+        "Countless ways to find happiness",
+        "Deals & Offers",
+        "Start Booking Your Trip To Aruba"
+      ]
+    },
+    {
+      "path": "/us/why-aruba/romance",
+      "title": "Romantic Things to do in Aruba - Restaurant, Resort & Hotels",
+      "sections": [
+        "Romance in Aruba",
+        "A lot to love",
+        "More featured romantic getaway ideas",
+        "Romantic experiences and Escapes",
+        "Ignite the Flame in Aruba",
+        "Start Booking Your Trip To Aruba"
+      ]
+    },
+    {
+      "path": "/us/why-aruba/culture",
+      "title": "Culture in Aruba, Authentic Cultural Experiences | Aruba.com",
+      "sections": [
+        "Culture",
+        "One happy history",
+        "Discover our culture",
+        "Aruba in the news",
+        "Out and about in Aruba",
+        "Start Booking Your Trip To Aruba"
+      ]
+    },
+    {
+      "path": "/us/why-aruba/wellness",
+      "title": "Aruba Wellness Retreats - Best Spa Retreats & Getaways",
+      "sections": [
+        "Wellness in Aruba",
+        "Mind, body, soul",
+        "Health and wellness in the news",
+        "More ways to stay healthy and fit",
+        "Start Booking Your Trip To Aruba"
+      ]
+    },
+    {
+      "path": "/us/why-aruba/eat-and-drink",
+      "title": "Aruba Culinary Vacations - Food Travel & Foodies | Aruba.com",
+      "sections": [
+        "Eat & Drink",
+        "It's a food affair",
+        "Featured Eateries",
+        "Start Booking Your Trip To Aruba"
+      ]
+    }
+  ]
+}

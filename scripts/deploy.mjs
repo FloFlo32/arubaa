@@ -15,14 +15,14 @@
  */
 import { execSync } from "node:child_process";
 import { existsSync, accessSync } from "node:fs";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 import { dirname, join } from "node:path";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DRY = process.argv.includes("--dry");
 
 if (existsSync(join(root, ".env"))) process.loadEnvFile(join(root, ".env"));
-const { brand } = await import(join(root, "brand.config.ts"));
+const { brand } = await import(pathToFileURL(join(root, "brand.config.ts")).href);
 
 const c = {
   dim: (s) => `\x1b[2m${s}\x1b[0m`,
@@ -96,10 +96,18 @@ if (!existsSync(join(root, ".git"))) sh("git init -b main");
 try {
   accessSync(join(root, ".git"));
   sh("git add -A");
+  // -c user.*  sets a transient author for this one commit only (never persisted
+  // to git config) so this works in environments with no git identity configured.
+  const identity = '-c user.name="getyetti-deploy" -c user.email="deploy@getyetti.com"';
   try {
-    sh('git commit -m "chore: initial commit from starter" --no-verify');
-  } catch {
-    console.log(`    ${c.dim("nothing to commit / already committed")}`);
+    sh(`git ${identity} commit -m "chore: ship site" --no-verify`);
+  } catch (err) {
+    const msg = String(err.stderr || err.message || "");
+    if (/nothing to commit/i.test(msg)) {
+      console.log(`    ${c.dim("nothing to commit / already committed")}`);
+    } else {
+      die(`git commit failed: ${msg.split("\n")[0]}`);
+    }
   }
 } catch {}
 

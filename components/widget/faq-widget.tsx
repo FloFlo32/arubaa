@@ -19,7 +19,7 @@ export function FaqWidget() {
   const [messages, setMessages] = React.useState<Msg[]>([
     {
       role: "assistant",
-      content: `Hi! I'm the ${brand.name} assistant. Ask me anything about what we do.`,
+      content: `Bonbini! I'm the ${brand.name} assistant. Ask me anything about visiting One Happy Island.`,
     },
   ]);
   const scrollRef = React.useRef<HTMLDivElement>(null);
@@ -61,7 +61,7 @@ export function FaqWidget() {
         setMessages((m) => updateLast(m, acc));
       }
     } catch {
-      setMessages((m) => updateLast(m, "Network error — please try again."));
+      setMessages((m) => updateLast(m, "Network error, please try again."));
     } finally {
       setBusy(false);
     }

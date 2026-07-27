@@ -20,43 +20,48 @@
 
 export const brand = {
   /** Product / company name. Shows in the nav, hero, footer, <title>, OG tags. */
-  name: "Aurora",
+  name: "Aruba",
 
   /** One-line value prop. Used in the hero sub-headline + meta description. */
-  tagline: "The starter pack for shipping websites that don't look AI-built.",
+  tagline: "One happy island",
 
   /** Longer description for SEO / Open Graph. ~150 chars is ideal. */
   description:
-    "A production-grade Next.js + Tailwind + shadcn starter with a real design system, motion, and one-command deploy to Vercel.",
+    "What makes Aruba the best island vacation destination on the planet? Find out everything you need to know about the One Happy Island right here.",
 
   /** Primary domain WITHOUT protocol. `/build` sets this to <project>.getyetti.com. */
-  domain: "aurora.getyetti.com",
+  domain: "arubaa.getyetti.com",
 
   /** Theme — drives the whole color system. Run `npm run brand` after editing. */
   theme: {
     /** Brand hue in OKLCH degrees (0–360). This single number re-skins the site. */
-    hue: 265,
+    hue: 25,
     /** Corner style. "sharp" = modern/editorial, "rounded" = friendly, "pill" = playful. */
     corners: "rounded" as "sharp" | "rounded" | "pill",
     /** Default color scheme on first paint. */
-    defaultScheme: "dark" as "light" | "dark",
+    defaultScheme: "light" as "light" | "dark",
   },
 
   /** Fonts. Any Google Font name works — edit, then run `npm run brand`. */
   fonts: {
     /** Big headlines. Pick something with PERSONALITY — this is what breaks the AI look. */
-    display: "Space Grotesk",
+    display: "Fraunces",
     /** Body / UI text. Keep it clean and readable. */
-    sans: "Geist",
+    sans: "Plus Jakarta Sans",
     /** Code / labels / kbd. */
     mono: "JetBrains Mono",
   },
 
   /** Links shown in the footer + used by deploy scripts. */
   social: {
-    github: "your-org/your-repo",
-    x: "yourhandle",
-    email: "hello@aurora.example.com",
+    facebook: "https://www.facebook.com/ArubaFans",
+    x: "https://twitter.com/Aruba",
+    instagram: "https://instagram.com/arubatourism",
+    pinterest: "https://pinterest.com/arubatourism",
+    youtube: "https://www.youtube.com/user/ArubaTourism",
+    tripadvisor: "https://www.tripadvisor.com/Profile/arubatourism",
+    tiktok: "https://www.tiktok.com/@travelaruba",
+    email: "support@aruba.com",
   },
 
   /**
@@ -67,9 +72,9 @@ export const brand = {
    */
   contact: {
     whatsapp: "",
-    phone: "",
+    phone: "18008627822",
     address: "",
-    mapQuery: "",
+    mapQuery: "Aruba",
   },
 } as const;
 

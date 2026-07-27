@@ -1,0 +1,45 @@
+{
+  "images": [
+    "/ingested/arubaa/img-001.svg",
+    "/ingested/arubaa/img-003.webp",
+    "/ingested/arubaa/img-004.svg",
+    "/ingested/arubaa/img-005.webp",
+    "/ingested/arubaa/img-006.webp",
+    "/ingested/arubaa/img-007.webp",
+    "/ingested/arubaa/img-008.webp",
+    "/ingested/arubaa/img-009.webp",
+    "/ingested/arubaa/img-010.webp",
+    "/ingested/arubaa/img-011.webp",
+    "/ingested/arubaa/img-012.webp",
+    "/ingested/arubaa/img-014.webp",
+    "/ingested/arubaa/img-015.webp",
+    "/ingested/arubaa/img-016.webp",
+    "/ingested/arubaa/img-017.webp",
+    "/ingested/arubaa/img-018.webp",
+    "/ingested/arubaa/img-019.webp",
+    "/ingested/arubaa/img-020.webp",
+    "/ingested/arubaa/img-021.webp",
+    "/ingested/arubaa/img-022.webp",
+    "/ingested/arubaa/img-023.webp",
+    "/ingested/arubaa/img-024.webp",
+    "/ingested/arubaa/img-025.webp",
+    "/ingested/arubaa/img-026.webp"
+  ],
+  "videos": [
+    "https://d3cy9zhslanhfa.cloudfront.net/media/F454DD94-244A-415F-B12550305C29D19F/D319A90D-E701-4B63-A75C76ABC79CB5F5/07C3C9A3-EDA5-47B2-982354BBC22584FA.mp4",
+    "https://d3cy9zhslanhfa.cloudfront.net/media/F454DD94-244A-415F-B12550305C29D19F/D319A90D-E701-4B63-A75C76ABC79CB5F5/07C3C9A3-EDA5-47B2-982354BBC22584FA.webm",
+    "https://aruba.bynder.com/asset/5a23170b-58df-46b2-b401-1d0a35a9a7b5/mp4/00_Homepage_BGvideo_16x9.mp4",
+    "https://d3cy9zhslanhfa.cloudfront.net/media/F454DD94-244A-415F-B12550305C29D19F/0A992827-3923-4486-86BB248EE430216E/662CA105-4005-48FB-AF37FF06E62BAF2E.mp4",
+    "https://d3cy9zhslanhfa.cloudfront.net/media/F454DD94-244A-415F-B12550305C29D19F/0A992827-3923-4486-86BB248EE430216E/662CA105-4005-48FB-AF37FF06E62BAF2E.webm",
+    "https://d3cy9zhslanhfa.cloudfront.net/media/F454DD94-244A-415F-B12550305C29D19F/B3273B52-DBED-4034-BB8AFC93696F06B4/3B022BF5-D49D-4CE0-8638039E7DCBCF82.mp4",
+    "https://d3cy9zhslanhfa.cloudfront.net/media/F454DD94-244A-415F-B12550305C29D19F/B3273B52-DBED-4034-BB8AFC93696F06B4/3B022BF5-D49D-4CE0-8638039E7DCBCF82.webm"
+  ],
+  "youtube": [
+    "https://www.youtube.com/watch?v=PfRnaXEARl8",
+    "https://www.youtube.com/watch?v=r6kLObd1mso",
+    "https://www.youtube.com/watch?v=5mtolGVBtaA",
+    "https://www.youtube.com/watch?v=x3omSjXIol4",
+    "https://www.youtube.com/watch?v=l8Zfk77x8uY",
+    "https://www.youtube.com/watch?v=52BO_6Kseak"
+  ]
+}
