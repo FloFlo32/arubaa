@@ -54,6 +54,8 @@ export const brand = {
 
   /** Links shown in the footer + used by deploy scripts. */
   social: {
+    /** owner/repo — used by the deploy/validate scripts to target the right GitHub repo. */
+    github: "FloFlo32/arubaa",
     facebook: "https://www.facebook.com/ArubaFans",
     x: "https://twitter.com/Aruba",
     instagram: "https://instagram.com/arubatourism",
