@@ -1,16 +1,14 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
-import { BookOpen, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Navbar } from "@/components/sections/navbar";
 import { Footer } from "@/components/sections/footer";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { ImageCard } from "@/components/magic/image-card";
 import { AutoSlider } from "@/components/magic/auto-slider";
 import { Reveal } from "@/components/magic/reveal";
 import { GridPattern } from "@/components/magic/grid-pattern";
-import { AuroraBackground } from "@/components/magic/aurora-background";
+import { PhotoHero } from "@/components/magic/photo-hero";
 
 export const metadata: Metadata = {
   title: "Travel Blog: Tips, Culture, and Experiences",
@@ -21,42 +19,42 @@ export const metadata: Metadata = {
 const topics = [
   {
     title: "Adventure",
-    href: "/why-aruba#adventure",
+    href: "/why-aruba/adventure",
     src: "/ingested/arubaa/img-027.webp",
     alt: "A couple exploring a sea cave and rock arch on Aruba's coastline",
     teaser: "Sea caves, rock arches and off road trails for the restless traveler.",
   },
   {
     title: "Romance",
-    href: "/why-aruba#romance",
+    href: "/why-aruba/romance",
     src: "/ingested/arubaa/img-045.webp",
     alt: "A couple sharing a quiet moment on an Aruba beach at sunset",
     teaser: "Sunset walks, private dinners and the moments couples come back for.",
   },
   {
     title: "Culture",
-    href: "/why-aruba#culture",
+    href: "/why-aruba/culture",
     src: "/ingested/arubaa/img-033.webp",
     alt: "A group gathered together on an Aruba beach",
     teaser: "The traditions and industries that make the island's identity.",
   },
   {
     title: "Wellness",
-    href: "/why-aruba#wellness",
+    href: "/why-aruba/wellness",
     src: "/ingested/arubaa/img-019.webp",
     alt: "A woman relaxing in a spa robe beside candles and a soaking tub",
     teaser: "Spas, stillness and the slow mornings that reset your clock.",
   },
   {
     title: "Eat & Drink",
-    href: "/why-aruba#eat-drink",
+    href: "/why-aruba/eat-and-drink",
     src: "/ingested/arubaa/img-036.webp",
     alt: "A couple relaxing together on the coastal rocks in Aruba",
     teaser: "Local flavor, fresh seafood and the tables worth lingering at.",
   },
   {
     title: "Families",
-    href: "/why-aruba#families",
+    href: "/why-aruba/families",
     src: "/ingested/arubaa/img-032.webp",
     alt: "A family enjoying the beach together in Aruba",
     teaser: "Easy days out that keep every age of the family happy.",
@@ -82,44 +80,13 @@ export default function BlogPage() {
     <>
       <Navbar />
       <main className="flex-1">
-        <section className="relative overflow-hidden">
-          <AuroraBackground />
-          <div className="container-px mx-auto grid max-w-7xl gap-10 pt-28 pb-16 sm:pt-32 sm:pb-24 lg:grid-cols-[1.05fr_1fr] lg:items-center">
-            <div>
-              <Reveal>
-                <Badge variant="accent">
-                  <BookOpen className="size-3.5" /> Stories from the island
-                </Badge>
-              </Reveal>
-              <Reveal delay={0.06}>
-                <h1 className="mt-6 max-w-xl text-balance text-5xl font-bold leading-[0.98] sm:text-6xl md:text-7xl">
-                  Travel Blog, Tips, <span className="text-gradient">Culture and Experiences</span>
-                </h1>
-              </Reveal>
-              <Reveal delay={0.12}>
-                <p className="mt-6 max-w-md text-lg text-muted-foreground">
-                  We&apos;re just getting started with the amazing effects Aruba has to
-                  offer. Dig into your trip details below to unlock a Caribbean
-                  experience.
-                </p>
-              </Reveal>
-            </div>
-
-            <Reveal delay={0.2}>
-              <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border shadow-2xl shadow-primary/10 sm:aspect-[5/6]">
-                <Image
-                  src="/ingested/arubaa/img-051.webp"
-                  alt="A newlywed couple holding hands on an Aruba beach"
-                  fill
-                  priority
-                  sizes="(max-width: 1024px) 100vw, 45vw"
-                  quality={80}
-                  className="object-cover object-top"
-                />
-              </div>
-            </Reveal>
-          </div>
-        </section>
+        <PhotoHero
+          eyebrow="Stories from the island"
+          title="Travel Blog, Tips, Culture and Experiences"
+          body="We're just getting started with the amazing effects Aruba has to offer. Dig into your trip details below to unlock a Caribbean experience."
+          src="/ingested/arubaa/img-051.webp"
+          alt="A newlywed couple holding hands on an Aruba beach"
+        />
 
         <section className="py-20">
           <div className="container-px mx-auto max-w-6xl">

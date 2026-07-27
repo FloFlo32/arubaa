@@ -1,15 +1,13 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
-import { Newspaper, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Navbar } from "@/components/sections/navbar";
 import { Footer } from "@/components/sections/footer";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { ImageCard } from "@/components/magic/image-card";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
 import { GridPattern } from "@/components/magic/grid-pattern";
-import { AuroraBackground } from "@/components/magic/aurora-background";
+import { PhotoHero } from "@/components/magic/photo-hero";
 
 export const metadata: Metadata = {
   title: "Aruba News, Island Tourism News",
@@ -50,45 +48,13 @@ export default function NewsPage() {
     <>
       <Navbar />
       <main className="flex-1">
-        <section className="relative overflow-hidden">
-          <AuroraBackground />
-          <div className="container-px mx-auto grid max-w-7xl gap-10 pt-28 pb-16 sm:pt-32 sm:pb-24 lg:grid-cols-[1.05fr_1fr] lg:items-center">
-            <div>
-              <Reveal>
-                <Badge variant="accent">
-                  <Newspaper className="size-3.5" /> Island updates
-                </Badge>
-              </Reveal>
-              <Reveal delay={0.06}>
-                <h1 className="mt-6 max-w-xl text-balance text-5xl font-bold leading-[0.98] sm:text-6xl md:text-7xl">
-                  Aruba, Island <span className="text-gradient">Tourism News</span>
-                </h1>
-              </Reveal>
-              <Reveal delay={0.12}>
-                <p className="mt-6 max-w-md text-lg text-muted-foreground">
-                  We&apos;re just getting started with the amazing effects Aruba has to
-                  offer. Dig into your trip details below to unlock a Caribbean
-                  experience that will fill you with sunshine and send you home with a
-                  happy afterglow that never fades.
-                </p>
-              </Reveal>
-            </div>
-
-            <Reveal delay={0.2}>
-              <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border shadow-2xl shadow-primary/10 sm:aspect-[5/6]">
-                <Image
-                  src="/ingested/arubaa/img-042.webp"
-                  alt="A family walking together holding hands on an Aruba beach"
-                  fill
-                  priority
-                  sizes="(max-width: 1024px) 100vw, 45vw"
-                  quality={80}
-                  className="object-cover object-top"
-                />
-              </div>
-            </Reveal>
-          </div>
-        </section>
+        <PhotoHero
+          eyebrow="Island updates"
+          title="Aruba, Island Tourism News"
+          body="We're just getting started with the amazing effects Aruba has to offer. Dig into your trip details below to unlock a Caribbean experience that will fill you with sunshine and send you home with a happy afterglow that never fades."
+          src="/ingested/arubaa/img-042.webp"
+          alt="A family walking together holding hands on an Aruba beach"
+        />
 
         <section className="container-px mx-auto max-w-6xl py-20 pb-24">
           <Reveal className="max-w-2xl">

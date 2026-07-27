@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
-import { Radio, Tv, ArrowRight } from "lucide-react";
+import { Tv, ArrowRight } from "lucide-react";
 import { Navbar } from "@/components/sections/navbar";
 import { Footer } from "@/components/sections/footer";
 import { Button } from "@/components/ui/button";
@@ -9,7 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { ImageCard } from "@/components/magic/image-card";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
 import { GridPattern } from "@/components/magic/grid-pattern";
-import { AuroraBackground } from "@/components/magic/aurora-background";
+import { PhotoHero } from "@/components/magic/photo-hero";
 
 export const metadata: Metadata = {
   title: "Live from Aruba",
@@ -65,53 +64,25 @@ export default function LiveWebcamsPage() {
     <>
       <Navbar />
       <main className="flex-1">
-        <section className="relative overflow-hidden">
-          <AuroraBackground />
-          <div className="container-px mx-auto grid max-w-7xl gap-10 pt-28 pb-16 sm:pt-32 sm:pb-24 lg:grid-cols-[1.05fr_1fr] lg:items-center">
-            <div>
-              <Reveal>
-                <Badge variant="accent">
-                  <Radio className="size-3.5" /> Streaming now
-                </Badge>
-              </Reveal>
-              <Reveal delay={0.06}>
-                <h1 className="mt-6 max-w-xl text-balance text-5xl font-bold leading-[0.98] sm:text-6xl md:text-7xl">
-                  Live from <span className="text-gradient">Aruba</span>
-                </h1>
-              </Reveal>
-              <Reveal delay={0.12}>
-                <p className="mt-6 max-w-md text-lg text-muted-foreground">
-                  From packing tips and English news on the Live Channel, to live sport and
-                  culture events, to the peaceful breeze through a palm tree on the beach:
-                  watch Aruba live through our webcams.
-                </p>
-              </Reveal>
-            </div>
+        <PhotoHero
+          eyebrow="Streaming now"
+          title="Live from Aruba"
+          body="From packing tips and English news on the Live Channel, to live sport and culture events, to the peaceful breeze through a palm tree on the beach: watch Aruba live through our webcams."
+          src="/ingested/arubaa/img-029.webp"
+          alt="Aerial view of beachgoers wading in Aruba's turquoise water"
+        />
 
-            <Reveal delay={0.2}>
-              <div className="relative">
-                <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border shadow-2xl shadow-primary/10 sm:aspect-[5/6]">
-                  <Image
-                    src="/ingested/arubaa/img-029.webp"
-                    alt="Aerial view of beachgoers wading in Aruba's turquoise water"
-                    fill
-                    priority
-                    sizes="(max-width: 1024px) 100vw, 45vw"
-                    quality={80}
-                    className="object-cover object-top"
-                  />
-                </div>
-                <div className="absolute -bottom-6 -left-6 hidden items-center gap-2 rounded-2xl border border-border bg-card px-4 py-3 shadow-xl shadow-black/10 sm:flex">
-                  <span className="relative flex size-2.5">
-                    <span className="absolute inline-flex size-full animate-ping rounded-full bg-primary/60" />
-                    <span className="relative inline-flex size-2.5 rounded-full bg-primary" />
-                  </span>
-                  <p className="text-sm font-medium">Live from One Happy Island</p>
-                </div>
-              </div>
-            </Reveal>
-          </div>
-        </section>
+        <div className="container-px mx-auto -mt-8 max-w-6xl">
+          <Reveal delay={0.1}>
+            <div className="mx-auto flex w-fit items-center gap-2 rounded-full border border-border bg-card px-4 py-2.5 shadow-lg shadow-black/5">
+              <span className="relative flex size-2.5">
+                <span className="absolute inline-flex size-full animate-ping rounded-full bg-primary/60" />
+                <span className="relative inline-flex size-2.5 rounded-full bg-primary" />
+              </span>
+              <p className="text-sm font-medium">Live from One Happy Island</p>
+            </div>
+          </Reveal>
+        </div>
 
         <section className="container-px mx-auto max-w-6xl py-20">
           <Reveal className="max-w-2xl">

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
-import { Percent, ShieldCheck, Home, Heart, Briefcase, ArrowRight } from "lucide-react";
+import { ShieldCheck, Home, Heart, Briefcase, ArrowRight } from "lucide-react";
 import { Navbar } from "@/components/sections/navbar";
 import { Footer } from "@/components/sections/footer";
 import { Button } from "@/components/ui/button";
@@ -9,7 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { ImageCard } from "@/components/magic/image-card";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
 import { GridPattern } from "@/components/magic/grid-pattern";
-import { AuroraBackground } from "@/components/magic/aurora-background";
+import { PhotoHero } from "@/components/magic/photo-hero";
 
 export const metadata: Metadata = {
   title: "Aruba Vacation & Travel Deals",
@@ -57,44 +56,13 @@ export default function DealsPage() {
     <>
       <Navbar />
       <main className="flex-1">
-        <section className="relative overflow-hidden">
-          <AuroraBackground />
-          <div className="container-px mx-auto grid max-w-7xl gap-10 pt-28 pb-16 sm:pt-32 sm:pb-24 lg:grid-cols-[1fr_1.05fr] lg:items-center">
-            <Reveal delay={0.2} className="order-2 lg:order-1">
-              <div className="relative aspect-[5/6] overflow-hidden rounded-3xl border border-border shadow-2xl shadow-primary/10">
-                <Image
-                  src="/ingested/arubaa/img-039.webp"
-                  alt="Beachgoers enjoying a sunny afternoon on the Aruba shoreline"
-                  fill
-                  priority
-                  sizes="(max-width: 1024px) 100vw, 45vw"
-                  quality={80}
-                  className="object-cover object-top"
-                />
-              </div>
-            </Reveal>
-
-            <div className="order-1 lg:order-2">
-              <Reveal>
-                <Badge variant="accent">
-                  <Percent className="size-3.5" /> Save more, worry less
-                </Badge>
-              </Reveal>
-              <Reveal delay={0.06}>
-                <h1 className="mt-6 text-balance text-5xl font-bold leading-[0.98] sm:text-6xl md:text-7xl">
-                  Aruba Vacation <span className="text-gradient">& Travel Deals</span>
-                </h1>
-              </Reveal>
-              <Reveal delay={0.12}>
-                <p className="mt-6 max-w-md text-lg text-muted-foreground">
-                  There are so many ways for you to save on your next Aruba vacation.
-                  We&apos;re welcoming visitors back with flexibility, serenity and
-                  affordability.
-                </p>
-              </Reveal>
-            </div>
-          </div>
-        </section>
+        <PhotoHero
+          eyebrow="Save more, worry less"
+          title="Aruba Vacation & Travel Deals"
+          body="There are so many ways for you to save on your next Aruba vacation. We're welcoming visitors back with flexibility, serenity and affordability."
+          src="/ingested/arubaa/img-039.webp"
+          alt="Beachgoers enjoying a sunny afternoon on the Aruba shoreline"
+        />
 
         <section className="container-px mx-auto max-w-6xl py-20">
           <Reveal className="max-w-2xl">
