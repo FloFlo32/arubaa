@@ -7,14 +7,14 @@ import { cn } from "@/lib/utils";
 const STORAGE_KEY = "aruba-language";
 
 const languages = [
-  { code: "us", label: "English (US)" },
-  { code: "uk", label: "English (UK)" },
-  { code: "es", label: "Español" },
-  { code: "nl", label: "Nederlands" },
-  { code: "de", label: "Deutsch" },
-  { code: "it", label: "Italiano" },
-  { code: "br", label: "Português" },
-  { code: "se", label: "Svenska" },
+  { code: "us", label: "English (US)", flag: "🇺🇸" },
+  { code: "uk", label: "English (UK)", flag: "🇬🇧" },
+  { code: "es", label: "Español", flag: "🇪🇸" },
+  { code: "nl", label: "Nederlands", flag: "🇳🇱" },
+  { code: "de", label: "Deutsch", flag: "🇩🇪" },
+  { code: "it", label: "Italiano", flag: "🇮🇹" },
+  { code: "br", label: "Português", flag: "🇧🇷" },
+  { code: "se", label: "Svenska", flag: "🇸🇪" },
 ];
 
 /**
@@ -64,7 +64,7 @@ export function LanguageGate() {
 
       <div className="container-px relative z-10 w-full max-w-lg">
         <div className="rounded-3xl border border-white/20 bg-primary/25 p-8 text-center shadow-2xl shadow-black/40 backdrop-blur-2xl sm:p-10">
-          <div className="mx-auto grid size-14 place-items-center rounded-2xl bg-white/95 p-2 shadow-lg">
+          <div className="mx-auto grid size-14 place-items-center rounded-2xl bg-black p-2 shadow-lg">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/aruba-logo.svg" alt="Aruba" className="h-8 w-auto" />
           </div>
@@ -82,8 +82,11 @@ export function LanguageGate() {
                 key={l.code}
                 type="button"
                 onClick={() => choose(l.code)}
-                className="cursor-pointer rounded-xl border border-white/25 bg-white/10 px-3 py-3 text-sm font-medium text-white transition-colors duration-200 hover:border-white/40 hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
+                className="flex cursor-pointer items-center justify-center gap-2 rounded-xl border border-white/25 bg-white/10 px-3 py-3 text-sm font-medium text-white transition-colors duration-200 hover:border-white/40 hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
               >
+                <span className="text-base" aria-hidden="true">
+                  {l.flag}
+                </span>
                 {l.label}
               </button>
             ))}
