@@ -18,8 +18,8 @@ const tours = [
     time: "1:30pm – 5pm · 3.5 hours",
     body: "Two premium snorkel stops, a Caribbean-style lunch, open bar, rope swing and island music.",
     href: "/boat-tours/afternoon-pirate-party",
-    img: "https://images.unsplash.com/photo-1621932945904-c5be9be992d8?auto=format&fit=crop&w=1200&q=80",
-    alt: "A happy group of friends riding on a boat",
+    img: "/ingested/flagshiparubaa/guest-e.webp",
+    alt: "A large group of guests cheering together aboard the schooner",
   },
   {
     eyebrow: "Sunset",
@@ -27,8 +27,8 @@ const tours = [
     time: "5:30pm – 7:30pm · 2 hours",
     body: "An open bar, Caribbean bites and two swimming stops as the sky turns to stars over the water.",
     href: "/boat-tours/sunset-stars-cruise",
-    img: "https://images.unsplash.com/photo-1519801584609-8ee5f072eddd?auto=format&fit=crop&w=1200&q=80",
-    alt: "Friends relaxing together on the deck of a sailboat",
+    img: "/ingested/flagshiparubaa/schooner-sunset-guests.webp",
+    alt: "Guests aboard the schooner at sunset",
   },
 ];
 

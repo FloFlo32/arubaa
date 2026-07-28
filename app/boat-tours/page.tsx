@@ -27,8 +27,8 @@ const tours = [
     time: "1:30pm – 5pm · 3.5 hours",
     body: "Two premium snorkel stops, a Caribbean-style lunch, open bar, rope swing and island music for a livelier afternoon.",
     href: "/boat-tours/afternoon-pirate-party",
-    img: "https://images.unsplash.com/photo-1530053969600-caed2596d242?auto=format&fit=crop&w=1200&q=80",
-    alt: "A school of fish swimming over a reef",
+    img: "/ingested/flagshiparubaa/guest-e.webp",
+    alt: "A large group of guests cheering together aboard the schooner",
   },
   {
     title: "Sunset & Stars Cruise",

@@ -27,8 +27,8 @@ const starters = [
   {
     title: "Afternoon Pirate Party",
     href: "/boat-tours/afternoon-pirate-party",
-    src: "https://images.unsplash.com/photo-1530053969600-caed2596d242?auto=format&fit=crop&w=1200&q=80",
-    alt: "A school of fish swimming over a reef",
+    src: "/ingested/flagshiparubaa/guest-e.webp",
+    alt: "A large group of guests cheering together aboard the schooner",
     description: "2 snorkel stops, lunch, open bar, rope swing. 1:30pm-5pm.",
   },
   {

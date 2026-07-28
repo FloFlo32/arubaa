@@ -11,7 +11,7 @@ const sites = [
     description:
       "A WWII-era wreck resting in Aruba's clear water, one of the largest shipwrecks in the Caribbean.",
     href: "/snorkel-sites#antilla-wreck",
-    src: "/ingested/flagshiparuba/img-010.webp",
+    src: "/ingested/flagshiparubaa/ss-antilla-wreck-aerial.webp",
     alt: "Aerial view of the SS Antilla shipwreck resting in Aruba's turquoise water",
     span: "sm:col-span-2",
     ratio: "aspect-[16/9]",
@@ -31,8 +31,8 @@ const sites = [
     description:
       "One of Aruba's top snorkel spots, with clear water close to shore and easy access.",
     href: "/snorkel-sites#malmok-beach",
-    src: "/ingested/flagshiparuba/img-008.webp",
-    alt: "A snorkeler in clear water off Malmok Beach in Aruba",
+    src: "/ingested/flagshiparubaa/malmok-beach.webp",
+    alt: "The turquoise coastline and rocky shore at Malmok Beach in Aruba",
     span: "",
     ratio: "aspect-[4/3]",
   },

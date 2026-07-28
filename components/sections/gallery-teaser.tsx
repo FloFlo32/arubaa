@@ -6,15 +6,15 @@ import { BorderBeam } from "@/components/magic/border-beam";
 const slides = [
   { src: "/ingested/flagshiparuba/img-007.webp", alt: "The Flagship Aruba schooner under sail", caption: "Under Sail" },
   { src: "/ingested/flagshiparuba/img-006.webp", alt: "A guest jumps from the schooner into the ocean", caption: "Making a Splash" },
-  { src: "https://images.unsplash.com/photo-1621932945904-c5be9be992d8?auto=format&fit=crop&w=1600&q=80", alt: "A happy group of friends riding on a boat", caption: "Good Times Onboard" },
+  { src: "/ingested/flagshiparubaa/guest-e.webp", alt: "A large group of guests cheering together aboard the schooner", caption: "Good Times Onboard" },
   { src: "/ingested/flagshiparuba/img-008.webp", alt: "A snorkeler in clear turquoise water", caption: "Reef Snorkeling" },
-  { src: "https://images.unsplash.com/photo-1519801584609-8ee5f072eddd?auto=format&fit=crop&w=1600&q=80", alt: "Friends relaxing together on the deck of a sailboat", caption: "Good Company" },
-  { src: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1600&q=80", alt: "A diver swims past a school of yellow reef fish", caption: "Marine Life" },
-  { src: "/ingested/flagshiparuba/img-010.webp", alt: "Aerial view of the SS Antilla shipwreck", caption: "The Shipwreck" },
-  { src: "https://images.unsplash.com/photo-1759567153576-abdd893a9065?auto=format&fit=crop&w=1600&q=80", alt: "Three friends laughing together at a beach hut", caption: "Making Memories" },
-  { src: "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1600&q=80", alt: "A sailboat on the sand beside palm trees and a thatched umbrella", caption: "The Beach" },
-  { src: "/ingested/flagshiparuba/img-009.webp", alt: "Aruba's rocky turquoise coastline", caption: "The Coastline" },
-  { src: "https://images.unsplash.com/photo-1563196638-8c9457546e5f?auto=format&fit=crop&w=1600&q=80", alt: "A couple walking hand in hand on the beach at sunset", caption: "Golden Hour" },
+  { src: "/ingested/flagshiparubaa/snorkel-sea-turtle.webp", alt: "A sea turtle swimming in clear turquoise water", caption: "Marine Life" },
+  { src: "/ingested/flagshiparubaa/guest-onboard-drink.webp", alt: "A guest smiling with a drink aboard the schooner", caption: "Onboard Vibes" },
+  { src: "/ingested/flagshiparubaa/ss-antilla-wreck-aerial.webp", alt: "Aerial view of the SS Antilla shipwreck", caption: "The Shipwreck" },
+  { src: "/ingested/flagshiparubaa/guest-b.webp", alt: "A parent and child snorkeling together, the schooner visible in the background", caption: "Family Time" },
+  { src: "/ingested/flagshiparubaa/malmok-beach.webp", alt: "The turquoise coastline at Malmok Beach", caption: "The Coastline" },
+  { src: "/ingested/flagshiparubaa/schooner-sunset-guests.webp", alt: "Guests aboard the schooner at sunset", caption: "Golden Hour" },
+  { src: "/ingested/flagshiparubaa/sunset-bird-silhouette.webp", alt: "A bird silhouetted against the sunset over the ocean", caption: "Day's End" },
 ];
 
 export function GalleryTeaser() {

@@ -23,8 +23,8 @@ export default function SnorkelSitesPage() {
           eyebrow="Where we sail"
           title="Snorkel Sites"
           body="Our Morning Splash Adventure visits a rotation of Aruba's best snorkel spots, from calm reef to WWII shipwreck."
-          src="/ingested/flagshiparuba/img-008.webp"
-          alt="A snorkeler in clear turquoise water off Aruba's coast"
+          src="/ingested/flagshiparubaa/snorkel-sea-turtle.webp"
+          alt="A sea turtle swimming in clear turquoise water off Aruba's coast"
         />
 
         <section id="boca-catalina" className="container-px mx-auto max-w-6xl py-16 sm:py-20 scroll-mt-24">
@@ -78,8 +78,8 @@ export default function SnorkelSitesPage() {
               <div className="overflow-hidden rounded-3xl border border-border bg-muted">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/ingested/flagshiparuba/img-008.webp"
-                  alt="A snorkeler in clear water off Malmok Beach in Aruba"
+                  src="/ingested/flagshiparubaa/malmok-beach.webp"
+                  alt="The turquoise coastline and rocky shore at Malmok Beach in Aruba"
                   loading="lazy"
                   decoding="async"
                   className="aspect-[5/4] w-full object-cover object-center"
@@ -95,7 +95,7 @@ export default function SnorkelSitesPage() {
               <div className="overflow-hidden rounded-3xl border border-border bg-muted">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/ingested/flagshiparuba/img-010.webp"
+                  src="/ingested/flagshiparubaa/ss-antilla-wreck-aerial.webp"
                   alt="Aerial view of the SS Antilla shipwreck resting in Aruba's turquoise water"
                   loading="lazy"
                   decoding="async"

@@ -94,8 +94,8 @@ export default function AfternoonPiratePartyPage() {
               <div className="overflow-hidden rounded-3xl border border-border bg-muted">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://images.unsplash.com/photo-1546456073-92b9f0a8d413?auto=format&fit=crop&w=1200&q=80"
-                  alt="Sunlight through clear turquoise Caribbean water"
+                  src="/ingested/flagshiparubaa/afternoon-pirate-party.webp"
+                  alt="A sailboat off Aruba's coast near a resort-lined beach"
                   loading="lazy"
                   decoding="async"
                   className="aspect-[4/5] w-full object-cover object-center"
@@ -117,16 +117,16 @@ export default function AfternoonPiratePartyPage() {
               description="A calm reef, great for every skill level."
             />
             <ImageCard
-              src="/ingested/flagshiparuba/img-008.webp"
-              alt="A snorkeler in clear turquoise water"
+              src="/ingested/flagshiparubaa/malmok-beach.webp"
+              alt="The turquoise coastline at Malmok Beach"
               title="Malmok"
               description="Clear water and easy access close to shore."
             />
             <ImageCard
-              src="https://images.unsplash.com/photo-1530053969600-caed2596d242?auto=format&fit=crop&w=1200&q=80"
-              alt="A school of fish swimming over a reef"
+              src="/ingested/flagshiparubaa/snorkel-sea-turtle.webp"
+              alt="A sea turtle swimming in clear turquoise water"
               title="Marine Life"
-              description="Colorful reef fish at every stop."
+              description="Colorful reef fish and the occasional turtle at every stop."
             />
           </AutoSlider>
         </section>

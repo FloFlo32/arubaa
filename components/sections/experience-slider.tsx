@@ -33,7 +33,7 @@ const moments = [
     description:
       "Snorkel above the SS Antilla, one of the largest shipwrecks in the Caribbean.",
     href: "/snorkel-sites#antilla-wreck",
-    src: "/ingested/flagshiparuba/img-010.webp",
+    src: "/ingested/flagshiparubaa/ss-antilla-wreck-aerial.webp",
   },
   {
     eyebrow: "Moment 05",
@@ -41,7 +41,7 @@ const moments = [
     description:
       "A boat full of friends is a better boat, every single time.",
     href: "/boat-tours/afternoon-pirate-party",
-    src: "https://images.unsplash.com/photo-1621932945904-c5be9be992d8?auto=format&fit=crop&w=1200&q=80",
+    src: "/ingested/flagshiparubaa/guest-e.webp",
   },
   {
     eyebrow: "Moment 06",
@@ -49,7 +49,7 @@ const moments = [
     description:
       "Watch the sky turn pink and gold as we sail back to shore.",
     href: "/boat-tours/sunset-stars-cruise",
-    src: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+    src: "/ingested/flagshiparubaa/schooner-pink-sunset.webp",
   },
   {
     eyebrow: "Moment 07",

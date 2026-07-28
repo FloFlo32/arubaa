@@ -94,8 +94,8 @@ export default function MorningSplashAdventurePage() {
               <div className="overflow-hidden rounded-3xl border border-border bg-muted">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=80"
-                  alt="A diver swims past a school of yellow reef fish"
+                  src="/ingested/flagshiparubaa/snorkel-sea-turtle.webp"
+                  alt="A sea turtle swimming in clear turquoise water"
                   loading="lazy"
                   decoding="async"
                   className="aspect-[4/5] w-full object-cover object-center"
