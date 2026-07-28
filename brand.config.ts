@@ -20,22 +20,22 @@
 
 export const brand = {
   /** Product / company name. Shows in the nav, hero, footer, <title>, OG tags. */
-  name: "Jolly Pirates",
+  name: "Flagship Aruba",
 
   /** One-line value prop. Used in the hero sub-headline + meta description. */
-  tagline: "Jolly Pirates | Aruba Snorkeling Trips and Sunset Cruises",
+  tagline: "Sail, Splash & Sunset Magic",
 
   /** Longer description for SEO / Open Graph. ~150 chars is ideal. */
   description:
-    "Sail with Jolly Pirates Aruba! Enjoy epic snorkeling tours to reefs and shipwrecks and relax on sunset cruises aboard our iconic schooner sailboats. Book now!",
+    "Set sail with Flagship Aruba aboard a traditional wooden schooner for snorkeling adventures and sunset cruises off Aruba's coast.",
 
   /** Primary domain WITHOUT protocol. `/build` sets this to <project>.getyetti.com. */
-  domain: "jollypirates.getyetti.com",
+  domain: "flagshiparuba.getyetti.com",
 
   /** Theme — drives the whole color system. Run `npm run brand` after editing. */
   theme: {
     /** Brand hue in OKLCH degrees (0–360). This single number re-skins the site. */
-    hue: 182,
+    hue: 235,
     /** Corner style. "sharp" = modern/editorial, "rounded" = friendly, "pill" = playful. */
     corners: "rounded" as "sharp" | "rounded" | "pill",
     /** Default color scheme on first paint. */
@@ -45,9 +45,9 @@ export const brand = {
   /** Fonts. Any Google Font name works — edit, then run `npm run brand`. */
   fonts: {
     /** Big headlines. Pick something with PERSONALITY — this is what breaks the AI look. */
-    display: "Fraunces",
+    display: "Playfair Display",
     /** Body / UI text. Keep it clean and readable. */
-    sans: "Plus Jakarta Sans",
+    sans: "Mulish",
     /** Code / labels / kbd. */
     mono: "JetBrains Mono",
   },
@@ -56,8 +56,8 @@ export const brand = {
   social: {
     /** owner/repo — used by the deploy/validate scripts to target the right GitHub repo. */
     github: "FloFlo32/arubaa",
-    instagram: "https://www.instagram.com/jollypiratesaruba/",
-    email: "info@jolly-pirates.com",
+    instagram: "https://www.instagram.com/flagshiparuba",
+    email: "info@flagshiparuba.com",
   },
 
   /**
@@ -67,10 +67,10 @@ export const brand = {
    * - address + mapQuery: set them and the <Map> section renders a pin + embedded map.
    */
   contact: {
-    whatsapp: "2975926777",
-    phone: "+2975868107",
-    address: "MooMba Beach, Palm Beach, Aruba (between the Holiday Inn and Marriott)",
-    mapQuery: "12.5775702,-70.044721",
+    whatsapp: "2975677637",
+    phone: "+2975677637",
+    address: "MooMba Beach Bar, Palm Beach, Aruba",
+    mapQuery: "MooMba Beach Bar Palm Beach Aruba",
   },
 } as const;
 

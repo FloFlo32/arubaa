@@ -1,0 +1,76 @@
+import Link from "next/link";
+import { ArrowUpRight, Clock } from "lucide-react";
+import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
+
+const tours = [
+  {
+    eyebrow: "Morning",
+    title: "Morning Splash Adventure",
+    time: "9am – 1pm · 4 hours",
+    body: "Three snorkel stops, gear included, unlimited drinks and Caribbean snacks aboard our traditional schooner.",
+    href: "/boat-tours/morning-splash-adventure",
+    img: "/ingested/flagshiparuba/img-008.webp",
+    alt: "A snorkeler smiles at the camera in clear turquoise water off Aruba's coast",
+  },
+  {
+    eyebrow: "Sunset",
+    title: "Sunset & Stars Cruise",
+    time: "5:30pm – 7:30pm · 2 hours",
+    body: "An open bar, Caribbean bites and two swimming stops as the sky turns to stars over the water.",
+    href: "/boat-tours/sunset-stars-cruise",
+    img: "/ingested/flagshiparuba/img-006.webp",
+    alt: "A guest jumps from the Flagship Aruba schooner into the ocean",
+  },
+];
+
+export function BoatToursOverview() {
+  return (
+    <section className="container-px mx-auto max-w-6xl py-20 sm:py-24">
+      <Reveal>
+        <span className="text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground">
+          Our boat tours
+        </span>
+        <h2 className="mt-3 text-4xl font-bold sm:text-5xl">Pick your time of day</h2>
+        <p className="mt-3 max-w-xl text-muted-foreground">
+          Two ways to sail with us: a morning snorkeling adventure, or an evening under
+          sail and stars.
+        </p>
+      </Reveal>
+
+      <RevealGroup className="mt-10 grid gap-6 sm:grid-cols-2" stagger={0.08}>
+        {tours.map((t) => (
+          <RevealItem key={t.title}>
+            <Link
+              href={t.href}
+              className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/5 cursor-pointer"
+            >
+              <div className="relative aspect-[16/10] overflow-hidden bg-muted">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={t.img}
+                  alt={t.alt}
+                  loading="lazy"
+                  decoding="async"
+                  className="size-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.04]"
+                />
+              </div>
+              <div className="flex flex-1 flex-col gap-2 p-6">
+                <span className="text-xs font-medium uppercase tracking-[0.16em] text-primary">
+                  {t.eyebrow}
+                </span>
+                <h3 className="flex items-start justify-between gap-2 font-display text-xl font-semibold leading-snug">
+                  {t.title}
+                  <ArrowUpRight className="mt-0.5 size-4 shrink-0 text-muted-foreground transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                </h3>
+                <p className="flex items-center gap-1.5 text-xs text-muted-foreground">
+                  <Clock className="size-3.5" /> {t.time}
+                </p>
+                <p className="text-sm text-muted-foreground">{t.body}</p>
+              </div>
+            </Link>
+          </RevealItem>
+        ))}
+      </RevealGroup>
+    </section>
+  );
+}

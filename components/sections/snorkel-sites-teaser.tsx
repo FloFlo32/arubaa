@@ -7,22 +7,32 @@ import { ArrowRight } from "lucide-react";
 
 const sites = [
   {
-    title: "Boca Catalina",
-    description:
-      "A calm, shallow reef close to shore, thick with tropical fish and easy for every skill level to enjoy.",
-    href: "/snorkel-sites#boca-catalina",
-    src: "/ingested/jollypirates/img-059.webp",
-    alt: "The Jolly Pirates schooner anchored near the rocky shore at Boca Catalina with guests snorkeling nearby",
-    span: "sm:col-span-2",
-    ratio: "aspect-[16/9]",
-  },
-  {
     title: "SS Antilla Shipwreck",
     description:
       "A WWII-era wreck resting in Aruba's clear water, one of the largest shipwrecks in the Caribbean.",
     href: "/snorkel-sites#antilla-wreck",
-    src: "/ingested/jollypirates/img-041.webp",
-    alt: "Clear turquoise water over one of Aruba's snorkel sites",
+    src: "/ingested/flagshiparuba/img-010.webp",
+    alt: "Aerial view of the SS Antilla shipwreck resting in Aruba's turquoise water",
+    span: "sm:col-span-2",
+    ratio: "aspect-[16/9]",
+  },
+  {
+    title: "Boca Catalina",
+    description:
+      "A calm, shallow reef close to shore, thick with tropical fish and easy for every skill level.",
+    href: "/snorkel-sites#boca-catalina",
+    src: "/ingested/flagshiparuba/img-009.webp",
+    alt: "A rocky cove and turquoise water along Aruba's northwest coast",
+    span: "",
+    ratio: "aspect-[4/3]",
+  },
+  {
+    title: "Malmok Beach",
+    description:
+      "One of Aruba's top snorkel spots, with clear water close to shore and easy access.",
+    href: "/snorkel-sites#malmok-beach",
+    src: "/ingested/flagshiparuba/img-008.webp",
+    alt: "A snorkeler in clear water off Malmok Beach in Aruba",
     span: "",
     ratio: "aspect-[4/3]",
   },
@@ -36,7 +46,7 @@ export function SnorkelSitesTeaser() {
           Where we sail
         </span>
         <h2 className="mt-3 max-w-2xl text-4xl font-bold sm:text-5xl">
-          Reef to shipwreck, all in one morning
+          Reef to shipwreck, all in one trip
         </h2>
       </Reveal>
 

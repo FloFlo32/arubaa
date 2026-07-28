@@ -2,9 +2,9 @@ import { Navbar } from "@/components/sections/navbar";
 import { LanguageGate } from "@/components/sections/language-gate";
 import { Hero } from "@/components/sections/hero";
 import { TrustBar } from "@/components/sections/trust-bar";
-import { CruisesOverview } from "@/components/sections/cruises-overview";
+import { BoatToursOverview } from "@/components/sections/boat-tours-overview";
 import { SnorkelSitesTeaser } from "@/components/sections/snorkel-sites-teaser";
-import { WhyJollyPirates } from "@/components/sections/why-jolly-pirates";
+import { WhyFlagshipAruba } from "@/components/sections/why-flagship-aruba";
 import { ExperienceSlider } from "@/components/sections/experience-slider";
 import { GalleryTeaser } from "@/components/sections/gallery-teaser";
 import { CTA } from "@/components/sections/cta";
@@ -18,9 +18,9 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <TrustBar />
-        <CruisesOverview />
+        <BoatToursOverview />
         <SnorkelSitesTeaser />
-        <WhyJollyPirates />
+        <WhyFlagshipAruba />
         <ExperienceSlider />
         <GalleryTeaser />
         <CTA />

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Anchor, Recycle, Fish, ArrowRight } from "lucide-react";
+import { Anchor, Users, Ship, ArrowRight } from "lucide-react";
 import { Navbar } from "@/components/sections/navbar";
 import { Footer } from "@/components/sections/footer";
 import { Button } from "@/components/ui/button";
@@ -9,26 +9,26 @@ import { PhotoHero } from "@/components/magic/photo-hero";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "About Us",
   description:
-    "For over 26 years, Jolly Pirates has sailed twin teak schooners along Aruba's coast for snorkeling trips and sunset cruises.",
+    "Flagship Aruba started as a childhood joke between three friends about owning a pirate ship. Now it's real.",
 };
 
 const values = [
   {
-    icon: Recycle,
-    title: "Reef-friendly cups & bags",
-    body: "We've swapped in recyclable cups and reusable souvenir bags to cut down on what ends up in the water.",
+    icon: Users,
+    title: "Three friends, one dream",
+    body: "We grew up joking about owning a pirate ship someday. Today, that ship is the one you'll be stepping onto.",
   },
   {
-    icon: Fish,
-    title: "Save the reefs bracelets",
-    body: "Proceeds from our reef bracelets go toward Aruba's Marine Park and its marine protection work.",
+    icon: Ship,
+    title: "A real wooden schooner",
+    body: "Not a modern catamaran dressed up for photos. Ours is a genuinely wooden vessel, built to feel like the real thing.",
   },
   {
     icon: Anchor,
-    title: "Traditional schooners",
-    body: "Our twin 85-foot teak schooners are built the old way, and we intend to keep sailing them the old way.",
+    title: "MooMba Beach, Palm Beach",
+    body: "We depart from the pier in front of MooMba Beach Bar, an easy walk from most Palm Beach resorts.",
   },
 ];
 
@@ -38,11 +38,11 @@ export default function AboutPage() {
       <Navbar />
       <main className="flex-1">
         <PhotoHero
-          eyebrow="Since day one"
-          title="26 years on Aruba's water"
-          body="Two traditional teak schooners, one winning formula: onboard merriment, expert crews, and Aruba's clearest water."
-          src="/ingested/jollypirates/img-010.webp"
-          alt="The Jolly Pirates crew in costume aboard the schooner"
+          eyebrow="Our story"
+          title="From childhood joke to real pirate ship"
+          body="Three friends with a shared love of the ocean turned an old joke into Flagship Aruba."
+          src="/ingested/flagshiparuba/img-007.webp"
+          alt="The Flagship Aruba schooner under sail"
         />
 
         <section id="our-story" className="container-px mx-auto max-w-6xl py-16 sm:py-20 scroll-mt-24">
@@ -51,8 +51,8 @@ export default function AboutPage() {
               <div className="overflow-hidden rounded-3xl border border-border bg-muted">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/ingested/jollypirates/img-031.webp"
-                  alt="The Jolly Pirates schooner under sail along Aruba's turquoise coastline"
+                  src="/ingested/flagshiparuba/img-006.webp"
+                  alt="A guest jumps from the Flagship Aruba schooner into the ocean"
                   loading="lazy"
                   decoding="async"
                   className="aspect-[5/4] w-full object-cover object-center"
@@ -67,33 +67,29 @@ export default function AboutPage() {
                 Our story
               </p>
               <h2 className="mt-2 text-balance text-3xl font-bold sm:text-4xl">
-                Twin schooners, one Aruba tradition
+                Three friends, one dream
               </h2>
               <p className="mt-4 max-w-lg text-pretty text-muted-foreground">
-                For over 26 years, Jolly Pirates has sailed Aruba&apos;s coast with the
-                billowing sails of our twin schooners, running snorkeling trips and
-                sunset cruises for visitors from every corner of the world. We&apos;ve held
-                to the same formula the whole time: majestic wooden ships, onboard
-                merriment, and a crew that treats every trip like it&apos;s the first one.
+                Flagship Aruba was founded by three lifelong friends with maritime
+                backgrounds who shared a love of the ocean and a childhood joke about
+                someday owning a pirate ship of their own. They turned that joke into a
+                real, beautifully crafted wooden vessel, and built a crew around sharing
+                the same sense of adventure with every guest who comes aboard.
               </p>
               <p className="mt-4 max-w-lg text-pretty text-muted-foreground">
-                We depart from MooMba Beach, between the Holiday Inn and the Marriott,
-                so wherever you&apos;re staying on the north coast, we&apos;re close by.
+                All of our cruises depart from the pier in front of MooMba Beach Bar on
+                Palm Beach.
               </p>
             </Reveal>
           </div>
         </section>
 
-        <section id="sustainability" className="container-px mx-auto max-w-6xl py-16 sm:py-20 scroll-mt-24">
+        <section className="container-px mx-auto max-w-6xl py-16 sm:py-20">
           <Reveal className="max-w-2xl">
-            <Badge variant="accent">Looking after the reef</Badge>
+            <Badge variant="accent">What sets us apart</Badge>
             <h2 className="mt-4 text-balance text-3xl font-bold sm:text-4xl">
-              Greener habits, same good time
+              The details that matter
             </h2>
-            <p className="mt-4 text-pretty text-muted-foreground">
-              The water we sail is the reason we&apos;re still in business after 26 years, so
-              we&apos;ve been shifting toward habits that keep it healthy for the next 26.
-            </p>
           </Reveal>
 
           <RevealGroup className="mt-10 grid gap-6 md:grid-cols-3" stagger={0.08}>
@@ -116,12 +112,12 @@ export default function AboutPage() {
           <Reveal className="flex flex-col items-center gap-4 text-center">
             <h2 className="text-3xl font-bold sm:text-4xl">Come sail with us</h2>
             <p className="max-w-md text-muted-foreground">
-              See our full cruise schedule and find the trip that fits your trip.
+              See our two boat tours and find the trip that fits your trip.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Button asChild size="lg">
-                <Link href="/cruises">
-                  See All Cruises <ArrowRight className="size-4" />
+                <Link href="/boat-tours">
+                  See Boat Tours <ArrowRight className="size-4" />
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">

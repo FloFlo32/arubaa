@@ -1,22 +1,20 @@
 import { type LocaleCode, localizePath } from "@/lib/i18n";
 
 /**
- * Jolly Pirates menu structure: cruises hub with the 4 real trips, snorkel
- * sites, about, and private charters. Labels are translated per locale below;
- * hrefs are locale-prefixed at render time via localizePath().
+ * Flagship Aruba menu structure: boat tours hub with the 2 real cruises,
+ * snorkel sites, and about. Labels are translated per locale below; hrefs
+ * are locale-prefixed at render time via localizePath().
  */
 export type NavChild = { key: string; href: string };
 export type NavItem = { key: string; href: string; children: NavChild[] };
 
 const primaryNavBase: NavItem[] = [
   {
-    key: "cruises",
-    href: "/cruises",
+    key: "boat-tours",
+    href: "/boat-tours",
     children: [
-      { key: "morning-snorkel", href: "/cruises/morning-snorkeling" },
-      { key: "afternoon-snorkel", href: "/cruises/afternoon-snorkeling" },
-      { key: "sunset-dinner", href: "/cruises/sunset-dinner-cruise" },
-      { key: "sunset-sail", href: "/cruises/sunset-sail" },
+      { key: "morning-splash", href: "/boat-tours/morning-splash-adventure" },
+      { key: "sunset-stars", href: "/boat-tours/sunset-stars-cruise" },
     ],
   },
   {
@@ -24,26 +22,18 @@ const primaryNavBase: NavItem[] = [
     href: "/snorkel-sites",
     children: [
       { key: "boca-catalina", href: "/snorkel-sites#boca-catalina" },
+      { key: "malmok-beach", href: "/snorkel-sites#malmok-beach" },
       { key: "antilla-wreck", href: "/snorkel-sites#antilla-wreck" },
     ],
   },
   {
-    key: "private-charters",
-    href: "/private-charters",
-    children: [],
-  },
-  {
     key: "about",
     href: "/about",
-    children: [
-      { key: "our-story", href: "/about#our-story" },
-      { key: "sustainability", href: "/about#sustainability" },
-    ],
+    children: [],
   },
 ];
 
 const secondaryNavBase: NavChild[] = [
-  { key: "deals", href: "/deals" },
   { key: "faq", href: "/faq" },
   { key: "contact", href: "/contact" },
 ];
@@ -57,24 +47,18 @@ const legalNavBase: NavChild[] = [
 
 /** label translations, keyed by nav item key */
 const t: Record<string, Record<LocaleCode, string>> = {
-  cruises: { en: "Cruises", es: "Cruceros", nl: "Cruises", de: "Kreuzfahrten", it: "Crociere", br: "Cruzeiros", se: "Kryssningar" },
+  "boat-tours": { en: "Boat Tours", es: "Excursiones En Barco", nl: "Boottochten", de: "Bootstouren", it: "Escursioni In Barca", br: "Passeios De Barco", se: "Båtturer" },
   "snorkel-sites": { en: "Snorkel Sites", es: "Sitios De Snorkel", nl: "Snorkelplekken", de: "Schnorchelplätze", it: "Siti Per Snorkeling", br: "Locais De Mergulho", se: "Snorkelplatser" },
-  "private-charters": { en: "Private Charters", es: "Chárteres Privados", nl: "Privé Charters", de: "Private Charter", it: "Noleggi Privati", br: "Fretamentos Privados", se: "Privata Charter" },
-  about: { en: "About", es: "Sobre Nosotros", nl: "Over Ons", de: "Über Uns", it: "Chi Siamo", br: "Sobre Nós", se: "Om Oss" },
+  about: { en: "About Us", es: "Sobre Nosotros", nl: "Over Ons", de: "Über Uns", it: "Chi Siamo", br: "Sobre Nós", se: "Om Oss" },
 
-  "morning-snorkel": { en: "Morning Snorkeling Trip", es: "Snorkel Matutino", nl: "Ochtend Snorkeltocht", de: "Schnorchel-Ausflug Am Morgen", it: "Snorkeling Del Mattino", br: "Passeio De Snorkel Matinal", se: "Morgonsnorkling" },
-  "afternoon-snorkel": { en: "Afternoon Snorkeling Tour", es: "Snorkel Por La Tarde", nl: "Middag Snorkeltocht", de: "Schnorchel-Tour Am Nachmittag", it: "Snorkeling Del Pomeriggio", br: "Passeio De Snorkel Vespertino", se: "Eftermiddagssnorkling" },
-  "sunset-dinner": { en: "Sunset Dinner Cruise", es: "Crucero Cena Al Atardecer", nl: "Zonsondergang Dinercruise", de: "Sonnenuntergangs-Dinnerfahrt", it: "Crociera Cena Al Tramonto", br: "Cruzeiro Jantar Ao Pôr Do Sol", se: "Solnedgångskryssning Med Middag" },
-  "sunset-sail": { en: "Sunset Sail", es: "Vela Al Atardecer", nl: "Zonsondergangstocht", de: "Sonnenuntergangsfahrt", it: "Vela Al Tramonto", br: "Vela Ao Pôr Do Sol", se: "Solnedgångssegling" },
+  "morning-splash": { en: "Morning Splash Adventure", es: "Aventura Matutina", nl: "Ochtend Avontuur", de: "Morgenabenteuer", it: "Avventura Del Mattino", br: "Aventura Matinal", se: "Morgonäventyr" },
+  "sunset-stars": { en: "Sunset & Stars Cruise", es: "Crucero Atardecer Y Estrellas", nl: "Zonsondergang & Sterrencruise", de: "Sonnenuntergangs- Und Sternenfahrt", it: "Crociera Tramonto E Stelle", br: "Cruzeiro Pôr Do Sol E Estrelas", se: "Solnedgång Och Stjärnkryssning" },
 
   "boca-catalina": { en: "Boca Catalina", es: "Boca Catalina", nl: "Boca Catalina", de: "Boca Catalina", it: "Boca Catalina", br: "Boca Catalina", se: "Boca Catalina" },
+  "malmok-beach": { en: "Malmok Beach", es: "Malmok Beach", nl: "Malmok Beach", de: "Malmok Beach", it: "Malmok Beach", br: "Malmok Beach", se: "Malmok Beach" },
   "antilla-wreck": { en: "SS Antilla Shipwreck", es: "Naufragio Del SS Antilla", nl: "Scheepswrak SS Antilla", de: "Schiffswrack SS Antilla", it: "Relitto SS Antilla", br: "Naufrágio Do SS Antilla", se: "Vraket SS Antilla" },
 
-  "our-story": { en: "Our Story", es: "Nuestra Historia", nl: "Ons Verhaal", de: "Unsere Geschichte", it: "La Nostra Storia", br: "Nossa História", se: "Vår Historia" },
-  sustainability: { en: "Sustainability", es: "Sostenibilidad", nl: "Duurzaamheid", de: "Nachhaltigkeit", it: "Sostenibilità", br: "Sustentabilidade", se: "Hållbarhet" },
-
-  deals: { en: "Deals", es: "Ofertas", nl: "Aanbiedingen", de: "Angebote", it: "Offerte", br: "Promoções", se: "Erbjudanden" },
-  faq: { en: "FAQs", es: "Preguntas Frecuentes", nl: "Veelgestelde Vragen", de: "Häufige Fragen", it: "Domande Frequenti", br: "Perguntas Frequentes", se: "Vanliga Frågor" },
+  faq: { en: "FAQ", es: "Preguntas Frecuentes", nl: "Veelgestelde Vragen", de: "Häufige Fragen", it: "Domande Frequenti", br: "Perguntas Frequentes", se: "Vanliga Frågor" },
   contact: { en: "Contact", es: "Contacto", nl: "Contact", de: "Kontakt", it: "Contatti", br: "Contato", se: "Kontakt" },
 
   "book-now": { en: "Book Now", es: "Reservar Ahora", nl: "Nu Boeken", de: "Jetzt Buchen", it: "Prenota Ora", br: "Reserve Agora", se: "Boka Nu" },

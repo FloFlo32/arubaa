@@ -6,7 +6,7 @@ import { US, GB, ES, NL, DE, IT, BR, SE } from "country-flag-icons/react/3x2";
 import { cn } from "@/lib/utils";
 import { type LocaleCode } from "@/lib/i18n";
 
-const STORAGE_KEY = "jolly-pirates-language";
+const STORAGE_KEY = "flagship-aruba-language";
 
 // "uk" reuses the "en" (English) content, same as aruba.com's UK site.
 const languages: { code: string; label: string; Flag: typeof US; locale: LocaleCode }[] = [
@@ -76,7 +76,7 @@ export function LanguageGate() {
       />
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/ingested/jollypirates/img-030.webp"
+        src="/ingested/flagshiparuba/img-007.webp"
         alt=""
         aria-hidden="true"
         className="absolute inset-0 size-full object-cover"
@@ -85,16 +85,16 @@ export function LanguageGate() {
 
       <div className="container-px relative z-10 w-full max-w-lg">
         <div className="rounded-3xl border border-white/20 bg-primary/25 p-8 text-center shadow-2xl shadow-black/40 backdrop-blur-2xl sm:p-10">
-          <div className="mx-auto grid h-16 w-20 place-items-center rounded-2xl bg-black p-2 shadow-lg">
+          <div className="mx-auto grid h-16 w-28 place-items-center rounded-2xl bg-black p-2 shadow-lg">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/jolly-pirates-logo.webp" alt="Jolly Pirates" className="h-full w-auto object-contain" />
+            <img src="/flagship-aruba-logo.webp" alt="Flagship Aruba" className="h-full w-auto object-contain" />
           </div>
 
           <h1 className="mt-6 text-balance text-3xl font-bold text-white sm:text-4xl">
             Ahoy!
           </h1>
           <p className="mt-2 text-sm text-white/80">
-            Welcome aboard Jolly Pirates. Choose your language to continue.
+            Welcome aboard Flagship Aruba. Choose your language to continue.
           </p>
 
           <div className="mt-8 grid grid-cols-2 gap-2.5">

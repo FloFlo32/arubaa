@@ -5,51 +5,43 @@ import { ImageCard } from "@/components/magic/image-card";
 const moments = [
   {
     eyebrow: "Moment 01",
-    title: "The Rope Swing",
-    description:
-      "Swing out from the bow and let go. Every trip includes unlimited turns on the swing that made us famous.",
-    href: "/cruises/morning-snorkeling",
-    src: "/ingested/jollypirates/img-041.webp",
-  },
-  {
-    eyebrow: "Moment 02",
     title: "Reef Snorkeling",
     description:
       "Mask, snorkel and fins included. Drift over calm, shallow reefs thick with tropical fish.",
     href: "/snorkel-sites",
-    src: "/ingested/jollypirates/img-059.webp",
+    src: "/ingested/flagshiparuba/img-008.webp",
+  },
+  {
+    eyebrow: "Moment 02",
+    title: "Off the Bow",
+    description:
+      "Jump straight off the schooner into the clear Caribbean water.",
+    href: "/boat-tours/morning-splash-adventure",
+    src: "/ingested/flagshiparuba/img-006.webp",
   },
   {
     eyebrow: "Moment 03",
-    title: "Life on the Bow",
+    title: "Life Under Sail",
     description:
-      "Stretch out on deck between stops while the schooner cuts through the turquoise water.",
-    href: "/cruises",
-    src: "/ingested/jollypirates/img-044.webp",
+      "Stretch out on deck while the schooner cuts through the turquoise water.",
+    href: "/boat-tours",
+    src: "/ingested/flagshiparuba/img-007.webp",
   },
   {
     eyebrow: "Moment 04",
-    title: "The Open Bar",
+    title: "The Shipwreck",
     description:
-      "Every cruise includes drinks at our open bar, from the first stop to the last splash.",
-    href: "/cruises",
-    src: "/ingested/jollypirates/img-025.webp",
+      "Snorkel above the SS Antilla, one of the largest shipwrecks in the Caribbean.",
+    href: "/snorkel-sites#antilla-wreck",
+    src: "/ingested/flagshiparuba/img-010.webp",
   },
   {
     eyebrow: "Moment 05",
-    title: "Golden Hour Toast",
+    title: "Sunset & Stars",
     description:
-      "Raise a glass as the sun drops into the Caribbean Sea on our sunset cruises.",
-    href: "/cruises/sunset-sail",
-    src: "/ingested/jollypirates/img-027.webp",
-  },
-  {
-    eyebrow: "Moment 06",
-    title: "The Splash Landing",
-    description:
-      "Cannonballs, backflips and belly flops off the schooner: the whole crew cheers you on.",
-    href: "/cruises/morning-snorkeling",
-    src: "/ingested/jollypirates/img-051.webp",
+      "Watch the sky turn to stars over the water on our evening cruise.",
+    href: "/boat-tours/sunset-stars-cruise",
+    src: "/ingested/flagshiparuba/img-009.webp",
   },
 ];
 
@@ -61,12 +53,11 @@ export function ExperienceSlider() {
           Onboard
         </span>
         <h2 className="mt-3 max-w-2xl text-4xl font-bold sm:text-5xl">
-          Every cruise, the same jolly moments
+          Every trip, the same magic
         </h2>
         <p className="mt-4 max-w-2xl text-muted-foreground">
-          Whichever cruise you pick, expect the same traditional schooners, the same
-          open bar, and the same rope swing that&apos;s been an Aruba tradition for over
-          26 years.
+          Whichever cruise you pick, expect the same wooden schooner, the same open bar,
+          and the same crew that built this from a childhood dream.
         </p>
       </Reveal>
 

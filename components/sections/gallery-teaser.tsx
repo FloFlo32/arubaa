@@ -4,11 +4,11 @@ import { Badge } from "@/components/ui/badge";
 import { BorderBeam } from "@/components/magic/border-beam";
 
 const slides = [
-  { src: "/ingested/jollypirates/img-030.webp", alt: "A guest swings from the rope swing beside the Jolly Pirates schooner", caption: "The Rope Swing" },
-  { src: "/ingested/jollypirates/img-031.webp", alt: "The Jolly Pirates schooner under sail along Aruba's coast", caption: "Under Sail" },
-  { src: "/ingested/jollypirates/img-010.webp", alt: "The Jolly Pirates crew in costume aboard the schooner", caption: "The Crew" },
-  { src: "/ingested/jollypirates/img-020.webp", alt: "Guests enjoying drinks from the open bar on deck", caption: "The Open Bar" },
-  { src: "/ingested/jollypirates/img-050.webp", alt: "A guest backflips into the Caribbean Sea off the coast of Aruba", caption: "Making a Splash" },
+  { src: "/ingested/flagshiparuba/img-007.webp", alt: "The Flagship Aruba schooner under sail", caption: "Under Sail" },
+  { src: "/ingested/flagshiparuba/img-006.webp", alt: "A guest jumps from the schooner into the ocean", caption: "Making a Splash" },
+  { src: "/ingested/flagshiparuba/img-008.webp", alt: "A snorkeler in clear turquoise water", caption: "Reef Snorkeling" },
+  { src: "/ingested/flagshiparuba/img-010.webp", alt: "Aerial view of the SS Antilla shipwreck", caption: "The Shipwreck" },
+  { src: "/ingested/flagshiparuba/img-009.webp", alt: "Aruba's rocky turquoise coastline", caption: "The Coastline" },
 ];
 
 export function GalleryTeaser() {
@@ -20,11 +20,11 @@ export function GalleryTeaser() {
             Gallery
           </Badge>
           <h2 className="mt-5 text-balance text-4xl font-bold sm:text-5xl">
-            26 years of jolly moments
+            A day aboard Flagship Aruba
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-pretty text-primary-foreground/85">
-            From the rope swing to the sunset toast, here&apos;s what a day aboard the
-            Jolly Pirates schooners actually looks like.
+            From the first splash to the last sunset, here&apos;s what a trip with us
+            actually looks like.
           </p>
         </Reveal>
 

@@ -9,14 +9,14 @@ import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Get in touch with Jolly Pirates: phone, WhatsApp, email or find us at MooMba Beach.",
+  description: "Get in touch with Flagship Aruba: phone, WhatsApp, email or find us at MooMba Beach Bar.",
 };
 
 const channels = [
   {
     icon: Phone,
     label: "Call us",
-    value: "+297 586 8107",
+    value: "+297 567 7637",
     href: `tel:${brand.contact.phone}`,
   },
   {
@@ -34,7 +34,7 @@ const channels = [
   {
     icon: MapPin,
     label: "Find us",
-    value: "MooMba Beach, Palm Beach",
+    value: "MooMba Beach Bar, Palm Beach",
     href: "#location",
   },
 ];
@@ -49,8 +49,8 @@ export default function ContactPage() {
             <Badge variant="accent">Get in touch</Badge>
             <h1 className="mt-6 text-balance text-4xl font-bold sm:text-5xl">Contact Us</h1>
             <p className="mt-4 text-lg text-muted-foreground">
-              Questions about a cruise, a private charter, or just want to say ahoy? Reach
-              out any way that&apos;s easiest for you.
+              Questions about a boat tour, or just want to say hello? Reach out any way
+              that&apos;s easiest for you.
             </p>
           </Reveal>
         </section>

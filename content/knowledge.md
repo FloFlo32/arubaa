@@ -1,67 +1,57 @@
-# Jolly Pirates knowledge base
+# Flagship Aruba knowledge base
 
-Source: https://www.jolly-pirates.com
+Source: https://www.flagshiparuba.com
 
 ## About
-Jolly Pirates has sailed twin 85-foot teak schooners along Aruba's coast for
-over 26 years, running snorkeling trips and sunset cruises out of MooMba
-Beach, Palm Beach (between the Holiday Inn and the Marriott).
+Flagship Aruba was founded by three lifelong friends with maritime backgrounds
+who turned a childhood joke about owning a pirate ship into a real, beautifully
+crafted wooden schooner. Tours depart from the pier in front of MooMba Beach
+Bar on Palm Beach, Aruba.
 
-## Cruises
-- Morning Snorkeling Trip: 9am-1pm (4 hours), $98pp. 3 snorkel stops, BBQ
-  lunch, open bar, rope swing. All ages.
-- Afternoon Snorkeling Tour: 2pm-5pm (3 hours), $76pp. 2 snorkel stops, open
-  bar, rope swing. All ages.
-- Sunset Dinner Cruise (Pirate Party): 5:30pm-8:30pm (3 hours), $110pp. BBQ
-  dinner + dessert, open bar, live DJ. Adults only (18+).
-- Sunset Sail: 5:30pm-7:30pm (2 hours), $59pp. Open bar, scenic views, no
-  snorkeling. All ages.
-- Private charters are available on any cruise for groups, weddings,
-  birthdays and corporate events.
+## Boat tours
+- Morning Splash Adventure: 9am-1pm (4 hours). Three snorkel stops (Boca
+  Catalina, SS Antilla shipwreck, Malmok Beach), snorkel gear included,
+  unlimited soft drinks/juices/water, Caribbean snacks, live music. Arrive
+  30 minutes before departure.
+- Sunset & Stars Cruise: 5:30pm-7:30pm (2 hours). Open bar (soft drinks,
+  juices, cocktails, snacks), Caribbean-inspired food, two swimming stops,
+  music, and stargazing as the sky darkens. Suitable for couples,
+  honeymooners, families and friends.
+- Exact pricing is not published online; contact the crew for current rates
+  and availability.
 
 ## Snorkel sites
-- Boca Catalina: a calm, shallow reef close to shore, good for all skill
-  levels.
-- SS Antilla Shipwreck: a WWII-era wreck resting in Aruba's clear water, one
-  of the largest shipwrecks in the Caribbean.
-
-## Sustainability
-Recyclable cups, reusable souvenir bags, and reef bracelets that support
-Aruba's Marine Park and marine protection efforts.
+- Boca Catalina Reefs: a calm, shallow reef close to shore, good for all
+  skill levels.
+- Malmok Beach: one of Aruba's top snorkel sites, clear water close to shore.
+- SS Antilla Shipwreck: a WWII-era wreck, one of the largest shipwrecks in
+  the Caribbean.
 
 ## FAQ
-Q: Where do the cruises depart from?
-A: All cruises depart from MooMba Beach on Palm Beach, between the Holiday
-Inn and the Marriott.
+Q: Where do the tours depart from?
+A: The pier in front of MooMba Beach Bar on Palm Beach.
 
-Q: Do I need to know how to swim or snorkel?
-A: No experience is required. Mask, snorkel and fins are included, and life
-jackets are available.
-
-Q: Is the Sunset Dinner Cruise really adults only?
-A: Yes, it's 18 and over. The morning trip, afternoon trip and sunset sail
-are open to all ages.
+Q: Do I need snorkeling experience?
+A: No, gear is included on the Morning Splash Adventure and the crew helps
+first-timers get comfortable.
 
 Q: What should I bring?
-A: Swimwear, a towel, sunscreen and a waterproof phone case if you want
-photos. Snorkel gear, drinks and food are provided.
+A: Swimwear, a towel, sunscreen and a waterproof phone case. Gear, drinks and
+snacks are provided.
 
 Q: Is food and drink included?
-A: Yes. The morning trip includes a BBQ lunch, the sunset dinner cruise
-includes BBQ and dessert, and every cruise includes an open bar.
+A: Yes, on both tours: snacks and drinks on the morning tour, an open bar and
+Caribbean bites on the sunset tour.
 
-Q: What happens if the weather turns bad?
-A: If a cruise needs to be shortened, rescheduled or canceled for weather,
-the crew will contact guests directly.
+Q: What time should I arrive?
+A: About 30 minutes before departure.
 
-Q: Are children welcome?
-A: Yes, on every cruise except the adults-only Sunset Dinner Cruise.
-Children are priced lower than adults.
-
-Q: How do I contact Jolly Pirates?
-A: Call +297 586 8107, WhatsApp, or email info@jolly-pirates.com.
+Q: How do I see pricing or book?
+A: Contact Flagship Aruba by phone, WhatsApp or email for current pricing and
+availability.
 
 ## Contact
-- WhatsApp: 2975926777
-- Phone: +2975868107
-- Location: MooMba Beach, Palm Beach, Aruba
+- WhatsApp: 2975677637
+- Phone: +297 567 7637
+- Email: info@flagshiparuba.com
+- Location: MooMba Beach Bar, Palm Beach, Aruba

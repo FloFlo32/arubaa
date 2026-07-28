@@ -16,8 +16,8 @@ export function CTA() {
             Ready to set sail?
           </h2>
           <p className="mx-auto mt-4 max-w-lg text-muted-foreground">
-            Reserve your spot on the next cruise, or check today&apos;s deals before you
-            book.
+            Reserve your spot on the Morning Splash Adventure or the Sunset & Stars
+            Cruise.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Button asChild size="lg">
@@ -26,7 +26,7 @@ export function CTA() {
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline">
-              <Link href="/deals">See Today&apos;s Deals</Link>
+              <Link href="/boat-tours">See Boat Tours</Link>
             </Button>
           </div>
         </div>

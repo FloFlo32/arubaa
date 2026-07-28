@@ -8,42 +8,42 @@ import { Badge } from "@/components/ui/badge";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
 
 export const metadata: Metadata = {
-  title: "FAQs",
-  description: "Answers to common questions about booking a Jolly Pirates cruise in Aruba.",
+  title: "FAQ",
+  description: "Answers to common questions about booking a Flagship Aruba boat tour.",
 };
 
 const faqs = [
   {
-    q: "Where do the cruises depart from?",
-    a: "All cruises depart from MooMba Beach on Palm Beach, between the Holiday Inn and the Marriott. Look for our crew and schooners right on the sand.",
+    q: "Where do the tours depart from?",
+    a: "All cruises depart from the pier in front of MooMba Beach Bar on Palm Beach.",
   },
   {
     q: "Do I need to know how to swim or snorkel?",
-    a: "No experience is required. Mask, snorkel and fins are included, our crew gives a quick briefing before the first stop, and life jackets are available for anyone who wants one.",
-  },
-  {
-    q: "Is the Sunset Dinner Cruise really adults only?",
-    a: "Yes, the Pirate Party Sunset Dinner Cruise is 18 and over. Our other three cruises, the morning and afternoon snorkeling trips and the sunset sail, are open to all ages.",
+    a: "No experience is required for the Morning Splash Adventure. Snorkel gear is included, and our crew is happy to help first-timers get comfortable.",
   },
   {
     q: "What should I bring?",
-    a: "Swimwear, a towel, sunscreen, and a waterproof case for your phone if you'd like photos. Snorkel gear, drinks and food (where included) are provided.",
+    a: "Swimwear, a towel, sunscreen and a waterproof phone case if you'd like photos. Snorkel gear, drinks and snacks are provided.",
   },
   {
-    q: "Is food and drink really included?",
-    a: "Yes. The morning trip includes a full BBQ lunch, the sunset dinner cruise includes BBQ and dessert, and every cruise includes an open bar with beer, rum punch, soda and water.",
+    q: "Is food and drink included?",
+    a: "Yes. The Morning Splash Adventure includes unlimited drinks and Caribbean snacks, and the Sunset & Stars Cruise includes an open bar and Caribbean-inspired bites.",
+  },
+  {
+    q: "What time should I arrive?",
+    a: "Please arrive about 30 minutes before departure so we can get everyone checked in and settled before we set sail.",
   },
   {
     q: "What happens if the weather turns bad?",
     a: "Safety comes first. If a cruise needs to be shortened, rescheduled or canceled for weather, our crew will contact you directly to sort out the best option.",
   },
   {
-    q: "How far in advance should I book?",
-    a: "Our cruises are popular, especially the morning trip, so we recommend booking a few days ahead, particularly in high season.",
+    q: "Is the Sunset & Stars Cruise suitable for families?",
+    a: "Yes, it works well for couples, honeymooners, families and friends. It is a more relaxed, scenic trip than the morning snorkeling adventure.",
   },
   {
-    q: "Are children welcome?",
-    a: "Yes, on every cruise except the adults-only Sunset Dinner Cruise. Children are priced lower than adults, contact us for exact pricing.",
+    q: "How do I book, and where can I see pricing?",
+    a: "Contact us by phone, WhatsApp or email and our crew will confirm current pricing and availability for your dates.",
   },
 ];
 

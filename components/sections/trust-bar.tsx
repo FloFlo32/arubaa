@@ -1,26 +1,26 @@
-import { Anchor, Ship, Fish, Sunset } from "lucide-react";
+import { Ship, Fish, Utensils, Users } from "lucide-react";
 import { RevealGroup, RevealItem } from "@/components/magic/reveal";
 
 const stats = [
   {
-    icon: Anchor,
-    value: "26+",
-    label: "Years sailing snorkeling and sunset trips out of Aruba",
-  },
-  {
     icon: Ship,
-    value: "2",
-    label: "Traditional 85-foot teak schooners in the fleet",
+    value: "1",
+    label: "Traditional wooden schooner, built to look like a real pirate ship",
   },
   {
     icon: Fish,
     value: "3",
-    label: "Snorkel sites visited on our morning trip, reef to shipwreck",
+    label: "Snorkel sites in rotation, from calm reef to WWII shipwreck",
   },
   {
-    icon: Sunset,
-    value: "4",
-    label: "Cruises to choose from, morning to sunset",
+    icon: Utensils,
+    value: "2",
+    label: "Boat tours to choose from, morning splash to sunset and stars",
+  },
+  {
+    icon: Users,
+    value: "3",
+    label: "Friends who turned a childhood dream into a real crew",
   },
 ];
 

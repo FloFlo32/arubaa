@@ -8,21 +8,21 @@ import { Reveal } from "@/components/magic/reveal";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "Jolly Pirates privacy policy: how we collect, use and protect your data.",
+    "Flagship Aruba privacy policy: how we collect, use and protect your data.",
 };
 
 const sections: { heading: string; body: string }[] = [
   {
     heading: "1. Introduction",
-    body: "Jolly Pirates provides this Privacy Policy to explain how it processes personal data across its digital properties, including this site and our booking platform. By using the Site or the Services, you acknowledge that we may collect information about you and use or disclose such information as described herein.",
+    body: "Flagship Aruba provides this Privacy Policy to explain how it processes personal data across its digital properties, including this site and our booking platform. By using the Site or the Services, you acknowledge that we may collect information about you and use or disclose such information as described herein.",
   },
   {
     heading: "2. Applicable Data Protection Laws",
-    body: "Jolly Pirates is committed to complying with privacy regulations worldwide. We will handle your Personal Data in accordance with the General Data Protection Regulation (EU) 2016/679 (GDPR) and other jurisdiction specific requirements. Personal Data means any information relating to an identifiable individual, whether directly or indirectly identifying them.",
+    body: "Flagship Aruba is committed to complying with privacy regulations worldwide. We will handle your Personal Data in accordance with the General Data Protection Regulation (EU) 2016/679 (GDPR) and other jurisdiction specific requirements. Personal Data means any information relating to an identifiable individual, whether directly or indirectly identifying them.",
   },
   {
     heading: "3. Information We Collect",
-    body: "Jolly Pirates gathers several categories of data depending on how you interact with us: identity information, contact details, booking preferences, technical data from your device, customer inquiries, usage patterns, marketing preferences, and limited financial information. Jolly Pirates does not otherwise collect or process consumer payment card information beyond what our booking partner requires. Non identifiable, aggregated or anonymized information falls outside the definition of Personal Data under applicable protection laws.",
+    body: "Flagship Aruba gathers several categories of data depending on how you interact with us: identity information, contact details, booking preferences, technical data from your device, customer inquiries, usage patterns, marketing preferences, and limited financial information. Flagship Aruba does not otherwise collect or process consumer payment card information beyond what our booking partner requires. Non identifiable, aggregated or anonymized information falls outside the definition of Personal Data under applicable protection laws.",
   },
   {
     heading: "4. Data Belonging to Minors",
@@ -34,7 +34,7 @@ const sections: { heading: string; body: string }[] = [
   },
   {
     heading: "6. Purpose and Legal Basis of Data Processing",
-    body: "We process Personal Data to provide and improve our Services, respond to inquiries, personalize your experience of the Site, send requested communications, and comply with legal obligations. Depending on the context, our legal basis includes your consent, the performance of a booking you have made, and Jolly Pirates' legitimate interest in offering our cruises to visitors.",
+    body: "We process Personal Data to provide and improve our Services, respond to inquiries, personalize your experience of the Site, send requested communications, and comply with legal obligations. Depending on the context, our legal basis includes your consent, the performance of a booking you have made, and Flagship Aruba&apos;s legitimate interest in offering our cruises to visitors.",
   },
   {
     heading: "7. Data Retention",
@@ -42,11 +42,11 @@ const sections: { heading: string; body: string }[] = [
   },
   {
     heading: "8. Security of Personal Data",
-    body: "Jolly Pirates maintains reasonable administrative, technical and physical safeguards designed to protect Personal Data against loss, misuse, unauthorized access, disclosure, alteration and destruction. While no system can guarantee absolute security, we regularly review our practices to reduce risk and respond promptly to any suspected incident.",
+    body: "Flagship Aruba maintains reasonable administrative, technical and physical safeguards designed to protect Personal Data against loss, misuse, unauthorized access, disclosure, alteration and destruction. While no system can guarantee absolute security, we regularly review our practices to reduce risk and respond promptly to any suspected incident.",
   },
   {
     heading: "9. Sharing Your Personal Data",
-    body: "We may share Personal Data with trusted service providers who support the operation of the Site and Services, with our booking partner involved in fulfilling your reservation, and where required by law or to protect the rights and safety of Jolly Pirates and its guests. We do not sell Personal Data to third parties for their own marketing purposes.",
+    body: "We may share Personal Data with trusted service providers who support the operation of the Site and Services, with our booking partner involved in fulfilling your reservation, and where required by law or to protect the rights and safety of Flagship Aruba and its guests. We do not sell Personal Data to third parties for their own marketing purposes.",
   },
 ];
 
@@ -64,7 +64,7 @@ export default function PrivacyPolicyPage() {
               Global Privacy Policy
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
-              How Jolly Pirates processes personal data across this site and its
+              How Flagship Aruba processes personal data across this site and its
               digital properties.
             </p>
           </Reveal>
@@ -75,10 +75,10 @@ export default function PrivacyPolicyPage() {
             <div className="flex flex-col items-start gap-2 rounded-2xl border border-border bg-card p-5 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
               <p>
                 This is a summary for demonstration purposes. For the complete, legally
-                binding policy, see the official jolly-pirates.com privacy policy.
+                binding policy, see the official flagshiparuba.com privacy policy.
               </p>
               <a
-                href="https://www.jolly-pirates.com/privacy-policy/"
+                href="https://www.flagshiparuba.com/privacy/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex shrink-0 cursor-pointer items-center gap-1.5 rounded-full border border-border bg-background px-3.5 py-1.5 font-medium text-primary transition-colors hover:bg-primary/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"

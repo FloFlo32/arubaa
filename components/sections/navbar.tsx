@@ -12,9 +12,9 @@ import { getLocaleFromPathname, localizePath } from "@/lib/i18n";
 
 function Logo({ href, className }: { href: string; className?: string }) {
   return (
-    <Link href={href} className={cn("flex items-center gap-2 shrink-0 cursor-pointer", className)} aria-label="Jolly Pirates home">
+    <Link href={href} className={cn("flex items-center gap-2 shrink-0 cursor-pointer", className)} aria-label="Flagship Aruba home">
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src="/jolly-pirates-logo.webp" alt="Jolly Pirates" className="h-12 w-auto" />
+      <img src="/flagship-aruba-logo.webp" alt="Flagship Aruba" className="h-10 w-auto" />
     </Link>
   );
 }
@@ -233,7 +233,7 @@ export function Navbar() {
               href={`tel:${brand.contact.phone}`}
               className="mt-2 flex cursor-pointer items-center gap-2 rounded-md px-3 py-3 text-base text-primary"
             >
-              <Phone className="size-4" /> +297 586 8107
+              <Phone className="size-4" /> +297 567 7637
             </a>
             <Button asChild className="mt-2">
               <Link href={bookNow.href} onClick={() => setOpen(false)}>

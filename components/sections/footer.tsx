@@ -11,23 +11,23 @@ import { getLocaleFromPathname, localizePath, type LocaleCode } from "@/lib/i18n
 const socials = [{ href: brand.social.instagram, label: "Instagram", Icon: InstagramIcon }];
 
 const tagline: Record<LocaleCode, string> = {
-  en: "Traditional schooner sailboats, epic snorkeling and sunset cruises on Aruba's turquoise coast.",
-  es: "Veleros goleta tradicionales, snorkel épico y cruceros al atardecer en la costa turquesa de Aruba.",
-  nl: "Traditionele schoenerzeilboten, geweldig snorkelen en zonsondergangcruises langs Aruba's turquoise kust.",
-  de: "Traditionelle Schoner, fantastisches Schnorcheln und Sonnenuntergangsfahrten an Arubas türkisfarbener Küste.",
-  it: "Golette tradizionali, snorkeling epico e crociere al tramonto lungo la costa turchese di Aruba.",
-  br: "Escunas tradicionais, mergulho com snorkel incrível e cruzeiros ao pôr do sol na costa turquesa de Aruba.",
-  se: "Traditionella skonertsegelbåtar, fantastisk snorkling och solnedgångskryssningar längs Arubas turkosa kust.",
+  en: "A traditional wooden schooner for snorkeling adventures and sunset cruises on Aruba's turquoise coast.",
+  es: "Una goleta de madera tradicional para aventuras de snorkel y cruceros al atardecer en la costa turquesa de Aruba.",
+  nl: "Een traditionele houten schoener voor snorkelavonturen en zonsondergangcruises langs Aruba's turquoise kust.",
+  de: "Ein traditioneller Holzschoner für Schnorchelabenteuer und Sonnenuntergangsfahrten an Arubas türkisfarbener Küste.",
+  it: "Una goletta di legno tradizionale per avventure di snorkeling e crociere al tramonto lungo la costa turchese di Aruba.",
+  br: "Uma escuna de madeira tradicional para aventuras de snorkel e cruzeiros ao pôr do sol na costa turquesa de Aruba.",
+  se: "En traditionell träskonert för snorkeläventyr och solnedgångskryssningar längs Arubas turkosa kust.",
 };
 
 const rights: Record<LocaleCode, string> = {
-  en: "Jolly Pirates Aruba. All rights reserved.",
-  es: "Jolly Pirates Aruba. Todos los derechos reservados.",
-  nl: "Jolly Pirates Aruba. Alle rechten voorbehouden.",
-  de: "Jolly Pirates Aruba. Alle Rechte vorbehalten.",
-  it: "Jolly Pirates Aruba. Tutti i diritti riservati.",
-  br: "Jolly Pirates Aruba. Todos os direitos reservados.",
-  se: "Jolly Pirates Aruba. Alla rättigheter förbehållna.",
+  en: "Flagship Aruba. All rights reserved.",
+  es: "Flagship Aruba. Todos los derechos reservados.",
+  nl: "Flagship Aruba. Alle rechten voorbehouden.",
+  de: "Flagship Aruba. Alle Rechte vorbehalten.",
+  it: "Flagship Aruba. Tutti i diritti riservati.",
+  br: "Flagship Aruba. Todos os direitos reservados.",
+  se: "Flagship Aruba. Alla rättigheter förbehållna.",
 };
 
 export function Footer() {
@@ -40,11 +40,11 @@ export function Footer() {
   return (
     <footer className="mt-auto border-t border-white/10 bg-neutral-950 text-neutral-300">
       <div className="container-px mx-auto max-w-7xl py-14">
-        <div className="grid gap-10 lg:grid-cols-[1.3fr_1fr_1fr_1fr_1fr]">
+        <div className="grid gap-10 lg:grid-cols-[1.3fr_1fr_1fr_1fr]">
           <div>
-            <Link href={homeHref} aria-label="Jolly Pirates home">
+            <Link href={homeHref} aria-label="Flagship Aruba home">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/jolly-pirates-logo.webp" alt="Jolly Pirates" className="h-16 w-auto" />
+              <img src="/flagship-aruba-logo.webp" alt="Flagship Aruba" className="h-14 w-auto" />
             </Link>
             <p className="mt-4 max-w-xs text-sm text-neutral-400">{tagline[locale]}</p>
             <div className="mt-5 flex flex-wrap gap-2">
@@ -63,7 +63,7 @@ export function Footer() {
             </div>
             <div className="mt-5 space-y-2">
               <a href={`tel:${brand.contact.phone}`} className="flex cursor-pointer items-center gap-2 text-sm text-neutral-400 transition-colors hover:text-white">
-                <Phone className="size-4 text-primary" /> +297 586 8107
+                <Phone className="size-4 text-primary" /> +297 567 7637
               </a>
               <a href={`mailto:${brand.social.email}`} className="flex cursor-pointer items-center gap-2 text-sm text-neutral-400 transition-colors hover:text-white">
                 <Mail className="size-4 text-primary" /> {brand.social.email}

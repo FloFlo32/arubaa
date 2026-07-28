@@ -13,35 +13,28 @@ import { AuroraBackground } from "@/components/magic/aurora-background";
 
 export const metadata: Metadata = {
   title: "Book Now",
-  description: "Book a Jolly Pirates snorkeling trip or sunset cruise in Aruba.",
+  description: "Book a Flagship Aruba boat tour: the Morning Splash Adventure or the Sunset & Stars Cruise.",
 };
 
 const starters = [
   {
-    title: "Morning Snorkeling Trip",
-    href: "/cruises/morning-snorkeling",
-    src: "/ingested/jollypirates/img-051.webp",
-    alt: "Guests leap from the Jolly Pirates schooner into the clear Caribbean water",
-    description: "3 snorkel stops, BBQ lunch, open bar and the rope swing. $98pp.",
+    title: "Morning Splash Adventure",
+    href: "/boat-tours/morning-splash-adventure",
+    src: "/ingested/flagshiparuba/img-008.webp",
+    alt: "A snorkeler smiles at the camera in clear turquoise water off Aruba's coast",
+    description: "3 snorkel stops, gear, drinks and snacks included. 9am-1pm.",
   },
   {
-    title: "Sunset Dinner Cruise",
-    href: "/cruises/sunset-dinner-cruise",
-    src: "/ingested/jollypirates/img-027.webp",
-    alt: "Guests toast with drinks at golden hour aboard the Jolly Pirates sunset cruise",
-    description: "Adults-only BBQ, open bar and a live DJ at sunset. $110pp.",
-  },
-  {
-    title: "Private Charters",
-    href: "/private-charters",
-    src: "/ingested/jollypirates/img-044.webp",
-    alt: "A group of guests laughing together on the schooner",
-    description: "Buy out an entire schooner for your group or event.",
+    title: "Sunset & Stars Cruise",
+    href: "/boat-tours/sunset-stars-cruise",
+    src: "/ingested/flagshiparuba/img-006.webp",
+    alt: "A guest jumps from the Flagship Aruba schooner into the ocean",
+    description: "Open bar, Caribbean bites and stargazing. 5:30pm-7:30pm.",
   },
 ];
 
 export default function BookNowPage() {
-  const phoneDisplay = "+297 586 8107";
+  const phoneDisplay = "+297 567 7637";
 
   return (
     <>
@@ -58,13 +51,13 @@ export default function BookNowPage() {
               </Reveal>
               <Reveal delay={0.06}>
                 <h1 className="mt-6 max-w-xl text-balance text-5xl font-bold leading-[0.98] sm:text-6xl md:text-7xl">
-                  Book Your <span className="text-gradient">Aruba Cruise</span>
+                  Book Your <span className="text-gradient">Aruba Boat Tour</span>
                 </h1>
               </Reveal>
               <Reveal delay={0.12}>
                 <p className="mt-6 max-w-md text-lg text-muted-foreground">
-                  Four cruises to choose from, all departing MooMba Beach. Call, WhatsApp
-                  or email us to lock in your date.
+                  Two tours to choose from, both departing MooMba Beach Bar. Call,
+                  WhatsApp or email us to lock in your date.
                 </p>
               </Reveal>
             </div>
@@ -72,8 +65,8 @@ export default function BookNowPage() {
             <Reveal delay={0.2}>
               <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border shadow-2xl shadow-primary/10 sm:aspect-[5/6]">
                 <Image
-                  src="/ingested/jollypirates/img-030.webp"
-                  alt="A guest swings from the rope swing into turquoise water beside the Jolly Pirates schooner"
+                  src="/ingested/flagshiparuba/img-007.webp"
+                  alt="The Flagship Aruba schooner under sail off Aruba's coast"
                   fill
                   priority
                   sizes="(max-width: 1024px) 100vw, 45vw"
@@ -89,7 +82,7 @@ export default function BookNowPage() {
           <Reveal className="max-w-2xl">
             <h2 className="text-4xl font-bold sm:text-5xl">Start with</h2>
           </Reveal>
-          <RevealGroup className="mt-10 grid gap-6 md:grid-cols-3">
+          <RevealGroup className="mt-10 grid gap-6 sm:grid-cols-2">
             {starters.map((s) => (
               <RevealItem key={s.title}>
                 <ImageCard
@@ -115,7 +108,7 @@ export default function BookNowPage() {
                   </h2>
                   <p className="mt-3 max-w-md text-muted-foreground">
                     Call, WhatsApp or email our crew and we&apos;ll help you pick the
-                    right cruise and lock in your date.
+                    right tour and lock in your date.
                   </p>
                 </div>
                 <div className="flex flex-col gap-3 sm:flex-row md:flex-col">
@@ -152,11 +145,11 @@ export default function BookNowPage() {
         <section className="container-px mx-auto max-w-6xl pb-24">
           <Reveal className="flex flex-col items-center gap-4 text-center">
             <p className="max-w-md text-muted-foreground">
-              Not sure yet which cruise fits your trip? Compare all four first.
+              Not sure yet which tour fits your trip? Compare both first.
             </p>
             <Button asChild size="lg" variant="outline">
-              <Link href="/cruises">
-                See All Cruises First <ArrowRight className="size-4" />
+              <Link href="/boat-tours">
+                See Both Boat Tours First <ArrowRight className="size-4" />
               </Link>
             </Button>
           </Reveal>
