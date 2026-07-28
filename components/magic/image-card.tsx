@@ -34,7 +34,7 @@ export function ImageCard({
 }) {
   const inner = (
     <>
-      <div className={cn("overflow-hidden bg-muted", ratio)}>
+      <div className={cn("min-h-0 flex-1 overflow-hidden bg-muted", ratio)}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={src}
@@ -44,7 +44,7 @@ export function ImageCard({
           className="size-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.04] motion-reduce:transition-none"
         />
       </div>
-      <div className="flex flex-1 flex-col gap-2 p-5">
+      <div className="flex shrink-0 flex-col gap-2 p-5">
         {eyebrow && (
           <span className="text-xs font-medium uppercase tracking-[0.18em] text-primary">
             {eyebrow}
