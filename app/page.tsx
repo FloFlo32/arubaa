@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/sections/navbar";
 import { LanguageGate } from "@/components/sections/language-gate";
 import { Hero } from "@/components/sections/hero";
+import { TrustBar } from "@/components/sections/trust-bar";
 import { Updates } from "@/components/sections/updates";
 import { Happiness } from "@/components/sections/happiness";
 import { NextStop } from "@/components/sections/next-stop";
@@ -16,6 +17,7 @@ export default function Home() {
       <Navbar />
       <main className="flex-1">
         <Hero />
+        <TrustBar />
         <Updates />
         <Happiness />
         <NextStop />
