@@ -75,7 +75,7 @@ export function Carousel({
               alt={s.alt}
               loading={i === 0 ? "eager" : "lazy"}
               decoding="async"
-              className="aspect-video w-full object-cover object-top"
+              className="aspect-video w-full object-cover object-center"
             />
             {s.caption && (
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-background/90 to-transparent p-5">

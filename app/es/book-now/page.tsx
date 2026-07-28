@@ -78,7 +78,7 @@ export default function BookNowPageEs() {
                   priority
                   sizes="(max-width: 1024px) 100vw, 45vw"
                   quality={80}
-                  className="object-cover object-top"
+                  className="object-cover object-center"
                 />
               </div>
             </Reveal>

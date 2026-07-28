@@ -66,7 +66,7 @@ function SplitRow({
               alt={alt}
               loading="lazy"
               decoding="async"
-              className="aspect-[5/4] w-full object-cover object-top"
+              className="aspect-[5/4] w-full object-cover object-center"
             />
           </div>
         </Reveal>

@@ -78,7 +78,7 @@ function SplitRow({
               alt={alt}
               loading="lazy"
               decoding="async"
-              className="aspect-[5/4] w-full object-cover object-top"
+              className="aspect-[5/4] w-full object-cover object-center"
             />
           </div>
         </Reveal>
@@ -137,7 +137,7 @@ export default function OurIslandPage() {
                   priority
                   quality={75}
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className="aspect-[6/7] w-full object-cover object-top"
+                  className="aspect-[6/7] w-full object-cover object-center"
                 />
               </div>
             </Reveal>
@@ -234,7 +234,7 @@ export default function OurIslandPage() {
                   alt="Uma família caminha de mãos dadas pelo litoral de Aruba"
                   loading="lazy"
                   decoding="async"
-                  className="aspect-[5/4] w-full object-cover object-top"
+                  className="aspect-[5/4] w-full object-cover object-center"
                 />
               </div>
             </Reveal>

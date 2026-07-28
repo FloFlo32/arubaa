@@ -41,7 +41,7 @@ export function ImageCard({
           alt={alt}
           loading="lazy"
           decoding="async"
-          className="size-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.04] motion-reduce:transition-none"
+          className="size-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.04] motion-reduce:transition-none"
         />
       </div>
       <div className="flex shrink-0 flex-col gap-2 p-5">

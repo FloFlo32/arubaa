@@ -28,7 +28,7 @@ export function PhotoHero({
         priority
         sizes="100vw"
         quality={85}
-        className="object-cover object-top"
+        className="object-cover object-center"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/30 to-black/75" />
       <div className="container-px relative z-10 mx-auto max-w-2xl py-20 text-center text-white">
