@@ -48,7 +48,7 @@ export function Footer() {
   return (
     <footer className="mt-auto border-t border-white/10 bg-neutral-950 text-neutral-300">
       <div className="container-px mx-auto max-w-7xl py-14">
-        <div className="grid gap-10 lg:grid-cols-[1.3fr_1fr_1fr_1fr]">
+        <div className="grid gap-10 lg:grid-cols-[1.3fr_1fr_1fr_1fr_1fr]">
           <div>
             <Link href={homeHref} aria-label="Aruba home">
               {/* eslint-disable-next-line @next/next/no-img-element */}
