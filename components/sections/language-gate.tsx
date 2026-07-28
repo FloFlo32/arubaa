@@ -54,6 +54,7 @@ export function LanguageGate() {
 
   return (
     <div
+      id="language-gate"
       className={cn(
         "fixed inset-0 z-[100] flex items-center justify-center overflow-hidden transition-opacity duration-300 motion-reduce:transition-none",
         leaving ? "pointer-events-none opacity-0" : "opacity-100"
@@ -62,6 +63,18 @@ export function LanguageGate() {
       aria-modal="true"
       aria-label="Choose your language"
     >
+      {/*
+        Hides the gate BEFORE first paint for returning visitors, so there is
+        no flash of the language picker before it disappears. This inline
+        script runs as the browser parses this HTML, well before React
+        hydrates and the useEffect below would otherwise fire. Same
+        anti-flash technique as components/theme-provider.tsx's ThemeScript.
+      */}
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `try{if(localStorage.getItem('${STORAGE_KEY}')){var g=document.getElementById('language-gate');if(g)g.style.display='none';}}catch(e){}`,
+        }}
+      />
       <HeroVideo
         src="https://aruba.bynder.com/asset/bf675846-d8a4-4914-ad0a-75c106743d6b/mp4/01_ArubaHomepage_BGvideo_16x9_main.mp4"
         poster="/ingested/arubaa/img-040.webp"
