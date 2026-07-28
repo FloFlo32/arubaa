@@ -112,7 +112,7 @@ export default function AboutPage() {
           <Reveal className="flex flex-col items-center gap-4 text-center">
             <h2 className="text-3xl font-bold sm:text-4xl">Come sail with us</h2>
             <p className="max-w-md text-muted-foreground">
-              See our two boat tours and find the trip that fits your trip.
+              See all three boat tours and find the trip that fits your trip.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Button asChild size="lg">

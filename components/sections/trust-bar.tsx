@@ -14,7 +14,7 @@ const stats = [
   },
   {
     icon: Utensils,
-    value: "2",
+    value: "3",
     label: "Boat tours to choose from, morning splash to sunset and stars",
   },
   {

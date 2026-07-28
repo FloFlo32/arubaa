@@ -18,8 +18,12 @@ const faqs = [
     a: "All cruises depart from the pier in front of MooMba Beach Bar on Palm Beach.",
   },
   {
+    q: "Which tour has the most energy?",
+    a: "The Afternoon Pirate Party. It runs 1:30pm-5pm with two snorkel stops, a rope swing and island music, and moves at a livelier pace than our morning trip.",
+  },
+  {
     q: "Do I need to know how to swim or snorkel?",
-    a: "No experience is required for the Morning Splash Adventure. Snorkel gear is included, and our crew is happy to help first-timers get comfortable.",
+    a: "No experience is required. Snorkel gear is included on the Morning Splash Adventure and Afternoon Pirate Party, and our crew is happy to help first-timers get comfortable.",
   },
   {
     q: "What should I bring?",
@@ -27,7 +31,7 @@ const faqs = [
   },
   {
     q: "Is food and drink included?",
-    a: "Yes. The Morning Splash Adventure includes unlimited drinks and Caribbean snacks, and the Sunset & Stars Cruise includes an open bar and Caribbean-inspired bites.",
+    a: "Yes, on every tour. The Morning Splash Adventure includes unlimited drinks and snacks, the Afternoon Pirate Party includes a Caribbean-style lunch and open bar, and the Sunset & Stars Cruise includes an open bar and Caribbean-inspired bites.",
   },
   {
     q: "What time should I arrive?",
@@ -39,7 +43,11 @@ const faqs = [
   },
   {
     q: "Is the Sunset & Stars Cruise suitable for families?",
-    a: "Yes, it works well for couples, honeymooners, families and friends. It is a more relaxed, scenic trip than the morning snorkeling adventure.",
+    a: "Yes, it works well for couples, honeymooners, families and friends. It is a more relaxed, scenic trip than our snorkeling tours.",
+  },
+  {
+    q: "Which snorkel sites will we visit?",
+    a: "Our captain chooses from Boca Catalina, Malmok Beach and the SS Antilla shipwreck based on conditions that day. The Morning Splash Adventure covers all three; the Afternoon Pirate Party covers two.",
   },
   {
     q: "How do I book, and where can I see pricing?",

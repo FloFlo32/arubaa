@@ -10,7 +10,7 @@ import { Reveal } from "@/components/magic/reveal";
 export const metadata: Metadata = {
   title: "Boat Tours",
   description:
-    "Two boat tours out of Aruba aboard our traditional wooden schooner: the Morning Splash Adventure and the Sunset & Stars Cruise.",
+    "Three boat tours out of Aruba aboard our traditional wooden schooner: the Morning Splash Adventure, the Afternoon Pirate Party, and the Sunset & Stars Cruise.",
 };
 
 const tours = [
@@ -21,6 +21,14 @@ const tours = [
     href: "/boat-tours/morning-splash-adventure",
     img: "/ingested/flagshiparuba/img-008.webp",
     alt: "A snorkeler smiles at the camera in clear turquoise water off Aruba's coast",
+  },
+  {
+    title: "Afternoon Pirate Party",
+    time: "1:30pm – 5pm · 3.5 hours",
+    body: "Two premium snorkel stops, a Caribbean-style lunch, open bar, rope swing and island music for a livelier afternoon.",
+    href: "/boat-tours/afternoon-pirate-party",
+    img: "https://images.unsplash.com/photo-1530053969600-caed2596d242?auto=format&fit=crop&w=1200&q=80",
+    alt: "A school of fish swimming over a reef",
   },
   {
     title: "Sunset & Stars Cruise",
@@ -39,7 +47,7 @@ export default function BoatToursPage() {
       <main className="flex-1">
         <PhotoHero
           eyebrow="All tours"
-          title="Two ways to sail with us"
+          title="Three ways to sail with us"
           body="Every tour departs from the pier in front of MooMba Beach Bar aboard our traditional wooden schooner."
           src="/ingested/flagshiparuba/img-007.webp"
           alt="The Flagship Aruba schooner under sail off Aruba's coast"

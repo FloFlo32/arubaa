@@ -13,7 +13,7 @@ import { AuroraBackground } from "@/components/magic/aurora-background";
 
 export const metadata: Metadata = {
   title: "Book Now",
-  description: "Book a Flagship Aruba boat tour: the Morning Splash Adventure or the Sunset & Stars Cruise.",
+  description: "Book a Flagship Aruba boat tour: Morning Splash Adventure, Afternoon Pirate Party, or Sunset & Stars Cruise.",
 };
 
 const starters = [
@@ -23,6 +23,13 @@ const starters = [
     src: "/ingested/flagshiparuba/img-008.webp",
     alt: "A snorkeler smiles at the camera in clear turquoise water off Aruba's coast",
     description: "3 snorkel stops, gear, drinks and snacks included. 9am-1pm.",
+  },
+  {
+    title: "Afternoon Pirate Party",
+    href: "/boat-tours/afternoon-pirate-party",
+    src: "https://images.unsplash.com/photo-1530053969600-caed2596d242?auto=format&fit=crop&w=1200&q=80",
+    alt: "A school of fish swimming over a reef",
+    description: "2 snorkel stops, lunch, open bar, rope swing. 1:30pm-5pm.",
   },
   {
     title: "Sunset & Stars Cruise",
@@ -56,7 +63,7 @@ export default function BookNowPage() {
               </Reveal>
               <Reveal delay={0.12}>
                 <p className="mt-6 max-w-md text-lg text-muted-foreground">
-                  Two tours to choose from, both departing MooMba Beach Bar. Call,
+                  Three tours to choose from, all departing MooMba Beach Bar. Call,
                   WhatsApp or email us to lock in your date.
                 </p>
               </Reveal>
@@ -82,7 +89,7 @@ export default function BookNowPage() {
           <Reveal className="max-w-2xl">
             <h2 className="text-4xl font-bold sm:text-5xl">Start with</h2>
           </Reveal>
-          <RevealGroup className="mt-10 grid gap-6 sm:grid-cols-2">
+          <RevealGroup className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {starters.map((s) => (
               <RevealItem key={s.title}>
                 <ImageCard
@@ -145,11 +152,11 @@ export default function BookNowPage() {
         <section className="container-px mx-auto max-w-6xl pb-24">
           <Reveal className="flex flex-col items-center gap-4 text-center">
             <p className="max-w-md text-muted-foreground">
-              Not sure yet which tour fits your trip? Compare both first.
+              Not sure yet which tour fits your trip? Compare all three first.
             </p>
             <Button asChild size="lg" variant="outline">
               <Link href="/boat-tours">
-                See Both Boat Tours First <ArrowRight className="size-4" />
+                See All Boat Tours First <ArrowRight className="size-4" />
               </Link>
             </Button>
           </Reveal>

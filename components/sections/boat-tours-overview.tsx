@@ -13,6 +13,15 @@ const tours = [
     alt: "A snorkeler smiles at the camera in clear turquoise water off Aruba's coast",
   },
   {
+    eyebrow: "Afternoon",
+    title: "Afternoon Pirate Party",
+    time: "1:30pm – 5pm · 3.5 hours",
+    body: "Two premium snorkel stops, a Caribbean-style lunch, open bar, rope swing and island music.",
+    href: "/boat-tours/afternoon-pirate-party",
+    img: "https://images.unsplash.com/photo-1530053969600-caed2596d242?auto=format&fit=crop&w=1200&q=80",
+    alt: "A school of fish swimming over a reef",
+  },
+  {
     eyebrow: "Sunset",
     title: "Sunset & Stars Cruise",
     time: "5:30pm – 7:30pm · 2 hours",
@@ -32,12 +41,12 @@ export function BoatToursOverview() {
         </span>
         <h2 className="mt-3 text-4xl font-bold sm:text-5xl">Pick your time of day</h2>
         <p className="mt-3 max-w-xl text-muted-foreground">
-          Two ways to sail with us: a morning snorkeling adventure, or an evening under
-          sail and stars.
+          Three ways to sail with us: a morning snorkeling adventure, a livelier
+          afternoon party, or an evening under sail and stars.
         </p>
       </Reveal>
 
-      <RevealGroup className="mt-10 grid gap-6 sm:grid-cols-2" stagger={0.08}>
+      <RevealGroup className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3" stagger={0.08}>
         {tours.map((t) => (
           <RevealItem key={t.title}>
             <Link

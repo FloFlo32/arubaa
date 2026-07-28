@@ -14,6 +14,7 @@ const primaryNavBase: NavItem[] = [
     href: "/boat-tours",
     children: [
       { key: "morning-splash", href: "/boat-tours/morning-splash-adventure" },
+      { key: "afternoon-pirate", href: "/boat-tours/afternoon-pirate-party" },
       { key: "sunset-stars", href: "/boat-tours/sunset-stars-cruise" },
     ],
   },
@@ -34,6 +35,7 @@ const primaryNavBase: NavItem[] = [
 ];
 
 const secondaryNavBase: NavChild[] = [
+  { key: "gallery", href: "/gallery" },
   { key: "faq", href: "/faq" },
   { key: "contact", href: "/contact" },
 ];
@@ -52,12 +54,14 @@ const t: Record<string, Record<LocaleCode, string>> = {
   about: { en: "About Us", es: "Sobre Nosotros", nl: "Over Ons", de: "Über Uns", it: "Chi Siamo", br: "Sobre Nós", se: "Om Oss" },
 
   "morning-splash": { en: "Morning Splash Adventure", es: "Aventura Matutina", nl: "Ochtend Avontuur", de: "Morgenabenteuer", it: "Avventura Del Mattino", br: "Aventura Matinal", se: "Morgonäventyr" },
+  "afternoon-pirate": { en: "Afternoon Pirate Party", es: "Fiesta Pirata Vespertina", nl: "Middag Piratenfeest", de: "Nachmittags-Piratenparty", it: "Festa Pirata Del Pomeriggio", br: "Festa Pirata Vespertina", se: "Eftermiddagens Piratfest" },
   "sunset-stars": { en: "Sunset & Stars Cruise", es: "Crucero Atardecer Y Estrellas", nl: "Zonsondergang & Sterrencruise", de: "Sonnenuntergangs- Und Sternenfahrt", it: "Crociera Tramonto E Stelle", br: "Cruzeiro Pôr Do Sol E Estrelas", se: "Solnedgång Och Stjärnkryssning" },
 
   "boca-catalina": { en: "Boca Catalina", es: "Boca Catalina", nl: "Boca Catalina", de: "Boca Catalina", it: "Boca Catalina", br: "Boca Catalina", se: "Boca Catalina" },
   "malmok-beach": { en: "Malmok Beach", es: "Malmok Beach", nl: "Malmok Beach", de: "Malmok Beach", it: "Malmok Beach", br: "Malmok Beach", se: "Malmok Beach" },
   "antilla-wreck": { en: "SS Antilla Shipwreck", es: "Naufragio Del SS Antilla", nl: "Scheepswrak SS Antilla", de: "Schiffswrack SS Antilla", it: "Relitto SS Antilla", br: "Naufrágio Do SS Antilla", se: "Vraket SS Antilla" },
 
+  gallery: { en: "Gallery", es: "Galería", nl: "Galerij", de: "Galerie", it: "Galleria", br: "Galeria", se: "Galleri" },
   faq: { en: "FAQ", es: "Preguntas Frecuentes", nl: "Veelgestelde Vragen", de: "Häufige Fragen", it: "Domande Frequenti", br: "Perguntas Frequentes", se: "Vanliga Frågor" },
   contact: { en: "Contact", es: "Contacto", nl: "Contact", de: "Kontakt", it: "Contatti", br: "Contato", se: "Kontakt" },
 
