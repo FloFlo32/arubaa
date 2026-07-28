@@ -1,42 +1,67 @@
-# Aruba (One Happy Island) knowledge base
+# Jolly Pirates knowledge base
 
-Source: https://www.aruba.com/
+Source: https://www.jolly-pirates.com
 
 ## About
-Aruba is a small island in the southern Caribbean Sea, about 15 miles north of Venezuela, just outside the hurricane belt. Only 19.6 miles long and six miles across, Aruba is known as One Happy Island: powdery white sand beaches, more than 300 sunny days a year, four languages spoken, and a population representing over 100 nationalities living in harmony.
+Jolly Pirates has sailed twin 85-foot teak schooners along Aruba's coast for
+over 26 years, running snorkeling trips and sunset cruises out of MooMba
+Beach, Palm Beach (between the Holiday Inn and the Marriott).
 
-## Getting there and around
-Aruba has convenient and direct flights from major U.S. and Canadian cities. Getting around the island is easy, from the lively capital Oranjestad to quiet seaside towns, pristine beaches, and the rugged desert interior.
+## Cruises
+- Morning Snorkeling Trip: 9am-1pm (4 hours), $98pp. 3 snorkel stops, BBQ
+  lunch, open bar, rope swing. All ages.
+- Afternoon Snorkeling Tour: 2pm-5pm (3 hours), $76pp. 2 snorkel stops, open
+  bar, rope swing. All ages.
+- Sunset Dinner Cruise (Pirate Party): 5:30pm-8:30pm (3 hours), $110pp. BBQ
+  dinner + dessert, open bar, live DJ. Adults only (18+).
+- Sunset Sail: 5:30pm-7:30pm (2 hours), $59pp. Open bar, scenic views, no
+  snorkeling. All ages.
+- Private charters are available on any cruise for groups, weddings,
+  birthdays and corporate events.
 
-## Things to do
-Beaches & coves (more than 20 public beaches, from calm family bays to wind-kissed shores), On the water (sailing, snorkeling, windsurfing), Natural Wonders (Arikok National Park, desert landscapes, cacti), Dining, Nightlife, Arts & Culture (San Nicolas street art and history), Sightseeing & Tours, Shopping, Wellbeing, Sports & Golf, a Calendar of Events, and curated Itineraries written by local experts.
+## Snorkel sites
+- Boca Catalina: a calm, shallow reef close to shore, good for all skill
+  levels.
+- SS Antilla Shipwreck: a WWII-era wreck resting in Aruba's clear water, one
+  of the largest shipwrecks in the Caribbean.
 
-## Why Aruba
-Adventure, Romance, Culture, Wellness, Eat & Drink, Families, and Weddings: Aruba has an experience for every kind of traveler. The Aruba Effect is the overwhelming sense of warmth and happiness visitors feel across the island.
-
-## Planning a visit
-Options include Hotels & Resorts, Vacation Rentals, Timeshares, and All-inclusive packages. Aruba also welcomes cruise visitors. Visitors should note a $20 sustainability fee as part of current travel requirements.
-
-## Deals
-Aruba regularly offers vacation deals, including workation packages, room rate savings, extended-stay options, and wedding or honeymoon packages. See the Deals & Offers page for current promotions.
-
-## Contact
-Phone: 1-800-862-7822
-Email: support@aruba.com
-Social: Facebook (ArubaFans), X/Twitter (@Aruba), Instagram (@arubatourism), Pinterest (arubatourism), YouTube (ArubaTourism), TripAdvisor (arubatourism), TikTok (@travelaruba)
+## Sustainability
+Recyclable cups, reusable souvenir bags, and reef bracelets that support
+Aruba's Marine Park and marine protection efforts.
 
 ## FAQ
-Q: What makes Aruba special?
-A: More than 300 sunny days a year, safe and modern infrastructure, four languages spoken, and the Aruba Effect: a genuine warmth from the island's people that visitors feel from the moment they arrive.
+Q: Where do the cruises depart from?
+A: All cruises depart from MooMba Beach on Palm Beach, between the Holiday
+Inn and the Marriott.
 
-Q: Is Aruba good for families?
-A: Yes. Aruba has calm, family-friendly beaches and activities for guests of all ages, from the shoreline to Arikok National Park.
+Q: Do I need to know how to swim or snorkel?
+A: No experience is required. Mask, snorkel and fins are included, and life
+jackets are available.
 
-Q: Does Aruba have all-inclusive resorts?
-A: Yes, Aruba offers all-inclusive packages alongside hotels, resorts, vacation rentals, and timeshares. See Plan Your Visit for details.
+Q: Is the Sunset Dinner Cruise really adults only?
+A: Yes, it's 18 and over. The morning trip, afternoon trip and sunset sail
+are open to all ages.
 
-Q: How do I get to Aruba?
-A: Aruba has convenient, direct flights from major U.S. and Canadian cities, plus cruise ship access. See Plan Your Visit > Getting to Aruba.
+Q: What should I bring?
+A: Swimwear, a towel, sunscreen and a waterproof phone case if you want
+photos. Snorkel gear, drinks and food are provided.
 
-Q: Is there a travel fee?
-A: Aruba has a $20 sustainability fee as part of its current travel requirements. Check Plan Your Visit > Tips for Visitors for the latest details.
+Q: Is food and drink included?
+A: Yes. The morning trip includes a BBQ lunch, the sunset dinner cruise
+includes BBQ and dessert, and every cruise includes an open bar.
+
+Q: What happens if the weather turns bad?
+A: If a cruise needs to be shortened, rescheduled or canceled for weather,
+the crew will contact guests directly.
+
+Q: Are children welcome?
+A: Yes, on every cruise except the adults-only Sunset Dinner Cruise.
+Children are priced lower than adults.
+
+Q: How do I contact Jolly Pirates?
+A: Call +297 586 8107, WhatsApp, or email info@jolly-pirates.com.
+
+## Contact
+- WhatsApp: 2975926777
+- Phone: +2975868107
+- Location: MooMba Beach, Palm Beach, Aruba

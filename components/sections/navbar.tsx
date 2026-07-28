@@ -12,9 +12,9 @@ import { getLocaleFromPathname, localizePath } from "@/lib/i18n";
 
 function Logo({ href, className }: { href: string; className?: string }) {
   return (
-    <Link href={href} className={cn("flex items-center gap-2 shrink-0 cursor-pointer", className)} aria-label="Aruba home">
+    <Link href={href} className={cn("flex items-center gap-2 shrink-0 cursor-pointer", className)} aria-label="Jolly Pirates home">
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src="/aruba-logo.svg" alt="Aruba" className="h-9 w-auto" />
+      <img src="/jolly-pirates-logo.webp" alt="Jolly Pirates" className="h-12 w-auto" />
     </Link>
   );
 }
@@ -65,11 +65,12 @@ export function Navbar() {
           <div className="hidden items-center lg:flex">
             {primaryNav.map((item) => {
               const active = isActive(item.href);
+              const hasChildren = item.children.length > 0;
               return (
                 <div
                   key={item.label}
                   className="relative"
-                  onMouseEnter={() => openMenu(item.label)}
+                  onMouseEnter={() => hasChildren && openMenu(item.label)}
                 >
                   <Link
                     href={item.href}
@@ -78,43 +79,47 @@ export function Navbar() {
                       active ? "text-primary" : "text-neutral-300"
                     )}
                     aria-current={active ? "page" : undefined}
-                    aria-expanded={activeMenu === item.label}
+                    aria-expanded={hasChildren ? activeMenu === item.label : undefined}
                   >
                     {item.label}
-                    <ChevronDown className={cn("size-3.5 transition-transform duration-200", activeMenu === item.label && "rotate-180")} />
+                    {hasChildren && (
+                      <ChevronDown className={cn("size-3.5 transition-transform duration-200", activeMenu === item.label && "rotate-180")} />
+                    )}
                   </Link>
 
-                  <div
-                    className={cn(
-                      "absolute left-1/2 top-full z-50 w-[22rem] -translate-x-1/2 pt-3 transition-all duration-200",
-                      activeMenu === item.label
-                        ? "pointer-events-auto translate-y-0 opacity-100"
-                        : "pointer-events-none -translate-y-1 opacity-0"
-                    )}
-                    onMouseEnter={() => openMenu(item.label)}
-                  >
-                    <div className="rounded-2xl border border-border bg-card p-3 shadow-xl shadow-black/[0.08]">
-                      <div className="grid grid-cols-2 gap-1">
-                        {item.children.map((child) => (
-                          <Link
-                            key={child.label}
-                            href={child.href}
-                            onClick={() => setActiveMenu(null)}
-                            className="cursor-pointer rounded-lg px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
-                          >
-                            {child.label}
-                          </Link>
-                        ))}
+                  {hasChildren && (
+                    <div
+                      className={cn(
+                        "absolute left-1/2 top-full z-50 w-[22rem] -translate-x-1/2 pt-3 transition-all duration-200",
+                        activeMenu === item.label
+                          ? "pointer-events-auto translate-y-0 opacity-100"
+                          : "pointer-events-none -translate-y-1 opacity-0"
+                      )}
+                      onMouseEnter={() => openMenu(item.label)}
+                    >
+                      <div className="rounded-2xl border border-border bg-card p-3 shadow-xl shadow-black/[0.08]">
+                        <div className="grid grid-cols-2 gap-1">
+                          {item.children.map((child) => (
+                            <Link
+                              key={child.label}
+                              href={child.href}
+                              onClick={() => setActiveMenu(null)}
+                              className="cursor-pointer rounded-lg px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
+                            >
+                              {child.label}
+                            </Link>
+                          ))}
+                        </div>
+                        <Link
+                          href={item.href}
+                          onClick={() => setActiveMenu(null)}
+                          className="mt-2 block cursor-pointer rounded-lg px-3 py-2 text-sm font-semibold text-primary transition-colors hover:bg-primary/10"
+                        >
+                          View all {item.label} →
+                        </Link>
                       </div>
-                      <Link
-                        href={item.href}
-                        onClick={() => setActiveMenu(null)}
-                        className="mt-2 block cursor-pointer rounded-lg px-3 py-2 text-sm font-semibold text-primary transition-colors hover:bg-primary/10"
-                      >
-                        View all {item.label} →
-                      </Link>
                     </div>
-                  </div>
+                  )}
                 </div>
               );
             })}
@@ -161,6 +166,22 @@ export function Navbar() {
           <div className="container-px mx-auto flex max-w-7xl flex-col gap-1 py-4">
             {primaryNav.map((item) => {
               const active = isActive(item.href);
+              const hasChildren = item.children.length > 0;
+              if (!hasChildren) {
+                return (
+                  <Link
+                    key={item.label}
+                    href={item.href}
+                    onClick={() => setOpen(false)}
+                    className={cn(
+                      "block cursor-pointer rounded-md border-b border-border/60 px-3 py-3 text-base font-medium",
+                      active ? "text-primary" : "text-foreground"
+                    )}
+                  >
+                    {item.label}
+                  </Link>
+                );
+              }
               return (
                 <div key={item.label} className="border-b border-border/60 py-1">
                   <button
@@ -212,7 +233,7 @@ export function Navbar() {
               href={`tel:${brand.contact.phone}`}
               className="mt-2 flex cursor-pointer items-center gap-2 rounded-md px-3 py-3 text-base text-primary"
             >
-              <Phone className="size-4" /> 1-800-862-7822
+              <Phone className="size-4" /> +297 586 8107
             </a>
             <Button asChild className="mt-2">
               <Link href={bookNow.href} onClick={() => setOpen(false)}>

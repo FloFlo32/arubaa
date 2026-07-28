@@ -2,11 +2,11 @@ import { Navbar } from "@/components/sections/navbar";
 import { LanguageGate } from "@/components/sections/language-gate";
 import { Hero } from "@/components/sections/hero";
 import { TrustBar } from "@/components/sections/trust-bar";
-import { Updates } from "@/components/sections/updates";
-import { Happiness } from "@/components/sections/happiness";
-import { NextStop } from "@/components/sections/next-stop";
-import { Effects } from "@/components/sections/effects";
-import { Itineraries } from "@/components/sections/itineraries";
+import { CruisesOverview } from "@/components/sections/cruises-overview";
+import { SnorkelSitesTeaser } from "@/components/sections/snorkel-sites-teaser";
+import { WhyJollyPirates } from "@/components/sections/why-jolly-pirates";
+import { ExperienceSlider } from "@/components/sections/experience-slider";
+import { GalleryTeaser } from "@/components/sections/gallery-teaser";
 import { CTA } from "@/components/sections/cta";
 import { Footer } from "@/components/sections/footer";
 
@@ -18,11 +18,11 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <TrustBar />
-        <Updates />
-        <Happiness />
-        <NextStop />
-        <Effects />
-        <Itineraries />
+        <CruisesOverview />
+        <SnorkelSitesTeaser />
+        <WhyJollyPirates />
+        <ExperienceSlider />
+        <GalleryTeaser />
         <CTA />
       </main>
       <Footer />

@@ -4,38 +4,30 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Mail, Phone } from "lucide-react";
 import { brand } from "@/brand.config";
-import { XIcon, PinterestIcon, TikTokIcon, TripAdvisorIcon, FacebookIcon, InstagramIcon, YouTubeIcon } from "@/components/icons";
+import { InstagramIcon } from "@/components/icons";
 import { getPrimaryNav, getLegalNav } from "@/lib/site-nav";
 import { getLocaleFromPathname, localizePath, type LocaleCode } from "@/lib/i18n";
 
-const socials = [
-  { href: brand.social.facebook, label: "Facebook", Icon: FacebookIcon },
-  { href: brand.social.x, label: "X", Icon: XIcon },
-  { href: brand.social.instagram, label: "Instagram", Icon: InstagramIcon },
-  { href: brand.social.pinterest, label: "Pinterest", Icon: PinterestIcon },
-  { href: brand.social.youtube, label: "YouTube", Icon: YouTubeIcon },
-  { href: brand.social.tripadvisor, label: "TripAdvisor", Icon: TripAdvisorIcon },
-  { href: brand.social.tiktok, label: "TikTok", Icon: TikTokIcon },
-];
+const socials = [{ href: brand.social.instagram, label: "Instagram", Icon: InstagramIcon }];
 
 const tagline: Record<LocaleCode, string> = {
-  en: "One happy island in the southern Caribbean. Find out everything you need to know about Aruba right here.",
-  es: "Una isla feliz en el Caribe sur. Descubre aquí todo lo que necesitas saber sobre Aruba.",
-  nl: "Een gelukkig eiland in de zuidelijke Caribische Zee. Ontdek hier alles wat je moet weten over Aruba.",
-  de: "Eine glückliche Insel in der südlichen Karibik. Hier erfährst du alles, was du über Aruba wissen musst.",
-  it: "Un'isola felice nei Caraibi meridionali. Scopri qui tutto quello che devi sapere su Aruba.",
-  br: "Uma ilha feliz no sul do Caribe. Descubra aqui tudo o que você precisa saber sobre Aruba.",
-  se: "En glad ö i södra Karibien. Ta reda på allt du behöver veta om Aruba här.",
+  en: "Traditional schooner sailboats, epic snorkeling and sunset cruises on Aruba's turquoise coast.",
+  es: "Veleros goleta tradicionales, snorkel épico y cruceros al atardecer en la costa turquesa de Aruba.",
+  nl: "Traditionele schoenerzeilboten, geweldig snorkelen en zonsondergangcruises langs Aruba's turquoise kust.",
+  de: "Traditionelle Schoner, fantastisches Schnorcheln und Sonnenuntergangsfahrten an Arubas türkisfarbener Küste.",
+  it: "Golette tradizionali, snorkeling epico e crociere al tramonto lungo la costa turchese di Aruba.",
+  br: "Escunas tradicionais, mergulho com snorkel incrível e cruzeiros ao pôr do sol na costa turquesa de Aruba.",
+  se: "Traditionella skonertsegelbåtar, fantastisk snorkling och solnedgångskryssningar längs Arubas turkosa kust.",
 };
 
 const rights: Record<LocaleCode, string> = {
-  en: "Aruba Tourism Authority. All rights reserved.",
-  es: "Aruba Tourism Authority. Todos los derechos reservados.",
-  nl: "Aruba Tourism Authority. Alle rechten voorbehouden.",
-  de: "Aruba Tourism Authority. Alle Rechte vorbehalten.",
-  it: "Aruba Tourism Authority. Tutti i diritti riservati.",
-  br: "Aruba Tourism Authority. Todos os direitos reservados.",
-  se: "Aruba Tourism Authority. Alla rättigheter förbehållna.",
+  en: "Jolly Pirates Aruba. All rights reserved.",
+  es: "Jolly Pirates Aruba. Todos los derechos reservados.",
+  nl: "Jolly Pirates Aruba. Alle rechten voorbehouden.",
+  de: "Jolly Pirates Aruba. Alle Rechte vorbehalten.",
+  it: "Jolly Pirates Aruba. Tutti i diritti riservati.",
+  br: "Jolly Pirates Aruba. Todos os direitos reservados.",
+  se: "Jolly Pirates Aruba. Alla rättigheter förbehållna.",
 };
 
 export function Footer() {
@@ -50,9 +42,9 @@ export function Footer() {
       <div className="container-px mx-auto max-w-7xl py-14">
         <div className="grid gap-10 lg:grid-cols-[1.3fr_1fr_1fr_1fr_1fr]">
           <div>
-            <Link href={homeHref} aria-label="Aruba home">
+            <Link href={homeHref} aria-label="Jolly Pirates home">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/aruba-logo.svg" alt="Aruba" className="h-10 w-auto" />
+              <img src="/jolly-pirates-logo.webp" alt="Jolly Pirates" className="h-16 w-auto" />
             </Link>
             <p className="mt-4 max-w-xs text-sm text-neutral-400">{tagline[locale]}</p>
             <div className="mt-5 flex flex-wrap gap-2">
@@ -71,7 +63,7 @@ export function Footer() {
             </div>
             <div className="mt-5 space-y-2">
               <a href={`tel:${brand.contact.phone}`} className="flex cursor-pointer items-center gap-2 text-sm text-neutral-400 transition-colors hover:text-white">
-                <Phone className="size-4 text-primary" /> 1-800-862-7822
+                <Phone className="size-4 text-primary" /> +297 586 8107
               </a>
               <a href={`mailto:${brand.social.email}`} className="flex cursor-pointer items-center gap-2 text-sm text-neutral-400 transition-colors hover:text-white">
                 <Mail className="size-4 text-primary" /> {brand.social.email}

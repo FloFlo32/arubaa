@@ -12,36 +12,36 @@ import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
 import { AuroraBackground } from "@/components/magic/aurora-background";
 
 export const metadata: Metadata = {
-  title: "Book Your Aruba Vacation",
-  description: "Start planning and booking your trip to One Happy Island.",
+  title: "Book Now",
+  description: "Book a Jolly Pirates snorkeling trip or sunset cruise in Aruba.",
 };
 
 const starters = [
   {
-    title: "Hotels & Resorts",
-    href: "/plan-your-visit#hotels-resorts",
-    src: "/ingested/arubaa/img-053.webp",
-    alt: "Guests relaxing at a resort pool in Aruba",
-    description: "From beachfront resorts to boutique stays, find the room that fits your trip.",
+    title: "Morning Snorkeling Trip",
+    href: "/cruises/morning-snorkeling",
+    src: "/ingested/jollypirates/img-051.webp",
+    alt: "Guests leap from the Jolly Pirates schooner into the clear Caribbean water",
+    description: "3 snorkel stops, BBQ lunch, open bar and the rope swing. $98pp.",
   },
   {
-    title: "Vacation Packages",
-    href: "/plan-your-visit#vacations",
-    src: "/ingested/arubaa/img-047.webp",
-    alt: "A couple in wedding attire running through the shallows on an Aruba beach",
-    description: "Flights, stays and experiences bundled together for an easier trip.",
+    title: "Sunset Dinner Cruise",
+    href: "/cruises/sunset-dinner-cruise",
+    src: "/ingested/jollypirates/img-027.webp",
+    alt: "Guests toast with drinks at golden hour aboard the Jolly Pirates sunset cruise",
+    description: "Adults-only BBQ, open bar and a live DJ at sunset. $110pp.",
   },
   {
-    title: "Current Deals",
-    href: "/deals",
-    src: "/ingested/arubaa/img-047.webp",
-    alt: "A couple sharing a moment on an Aruba beach",
-    description: "Check today's offers before you lock in your dates.",
+    title: "Private Charters",
+    href: "/private-charters",
+    src: "/ingested/jollypirates/img-044.webp",
+    alt: "A group of guests laughing together on the schooner",
+    description: "Buy out an entire schooner for your group or event.",
   },
 ];
 
 export default function BookNowPage() {
-  const phoneDisplay = "1-800-862-7822";
+  const phoneDisplay = "+297 586 8107";
 
   return (
     <>
@@ -58,13 +58,13 @@ export default function BookNowPage() {
               </Reveal>
               <Reveal delay={0.06}>
                 <h1 className="mt-6 max-w-xl text-balance text-5xl font-bold leading-[0.98] sm:text-6xl md:text-7xl">
-                  Book Your Vacation <span className="text-gradient">to Aruba</span>
+                  Book Your <span className="text-gradient">Aruba Cruise</span>
                 </h1>
               </Reveal>
               <Reveal delay={0.12}>
                 <p className="mt-6 max-w-md text-lg text-muted-foreground">
-                  We can&apos;t wait to see you. Whichever way you like to travel, Aruba
-                  makes it easy to book the stay that&apos;s right for you.
+                  Four cruises to choose from, all departing MooMba Beach. Call, WhatsApp
+                  or email us to lock in your date.
                 </p>
               </Reveal>
             </div>
@@ -72,8 +72,8 @@ export default function BookNowPage() {
             <Reveal delay={0.2}>
               <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border shadow-2xl shadow-primary/10 sm:aspect-[5/6]">
                 <Image
-                  src="/ingested/arubaa/img-045.webp"
-                  alt="A couple on the beach in Aruba, planning their stay"
+                  src="/ingested/jollypirates/img-030.webp"
+                  alt="A guest swings from the rope swing into turquoise water beside the Jolly Pirates schooner"
                   fill
                   priority
                   sizes="(max-width: 1024px) 100vw, 45vw"
@@ -114,8 +114,8 @@ export default function BookNowPage() {
                     Prefer to talk it through?
                   </h2>
                   <p className="mt-3 max-w-md text-muted-foreground">
-                    Call or email our team and we&apos;ll help you build the trip, from
-                    the first flight to the last sunset.
+                    Call, WhatsApp or email our crew and we&apos;ll help you pick the
+                    right cruise and lock in your date.
                   </p>
                 </div>
                 <div className="flex flex-col gap-3 sm:flex-row md:flex-col">
@@ -152,12 +152,11 @@ export default function BookNowPage() {
         <section className="container-px mx-auto max-w-6xl pb-24">
           <Reveal className="flex flex-col items-center gap-4 text-center">
             <p className="max-w-md text-muted-foreground">
-              Not sure yet where to start? See everything there is to do before you pick
-              your dates.
+              Not sure yet which cruise fits your trip? Compare all four first.
             </p>
             <Button asChild size="lg" variant="outline">
-              <Link href="/things-to-do">
-                Explore Things To Do First <ArrowRight className="size-4" />
+              <Link href="/cruises">
+                See All Cruises First <ArrowRight className="size-4" />
               </Link>
             </Button>
           </Reveal>

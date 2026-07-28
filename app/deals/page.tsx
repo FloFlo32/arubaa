@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ShieldCheck, Home, Heart, Briefcase, ArrowRight } from "lucide-react";
+import { Users, CalendarDays, Gift, ArrowRight } from "lucide-react";
 import { Navbar } from "@/components/sections/navbar";
 import { Footer } from "@/components/sections/footer";
 import { Button } from "@/components/ui/button";
@@ -11,43 +11,42 @@ import { GridPattern } from "@/components/magic/grid-pattern";
 import { PhotoHero } from "@/components/magic/photo-hero";
 
 export const metadata: Metadata = {
-  title: "Aruba Vacation & Travel Deals",
-  description:
-    "Save on your next Aruba vacation with flexible, affordable deals and offers.",
+  title: "Deals",
+  description: "Group rates and combo pricing on Jolly Pirates snorkeling trips and sunset cruises in Aruba.",
 };
 
 const featured = [
   {
-    title: "One Happy Workation",
-    src: "/ingested/arubaa/img-031.webp",
-    alt: "A woman standing alone on sandy terrain overlooking the sea in Aruba",
+    title: "Two-Cruise Combo",
+    src: "/ingested/jollypirates/img-020.webp",
+    alt: "Guests relaxing together with drinks on deck",
     description:
-      "In Aruba, we're in the business of happiness, so we're offering visitors a chance to work right from paradise.",
+      "Book the morning snorkeling trip and a sunset cruise together and ask our crew about combo pricing.",
   },
   {
-    title: "Travel Requirements",
-    src: "/ingested/arubaa/img-030.webp",
-    alt: "Visitors arriving on an Aruba beach, ready for their trip",
+    title: "Group Rates",
+    src: "/ingested/jollypirates/img-044.webp",
+    alt: "A group of guests laughing together on the schooner",
     description:
-      "Here are some details to remember when traveling to and from Aruba. Learn more about the new $20 sustainability fee.",
+      "Traveling with 10 or more? Ask about group pricing on any of our four cruises.",
   },
 ];
 
-const savings = [
+const perks = [
   {
-    icon: Home,
-    title: "Hotels & resorts",
-    body: "Room rate savings at Aruba's amazing hotels and resorts, all year round.",
+    icon: Users,
+    title: "Group bookings",
+    body: "Discounted per-person rates for parties of 10 or more on any cruise.",
   },
   {
-    icon: Briefcase,
-    title: "Extended stays",
-    body: "Flexible workation options for visitors who want more than a week in paradise.",
+    icon: CalendarDays,
+    title: "Off-peak pricing",
+    body: "Ask about seasonal rates on the afternoon snorkeling tour and sunset sail.",
   },
   {
-    icon: Heart,
-    title: "Weddings & honeymoons",
-    body: "Worry free wedding and honeymoon packages, built for your happiest days.",
+    icon: Gift,
+    title: "Kids sail for less",
+    body: "Children are priced below the adult rate on every cruise except our adults-only sunset dinner.",
   },
 ];
 
@@ -57,11 +56,11 @@ export default function DealsPage() {
       <Navbar />
       <main className="flex-1">
         <PhotoHero
-          eyebrow="Save more, worry less"
-          title="Aruba Vacation & Travel Deals"
-          body="There are so many ways for you to save on your next Aruba vacation. We're welcoming visitors back with flexibility, serenity and affordability."
-          src="/ingested/arubaa/img-039.webp"
-          alt="Beachgoers enjoying a sunny afternoon on the Aruba shoreline"
+          eyebrow="Save on your cruise"
+          title="Deals"
+          body="Group rates, combo pricing and seasonal offers on our snorkeling trips and sunset cruises."
+          src="/ingested/jollypirates/img-020.webp"
+          alt="Guests relaxing together with drinks on deck"
         />
 
         <section className="container-px mx-auto max-w-6xl py-20">
@@ -87,16 +86,16 @@ export default function DealsPage() {
         <section className="container-px mx-auto max-w-6xl pb-24">
           <Reveal className="max-w-2xl">
             <Badge variant="accent">
-              <ShieldCheck className="size-3.5" /> Always available
+              <Gift className="size-3.5" /> Always available
             </Badge>
             <h2 className="mt-4 text-4xl font-bold sm:text-5xl">Ways to save, year round</h2>
             <p className="mt-4 text-muted-foreground">
-              Beyond limited time offers, Aruba keeps a standing set of savings programs
-              open to every visitor.
+              Beyond limited-time offers, we keep a standing set of savings open to every
+              guest. Contact us for current pricing.
             </p>
           </Reveal>
           <RevealGroup className="mt-10 grid gap-6 md:grid-cols-3">
-            {savings.map((s) => (
+            {perks.map((s) => (
               <RevealItem
                 key={s.title}
                 className="flex flex-col rounded-2xl border border-border bg-card p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/5"
@@ -116,11 +115,10 @@ export default function DealsPage() {
             <div className="relative overflow-hidden rounded-3xl border border-border bg-card px-6 py-16 text-center sm:px-12">
               <GridPattern />
               <h2 className="mx-auto max-w-2xl text-balance text-4xl font-bold sm:text-5xl">
-                Ready to lock in your rate?
+                Ready to lock in your date?
               </h2>
               <p className="mx-auto mt-4 max-w-lg text-muted-foreground">
-                Grab today&apos;s deal before it&apos;s gone and start counting down to One
-                Happy Island.
+                Reach out for current pricing and availability before you book.
               </p>
               <div className="mt-8 flex justify-center">
                 <Button asChild size="lg">

@@ -1,26 +1,26 @@
-import { Sun, Waves, Globe2, Plane } from "lucide-react";
+import { Anchor, Ship, Fish, Sunset } from "lucide-react";
 import { RevealGroup, RevealItem } from "@/components/magic/reveal";
 
 const stats = [
   {
-    icon: Sun,
-    value: "300+",
-    label: "Sunny days a year, more than any other Caribbean island",
+    icon: Anchor,
+    value: "26+",
+    label: "Years sailing snorkeling and sunset trips out of Aruba",
   },
   {
-    icon: Waves,
-    value: "20+",
-    label: "Public beaches and coves to choose from",
+    icon: Ship,
+    value: "2",
+    label: "Traditional 85-foot teak schooners in the fleet",
   },
   {
-    icon: Globe2,
-    value: "100+",
-    label: "Nationalities living together on one happy island",
+    icon: Fish,
+    value: "3",
+    label: "Snorkel sites visited on our morning trip, reef to shipwreck",
   },
   {
-    icon: Plane,
-    value: "100+",
-    label: "Direct flights from major U.S. and Canadian cities",
+    icon: Sunset,
+    value: "4",
+    label: "Cruises to choose from, morning to sunset",
   },
 ];
 

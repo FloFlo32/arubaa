@@ -1,0 +1,333 @@
+{
+  "source": "https://www.jolly-pirates.com",
+  "ingestedFromHost": "jolly-pirates.com",
+  "pagesCrawled": 13,
+  "name": "Jolly Pirates",
+  "tagline": "Jolly Pirates | Aruba Snorkeling Trips and Sunset Cruises",
+  "description": "Sail with Jolly Pirates Aruba! Enjoy epic snorkeling tours to reefs and shipwrecks and relax on sunset cruises aboard our iconic schooner sailboats. Book now!",
+  "domain": "jolly-pirates.com",
+  "brandColor": {
+    "hex": "#22b9a7",
+    "src": "css-frequency",
+    "oklchHue": 182
+  },
+  "theme": {
+    "hue": 182
+  },
+  "fonts": [],
+  "logo": "assets/logo.webp",
+  "logoNote": null,
+  "favicon": "https://www.jolly-pirates.com/wp-content/uploads/sites/4161/2020/06/jolly-pirates-fav-icon.png?w=180&h=180",
+  "images": [
+    "/ingested/jollypirates/img-001.webp",
+    "/ingested/jollypirates/img-002.webp",
+    "/ingested/jollypirates/img-004.webp",
+    "/ingested/jollypirates/img-005.webp",
+    "/ingested/jollypirates/img-006.webp",
+    "/ingested/jollypirates/img-007.webp",
+    "/ingested/jollypirates/img-008.webp",
+    "/ingested/jollypirates/img-009.webp",
+    "/ingested/jollypirates/img-010.webp",
+    "/ingested/jollypirates/img-011.webp",
+    "/ingested/jollypirates/img-012.webp",
+    "/ingested/jollypirates/img-013.webp",
+    "/ingested/jollypirates/img-014.webp",
+    "/ingested/jollypirates/img-015.webp",
+    "/ingested/jollypirates/img-016.webp",
+    "/ingested/jollypirates/img-017.webp",
+    "/ingested/jollypirates/img-018.webp",
+    "/ingested/jollypirates/img-019.webp",
+    "/ingested/jollypirates/img-020.webp",
+    "/ingested/jollypirates/img-021.webp",
+    "/ingested/jollypirates/img-022.webp",
+    "/ingested/jollypirates/img-023.webp",
+    "/ingested/jollypirates/img-024.webp",
+    "/ingested/jollypirates/img-025.webp",
+    "/ingested/jollypirates/img-026.webp",
+    "/ingested/jollypirates/img-027.webp",
+    "/ingested/jollypirates/img-028.webp",
+    "/ingested/jollypirates/img-029.webp",
+    "/ingested/jollypirates/img-030.webp",
+    "/ingested/jollypirates/img-031.webp",
+    "/ingested/jollypirates/img-032.webp",
+    "/ingested/jollypirates/img-033.webp",
+    "/ingested/jollypirates/img-034.webp",
+    "/ingested/jollypirates/img-035.webp",
+    "/ingested/jollypirates/img-036.webp",
+    "/ingested/jollypirates/img-037.webp",
+    "/ingested/jollypirates/img-038.webp",
+    "/ingested/jollypirates/img-039.webp",
+    "/ingested/jollypirates/img-040.webp",
+    "/ingested/jollypirates/img-041.webp",
+    "/ingested/jollypirates/img-042.webp",
+    "/ingested/jollypirates/img-043.webp",
+    "/ingested/jollypirates/img-044.webp",
+    "/ingested/jollypirates/img-045.webp",
+    "/ingested/jollypirates/img-046.webp",
+    "/ingested/jollypirates/img-047.webp",
+    "/ingested/jollypirates/img-048.webp",
+    "/ingested/jollypirates/img-049.webp",
+    "/ingested/jollypirates/img-050.webp",
+    "/ingested/jollypirates/img-051.webp",
+    "/ingested/jollypirates/img-052.webp",
+    "/ingested/jollypirates/img-053.webp",
+    "/ingested/jollypirates/img-054.webp",
+    "/ingested/jollypirates/img-055.webp",
+    "/ingested/jollypirates/img-056.webp",
+    "/ingested/jollypirates/img-057.webp",
+    "/ingested/jollypirates/img-058.webp",
+    "/ingested/jollypirates/img-059.webp",
+    "/ingested/jollypirates/img-060.webp"
+  ],
+  "imageCount": 59,
+  "social": {
+    "instagram": "https://www.instagram.com/jollypiratesaruba/"
+  },
+  "whatsapp": "2975926777",
+  "phone": "+2975868107",
+  "location": {
+    "address": null,
+    "mapUrl": "https://www.google.com/maps/place/Jolly+Pirates+Sailing+Cruises+%26+Snorkeling/@12.5775702,-70.044721,15z/data=!4m2!3m1!1s0x0:0x51ee28f24db0a806?sa=X&ved=1t:2428&ictx=111&cshid=1712007626981158",
+    "lat": "12.5775702",
+    "lng": "-70.044721",
+    "mapQuery": "12.5775702,-70.044721"
+  },
+  "sectionOrder": [
+    "Snorkeling, Sailing, & Sunset Pirate Ship Cruises in Aruba",
+    "Link Gallery"
+  ],
+  "navItems": [
+    {
+      "text": "Introducing Our New Adults-Only Cruise - Click for More! Snorkel Cruises Open Snorkel Cruises Menu Morning Snorkeling Trips Afternoon Snorkeling Tours View All Cruises Sunset Cruises Open Sunset Cruises Menu Adults Sunset Dinner Cruise Sunset Sail View All Cruises Private Parties Promos Info Open Info Menu About FAQs Snorkel Sites Contact Us Other Activities Eat, Play, Drink in Aruba Excursions Near Marriott Aruba Blog More Open More Menu Calendar Search By Date & Book Now Menu",
+      "url": "https://www.jolly-pirates.com/undefined",
+      "path": "/undefined"
+    },
+    {
+      "text": "Morning Snorkeling Trips",
+      "url": "https://www.jolly-pirates.com/cruise/sail-snorkel-swim-and-swing/",
+      "path": "/cruise/sail-snorkel-swim-and-swing"
+    },
+    {
+      "text": "Afternoon Snorkeling Tours",
+      "url": "https://www.jolly-pirates.com/cruise/aruba-snorkeling-tour/",
+      "path": "/cruise/aruba-snorkeling-tour"
+    },
+    {
+      "text": "View All Cruises",
+      "url": "https://www.jolly-pirates.com/cruise/",
+      "path": "/cruise"
+    },
+    {
+      "text": "Adults Sunset Dinner Cruise",
+      "url": "https://www.jolly-pirates.com/cruise/grub-and-grog-sunset-sail/",
+      "path": "/cruise/grub-and-grog-sunset-sail"
+    },
+    {
+      "text": "Sunset Sail",
+      "url": "https://www.jolly-pirates.com/cruise/aruba-sunset-sail/",
+      "path": "/cruise/aruba-sunset-sail"
+    },
+    {
+      "text": "Private Parties",
+      "url": "https://www.jolly-pirates.com/private-party/",
+      "path": "/private-party"
+    },
+    {
+      "text": "Promos",
+      "url": "https://www.jolly-pirates.com/special-offer/",
+      "path": "/special-offer"
+    },
+    {
+      "text": "About",
+      "url": "https://www.jolly-pirates.com/about-us/",
+      "path": "/about-us"
+    },
+    {
+      "text": "FAQs",
+      "url": "https://www.jolly-pirates.com/faq/",
+      "path": "/faq"
+    },
+    {
+      "text": "Snorkel Sites",
+      "url": "https://www.jolly-pirates.com/snorkel-sites/",
+      "path": "/snorkel-sites"
+    },
+    {
+      "text": "Contact Us",
+      "url": "https://www.jolly-pirates.com/contact-us/",
+      "path": "/contact-us"
+    },
+    {
+      "text": "Other Activities",
+      "url": "https://www.jolly-pirates.com/other-activities/",
+      "path": "/other-activities"
+    },
+    {
+      "text": "Eat, Play, Drink in Aruba",
+      "url": "https://www.jolly-pirates.com/eat-play-drink-in-aruba/",
+      "path": "/eat-play-drink-in-aruba"
+    },
+    {
+      "text": "Excursions Near Marriott Aruba",
+      "url": "https://www.jolly-pirates.com/excursions-near-marriott-aruba/",
+      "path": "/excursions-near-marriott-aruba"
+    },
+    {
+      "text": "Blog",
+      "url": "https://www.jolly-pirates.com/blog/",
+      "path": "/blog"
+    }
+  ],
+  "footerItems": [
+    {
+      "text": "All Cruises",
+      "url": "https://www.jolly-pirates.com/cruise/",
+      "path": "/cruise"
+    },
+    {
+      "text": "About",
+      "url": "https://www.jolly-pirates.com/about-us/",
+      "path": "/about-us"
+    },
+    {
+      "text": "FAQs",
+      "url": "https://www.jolly-pirates.com/faq/",
+      "path": "/faq"
+    },
+    {
+      "text": "Snorkel Sites",
+      "url": "https://www.jolly-pirates.com/snorkel-sites/",
+      "path": "/snorkel-sites"
+    },
+    {
+      "text": "Contact Us",
+      "url": "https://www.jolly-pirates.com/contact-us/",
+      "path": "/contact-us"
+    },
+    {
+      "text": "Discounts",
+      "url": "https://www.jolly-pirates.com/special-offer/",
+      "path": "/special-offer"
+    },
+    {
+      "text": "Other Activities",
+      "url": "https://www.jolly-pirates.com/other-activities/",
+      "path": "/other-activities"
+    },
+    {
+      "text": "Eat, Play, Drink in Aruba",
+      "url": "https://www.jolly-pirates.com/eat-play-drink-in-aruba/",
+      "path": "/eat-play-drink-in-aruba"
+    },
+    {
+      "text": "Blog",
+      "url": "https://www.jolly-pirates.com/blog/",
+      "path": "/blog"
+    },
+    {
+      "text": "Privacy & Cookie Statement",
+      "url": "https://www.jolly-pirates.com/privacy-policy/",
+      "path": "/privacy-policy"
+    }
+  ],
+  "innerPages": [
+    {
+      "path": "/cruise/grub-and-grog-sunset-sail/",
+      "title": "Aruba Dinner Cruise on a Pirate Ship at Sunset | Jolly Pirates Hour GlassClockAnchorHour GlassClockClockHour GlassCheck BubbleScuba MaskFoodHour GlassClockClockHour GlassCheck BubbleScuba MaskGlassPhoneEnvelopeMap MarkerFacebookInstagramTik TokYouTubeCellphonePowered by FareHarbor",
+      "sections": [
+        "Pirate Party Sunset Dinner Cruise Aruba",
+        "Quick Details",
+        "Party like a Pirate with Grub & Grog on a Pirate Ship Cruise for Adults",
+        "Link Gallery"
+      ]
+    },
+    {
+      "path": "/cruise/sail-snorkel-swim-and-swing/",
+      "title": "Morning Pirate Ship Aruba Snorkeling Excursions | Jolly Pirates Hour GlassClockMap MarkerAnchorHour GlassClockClockHour GlassCheck BubbleScuba MaskGlassHour GlassClockClockHour GlassCheck BubbleGlassPhoneEnvelopeMap MarkerFacebookInstagramTik TokYouTubeCellphonePowered by FareHarbor",
+      "sections": [
+        "MORNING ARUBA SNORKELING TRIPS",
+        "Quick Details",
+        "Sail on traditional pirate ship and go snorkeling in Aruba",
+        "Link Gallery"
+      ]
+    },
+    {
+      "path": "/cruise/aruba-snorkeling-tour/",
+      "title": "Aruba Snorkeling Tours by Pirate Ship | Jolly Pirates Aruba Hour GlassClockMap MarkerAnchorHour GlassClockClockHour GlassCheck BubbleScuba MaskFoodHour GlassClockClockHour GlassCheck BubbleGlassPhoneEnvelopeMap MarkerFacebookInstagramTik TokYouTubeCellphonePowered by FareHarbor",
+      "sections": [
+        "AFTERNOON ARUBA SNORKELING TOURS",
+        "Quick Details",
+        "Sail on a Schooner Pirate Ship on Our Epic Aruba Snorkeling Tours!",
+        "Link Gallery"
+      ]
+    },
+    {
+      "path": "/cruise/",
+      "title": "Aruba Pirate Ship Cruises | Jolly Pirates CalendarHour GlassClockClockHour GlassCheck BubbleScuba MaskFoodHour GlassClockClockHour GlassCheck BubbleFoodHour GlassClockClockHour GlassCheck BubbleScuba MaskGlassHour GlassClockClockHour GlassCheck BubbleGlassPhonePhoneEnvelopeMap MarkerFacebookInstagramTik TokYouTubeCellphonePowered by FareHarbor",
+      "sections": [
+        "Aruba Pirate Ship Cruises",
+        "Link Gallery"
+      ]
+    },
+    {
+      "path": "/cruise/aruba-sunset-sail/",
+      "title": "Sunset Cruise Aruba on a Schooner Sailboat | Jolly Pirates Hour GlassClockAnchorHour GlassClockClockHour GlassCheck BubbleScuba MaskGlassHour GlassClockClockHour GlassCheck BubbleFoodPhoneEnvelopeMap MarkerFacebookInstagramTik TokYouTubeCellphonePowered by FareHarbor",
+      "sections": [
+        "ARUBA SUNSET CRUISE",
+        "Quick Details",
+        "Experience a Breathtaking Aruba Sunset Schooner Cruise",
+        "Link Gallery"
+      ]
+    },
+    {
+      "path": "/private-party/",
+      "title": "Private Boat Charter Aruba Party Boat | Jolly Pirates PausePlay VideoUnmuteMutePhoneChevron downChevron downChevron downChevron downChevron downChevron downPhoneEnvelopeMap MarkerFacebookInstagramTik TokYouTubeCellphonePowered by FareHarbor",
+      "sections": [
+        "Love a Private Party?So do we!",
+        "Link Gallery"
+      ]
+    },
+    {
+      "path": "/special-offer/",
+      "title": "Special Offers | Jolly Pirates CalendarPausePlay VideoUnmuteMutePhoneEnvelopeMap MarkerFacebookInstagramTik TokYouTubeCellphonePowered by FareHarbor",
+      "sections": [
+        "Deals & Discounts",
+        "Link Gallery"
+      ]
+    },
+    {
+      "path": "/about-us/",
+      "title": "About Snorkeling Aruba and an Aruba Cruise | Jolly Pirates CalendarPhoneEnvelopeMap MarkerFacebookInstagramTik TokYouTubeCellphonePowered by FareHarbor",
+      "sections": [
+        "ABOUT US",
+        "Link Gallery"
+      ]
+    },
+    {
+      "path": "/faq/",
+      "title": "Aruba Cruise Frequently Asked Questions | Jolly Pirates CalendarChevron downChevron downChevron downChevron downChevron downChevron downChevron downChevron downChevron downChevron downChevron downChevron downChevron downChevron downChevron downChevron downChevron downChevron downChevron downChevron downChevron downChevron downChevron downChevron downChevron downChevron downChevron downChevron downChevron downChevron downPhoneEnvelopeMap MarkerFacebookInstagramTik TokYouTubeCellphonePowered by FareHarbor",
+      "sections": [
+        "Frequently Asked Questions",
+        "Link Gallery"
+      ]
+    },
+    {
+      "path": "/snorkel-sites/",
+      "title": "Aruba Snorkel and Shipwreck Sites | Jolly Pirates Aruba CalendarAnchorAnchorAnchorPhoneEnvelopeMap MarkerFacebookInstagramTik TokYouTubeCellphonePowered by FareHarbor",
+      "sections": [
+        "Snorkel Sites",
+        "Link Gallery"
+      ]
+    },
+    {
+      "path": "/contact-us/",
+      "title": "Contact Us | Jolly Pirates CalendarPhoneEnvelopeMap MarkerPhoneEnvelopeMap MarkerFacebookInstagramTik TokYouTubeCellphonePowered by FareHarbor",
+      "sections": [
+        "Contact Us",
+        "JOLLY PIRATES",
+        "Google Map",
+        "Link Gallery"
+      ]
+    }
+  ]
+}

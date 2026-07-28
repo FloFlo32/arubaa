@@ -8,7 +8,7 @@ import { Reveal } from "@/components/magic/reveal";
 
 export const metadata: Metadata = {
   title: "Terms & Conditions",
-  description: "Terms and conditions for using Aruba.com.",
+  description: "Terms and conditions for booking a cruise with Jolly Pirates.",
 };
 
 const sections: { heading: string; body: string }[] = [
@@ -18,19 +18,19 @@ const sections: { heading: string; body: string }[] = [
   },
   {
     heading: "Use of the Site",
-    body: "You may browse and use the Site for lawful purposes related to planning and enjoying your visit to Aruba. You agree not to misuse the Site, interfere with its normal operation, or attempt to access it by means other than the interface and instructions we provide.",
+    body: "You may browse and use the Site for lawful purposes related to booking and enjoying a cruise with Jolly Pirates. You agree not to misuse the Site, interfere with its normal operation, or attempt to access it by means other than the interface and instructions we provide.",
   },
   {
     heading: "Intellectual Property",
-    body: "All content on this Site, including text, images, logos and design elements, is owned by or licensed to the Aruba Tourism Authority and is protected by applicable intellectual property laws. You may view and share content for personal, non commercial purposes, but may not reproduce or redistribute it without permission.",
+    body: "All content on this Site, including text, images, logos and design elements, is owned by or licensed to Jolly Pirates and is protected by applicable intellectual property laws. You may view and share content for personal, non commercial purposes, but may not reproduce or redistribute it without permission.",
   },
   {
     heading: "Third-Party Links",
-    body: "This Site may link to resorts, tour operators and other third party websites for your convenience. We do not control and are not responsible for the content, policies or practices of those third party sites, and inclusion of a link does not imply endorsement.",
+    body: "This Site may link to our booking partner and other third party websites for your convenience. We do not control and are not responsible for the content, policies or practices of those third party sites, and inclusion of a link does not imply endorsement.",
   },
   {
     heading: "Limitation of Liability",
-    body: "The Site and its content are provided on an as is basis. To the fullest extent permitted by law, the Aruba Tourism Authority disclaims liability for any indirect, incidental or consequential damages arising from your use of the Site or reliance on information found here.",
+    body: "The Site and its content are provided on an as is basis. To the fullest extent permitted by law, Jolly Pirates disclaims liability for any indirect, incidental or consequential damages arising from your use of the Site or reliance on information found here.",
   },
   {
     heading: "Changes to These Terms",
@@ -42,7 +42,7 @@ const sections: { heading: string; body: string }[] = [
   },
   {
     heading: "Contact",
-    body: `If you have questions about these Terms & Conditions, you can reach the Aruba Tourism Authority by phone or email using the details in our footer, or by writing to ${brand.social.email}.`,
+    body: `If you have questions about these Terms & Conditions, you can reach Jolly Pirates by phone or email using the details in our footer, or by writing to ${brand.social.email}.`,
   },
 ];
 
@@ -70,10 +70,10 @@ export default function TermsPage() {
             <div className="flex flex-col items-start gap-2 rounded-2xl border border-border bg-card p-5 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
               <p>
                 This is a summary for demonstration purposes. For the complete, legally
-                binding terms, see the official Aruba.com terms and conditions.
+                binding terms, see the official jolly-pirates.com site.
               </p>
               <a
-                href="https://www.aruba.com/us/terms-and-conditions"
+                href="https://www.jolly-pirates.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex shrink-0 cursor-pointer items-center gap-1.5 rounded-full border border-border bg-background px-3.5 py-1.5 font-medium text-primary transition-colors hover:bg-primary/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"

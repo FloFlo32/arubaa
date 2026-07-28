@@ -13,11 +13,11 @@ export function CTA() {
           <GridPattern />
           <BorderBeam />
           <h2 className="mx-auto max-w-xl text-balance text-4xl font-bold sm:text-5xl">
-            We can&apos;t wait to see you.
+            Ready to set sail?
           </h2>
           <p className="mx-auto mt-4 max-w-lg text-muted-foreground">
-            Whichever way you like to travel, Aruba makes it easy to book the stay that&apos;s
-            right for you.
+            Reserve your spot on the next cruise, or check today&apos;s deals before you
+            book.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Button asChild size="lg">

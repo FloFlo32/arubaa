@@ -20,22 +20,22 @@
 
 export const brand = {
   /** Product / company name. Shows in the nav, hero, footer, <title>, OG tags. */
-  name: "Aruba",
+  name: "Jolly Pirates",
 
   /** One-line value prop. Used in the hero sub-headline + meta description. */
-  tagline: "One happy island",
+  tagline: "Jolly Pirates | Aruba Snorkeling Trips and Sunset Cruises",
 
   /** Longer description for SEO / Open Graph. ~150 chars is ideal. */
   description:
-    "What makes Aruba the best island vacation destination on the planet? Find out everything you need to know about the One Happy Island right here.",
+    "Sail with Jolly Pirates Aruba! Enjoy epic snorkeling tours to reefs and shipwrecks and relax on sunset cruises aboard our iconic schooner sailboats. Book now!",
 
   /** Primary domain WITHOUT protocol. `/build` sets this to <project>.getyetti.com. */
-  domain: "aruba.getyetti.com",
+  domain: "jollypirates.getyetti.com",
 
   /** Theme — drives the whole color system. Run `npm run brand` after editing. */
   theme: {
     /** Brand hue in OKLCH degrees (0–360). This single number re-skins the site. */
-    hue: 25,
+    hue: 182,
     /** Corner style. "sharp" = modern/editorial, "rounded" = friendly, "pill" = playful. */
     corners: "rounded" as "sharp" | "rounded" | "pill",
     /** Default color scheme on first paint. */
@@ -56,14 +56,8 @@ export const brand = {
   social: {
     /** owner/repo — used by the deploy/validate scripts to target the right GitHub repo. */
     github: "FloFlo32/arubaa",
-    facebook: "https://www.facebook.com/ArubaFans",
-    x: "https://twitter.com/Aruba",
-    instagram: "https://instagram.com/arubatourism",
-    pinterest: "https://pinterest.com/arubatourism",
-    youtube: "https://www.youtube.com/user/ArubaTourism",
-    tripadvisor: "https://www.tripadvisor.com/Profile/arubatourism",
-    tiktok: "https://www.tiktok.com/@travelaruba",
-    email: "support@aruba.com",
+    instagram: "https://www.instagram.com/jollypiratesaruba/",
+    email: "info@jolly-pirates.com",
   },
 
   /**
@@ -73,10 +67,10 @@ export const brand = {
    * - address + mapQuery: set them and the <Map> section renders a pin + embedded map.
    */
   contact: {
-    whatsapp: "",
-    phone: "18008627822",
-    address: "",
-    mapQuery: "Aruba",
+    whatsapp: "2975926777",
+    phone: "+2975868107",
+    address: "MooMba Beach, Palm Beach, Aruba (between the Holiday Inn and Marriott)",
+    mapQuery: "12.5775702,-70.044721",
   },
 } as const;
 
