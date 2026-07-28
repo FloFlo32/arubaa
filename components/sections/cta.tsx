@@ -16,8 +16,8 @@ export function CTA() {
             Ready to set sail?
           </h2>
           <p className="mx-auto mt-4 max-w-lg text-muted-foreground">
-            Reserve your spot on the Morning Splash Adventure or the Sunset & Stars
-            Cruise.
+            Reserve your spot on the Morning Splash Adventure, the Afternoon Pirate
+            Party, or the Sunset & Stars Cruise.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Button asChild size="lg">

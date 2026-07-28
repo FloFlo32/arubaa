@@ -7,8 +7,11 @@ const slides = [
   { src: "/ingested/flagshiparuba/img-007.webp", alt: "The Flagship Aruba schooner under sail", caption: "Under Sail" },
   { src: "/ingested/flagshiparuba/img-006.webp", alt: "A guest jumps from the schooner into the ocean", caption: "Making a Splash" },
   { src: "/ingested/flagshiparuba/img-008.webp", alt: "A snorkeler in clear turquoise water", caption: "Reef Snorkeling" },
+  { src: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1600&q=80", alt: "A diver swims past a school of yellow reef fish", caption: "Marine Life" },
   { src: "/ingested/flagshiparuba/img-010.webp", alt: "Aerial view of the SS Antilla shipwreck", caption: "The Shipwreck" },
+  { src: "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1600&q=80", alt: "A sailboat on the sand beside palm trees and a thatched umbrella", caption: "The Beach" },
   { src: "/ingested/flagshiparuba/img-009.webp", alt: "Aruba's rocky turquoise coastline", caption: "The Coastline" },
+  { src: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80", alt: "A pink sunset over calm turquoise water", caption: "Golden Hour" },
 ];
 
 export function GalleryTeaser() {

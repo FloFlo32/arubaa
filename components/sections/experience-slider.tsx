@@ -21,11 +21,11 @@ const moments = [
   },
   {
     eyebrow: "Moment 03",
-    title: "Life Under Sail",
+    title: "Marine Life",
     description:
-      "Stretch out on deck while the schooner cuts through the turquoise water.",
-    href: "/boat-tours",
-    src: "/ingested/flagshiparuba/img-007.webp",
+      "Schools of tropical fish thread through the reef at every stop.",
+    href: "/snorkel-sites",
+    src: "https://images.unsplash.com/photo-1530053969600-caed2596d242?auto=format&fit=crop&w=1200&q=80",
   },
   {
     eyebrow: "Moment 04",
@@ -37,11 +37,19 @@ const moments = [
   },
   {
     eyebrow: "Moment 05",
-    title: "Sunset & Stars",
+    title: "Golden Hour",
     description:
-      "Watch the sky turn to stars over the water on our evening cruise.",
+      "Watch the sky turn pink and gold as we sail back to shore.",
     href: "/boat-tours/sunset-stars-cruise",
-    src: "/ingested/flagshiparuba/img-009.webp",
+    src: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    eyebrow: "Moment 06",
+    title: "Life Under Sail",
+    description:
+      "Stretch out on deck while the schooner cuts through the turquoise water.",
+    href: "/boat-tours",
+    src: "/ingested/flagshiparuba/img-007.webp",
   },
 ];
 

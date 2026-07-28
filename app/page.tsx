@@ -2,6 +2,7 @@ import { Navbar } from "@/components/sections/navbar";
 import { LanguageGate } from "@/components/sections/language-gate";
 import { Hero } from "@/components/sections/hero";
 import { TrustBar } from "@/components/sections/trust-bar";
+import { HighlightsMarquee } from "@/components/sections/highlights-marquee";
 import { BoatToursOverview } from "@/components/sections/boat-tours-overview";
 import { SnorkelSitesTeaser } from "@/components/sections/snorkel-sites-teaser";
 import { WhyFlagshipAruba } from "@/components/sections/why-flagship-aruba";
@@ -19,6 +20,7 @@ export default function Home() {
         <Hero />
         <TrustBar />
         <BoatToursOverview />
+        <HighlightsMarquee />
         <SnorkelSitesTeaser />
         <WhyFlagshipAruba />
         <ExperienceSlider />
