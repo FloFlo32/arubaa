@@ -20,7 +20,7 @@ export function PhotoHero({
   alt: string;
 }) {
   return (
-    <section className="relative flex min-h-[62vh] items-center overflow-hidden">
+    <section className="relative flex min-h-[62vh] items-center overflow-hidden pt-24 sm:pt-28">
       <Image
         src={src}
         alt={alt}

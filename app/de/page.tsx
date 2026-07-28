@@ -172,7 +172,7 @@ export default function HomeDe() {
     <>
       <Navbar />
       <main className="flex-1">
-        <section className="relative flex min-h-[90vh] items-center overflow-hidden">
+        <section className="relative flex min-h-[90vh] items-center overflow-hidden pt-24 sm:pt-28">
           <HeroVideo
             src="https://aruba.bynder.com/asset/bf675846-d8a4-4914-ad0a-75c106743d6b/mp4/01_ArubaHomepage_BGvideo_16x9_main.mp4"
             poster="/ingested/arubaa/img-040.webp"

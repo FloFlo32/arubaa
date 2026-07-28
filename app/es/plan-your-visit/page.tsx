@@ -133,7 +133,7 @@ export default function PlanYourVisitPageEs() {
       <Navbar />
       <main className="flex-1">
         {/* Hero */}
-        <section className="relative flex min-h-[70vh] items-center overflow-hidden">
+        <section className="relative flex min-h-[70vh] items-center overflow-hidden pt-24 sm:pt-28">
           <HeroVideo
             src="https://aruba.bynder.com/asset/6923a03a-c228-4ba6-a03d-5530a8311041/mp4/FINAL-ANIMATION-VIDEO-HERO-HOME.mp4"
             poster="/ingested/arubaa/img-039.webp"

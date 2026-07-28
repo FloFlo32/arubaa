@@ -88,7 +88,7 @@ export default function WhyArubaPage() {
       <Navbar />
       <main className="flex-1">
         {/* Hero */}
-        <section className="relative flex min-h-[70vh] items-center overflow-hidden">
+        <section className="relative flex min-h-[70vh] items-center overflow-hidden pt-24 sm:pt-28">
           <HeroVideo
             src="https://aruba.bynder.com/asset/5a23170b-58df-46b2-b401-1d0a35a9a7b5/mp4/00_Homepage_BGvideo_16x9.mp4"
             poster="/ingested/arubaa/img-040.webp"

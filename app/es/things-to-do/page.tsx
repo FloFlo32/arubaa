@@ -140,7 +140,7 @@ export default function ThingsToDoPageEs() {
       <Navbar />
       <main className="flex-1">
         {/* Hero */}
-        <section className="relative flex min-h-[70vh] items-center overflow-hidden">
+        <section className="relative flex min-h-[70vh] items-center overflow-hidden pt-24 sm:pt-28">
           <HeroVideo
             src="https://aruba.bynder.com/asset/1c987a2c-afe4-4348-b459-383e6ac9916e/mp4/CORTO-PT-HERO-ANIMATION.mp4"
             poster="/ingested/arubaa/img-029.webp"
