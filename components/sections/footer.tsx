@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { Mail, Phone } from "lucide-react";
 import { brand } from "@/brand.config";
 import { XIcon, PinterestIcon, TikTokIcon, TripAdvisorIcon, FacebookIcon, InstagramIcon, YouTubeIcon } from "@/components/icons";
-import { getPrimaryNav, getSecondaryNav, getLegalNav, getBookNow } from "@/lib/site-nav";
+import { getPrimaryNav, getLegalNav } from "@/lib/site-nav";
 import { getLocaleFromPathname, localizePath, type LocaleCode } from "@/lib/i18n";
 
 const socials = [
@@ -28,10 +28,6 @@ const tagline: Record<LocaleCode, string> = {
   se: "En glad ö i södra Karibien. Ta reda på allt du behöver veta om Aruba här.",
 };
 
-const moreLabel: Record<LocaleCode, string> = {
-  en: "More", es: "Más", nl: "Meer", de: "Mehr", it: "Altro", br: "Mais", se: "Mer",
-};
-
 const rights: Record<LocaleCode, string> = {
   en: "Aruba Tourism Authority. All rights reserved.",
   es: "Aruba Tourism Authority. Todos los derechos reservados.",
@@ -46,15 +42,13 @@ export function Footer() {
   const pathname = usePathname();
   const locale = getLocaleFromPathname(pathname);
   const primaryNav = getPrimaryNav(locale);
-  const secondaryNav = getSecondaryNav(locale);
   const legalNav = getLegalNav(locale);
-  const bookNow = getBookNow(locale);
   const homeHref = localizePath(locale, "/");
 
   return (
     <footer className="mt-auto border-t border-white/10 bg-neutral-950 text-neutral-300">
       <div className="container-px mx-auto max-w-7xl py-14">
-        <div className="grid gap-10 lg:grid-cols-[1.3fr_1fr_1fr_1fr_1fr]">
+        <div className="grid gap-10 lg:grid-cols-[1.3fr_1fr_1fr_1fr]">
           <div>
             <Link href={homeHref} aria-label="Aruba home">
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -101,24 +95,6 @@ export function Footer() {
               </ul>
             </div>
           ))}
-
-          <div>
-            <span className="font-display text-sm font-semibold text-white">{moreLabel[locale]}</span>
-            <ul className="mt-4 space-y-2.5">
-              {secondaryNav.map((l) => (
-                <li key={l.href}>
-                  <Link href={l.href} className="cursor-pointer text-sm text-neutral-400 transition-colors hover:text-white">
-                    {l.label}
-                  </Link>
-                </li>
-              ))}
-              <li>
-                <Link href={bookNow.href} className="cursor-pointer text-sm font-medium text-primary transition-colors hover:text-primary/80">
-                  {bookNow.label}
-                </Link>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
       <div className="border-t border-white/10">
