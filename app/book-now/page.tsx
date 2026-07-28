@@ -72,7 +72,7 @@ export default function BookNowPage() {
             <Reveal delay={0.2}>
               <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border shadow-2xl shadow-primary/10 sm:aspect-[5/6]">
                 <Image
-                  src="/ingested/flagshiparuba/img-007.webp"
+                  src="/ingested/flagshiparubaa/schooner-turquoise-anchor.webp"
                   alt="The Flagship Aruba schooner under sail off Aruba's coast"
                   fill
                   priority

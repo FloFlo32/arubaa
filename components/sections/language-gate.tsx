@@ -76,7 +76,7 @@ export function LanguageGate() {
       />
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/ingested/flagshiparuba/img-007.webp"
+        src="/ingested/flagshiparubaa/schooner-turquoise-anchor.webp"
         alt=""
         aria-hidden="true"
         className="absolute inset-0 size-full object-cover"

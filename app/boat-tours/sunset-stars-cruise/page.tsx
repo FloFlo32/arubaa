@@ -94,7 +94,7 @@ export default function SunsetStarsCruisePage() {
               <div className="overflow-hidden rounded-3xl border border-border bg-muted">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/ingested/flagshiparuba/img-007.webp"
+                  src="/ingested/flagshiparubaa/schooner-turquoise-anchor.webp"
                   alt="The Flagship Aruba schooner under sail at dusk"
                   loading="lazy"
                   decoding="async"

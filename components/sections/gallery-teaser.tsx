@@ -4,7 +4,9 @@ import { Badge } from "@/components/ui/badge";
 import { BorderBeam } from "@/components/magic/border-beam";
 
 const slides = [
-  { src: "/ingested/flagshiparuba/img-007.webp", alt: "The Flagship Aruba schooner under sail", caption: "Under Sail" },
+  { src: "/ingested/flagshiparubaa/schooner-turquoise-anchor.webp", alt: "The Flagship Aruba schooner under sail", caption: "Under Sail" },
+  { src: "/ingested/flagshiparubaa/boat-aerial-turquoise.webp", alt: "Aerial view of the Flagship Aruba schooner anchored in turquoise water", caption: "From Above" },
+  { src: "/ingested/flagship-owner/ship-transom-flagship-name.jpg", alt: "The stern of the Flagship Aruba schooner with the ship's name painted on the hull", caption: "Our Namesake" },
   { src: "/ingested/flagshiparuba/img-006.webp", alt: "A guest jumps from the schooner into the ocean", caption: "Making a Splash" },
   { src: "/ingested/flagshiparubaa/guest-e.webp", alt: "A large group of guests cheering together aboard the schooner", caption: "Good Times Onboard" },
   { src: "/ingested/flagshiparuba/img-008.webp", alt: "A snorkeler in clear turquoise water", caption: "Reef Snorkeling" },

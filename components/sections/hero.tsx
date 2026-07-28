@@ -9,7 +9,7 @@ export function Hero() {
     <section className="relative flex min-h-[90vh] items-center overflow-hidden pt-24 sm:pt-28">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/ingested/flagshiparuba/img-007.webp"
+        src="/ingested/flagshiparubaa/schooner-turquoise-anchor.webp"
         alt="The Flagship Aruba schooner under sail off Aruba's coast"
         className="absolute inset-0 size-full object-cover"
       />

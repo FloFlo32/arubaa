@@ -57,7 +57,7 @@ const moments = [
     description:
       "Stretch out on deck while the schooner cuts through the turquoise water.",
     href: "/boat-tours",
-    src: "/ingested/flagshiparuba/img-007.webp",
+    src: "/ingested/flagshiparubaa/schooner-turquoise-anchor.webp",
   },
 ];
 

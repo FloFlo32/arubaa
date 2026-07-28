@@ -123,7 +123,7 @@ export default function MorningSplashAdventurePage() {
               description="Jump straight in between snorkel stops."
             />
             <ImageCard
-              src="/ingested/flagshiparuba/img-007.webp"
+              src="/ingested/flagshiparubaa/schooner-turquoise-anchor.webp"
               alt="The Flagship Aruba schooner under sail"
               title="The Ship"
               description="A traditional wooden schooner, built to feel like the real thing."

@@ -1,12 +1,21 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Anchor, Users, Ship, ArrowRight } from "lucide-react";
+import { Anchor, Users, Ship, ArrowRight, Hammer } from "lucide-react";
 import { Navbar } from "@/components/sections/navbar";
 import { Footer } from "@/components/sections/footer";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { PhotoHero } from "@/components/magic/photo-hero";
+import { Gallery } from "@/components/magic/gallery";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
+
+const restorationPhotos = [
+  { src: "/ingested/flagship-owner/restoration-owner-portrait.jpg", alt: "One of Flagship Aruba's owners standing beside the schooner during restoration work" },
+  { src: "/ingested/flagship-owner/restoration-worker-mask.jpg", alt: "A crew member preparing the hull during restoration" },
+  { src: "/ingested/flagship-owner/restoration-worker-drilling.jpg", alt: "A crew member working on deck rigging during restoration" },
+  { src: "/ingested/flagship-owner/restoration-worker-thumbsup.jpg", alt: "A crew member giving a thumbs up during the restoration project" },
+  { src: "/ingested/flagship-owner/ship-transom-flagship-name.jpg", alt: "The Flagship Aruba schooner's stern, freshly painted with the ship's name" },
+];
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -41,7 +50,7 @@ export default function AboutPage() {
           eyebrow="Our story"
           title="From childhood joke to real pirate ship"
           body="Three friends with a shared love of the ocean turned an old joke into Flagship Aruba."
-          src="/ingested/flagshiparuba/img-007.webp"
+          src="/ingested/flagshiparubaa/schooner-turquoise-anchor.webp"
           alt="The Flagship Aruba schooner under sail"
         />
 
@@ -82,6 +91,28 @@ export default function AboutPage() {
               </p>
             </Reveal>
           </div>
+        </section>
+
+        <section id="the-restoration" className="container-px mx-auto max-w-6xl py-16 sm:py-20 scroll-mt-24">
+          <Reveal className="max-w-2xl">
+            <Badge variant="accent">
+              <Hammer className="size-3.5" /> A labor of love
+            </Badge>
+            <h2 className="mt-4 text-balance text-3xl font-bold sm:text-4xl">
+              We restored her ourselves
+            </h2>
+            <p className="mt-4 text-pretty text-muted-foreground">
+              Before Flagship Aruba could carry her first guests, our crew spent weeks
+              hand-restoring the schooner: sanding and repainting the hull, rebuilding
+              rigging, and repainting her name across the stern. We still do the
+              maintenance ourselves, because a wooden ship this old only stays this
+              beautiful if you take care of her like family.
+            </p>
+          </Reveal>
+
+          <Reveal delay={0.1} className="mt-10">
+            <Gallery images={restorationPhotos} />
+          </Reveal>
         </section>
 
         <section className="container-px mx-auto max-w-6xl py-16 sm:py-20">

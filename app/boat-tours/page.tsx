@@ -49,7 +49,7 @@ export default function BoatToursPage() {
           eyebrow="All tours"
           title="Three ways to sail with us"
           body="Every tour departs from the pier in front of MooMba Beach Bar aboard our traditional wooden schooner."
-          src="/ingested/flagshiparuba/img-007.webp"
+          src="/ingested/flagshiparubaa/schooner-turquoise-anchor.webp"
           alt="The Flagship Aruba schooner under sail off Aruba's coast"
         />
 

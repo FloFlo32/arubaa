@@ -58,7 +58,7 @@ export function WhyFlagshipAruba() {
             <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-primary-foreground/15 shadow-2xl shadow-black/30 sm:aspect-[5/6]">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/ingested/flagshiparuba/img-007.webp"
+                src="/ingested/flagshiparubaa/boat-aerial-turquoise.webp"
                 alt="The Flagship Aruba schooner under sail off Aruba's coast"
                 loading="lazy"
                 decoding="async"

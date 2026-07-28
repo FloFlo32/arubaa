@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 const images = [
-  { src: "/ingested/flagshiparuba/img-007.webp", alt: "The Flagship Aruba schooner under sail off Aruba's coast" },
+  { src: "/ingested/flagshiparubaa/schooner-turquoise-anchor.webp", alt: "The Flagship Aruba schooner under sail off Aruba's coast" },
   { src: "/ingested/flagshiparuba/img-006.webp", alt: "A guest jumps from the Flagship Aruba schooner into the ocean" },
   { src: "/ingested/flagshiparubaa/guest-e.webp", alt: "A large group of guests cheering together aboard the schooner" },
   { src: "/ingested/flagshiparuba/img-008.webp", alt: "A snorkeler smiles at the camera in clear turquoise water off Aruba's coast" },

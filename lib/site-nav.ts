@@ -30,12 +30,24 @@ const primaryNavBase: NavItem[] = [
   {
     key: "about",
     href: "/about",
-    children: [],
+    children: [
+      { key: "our-story", href: "/about#our-story" },
+      { key: "the-restoration", href: "/about#the-restoration" },
+    ],
+  },
+  {
+    key: "private-charters",
+    href: "/private-charters",
+    children: [
+      { key: "reviews", href: "/reviews" },
+      { key: "contact", href: "/contact" },
+    ],
   },
 ];
 
 const secondaryNavBase: NavChild[] = [
   { key: "gallery", href: "/gallery" },
+  { key: "reviews", href: "/reviews" },
   { key: "faq", href: "/faq" },
   { key: "contact", href: "/contact" },
 ];
@@ -52,6 +64,10 @@ const t: Record<string, Record<LocaleCode, string>> = {
   "boat-tours": { en: "Boat Tours", es: "Excursiones En Barco", nl: "Boottochten", de: "Bootstouren", it: "Escursioni In Barca", br: "Passeios De Barco", se: "Båtturer" },
   "snorkel-sites": { en: "Snorkel Sites", es: "Sitios De Snorkel", nl: "Snorkelplekken", de: "Schnorchelplätze", it: "Siti Per Snorkeling", br: "Locais De Mergulho", se: "Snorkelplatser" },
   about: { en: "About Us", es: "Sobre Nosotros", nl: "Over Ons", de: "Über Uns", it: "Chi Siamo", br: "Sobre Nós", se: "Om Oss" },
+  "our-story": { en: "Our Story", es: "Nuestra Historia", nl: "Ons Verhaal", de: "Unsere Geschichte", it: "La Nostra Storia", br: "Nossa História", se: "Vår Historia" },
+  "the-restoration": { en: "The Restoration", es: "La Restauración", nl: "De Restauratie", de: "Die Restaurierung", it: "Il Restauro", br: "A Restauração", se: "Restaureringen" },
+  "private-charters": { en: "Private Charters", es: "Chárteres Privados", nl: "Privé Charters", de: "Private Charter", it: "Noleggi Privati", br: "Fretamentos Privados", se: "Privata Charter" },
+  reviews: { en: "Reviews", es: "Opiniones", nl: "Beoordelingen", de: "Bewertungen", it: "Recensioni", br: "Avaliações", se: "Recensioner" },
 
   "morning-splash": { en: "Morning Splash Adventure", es: "Aventura Matutina", nl: "Ochtend Avontuur", de: "Morgenabenteuer", it: "Avventura Del Mattino", br: "Aventura Matinal", se: "Morgonäventyr" },
   "afternoon-pirate": { en: "Afternoon Pirate Party", es: "Fiesta Pirata Vespertina", nl: "Middag Piratenfeest", de: "Nachmittags-Piratenparty", it: "Festa Pirata Del Pomeriggio", br: "Festa Pirata Vespertina", se: "Eftermiddagens Piratfest" },
