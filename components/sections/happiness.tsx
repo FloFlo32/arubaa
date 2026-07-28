@@ -23,7 +23,7 @@ const cells = [
   {
     title: "Weddings",
     description: "Getting married in Aruba is the ideal way to unite two happy hearts.",
-    href: "/why-aruba#weddings",
+    href: "/why-aruba/weddings",
     src: "/ingested/arubaa/img-050.webp",
     span: "",
     ratio: "aspect-[4/3]",
@@ -32,7 +32,7 @@ const cells = [
     title: "Wellness in Aruba",
     description:
       "Is it really a vacation if you feel like you need another one by the end of it? Good news: Aruba isn't that kind of trip.",
-    href: "/why-aruba#wellness",
+    href: "/why-aruba/wellness",
     src: "/ingested/arubaa/img-031.webp",
     span: "",
     ratio: "aspect-[4/3]",
@@ -43,8 +43,8 @@ const cells = [
       "Rich in history, culture and architecture, a true reflection of the inhabitants of San Nicolas and their daily lives.",
     href: "/things-to-do#arts-culture",
     src: "/ingested/arubaa/img-033.webp",
-    span: "sm:col-span-2",
-    ratio: "aspect-[16/9]",
+    span: "",
+    ratio: "aspect-[4/3]",
   },
 ];
 
