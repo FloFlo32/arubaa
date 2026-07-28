@@ -7,11 +7,12 @@ import { Menu, X, ChevronDown, Phone } from "lucide-react";
 import { brand } from "@/brand.config";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { primaryNav, secondaryNav, bookNow } from "@/lib/site-nav";
+import { getPrimaryNav, getSecondaryNav, getBookNow } from "@/lib/site-nav";
+import { getLocaleFromPathname, localizePath } from "@/lib/i18n";
 
-function Logo({ className }: { className?: string }) {
+function Logo({ href, className }: { href: string; className?: string }) {
   return (
-    <Link href="/" className={cn("flex items-center gap-2 shrink-0 cursor-pointer", className)} aria-label="Aruba home">
+    <Link href={href} className={cn("flex items-center gap-2 shrink-0 cursor-pointer", className)} aria-label="Aruba home">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src="/aruba-logo.svg" alt="Aruba" className="h-9 w-auto" />
     </Link>
@@ -20,6 +21,11 @@ function Logo({ className }: { className?: string }) {
 
 export function Navbar() {
   const pathname = usePathname();
+  const locale = getLocaleFromPathname(pathname);
+  const primaryNav = getPrimaryNav(locale);
+  const secondaryNav = getSecondaryNav(locale);
+  const bookNow = getBookNow(locale);
+  const homeHref = localizePath(locale, "/");
   const [scrolled, setScrolled] = React.useState(false);
   const [open, setOpen] = React.useState(false);
   const [mobileSection, setMobileSection] = React.useState<string | null>(null);
@@ -54,7 +60,7 @@ export function Navbar() {
           )}
           onMouseLeave={scheduleClose}
         >
-          <Logo />
+          <Logo href={homeHref} />
 
           <div className="hidden items-center lg:flex">
             {primaryNav.map((item) => {

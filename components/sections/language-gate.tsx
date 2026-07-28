@@ -1,21 +1,24 @@
 "use client";
 
 import * as React from "react";
+import { useRouter } from "next/navigation";
 import { US, GB, ES, NL, DE, IT, BR, SE } from "country-flag-icons/react/3x2";
 import { HeroVideo } from "@/components/magic/hero-video";
 import { cn } from "@/lib/utils";
+import { type LocaleCode } from "@/lib/i18n";
 
 const STORAGE_KEY = "aruba-language";
 
-const languages = [
-  { code: "us", label: "English (US)", Flag: US },
-  { code: "uk", label: "English (UK)", Flag: GB },
-  { code: "es", label: "Español", Flag: ES },
-  { code: "nl", label: "Nederlands", Flag: NL },
-  { code: "de", label: "Deutsch", Flag: DE },
-  { code: "it", label: "Italiano", Flag: IT },
-  { code: "br", label: "Português", Flag: BR },
-  { code: "se", label: "Svenska", Flag: SE },
+// "uk" reuses the "en" (English) content, same as aruba.com's UK site.
+const languages: { code: string; label: string; Flag: typeof US; locale: LocaleCode }[] = [
+  { code: "us", label: "English (US)", Flag: US, locale: "en" },
+  { code: "uk", label: "English (UK)", Flag: GB, locale: "en" },
+  { code: "es", label: "Español", Flag: ES, locale: "es" },
+  { code: "nl", label: "Nederlands", Flag: NL, locale: "nl" },
+  { code: "de", label: "Deutsch", Flag: DE, locale: "de" },
+  { code: "it", label: "Italiano", Flag: IT, locale: "it" },
+  { code: "br", label: "Português", Flag: BR, locale: "br" },
+  { code: "se", label: "Svenska", Flag: SE, locale: "se" },
 ];
 
 /**
@@ -25,6 +28,7 @@ const languages = [
  * choice in localStorage so returning visitors go straight to the site.
  */
 export function LanguageGate() {
+  const router = useRouter();
   const [visible, setVisible] = React.useState(true);
   const [leaving, setLeaving] = React.useState(false);
 
@@ -37,12 +41,13 @@ export function LanguageGate() {
     } catch {}
   }, []);
 
-  const choose = (code: string) => {
+  const choose = (code: string, locale: LocaleCode) => {
     try {
       localStorage.setItem(STORAGE_KEY, code);
     } catch {}
     setLeaving(true);
     setTimeout(() => setVisible(false), 350);
+    router.push(locale === "en" ? "/" : `/${locale}`);
   };
 
   if (!visible) return null;
@@ -82,7 +87,7 @@ export function LanguageGate() {
               <button
                 key={l.code}
                 type="button"
-                onClick={() => choose(l.code)}
+                onClick={() => choose(l.code, l.locale)}
                 className="flex cursor-pointer items-center justify-center gap-2 rounded-xl border border-white/25 bg-white/10 px-3 py-3 text-sm font-medium text-white transition-colors duration-200 hover:border-white/40 hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
               >
                 <l.Flag className="h-3.5 w-5 shrink-0 rounded-[2px]" aria-hidden="true" />
