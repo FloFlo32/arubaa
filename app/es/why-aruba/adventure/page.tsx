@@ -117,7 +117,7 @@ export default function AdventurePageEs() {
               description="La marea baja abre bancos de arena que se extienden hacia las aguas poco profundas de color turquesa."
             />
             <ImageCard
-              src="/ingested/arubaa/img-004.webp"
+              src="/ingested/arubaa/img-081.webp"
               alt="Una pareja en silueta sobre las dunas de Aruba al atardecer"
               title="Caminatas por las dunas"
               description="La costa noreste es toda dunas onduladas y viento, mejor vista a pie."

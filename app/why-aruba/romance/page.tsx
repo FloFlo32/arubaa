@@ -113,8 +113,8 @@ export default function RomancePage() {
               description="Beach bars time happy hour to the sunset, not the clock."
             />
             <ImageCard
-              src="/ingested/arubaa/img-009.webp"
-              alt="A couple relaxes under a resort umbrella at sunset"
+              src="/ingested/arubaa/img-057.webp"
+              alt="A couple chats poolside together at a resort in Aruba"
               title="Private cabanas"
               description="Reserve a shaded spot for the day and let the island come to you."
             />

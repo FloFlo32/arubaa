@@ -115,7 +115,7 @@ export default function AdventurePage() {
               description="La bassa marea apre banchi di sabbia che si estendono nelle acque basse turchesi."
             />
             <ImageCard
-              src="/ingested/arubaa/img-004.webp"
+              src="/ingested/arubaa/img-081.webp"
               alt="Una coppia in silhouette sulle dune di Aruba al tramonto"
               title="Escursioni tra le dune"
               description="La costa nordorientale è tutta dune ondulate e vento, da vedere al meglio a piedi."

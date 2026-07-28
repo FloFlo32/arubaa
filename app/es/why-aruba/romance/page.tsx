@@ -113,7 +113,7 @@ export default function RomancePageEs() {
               description="Los bares de playa programan la hora feliz según el atardecer, no el reloj."
             />
             <ImageCard
-              src="/ingested/arubaa/img-009.webp"
+              src="/ingested/arubaa/img-057.webp"
               alt="Una pareja se relaja bajo una sombrilla de resort al atardecer"
               title="Cabañas privadas"
               description="Reserva un lugar con sombra por el día y deja que la isla venga a ti."

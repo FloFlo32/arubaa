@@ -117,7 +117,7 @@ export default function AdventurePage() {
               description="A maré baixa revela bancos de areia que se estendem pelas águas turquesa."
             />
             <ImageCard
-              src="/ingested/arubaa/img-004.webp"
+              src="/ingested/arubaa/img-081.webp"
               alt="Um casal em silhueta nas dunas de Aruba ao pôr do sol"
               title="Caminhadas nas dunas"
               description="A costa nordeste é toda dunas ondulantes e vento, melhor vista a pé."

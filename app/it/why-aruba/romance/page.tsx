@@ -113,7 +113,7 @@ export default function RomancePage() {
               description="I bar sulla spiaggia sincronizzano l'happy hour con il tramonto, non con l'orologio."
             />
             <ImageCard
-              src="/ingested/arubaa/img-009.webp"
+              src="/ingested/arubaa/img-057.webp"
               alt="Una coppia si rilassa sotto un ombrellone di un resort al tramonto"
               title="Cabine private"
               description="Riserva un posto all'ombra per tutto il giorno e lascia che l'isola venga da te."

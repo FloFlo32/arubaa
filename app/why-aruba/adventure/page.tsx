@@ -115,8 +115,8 @@ export default function AdventurePage() {
               description="Low tide opens up sandbars that stretch out into the turquoise shallows."
             />
             <ImageCard
-              src="/ingested/arubaa/img-004.webp"
-              alt="A couple silhouetted on the dunes of Aruba at sunset"
+              src="/ingested/arubaa/img-081.webp"
+              alt="Two hikers silhouetted on a sand dune in Aruba"
               title="Dune hikes"
               description="The northeast coast is all rolling dunes and wind, best seen on foot."
             />

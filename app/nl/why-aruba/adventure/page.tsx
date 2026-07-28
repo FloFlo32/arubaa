@@ -116,7 +116,7 @@ export default function AdventurePage() {
               description="Bij laag water ontstaan zandbanken die zich uitstrekken tot in de turquoise ondiepten."
             />
             <ImageCard
-              src="/ingested/arubaa/img-004.webp"
+              src="/ingested/arubaa/img-081.webp"
               alt="Een koppel silhouetteert op de duinen van Aruba bij zonsondergang"
               title="Duinwandelingen"
               description="De noordoostkust is één en al glooiende duinen en wind, het best te zien te voet."

@@ -115,7 +115,7 @@ export default function AdventurePage() {
               description="Lågvatten öppnar upp sandbankar som sträcker sig ut i det turkosa vattnet."
             />
             <ImageCard
-              src="/ingested/arubaa/img-004.webp"
+              src="/ingested/arubaa/img-081.webp"
               alt="Ett par i silhuett på Arubas dyner vid solnedgång"
               title="Vandring bland dynerna"
               description="Nordostkusten är rullande dyner och vind, bäst upplevd till fots."

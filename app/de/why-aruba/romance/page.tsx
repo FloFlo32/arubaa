@@ -114,7 +114,7 @@ export default function RomancePage() {
               description="Strandbars richten die Happy Hour nach dem Sonnenuntergang aus, nicht nach der Uhr."
             />
             <ImageCard
-              src="/ingested/arubaa/img-009.webp"
+              src="/ingested/arubaa/img-057.webp"
               alt="Ein Paar entspannt unter einem Sonnenschirm des Resorts bei Sonnenuntergang"
               title="Private Cabanas"
               description="Reservieren Sie sich für den Tag einen schattigen Platz und lassen Sie die Insel zu sich kommen."

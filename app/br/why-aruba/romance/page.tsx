@@ -113,7 +113,7 @@ export default function RomancePage() {
               description="Os bares de praia programam o happy hour pelo pôr do sol, não pelo relógio."
             />
             <ImageCard
-              src="/ingested/arubaa/img-009.webp"
+              src="/ingested/arubaa/img-057.webp"
               alt="Um casal relaxa sob uma cabana de resort ao pôr do sol"
               title="Cabanas privadas"
               description="Reserve um cantinho à sombra para o dia e deixe a ilha vir até vocês."

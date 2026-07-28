@@ -113,7 +113,7 @@ export default function RomancePage() {
               description="Strandbarer lägger happy hour efter solnedgången, inte klockan."
             />
             <ImageCard
-              src="/ingested/arubaa/img-009.webp"
+              src="/ingested/arubaa/img-057.webp"
               alt="Ett par kopplar av under ett hotellparasoll vid solnedgången"
               title="Privata cabanas"
               description="Reservera en skuggig plats för dagen och låt ön komma till er."

@@ -117,7 +117,7 @@ export default function AdventurePage() {
               description="Bei Ebbe entstehen Sandbänke, die sich bis in die türkisfarbenen Untiefen erstrecken."
             />
             <ImageCard
-              src="/ingested/arubaa/img-004.webp"
+              src="/ingested/arubaa/img-081.webp"
               alt="Ein Paar als Silhouette auf den Dünen Arubas bei Sonnenuntergang"
               title="Dünenwanderungen"
               description="Die Nordostküste besteht aus sanften Dünen und Wind, am besten zu Fuß zu erleben."
