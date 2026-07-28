@@ -73,7 +73,8 @@ export default function WeddingsPage() {
             </h2>
             <p className="mt-4 text-pretty text-muted-foreground">
               Aruba&apos;s wedding planners handle everything from permits to flowers, so
-              the only real decision left is which stretch of beach to say your vows on.
+              the only real decision left is where to say your vows: Eagle Beach for a
+              classic backdrop, or the hilltop Alto Vista Chapel for something quieter.
             </p>
           </Reveal>
 

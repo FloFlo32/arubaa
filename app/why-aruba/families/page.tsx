@@ -72,9 +72,9 @@ export default function FamiliesPage() {
               Something for every member of the trip
             </h2>
             <p className="mt-4 text-pretty text-muted-foreground">
-              The Aruba Effect is felt by anyone who opens themselves to it, and that
-              includes the youngest travelers. If you&apos;re looking for something
-              parents and kids can love equally, this is it.
+              Beyond the beach, kid-favorite stops include the Butterfly Farm, the Donkey
+              Sanctuary, the Ostrich Farm, Philip&apos;s Animal Garden and De Palm Island:
+              easy half-day trips that work for grandparents and toddlers alike.
             </p>
           </Reveal>
 

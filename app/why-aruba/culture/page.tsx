@@ -72,9 +72,10 @@ export default function CulturePage() {
               A small island, a big mix of people
             </h2>
             <p className="mt-4 text-pretty text-muted-foreground">
-              Aruba&apos;s culture isn&apos;t kept in a museum. It&apos;s in the language
-              switching mid-sentence, the aroma coming from a roadside food truck, and the
-              mural that wraps around a whole city block.
+              Aruba&apos;s culture isn&apos;t kept in a museum, though there are a few worth
+              visiting: the hilltop Alto Vista Chapel, the ruins of the old Bushiribana
+              Gold Mill, and the peacock murals of San Nicolas all sit within a short
+              drive of each other.
             </p>
           </Reveal>
 

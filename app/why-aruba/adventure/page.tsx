@@ -102,9 +102,10 @@ export default function AdventurePage() {
               Built for exploring, not just visiting
             </h2>
             <p className="mt-4 text-pretty text-muted-foreground">
-              Rent a UTV for the desert interior, book a snorkel boat for the reefs, or just
-              start walking from your hotel: Aruba is small enough that every kind of
-              adventure is a short trip from where you&apos;re staying.
+              Rent a UTV for the desert interior, book a snorkel boat for the reefs,
+              mountain-bike the north coast, catch a kiteboarding lesson when the trade
+              winds pick up, or just start walking from your hotel: Aruba is small enough
+              that every kind of adventure is a short trip from where you&apos;re staying.
             </p>
           </Reveal>
           <AutoSlider className="mt-10" itemClassName="w-[82%] sm:w-[46%] lg:w-[31%]">
