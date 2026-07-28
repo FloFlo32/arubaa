@@ -1,20 +1,21 @@
 "use client";
 
 import * as React from "react";
+import { US, GB, ES, NL, DE, IT, BR, SE } from "country-flag-icons/react/3x2";
 import { HeroVideo } from "@/components/magic/hero-video";
 import { cn } from "@/lib/utils";
 
 const STORAGE_KEY = "aruba-language";
 
 const languages = [
-  { code: "us", label: "English (US)", flag: "🇺🇸" },
-  { code: "uk", label: "English (UK)", flag: "🇬🇧" },
-  { code: "es", label: "Español", flag: "🇪🇸" },
-  { code: "nl", label: "Nederlands", flag: "🇳🇱" },
-  { code: "de", label: "Deutsch", flag: "🇩🇪" },
-  { code: "it", label: "Italiano", flag: "🇮🇹" },
-  { code: "br", label: "Português", flag: "🇧🇷" },
-  { code: "se", label: "Svenska", flag: "🇸🇪" },
+  { code: "us", label: "English (US)", Flag: US },
+  { code: "uk", label: "English (UK)", Flag: GB },
+  { code: "es", label: "Español", Flag: ES },
+  { code: "nl", label: "Nederlands", Flag: NL },
+  { code: "de", label: "Deutsch", Flag: DE },
+  { code: "it", label: "Italiano", Flag: IT },
+  { code: "br", label: "Português", Flag: BR },
+  { code: "se", label: "Svenska", Flag: SE },
 ];
 
 /**
@@ -84,9 +85,7 @@ export function LanguageGate() {
                 onClick={() => choose(l.code)}
                 className="flex cursor-pointer items-center justify-center gap-2 rounded-xl border border-white/25 bg-white/10 px-3 py-3 text-sm font-medium text-white transition-colors duration-200 hover:border-white/40 hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
               >
-                <span className="text-base" aria-hidden="true">
-                  {l.flag}
-                </span>
+                <l.Flag className="h-3.5 w-5 shrink-0 rounded-[2px]" aria-hidden="true" />
                 {l.label}
               </button>
             ))}
