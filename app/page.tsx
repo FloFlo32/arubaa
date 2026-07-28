@@ -1,4 +1,5 @@
 import { Navbar } from "@/components/sections/navbar";
+import { LanguageGate } from "@/components/sections/language-gate";
 import { Hero } from "@/components/sections/hero";
 import { Updates } from "@/components/sections/updates";
 import { Happiness } from "@/components/sections/happiness";
@@ -11,6 +12,7 @@ import { Footer } from "@/components/sections/footer";
 export default function Home() {
   return (
     <>
+      <LanguageGate />
       <Navbar />
       <main className="flex-1">
         <Hero />
