@@ -21,11 +21,11 @@ const moments = [
   },
   {
     eyebrow: "Moment 03",
-    title: "Marine Life",
+    title: "Good Company",
     description:
-      "Schools of tropical fish thread through the reef at every stop.",
-    href: "/snorkel-sites",
-    src: "https://images.unsplash.com/photo-1530053969600-caed2596d242?auto=format&fit=crop&w=1200&q=80",
+      "Friends, couples and families lounging together on deck between stops.",
+    href: "/boat-tours/sunset-stars-cruise",
+    src: "https://images.unsplash.com/photo-1519801584609-8ee5f072eddd?auto=format&fit=crop&w=1200&q=80",
   },
   {
     eyebrow: "Moment 04",
@@ -37,6 +37,14 @@ const moments = [
   },
   {
     eyebrow: "Moment 05",
+    title: "Group Fun",
+    description:
+      "A boat full of friends is a better boat, every single time.",
+    href: "/boat-tours/afternoon-pirate-party",
+    src: "https://images.unsplash.com/photo-1621932945904-c5be9be992d8?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    eyebrow: "Moment 06",
     title: "Golden Hour",
     description:
       "Watch the sky turn pink and gold as we sail back to shore.",
@@ -44,7 +52,7 @@ const moments = [
     src: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
   },
   {
-    eyebrow: "Moment 06",
+    eyebrow: "Moment 07",
     title: "Life Under Sail",
     description:
       "Stretch out on deck while the schooner cuts through the turquoise water.",

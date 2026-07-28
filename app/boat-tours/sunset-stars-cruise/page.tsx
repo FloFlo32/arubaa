@@ -111,22 +111,22 @@ export default function SunsetStarsCruisePage() {
           </Reveal>
           <AutoSlider className="mt-10" itemClassName="w-[82%] sm:w-[46%] lg:w-[31%]">
             <ImageCard
+              src="https://images.unsplash.com/photo-1519801584609-8ee5f072eddd?auto=format&fit=crop&w=1200&q=80"
+              alt="Friends relaxing together on the deck of a sailboat"
+              title="Good Company"
+              description="Room to relax with friends, family or a date."
+            />
+            <ImageCard
+              src="https://images.unsplash.com/photo-1563196638-8c9457546e5f?auto=format&fit=crop&w=1200&q=80"
+              alt="A couple walking hand in hand on the beach at sunset"
+              title="Golden Hour"
+              description="Front-row views as the sun drops toward the horizon."
+            />
+            <ImageCard
               src="/ingested/flagshiparuba/img-006.webp"
               alt="A guest jumps from the schooner into the ocean"
               title="Swimming Stops"
               description="Two chances to cool off along the way."
-            />
-            <ImageCard
-              src="/ingested/flagshiparuba/img-008.webp"
-              alt="A snorkeler in clear turquoise water"
-              title="Clear Water"
-              description="Aruba's calm, warm coastline at its best."
-            />
-            <ImageCard
-              src="/ingested/flagshiparuba/img-009.webp"
-              alt="Aruba's rocky coastline at golden hour"
-              title="Golden Hour"
-              description="Front-row views as the sun drops toward the horizon."
             />
           </AutoSlider>
         </section>
