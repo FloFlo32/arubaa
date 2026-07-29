@@ -110,7 +110,7 @@ export default function AfternoonPiratePartyPage() {
           <Reveal className="max-w-2xl">
             <h2 className="text-3xl font-bold sm:text-4xl">More from this tour</h2>
           </Reveal>
-          <AutoSlider className="mt-10" itemClassName="w-[82%] sm:w-[46%] lg:w-[31%]">
+          <AutoSlider className="mt-10" itemClassName="w-[82%] sm:w-[46%] lg:w-[31%]" controls={false}>
             <ImageCard
               src="/ingested/flagshiparuba/img-009.webp"
               alt="A rocky cove and turquoise water along Aruba's northwest coast"

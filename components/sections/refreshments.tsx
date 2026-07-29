@@ -28,8 +28,8 @@ const menu = [
     icon: IceCreamCone,
     title: "Golden Hour Treats",
     body: "Sweet island bites while the sky turns pink on the Sunset & Stars Cruise.",
-    src: "/ingested/flagshiparubaa/schooner-sunset-guests.webp",
-    alt: "Guests relaxing together as the sun sets",
+    src: "/ingested/flagshiparubaa/guest-g.webp",
+    alt: "Guests dancing and celebrating together at golden hour",
   },
 ];
 

@@ -40,7 +40,7 @@ const moments: {
     description:
       "The music comes out and the whole boat ends up on deck for the ride back in.",
     href: "/boat-tours/sunset-stars-cruise",
-    src: "/ingested/flagshiparubaa/guest-g.webp",
+    src: "/ingested/flagshiparubaa/guest-h.webp",
   },
   {
     eyebrow: "Moment 05",

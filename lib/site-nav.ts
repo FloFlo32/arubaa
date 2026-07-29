@@ -30,10 +30,7 @@ const primaryNavBase: NavItem[] = [
   {
     key: "about",
     href: "/about",
-    children: [
-      { key: "our-story", href: "/about#our-story" },
-      { key: "the-restoration", href: "/about#the-restoration" },
-    ],
+    children: [],
   },
   {
     key: "private-charters",

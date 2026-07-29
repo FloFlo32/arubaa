@@ -111,7 +111,7 @@ export default function MorningSplashAdventurePage() {
           <Reveal className="max-w-2xl">
             <h2 className="text-3xl font-bold sm:text-4xl">More from this tour</h2>
           </Reveal>
-          <AutoSlider className="mt-10" itemClassName="w-[82%] sm:w-[46%] lg:w-[31%]">
+          <AutoSlider className="mt-10" itemClassName="w-[82%] sm:w-[46%] lg:w-[31%]" controls={false}>
             <ImageCard
               src="/ingested/flagshiparuba/img-009.webp"
               alt="A rocky cove and turquoise water along Aruba's northwest coast"
@@ -123,12 +123,14 @@ export default function MorningSplashAdventurePage() {
               alt="A guest jumps from the schooner into the ocean"
               title="Off the Bow"
               description="Jump straight in between snorkel stops."
+              ratio="aspect-[16/9]"
             />
             <ImageCard
               src="/ingested/flagship-owner/ladyblack-transom.jpg"
               alt="The Flagship Aruba schooner's name painted on the stern"
               title="The Ship"
               description="A traditional wooden schooner, built to feel like the real thing."
+              ratio="aspect-[3/2]"
             />
           </AutoSlider>
         </section>

@@ -141,11 +141,11 @@ export function Navbar() {
 
           <div className="flex items-center gap-2">
             <Button
-              asChild
+              data-yetti-activity=""
               size="sm"
               className="hidden rounded-full bg-ocean text-primary shadow-none hover:bg-ocean/90 sm:inline-flex"
             >
-              <Link href={bookNow.href}>{bookNow.label}</Link>
+              {bookNow.label}
             </Button>
             <Button
               variant="ghost"
@@ -234,10 +234,12 @@ export function Navbar() {
             >
               <Phone className="size-4" /> +297 567 7637
             </a>
-            <Button asChild className="mt-2 rounded-full bg-ocean text-primary shadow-none hover:bg-ocean/90">
-              <Link href={bookNow.href} onClick={() => setOpen(false)}>
-                {bookNow.label}
-              </Link>
+            <Button
+              data-yetti-activity=""
+              className="mt-2 rounded-full bg-ocean text-primary shadow-none hover:bg-ocean/90"
+              onClick={() => setOpen(false)}
+            >
+              {bookNow.label}
             </Button>
           </div>
         </div>

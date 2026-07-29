@@ -16,9 +16,9 @@ const socials = [
 ].filter((s) => s.href);
 
 const partners = [
-  { href: "https://www.viator.com", label: "Viator", src: "/partners/viator.svg" },
-  { href: "https://www.tripadvisor.com", label: "TripAdvisor", src: "/partners/tripadvisor.svg" },
-  { href: "https://www.getyourguide.com", label: "GetYourGuide", src: "/partners/getyourguide.svg" },
+  { href: "https://www.viator.com", label: "Viator", src: "/partners/viator.svg", color: "oklch(0.7 0.14 45)" },
+  { href: "https://www.tripadvisor.com", label: "TripAdvisor", src: "/partners/tripadvisor.svg", color: "oklch(0.68 0.14 155)" },
+  { href: "https://www.getyourguide.com", label: "GetYourGuide", src: "/partners/getyourguide.svg", color: "oklch(0.68 0.17 25)" },
 ];
 
 const tagline: Record<LocaleCode, string> = {
@@ -127,12 +127,13 @@ export function Footer() {
               </a>
             ))}
           </div>
-          <Link
-            href={localizePath(locale, "/book-now")}
+          <button
+            type="button"
+            data-yetti-activity=""
             className="mt-5 inline-flex cursor-pointer items-center justify-center rounded-full bg-ocean px-5 py-2.5 text-sm font-semibold text-ocean-foreground transition-transform duration-200 hover:scale-105"
           >
             Book Now
-          </Link>
+          </button>
         </div>
       </div>
       <div className="border-t border-primary-foreground/15 py-8">
@@ -148,10 +149,10 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={p.label}
-                className="cursor-pointer opacity-70 brightness-0 invert transition-opacity hover:opacity-100"
+                className="flex cursor-pointer items-center rounded-xl border border-primary-foreground/15 bg-primary-foreground/5 px-4 py-2 transition-colors hover:bg-primary-foreground/10"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={p.src} alt={p.label} className="h-5 w-auto sm:h-6" />
+                <img src={p.src} alt={p.label} className="h-5 w-auto sm:h-6" style={{ color: p.color }} />
               </a>
             ))}
           </div>

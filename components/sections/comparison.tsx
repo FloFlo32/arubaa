@@ -1,4 +1,4 @@
-import { Check, X, Scale, ArrowRight } from "lucide-react";
+import { Check, X, Scale, ArrowRight, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
 import { Badge } from "@/components/ui/badge";
@@ -63,8 +63,8 @@ export function Comparison() {
           <div className="hidden items-center p-5 font-display text-sm font-semibold uppercase tracking-wide sm:flex">
             What matters
           </div>
-          <div className="flex items-center justify-center gap-2 bg-ocean p-5 text-center font-display text-sm font-semibold uppercase tracking-wide text-primary">
-            Flagship Aruba
+          <div className="flex items-center justify-center gap-1.5 bg-ocean p-5 text-center font-display text-sm font-semibold uppercase tracking-wide text-primary">
+            <Sparkles className="size-4" /> Flagship Aruba
           </div>
           <div className="flex items-center justify-center p-5 text-center font-display text-sm font-semibold uppercase tracking-wide text-primary-foreground/70">
             Typical Big-Boat Tours
@@ -78,7 +78,7 @@ export function Comparison() {
               className={`grid grid-cols-2 sm:grid-cols-[1.2fr_1fr_1fr] ${i % 2 === 0 ? "bg-card" : "bg-muted/40"}`}
             >
               <div className="hidden p-5 text-sm font-semibold sm:flex sm:items-center">{r.label}</div>
-              <div className="flex items-start gap-3 border-t border-border bg-ocean/[0.06] p-5 sm:border-t-0">
+              <div className="flex items-start gap-3 border-t border-l-2 border-border border-l-ocean bg-ocean/[0.06] p-5 sm:border-t-0">
                 <span className="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-[oklch(0.88_0.09_150)] text-[oklch(0.4_0.1_150)]">
                   <Check className="size-3.5" />
                 </span>

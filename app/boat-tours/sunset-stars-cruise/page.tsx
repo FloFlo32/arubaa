@@ -110,7 +110,7 @@ export default function SunsetStarsCruisePage() {
           <Reveal className="max-w-2xl">
             <h2 className="text-3xl font-bold sm:text-4xl">More from this cruise</h2>
           </Reveal>
-          <AutoSlider className="mt-10" itemClassName="w-[82%] sm:w-[46%] lg:w-[31%]">
+          <AutoSlider className="mt-10" itemClassName="w-[82%] sm:w-[46%] lg:w-[31%]" controls={false}>
             <ImageCard
               src="/ingested/flagshiparubaa/schooner-sunset-guests.webp"
               alt="Guests aboard the schooner at sunset"

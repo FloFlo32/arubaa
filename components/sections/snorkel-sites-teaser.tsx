@@ -5,6 +5,8 @@ import { ImageCard } from "@/components/magic/image-card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Compass } from "lucide-react";
 import { BookNowButton } from "@/components/widget/book-now-button";
+import { GridPattern } from "@/components/magic/grid-pattern";
+import { BorderBeam } from "@/components/magic/border-beam";
 
 const sites = [
   {
@@ -67,14 +69,16 @@ export function SnorkelSitesTeaser() {
         ))}
 
         <Reveal delay={0.18} className="sm:col-span-2">
-          <div className="flex h-full flex-col justify-center gap-5 rounded-2xl border border-ocean/25 bg-ocean/10 p-7 sm:flex-row sm:items-center sm:justify-between">
-            <div className="flex items-start gap-4">
-              <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-ocean/20 text-ocean">
-                <Compass className="size-5" />
+          <div className="relative flex h-full flex-col justify-center gap-5 overflow-hidden rounded-2xl bg-primary p-8 text-primary-foreground sm:flex-row sm:items-center sm:justify-between">
+            <GridPattern className="opacity-20" />
+            <BorderBeam colorFrom="var(--color-ocean)" colorTo="var(--color-aurora-2)" />
+            <div className="relative z-10 flex items-start gap-4">
+              <span className="grid size-12 shrink-0 place-items-center rounded-xl bg-ocean/20 text-ocean ring-1 ring-ocean/30">
+                <Compass className="size-6" />
               </span>
               <div>
-                <h3 className="text-lg font-semibold">See all three in one trip</h3>
-                <p className="mt-1.5 max-w-md text-sm text-pretty text-muted-foreground">
+                <h3 className="text-xl font-bold">See all three in one trip</h3>
+                <p className="mt-2 max-w-md text-sm text-pretty text-primary-foreground/80">
                   You don&apos;t have to pick just one. Our Morning Splash Adventure
                   visits the calm reef at Boca Catalina, the clear water off Malmok
                   Beach, and the WWII-era SS Antilla shipwreck, all in a single
@@ -84,8 +88,12 @@ export function SnorkelSitesTeaser() {
                 </p>
               </div>
             </div>
-            <div className="flex shrink-0 flex-wrap gap-2.5">
-              <Button asChild variant="outline">
+            <div className="relative z-10 flex shrink-0 flex-wrap gap-2.5">
+              <Button
+                asChild
+                variant="outline"
+                className="border-primary-foreground/30 bg-transparent text-primary-foreground hover:bg-white/10 hover:text-primary-foreground"
+              >
                 <Link href="/snorkel-sites">
                   See All Sites <ArrowRight className="size-4" />
                 </Link>

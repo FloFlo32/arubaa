@@ -1,34 +1,57 @@
-import { Reveal } from "@/components/magic/reveal";
+import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
 
 const partners = [
-  { href: "https://www.viator.com", label: "Viator", src: "/partners/viator.svg" },
-  { href: "https://www.tripadvisor.com", label: "TripAdvisor", src: "/partners/tripadvisor.svg" },
-  { href: "https://www.getyourguide.com", label: "GetYourGuide", src: "/partners/getyourguide.svg" },
+  {
+    href: "https://www.viator.com",
+    label: "Viator",
+    src: "/partners/viator.svg",
+    color: "oklch(0.62 0.16 45)",
+    tint: "oklch(0.62 0.16 45 / 0.1)",
+    border: "oklch(0.62 0.16 45 / 0.25)",
+  },
+  {
+    href: "https://www.tripadvisor.com",
+    label: "TripAdvisor",
+    src: "/partners/tripadvisor.svg",
+    color: "oklch(0.6 0.15 155)",
+    tint: "oklch(0.6 0.15 155 / 0.1)",
+    border: "oklch(0.6 0.15 155 / 0.25)",
+  },
+  {
+    href: "https://www.getyourguide.com",
+    label: "GetYourGuide",
+    src: "/partners/getyourguide.svg",
+    color: "oklch(0.6 0.19 25)",
+    tint: "oklch(0.6 0.19 25 / 0.1)",
+    border: "oklch(0.6 0.19 25 / 0.25)",
+  },
 ];
 
 export function WeWorkWith() {
   return (
-    <section className="container-px mx-auto max-w-5xl py-14">
-      <Reveal className="flex flex-col items-center gap-6 sm:flex-row sm:justify-between">
+    <section className="container-px mx-auto max-w-5xl py-16">
+      <Reveal className="text-center">
         <p className="text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground">
           We work with
         </p>
-        <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-10">
-          {partners.map((p) => (
+      </Reveal>
+      <RevealGroup className="mt-6 grid gap-4 sm:grid-cols-3" stagger={0.08}>
+        {partners.map((p) => (
+          <RevealItem key={p.label}>
             <a
-              key={p.label}
               href={p.href}
               target="_blank"
               rel="noopener noreferrer"
               aria-label={p.label}
-              className="cursor-pointer opacity-60 grayscale transition-opacity hover:opacity-100 hover:grayscale-0"
+              className="flex cursor-pointer items-center justify-center gap-3 rounded-2xl border p-6 transition-transform duration-200 hover:-translate-y-1"
+              style={{ backgroundColor: p.tint, borderColor: p.border }}
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={p.src} alt={p.label} className="h-6 w-auto sm:h-7" />
+              <img src={p.src} alt={p.label} className="h-7 w-auto" style={{ color: p.color }} />
             </a>
-          ))}
-        </div>
-      </Reveal>
+          </RevealItem>
+        ))}
+      </RevealGroup>
     </section>
   );
 }
