@@ -5,6 +5,7 @@ import { Navbar } from "@/components/sections/navbar";
 import { Footer } from "@/components/sections/footer";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/magic/reveal";
+import { SectionCTA } from "@/components/sections/section-cta";
 
 export const metadata: Metadata = {
   title: "Why We Restored Our Own Schooner",
@@ -73,16 +74,18 @@ export default function BlogPostPage() {
             </p>
           </Reveal>
 
-          <Reveal delay={0.14} className="mt-14 flex flex-col items-center gap-4 rounded-3xl border border-border bg-card p-8 text-center sm:p-10">
-            <h2 className="text-2xl font-bold sm:text-3xl">See the restoration for yourself</h2>
-            <p className="max-w-md text-muted-foreground">
-              Watch the full behind-the-scenes footage and read the rest of our story.
-            </p>
-            <Button asChild size="lg">
-              <Link href="/about#the-restoration">
-                See the Restoration <ArrowRight className="size-4" />
-              </Link>
-            </Button>
+          <Reveal delay={0.14} className="mt-14">
+            <SectionCTA
+              title="See the restoration for yourself"
+              body="Watch the full behind-the-scenes footage and read the rest of our story."
+              image="/ingested/flagship-owner/restoration-worker-thumbsup.jpg"
+            >
+              <Button asChild size="lg" className="bg-ocean text-primary hover:bg-ocean/90">
+                <Link href="/about#the-restoration">
+                  See the Restoration <ArrowRight className="size-4" />
+                </Link>
+              </Button>
+            </SectionCTA>
           </Reveal>
         </article>
       </main>

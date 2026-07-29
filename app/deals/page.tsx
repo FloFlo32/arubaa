@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Users, CalendarCheck, Anchor, MessageCircle } from "lucide-react";
+import { ArrowRight, Users, CalendarCheck, Anchor } from "lucide-react";
 import { Navbar } from "@/components/sections/navbar";
 import { Footer } from "@/components/sections/footer";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { PhotoHero } from "@/components/magic/photo-hero";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
+import { SectionCTA } from "@/components/sections/section-cta";
 import { brand } from "@/brand.config";
 
 export const metadata: Metadata = {
@@ -75,26 +76,22 @@ export default function DealsPage() {
 
         <section className="container-px mx-auto max-w-6xl pb-24">
           <Reveal>
-            <div className="flex flex-col items-center gap-4 rounded-3xl border border-border bg-card px-6 py-14 text-center sm:px-12">
-              <MessageCircle className="size-8 text-primary" />
-              <h2 className="text-2xl font-bold sm:text-3xl">Tell us your plans</h2>
-              <p className="max-w-md text-muted-foreground">
-                Send us your group size, dates and which tour you&apos;re eyeing. We&apos;ll reply
-                with pricing and let you know about any current availability deals.
-              </p>
-              <div className="mt-2 flex flex-wrap items-center justify-center gap-3">
-                <Button asChild size="lg">
-                  <Link href="/contact">
-                    Contact Us <ArrowRight className="size-4" />
-                  </Link>
-                </Button>
-                <Button asChild size="lg" variant="outline">
-                  <a href={`https://wa.me/${brand.contact.whatsapp}`} target="_blank" rel="noopener noreferrer">
-                    WhatsApp Us
-                  </a>
-                </Button>
-              </div>
-            </div>
+            <SectionCTA
+              title="Tell us your plans"
+              body="Send us your group size, dates and which tour you're eyeing. We'll reply with pricing and let you know about any current availability deals."
+              image="/ingested/flagshiparubaa/guest-d.webp"
+            >
+              <Button asChild size="lg" className="bg-ocean text-primary hover:bg-ocean/90">
+                <Link href="/contact">
+                  Contact Us <ArrowRight className="size-4" />
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="border-primary-foreground/30 bg-transparent text-primary-foreground hover:bg-white/10 hover:text-primary-foreground">
+                <a href={`https://wa.me/${brand.contact.whatsapp}`} target="_blank" rel="noopener noreferrer">
+                  WhatsApp Us
+                </a>
+              </Button>
+            </SectionCTA>
           </Reveal>
         </section>
       </main>

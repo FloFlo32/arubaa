@@ -1,4 +1,4 @@
-import { Check, X, Scale, ArrowRight, Sparkles } from "lucide-react";
+import { Check, X, Scale, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
 import { Badge } from "@/components/ui/badge";
@@ -49,7 +49,7 @@ export function Comparison() {
         </p>
       </Reveal>
 
-      <Reveal delay={0.06} className="mx-auto mt-10 grid max-w-3xl grid-cols-3 gap-3">
+      <Reveal delay={0.06} className="mx-auto mt-10 grid max-w-2xl grid-cols-3 gap-3">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/ingested/flagship-owner/ladyblack-transom.jpg" alt="The Flagship Aruba schooner" loading="lazy" decoding="async" className="aspect-square w-full rounded-2xl border border-border object-cover" />
         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -58,42 +58,21 @@ export function Comparison() {
         <img src="/ingested/flagshiparubaa/snorkeler-boca-catalina.webp" alt="A guest snorkeling in clear water" loading="lazy" decoding="async" className="aspect-square w-full rounded-2xl border border-border object-cover" />
       </Reveal>
 
-      <div className="mt-10 overflow-hidden rounded-3xl border border-border shadow-lg shadow-primary/5">
-        <div className="grid grid-cols-2 bg-primary text-primary-foreground sm:grid-cols-[1.2fr_1fr_1fr]">
-          <div className="hidden items-center p-5 font-display text-sm font-semibold uppercase tracking-wide sm:flex">
-            What matters
-          </div>
-          <div className="flex items-center justify-center gap-1.5 bg-ocean p-5 text-center font-display text-sm font-semibold uppercase tracking-wide text-primary">
-            <Sparkles className="size-4" /> Flagship Aruba
-          </div>
-          <div className="flex items-center justify-center p-5 text-center font-display text-sm font-semibold uppercase tracking-wide text-primary-foreground/70">
-            Typical Big-Boat Tours
-          </div>
-        </div>
-
-        <RevealGroup stagger={0.06}>
-          {rows.map((r, i) => (
-            <RevealItem
-              key={r.label}
-              className={`grid grid-cols-2 sm:grid-cols-[1.2fr_1fr_1fr] ${i % 2 === 0 ? "bg-card" : "bg-muted/40"}`}
-            >
-              <div className="hidden p-5 text-sm font-semibold sm:flex sm:items-center">{r.label}</div>
-              <div className="flex items-start gap-3 border-t border-l-2 border-border border-l-ocean bg-ocean/[0.06] p-5 sm:border-t-0">
-                <span className="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-[oklch(0.88_0.09_150)] text-[oklch(0.4_0.1_150)]">
-                  <Check className="size-3.5" />
-                </span>
-                <p className="text-sm text-pretty">{r.us}</p>
-              </div>
-              <div className="flex items-start gap-3 border-t border-l border-border p-5 sm:border-t-0">
-                <span className="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-[oklch(0.9_0.06_25)] text-[oklch(0.5_0.13_25)]">
-                  <X className="size-3.5" />
-                </span>
-                <p className="text-sm text-pretty text-muted-foreground">{r.them}</p>
-              </div>
-            </RevealItem>
-          ))}
-        </RevealGroup>
-      </div>
+      <RevealGroup className="mx-auto mt-10 max-w-2xl divide-y divide-border overflow-hidden rounded-2xl border border-border" stagger={0.06}>
+        {rows.map((r) => (
+          <RevealItem key={r.label} className="flex flex-col gap-2.5 p-5 sm:p-6">
+            <p className="text-xs font-semibold uppercase tracking-[0.15em] text-muted-foreground">{r.label}</p>
+            <div className="flex items-start gap-2.5">
+              <Check className="mt-0.5 size-4 shrink-0 text-[oklch(0.55_0.13_150)]" />
+              <p className="text-sm font-medium text-foreground">{r.us}</p>
+            </div>
+            <div className="flex items-start gap-2.5">
+              <X className="mt-0.5 size-4 shrink-0 text-[oklch(0.62_0.16_25)]" />
+              <p className="text-sm text-muted-foreground">{r.them}</p>
+            </div>
+          </RevealItem>
+        ))}
+      </RevealGroup>
 
       <Reveal delay={0.1} className="mt-10 flex flex-col items-center gap-4 text-center">
         <p className="max-w-md text-muted-foreground">

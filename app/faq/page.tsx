@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { PhotoHero } from "@/components/magic/photo-hero";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
 import { BookNowButton } from "@/components/widget/book-now-button";
+import { SectionCTA } from "@/components/sections/section-cta";
 import { faqs } from "@/lib/faqs";
 
 export const metadata: Metadata = {
@@ -37,19 +38,15 @@ export default function FaqPage() {
             ))}
           </RevealGroup>
 
-          <Reveal delay={0.1} className="mt-10 flex flex-col items-center gap-4 rounded-3xl border border-border bg-card px-6 py-12 text-center">
-            <h2 className="text-2xl font-bold sm:text-3xl">Still have questions?</h2>
-            <p className="max-w-md text-muted-foreground">
-              Our crew is happy to help by phone, email or WhatsApp.
-            </p>
-            <div className="flex flex-wrap items-center justify-center gap-3">
+          <Reveal delay={0.1} className="mt-10">
+            <SectionCTA title="Still have questions?" body="Our crew is happy to help by phone, email or WhatsApp.">
               <BookNowButton />
-              <Button asChild size="lg" variant="outline">
+              <Button asChild size="lg" variant="outline" className="border-primary-foreground/30 bg-transparent text-primary-foreground hover:bg-white/10 hover:text-primary-foreground">
                 <Link href="/contact">
                   Contact Us <ArrowRight className="size-4" />
                 </Link>
               </Button>
-            </div>
+            </SectionCTA>
           </Reveal>
         </section>
       </main>

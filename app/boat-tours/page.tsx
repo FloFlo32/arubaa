@@ -6,6 +6,7 @@ import { Footer } from "@/components/sections/footer";
 import { Button } from "@/components/ui/button";
 import { PhotoHero } from "@/components/magic/photo-hero";
 import { Reveal } from "@/components/magic/reveal";
+import { SectionCTA } from "@/components/sections/section-cta";
 
 export const metadata: Metadata = {
   title: "Boat Tours",
@@ -89,14 +90,16 @@ export default function BoatToursPage() {
         </section>
 
         <section className="container-px mx-auto max-w-6xl pb-24">
-          <Reveal className="flex flex-col items-center gap-4 rounded-3xl border border-border bg-card px-6 py-14 text-center sm:px-12">
-            <h2 className="text-3xl font-bold sm:text-4xl">Not sure which to pick?</h2>
-            <p className="max-w-md text-muted-foreground">
-              Reach out and our crew will help you choose the right tour for your trip.
-            </p>
-            <Button asChild size="lg">
-              <Link href="/contact">Contact Us</Link>
-            </Button>
+          <Reveal>
+            <SectionCTA
+              title="Not sure which to pick?"
+              body="Reach out and our crew will help you choose the right tour for your trip."
+              image="/ingested/flagshiparubaa/guest-e.webp"
+            >
+              <Button asChild size="lg" className="bg-ocean text-primary hover:bg-ocean/90">
+                <Link href="/contact">Contact Us</Link>
+              </Button>
+            </SectionCTA>
           </Reveal>
         </section>
       </main>

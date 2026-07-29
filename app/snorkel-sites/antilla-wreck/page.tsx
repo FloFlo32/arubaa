@@ -8,6 +8,7 @@ import { Reveal } from "@/components/magic/reveal";
 import { BookNowButton } from "@/components/widget/book-now-button";
 import { SnorkelSitesSidebar } from "@/components/sections/snorkel-sites-sidebar";
 import { RelatedSites } from "@/components/sections/related-sites";
+import { SectionCTA } from "@/components/sections/section-cta";
 import { snorkelSites } from "@/lib/snorkel-sites";
 
 const site = snorkelSites.find((s) => s.slug === "antilla-wreck")!;
@@ -76,15 +77,27 @@ export default function AntillaWreckPage() {
                 </p>
               </Reveal>
 
-              <Reveal delay={0.1} className="mt-8 overflow-hidden rounded-3xl border border-border bg-muted">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={site.secondaryImage}
-                  alt={site.secondaryAlt}
-                  loading="lazy"
-                  decoding="async"
-                  className="aspect-[16/9] w-full object-cover"
-                />
+              <Reveal delay={0.1} className="mt-8 grid gap-4 sm:grid-cols-2">
+                <div className="overflow-hidden rounded-3xl border border-border bg-muted">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/ingested/flagship-owner/ladyblack-jump.jpg"
+                    alt="A guest jumping off the bow into the ocean near the wreck site"
+                    loading="lazy"
+                    decoding="async"
+                    className="aspect-square w-full object-cover"
+                  />
+                </div>
+                <div className="overflow-hidden rounded-3xl border border-border bg-muted">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/ingested/flagshiparubaa/guest-onboard-drink.webp"
+                    alt="A guest smiling with a drink after snorkeling the wreck"
+                    loading="lazy"
+                    decoding="async"
+                    className="aspect-square w-full object-cover"
+                  />
+                </div>
               </Reveal>
 
               <Reveal delay={0.14} className="mt-8">
@@ -97,17 +110,19 @@ export default function AntillaWreckPage() {
         </section>
 
         <section className="container-px mx-auto max-w-6xl pb-24">
-          <Reveal className="flex flex-col items-center gap-4 rounded-3xl border border-border bg-card px-6 py-14 text-center sm:px-12">
-            <h2 className="text-3xl font-bold sm:text-4xl">See it for yourself</h2>
-            <p className="max-w-md text-muted-foreground">
-              The SS Antilla is one of three stops on our Morning Splash Adventure.
-            </p>
-            <Link
-              href="/boat-tours/morning-splash-adventure"
-              className="inline-flex cursor-pointer items-center gap-1.5 text-sm font-semibold text-primary hover:underline"
+          <Reveal>
+            <SectionCTA
+              title="See it for yourself"
+              body="The SS Antilla is one of three stops on our Morning Splash Adventure."
+              image="/ingested/flagshiparubaa/guest-e.webp"
             >
-              See the Morning Splash Adventure <ArrowRight className="size-4" />
-            </Link>
+              <Link
+                href="/boat-tours/morning-splash-adventure"
+                className="inline-flex cursor-pointer items-center gap-1.5 rounded-full bg-ocean px-5 py-2.5 text-sm font-semibold text-primary transition-transform hover:scale-105"
+              >
+                See the Morning Splash Adventure <ArrowRight className="size-4" />
+              </Link>
+            </SectionCTA>
           </Reveal>
         </section>
 

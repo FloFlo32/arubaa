@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Reveal } from "@/components/magic/reveal";
 import { BookNowButton } from "@/components/widget/book-now-button";
 import { HeroSlideshow } from "@/components/sections/hero-slideshow";
+import { TripAdvisorBadge } from "@/components/sections/tripadvisor-badge";
 
 export function Hero() {
   return (
@@ -17,6 +18,10 @@ export function Hero() {
           <Badge variant="accent" className="mx-auto border-white/25 bg-white/10 text-white">
             <Anchor className="size-3.5" /> Sail, Splash & Sunset Magic
           </Badge>
+        </Reveal>
+
+        <Reveal delay={0.04}>
+          <TripAdvisorBadge className="mx-auto mt-5" />
         </Reveal>
 
         <Reveal delay={0.06}>

@@ -5,6 +5,7 @@ import { Navbar } from "@/components/sections/navbar";
 import { Footer } from "@/components/sections/footer";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/magic/reveal";
+import { SectionCTA } from "@/components/sections/section-cta";
 
 export const metadata: Metadata = {
   title: "What Makes Aruba a Popular Honeymoon Destination?",
@@ -69,16 +70,18 @@ export default function BlogPostPage() {
             </p>
           </Reveal>
 
-          <Reveal delay={0.14} className="mt-14 flex flex-col items-center gap-4 rounded-3xl border border-border bg-card p-8 text-center sm:p-10">
-            <h2 className="text-2xl font-bold sm:text-3xl">Sail into the sunset, literally</h2>
-            <p className="max-w-md text-muted-foreground">
-              Our Sunset & Stars Cruise is a regular pick for honeymooners and anniversary trips.
-            </p>
-            <Button asChild size="lg">
-              <Link href="/boat-tours/sunset-stars-cruise">
-                See Sunset & Stars Cruise <ArrowRight className="size-4" />
-              </Link>
-            </Button>
+          <Reveal delay={0.14} className="mt-14">
+            <SectionCTA
+              title="Sail into the sunset, literally"
+              body="Our Sunset & Stars Cruise is a regular pick for honeymooners and anniversary trips."
+              image="/ingested/flagship-owner/ship-sunset-dramatic-wide.jpg"
+            >
+              <Button asChild size="lg" className="bg-ocean text-primary hover:bg-ocean/90">
+                <Link href="/boat-tours/sunset-stars-cruise">
+                  See Sunset & Stars Cruise <ArrowRight className="size-4" />
+                </Link>
+              </Button>
+            </SectionCTA>
           </Reveal>
         </article>
       </main>

@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { MessageCircle, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Navbar } from "@/components/sections/navbar";
 import { Footer } from "@/components/sections/footer";
 import { Button } from "@/components/ui/button";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
 import { PhotoHero } from "@/components/magic/photo-hero";
+import { SectionCTA } from "@/components/sections/section-cta";
 
 export const metadata: Metadata = {
   title: "Reviews",
@@ -55,19 +56,17 @@ export default function ReviewsPage() {
         </section>
 
         <section className="container-px mx-auto max-w-3xl pb-24">
-          <Reveal className="flex flex-col items-center gap-4 rounded-3xl border border-border bg-card px-6 py-12 text-center">
-            <MessageCircle className="size-8 text-primary" />
-            <h2 className="text-2xl font-bold sm:text-3xl">Search us before you book</h2>
-            <p className="max-w-md text-muted-foreground">
-              Look up &ldquo;Flagship Aruba&rdquo; on TripAdvisor or Google to read
-              independent reviews from guests who&apos;ve sailed with us. We&apos;d
-              rather you check for yourself than take our word for it.
-            </p>
-            <Button asChild size="lg">
-              <Link href="/contact">
-                Questions First? Contact Us <ArrowRight className="size-4" />
-              </Link>
-            </Button>
+          <Reveal>
+            <SectionCTA
+              title="Search us before you book"
+              body="Look up “Flagship Aruba” on TripAdvisor or Google to read independent reviews from guests who've sailed with us. We'd rather you check for yourself than take our word for it."
+            >
+              <Button asChild size="lg" className="bg-ocean text-primary hover:bg-ocean/90">
+                <Link href="/contact">
+                  Questions First? Contact Us <ArrowRight className="size-4" />
+                </Link>
+              </Button>
+            </SectionCTA>
           </Reveal>
         </section>
       </main>

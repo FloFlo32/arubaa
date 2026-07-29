@@ -16,6 +16,7 @@ import { ReviewsTeaser } from "@/components/sections/reviews-teaser";
 import { WeWorkWith } from "@/components/sections/we-work-with";
 import { GalleryTeaser } from "@/components/sections/gallery-teaser";
 import { CTA } from "@/components/sections/cta";
+import { TripAdvisorFeature } from "@/components/sections/tripadvisor-feature";
 import { FaqTeaser } from "@/components/sections/faq-teaser";
 import { Footer } from "@/components/sections/footer";
 
@@ -41,6 +42,7 @@ export default function Home() {
         <WeWorkWith />
         <GalleryTeaser />
         <CTA />
+        <TripAdvisorFeature />
         <FaqTeaser />
       </main>
       <Footer />

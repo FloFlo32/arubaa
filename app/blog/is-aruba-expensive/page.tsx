@@ -5,6 +5,7 @@ import { Navbar } from "@/components/sections/navbar";
 import { Footer } from "@/components/sections/footer";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/magic/reveal";
+import { SectionCTA } from "@/components/sections/section-cta";
 
 export const metadata: Metadata = {
   title: "Is Aruba an Expensive Destination?",
@@ -70,16 +71,18 @@ export default function BlogPostPage() {
             </p>
           </Reveal>
 
-          <Reveal delay={0.14} className="mt-14 flex flex-col items-center gap-4 rounded-3xl border border-border bg-card p-8 text-center sm:p-10">
-            <h2 className="text-2xl font-bold sm:text-3xl">Book direct, skip the markup</h2>
-            <p className="max-w-md text-muted-foreground">
-              See how we price our tours and where the savings actually come from.
-            </p>
-            <Button asChild size="lg">
-              <Link href="/deals">
-                See Deals & Offers <ArrowRight className="size-4" />
-              </Link>
-            </Button>
+          <Reveal delay={0.14} className="mt-14">
+            <SectionCTA
+              title="Book direct, skip the markup"
+              body="See how we price our tours and where the savings actually come from."
+              image="/ingested/flagshiparubaa/coastline-cliff-sunset.webp"
+            >
+              <Button asChild size="lg" className="bg-ocean text-primary hover:bg-ocean/90">
+                <Link href="/deals">
+                  See Deals & Offers <ArrowRight className="size-4" />
+                </Link>
+              </Button>
+            </SectionCTA>
           </Reveal>
         </article>
       </main>

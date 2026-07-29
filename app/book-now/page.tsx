@@ -111,13 +111,15 @@ export default function BookNowPage() {
 
         <section className="container-px mx-auto max-w-6xl pb-24">
           <Reveal>
-            <div className="rounded-3xl border border-border bg-card p-8 sm:p-12">
-              <div className="grid gap-8 md:grid-cols-[1.2fr_1fr] md:items-center">
+            <div className="relative overflow-hidden rounded-3xl bg-primary p-8 text-primary-foreground sm:p-12">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/ingested/flagshiparubaa/guest-e.webp" alt="" aria-hidden="true" className="absolute inset-0 size-full object-cover opacity-20" />
+              <div className="relative z-10 grid gap-8 md:grid-cols-[1.2fr_1fr] md:items-center">
                 <div>
                   <h2 className="text-3xl font-bold sm:text-4xl">
                     Prefer to talk it through?
                   </h2>
-                  <p className="mt-3 max-w-md text-muted-foreground">
+                  <p className="mt-3 max-w-md text-primary-foreground/80">
                     Call, WhatsApp or email our crew and we&apos;ll help you pick the
                     right tour and lock in your date.
                   </p>
@@ -125,25 +127,25 @@ export default function BookNowPage() {
                 <div className="flex flex-col gap-3 sm:flex-row md:flex-col">
                   <a
                     href={`tel:${brand.contact.phone}`}
-                    className="flex cursor-pointer items-center gap-3 rounded-xl border border-border bg-background px-5 py-4 transition-colors hover:border-primary/40 hover:bg-primary/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                    className="flex cursor-pointer items-center gap-3 rounded-xl border border-primary-foreground/15 bg-primary-foreground/5 px-5 py-4 transition-colors hover:border-ocean/40 hover:bg-ocean/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                   >
-                    <span className="grid size-10 shrink-0 place-items-center rounded-full bg-primary/10 text-primary">
+                    <span className="grid size-10 shrink-0 place-items-center rounded-full bg-ocean/20 text-ocean">
                       <Phone className="size-4" />
                     </span>
                     <span>
-                      <span className="block text-sm text-muted-foreground">Call us</span>
+                      <span className="block text-sm text-primary-foreground/70">Call us</span>
                       <span className="block font-semibold">{phoneDisplay}</span>
                     </span>
                   </a>
                   <a
                     href={`mailto:${brand.social.email}`}
-                    className="flex cursor-pointer items-center gap-3 rounded-xl border border-border bg-background px-5 py-4 transition-colors hover:border-primary/40 hover:bg-primary/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                    className="flex cursor-pointer items-center gap-3 rounded-xl border border-primary-foreground/15 bg-primary-foreground/5 px-5 py-4 transition-colors hover:border-ocean/40 hover:bg-ocean/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                   >
-                    <span className="grid size-10 shrink-0 place-items-center rounded-full bg-primary/10 text-primary">
+                    <span className="grid size-10 shrink-0 place-items-center rounded-full bg-ocean/20 text-ocean">
                       <Mail className="size-4" />
                     </span>
                     <span>
-                      <span className="block text-sm text-muted-foreground">Email us</span>
+                      <span className="block text-sm text-primary-foreground/70">Email us</span>
                       <span className="block font-semibold">{brand.social.email}</span>
                     </span>
                   </a>

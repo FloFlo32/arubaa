@@ -92,15 +92,15 @@ export function Navbar() {
                   {hasChildren && (
                     <div
                       className={cn(
-                        "absolute left-1/2 top-full z-50 w-[22rem] -translate-x-1/2 pt-3 transition-all duration-200",
+                        "absolute left-1/2 top-full z-50 w-56 -translate-x-1/2 pt-3 transition-all duration-200",
                         activeMenu === item.label
                           ? "pointer-events-auto translate-y-0 opacity-100"
                           : "pointer-events-none -translate-y-1 opacity-0"
                       )}
                       onMouseEnter={() => openMenu(item.label)}
                     >
-                      <div className="rounded-2xl border border-border bg-card p-3 shadow-xl shadow-black/[0.08]">
-                        <div className="grid grid-cols-2 gap-1">
+                      <div className="rounded-2xl border border-border bg-card p-2 shadow-xl shadow-black/[0.08]">
+                        <div className="flex flex-col gap-1">
                           {item.children.map((child) => (
                             <Link
                               key={child.label}
@@ -196,7 +196,7 @@ export function Navbar() {
                     <ChevronDown className={cn("size-4 transition-transform", mobileSection === item.label && "rotate-180")} />
                   </button>
                   {mobileSection === item.label && (
-                    <div className="grid grid-cols-2 gap-1 pb-3 pl-3">
+                    <div className="flex flex-col gap-1 pb-3 pl-3">
                       {item.children.map((child) => (
                         <Link
                           key={child.label}

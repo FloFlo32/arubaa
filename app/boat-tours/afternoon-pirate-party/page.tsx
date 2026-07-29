@@ -93,8 +93,8 @@ export default function AfternoonPiratePartyPage() {
               <div className="overflow-hidden rounded-3xl border border-border bg-muted">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/ingested/flagshiparubaa/afternoon-pirate-party.webp"
-                  alt="A sailboat off Aruba's coast near a resort-lined beach"
+                  src="/ingested/flagshiparubaa/guest-d.webp"
+                  alt="Guests toasting with drinks at the onboard bar"
                   loading="lazy"
                   decoding="async"
                   className="aspect-[4/5] w-full object-cover object-center"
@@ -110,7 +110,7 @@ export default function AfternoonPiratePartyPage() {
           <Reveal className="max-w-2xl">
             <h2 className="text-3xl font-bold sm:text-4xl">More from this tour</h2>
           </Reveal>
-          <AutoSlider className="mt-10" itemClassName="w-[82%] sm:w-[46%] lg:w-[31%]" controls={false}>
+          <AutoSlider className="mt-10" itemClassName="w-[82%] sm:w-[46%] lg:w-[31%]">
             <ImageCard
               src="/ingested/flagshiparuba/img-009.webp"
               alt="A rocky cove and turquoise water along Aruba's northwest coast"
@@ -128,6 +128,12 @@ export default function AfternoonPiratePartyPage() {
               alt="A sea turtle swimming in clear turquoise water"
               title="Marine Life"
               description="Colorful reef fish and the occasional turtle at every stop."
+            />
+            <ImageCard
+              src="/ingested/flagshiparubaa/guest-g.webp"
+              alt="Guests dancing and celebrating together on deck"
+              title="Island Music"
+              description="Caribbean rhythms and a lively crowd the whole way."
             />
           </AutoSlider>
         </section>

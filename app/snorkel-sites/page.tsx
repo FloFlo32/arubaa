@@ -6,6 +6,7 @@ import { Footer } from "@/components/sections/footer";
 import { Button } from "@/components/ui/button";
 import { PhotoHero } from "@/components/magic/photo-hero";
 import { Reveal } from "@/components/magic/reveal";
+import { SectionCTA } from "@/components/sections/section-cta";
 import { snorkelSites } from "@/lib/snorkel-sites";
 
 export const metadata: Metadata = {
@@ -64,22 +65,17 @@ export default function SnorkelSitesPage() {
 
         <section className="container-px mx-auto max-w-6xl pb-24">
           <Reveal>
-            <div className="relative overflow-hidden rounded-3xl border border-border bg-card px-6 py-16 text-center sm:px-12">
-              <h2 className="mx-auto max-w-2xl text-balance text-4xl font-bold sm:text-5xl">
-                See all three sites in one trip
-              </h2>
-              <p className="mx-auto mt-4 max-w-lg text-pretty text-muted-foreground">
-                Our Morning Splash Adventure visits Boca Catalina, Malmok Beach and the
-                SS Antilla, with gear, drinks and snacks included.
-              </p>
-              <div className="mt-8 flex justify-center">
-                <Button asChild size="lg">
-                  <Link href="/boat-tours/morning-splash-adventure">
-                    See the Morning Splash Adventure <ArrowRight className="size-4" />
-                  </Link>
-                </Button>
-              </div>
-            </div>
+            <SectionCTA
+              title="See all three sites in one trip"
+              body="Our Morning Splash Adventure visits Boca Catalina, Malmok Beach and the SS Antilla, with gear, drinks and snacks included."
+              image="/ingested/flagshiparubaa/snorkeler-boca-catalina.webp"
+            >
+              <Button asChild size="lg" className="bg-ocean text-primary hover:bg-ocean/90">
+                <Link href="/boat-tours/morning-splash-adventure">
+                  See the Morning Splash Adventure <ArrowRight className="size-4" />
+                </Link>
+              </Button>
+            </SectionCTA>
           </Reveal>
         </section>
       </main>

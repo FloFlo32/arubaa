@@ -8,6 +8,7 @@ import { Reveal } from "@/components/magic/reveal";
 import { BookNowButton } from "@/components/widget/book-now-button";
 import { SnorkelSitesSidebar } from "@/components/sections/snorkel-sites-sidebar";
 import { RelatedSites } from "@/components/sections/related-sites";
+import { SectionCTA } from "@/components/sections/section-cta";
 import { snorkelSites } from "@/lib/snorkel-sites";
 
 const site = snorkelSites.find((s) => s.slug === "malmok-beach")!;
@@ -67,7 +68,17 @@ export default function MalmokBeachPage() {
                 <p className="text-pretty text-lg text-muted-foreground">{site.body}</p>
               </Reveal>
 
-              <Reveal delay={0.08} className="mt-8 grid gap-4 sm:grid-cols-2">
+              <Reveal delay={0.08} className="mt-8 grid gap-4 sm:grid-cols-3">
+                <div className="overflow-hidden rounded-3xl border border-border bg-muted">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/ingested/flagshiparubaa/guest-b.webp"
+                    alt="Three guests smiling in snorkel masks and life vests"
+                    loading="lazy"
+                    decoding="async"
+                    className="aspect-square w-full object-cover"
+                  />
+                </div>
                 <div className="overflow-hidden rounded-3xl border border-border bg-muted">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
@@ -105,17 +116,19 @@ export default function MalmokBeachPage() {
         </section>
 
         <section className="container-px mx-auto max-w-6xl pb-24">
-          <Reveal className="flex flex-col items-center gap-4 rounded-3xl border border-border bg-card px-6 py-14 text-center sm:px-12">
-            <h2 className="text-3xl font-bold sm:text-4xl">See it for yourself</h2>
-            <p className="max-w-md text-muted-foreground">
-              Malmok Beach is a regular stop on our Morning Splash Adventure and Afternoon Pirate Party.
-            </p>
-            <Link
-              href="/boat-tours"
-              className="inline-flex cursor-pointer items-center gap-1.5 text-sm font-semibold text-primary hover:underline"
+          <Reveal>
+            <SectionCTA
+              title="See it for yourself"
+              body="Malmok Beach is a regular stop on our Morning Splash Adventure and Afternoon Pirate Party."
+              image="/ingested/flagshiparubaa/guest-h.webp"
             >
-              See All Boat Tours <ArrowRight className="size-4" />
-            </Link>
+              <Link
+                href="/boat-tours"
+                className="inline-flex cursor-pointer items-center gap-1.5 rounded-full bg-ocean px-5 py-2.5 text-sm font-semibold text-primary transition-transform hover:scale-105"
+              >
+                See All Boat Tours <ArrowRight className="size-4" />
+              </Link>
+            </SectionCTA>
           </Reveal>
         </section>
 
