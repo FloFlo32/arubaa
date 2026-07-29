@@ -67,15 +67,20 @@ export function SnorkelSitesTeaser() {
         ))}
 
         <Reveal delay={0.18} className="sm:col-span-2">
-          <div className="flex h-full flex-col justify-center gap-4 rounded-2xl border border-ocean/25 bg-ocean/10 p-7 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex h-full flex-col justify-center gap-5 rounded-2xl border border-ocean/25 bg-ocean/10 p-7 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex items-start gap-4">
               <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-ocean/20 text-ocean">
                 <Compass className="size-5" />
               </span>
               <div>
                 <h3 className="text-lg font-semibold">See all three in one trip</h3>
-                <p className="mt-1 text-sm text-muted-foreground">
-                  The Morning Splash Adventure visits every site on this page.
+                <p className="mt-1.5 max-w-md text-sm text-pretty text-muted-foreground">
+                  You don&apos;t have to pick just one. Our Morning Splash Adventure
+                  visits the calm reef at Boca Catalina, the clear water off Malmok
+                  Beach, and the WWII-era SS Antilla shipwreck, all in a single
+                  4-hour trip with gear, drinks and snacks included. Our captain
+                  reads the day&apos;s conditions and routes you through all three
+                  for the best visibility.
                 </p>
               </div>
             </div>
