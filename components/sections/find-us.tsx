@@ -28,13 +28,13 @@ export function FindUs() {
         </Reveal>
       </div>
 
-      <Reveal delay={0.1} className="container-px relative z-10 mx-auto mt-10 max-w-4xl">
-        <div className="overflow-hidden rounded-3xl border border-ocean/20 shadow-xl shadow-ocean/10">
+      <Reveal delay={0.1} className="container-px relative z-10 mx-auto mt-10 max-w-5xl">
+        <div className="overflow-hidden rounded-3xl border border-ocean/20 bg-card p-4 shadow-xl shadow-ocean/10 sm:p-6">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/ingested/flagship-owner/malmok-map.jpg"
             alt="Map of Aruba showing where Flagship Aruba sails, near Palm Beach and Malmok"
-            className="aspect-[16/10] w-full object-cover sm:aspect-[16/8]"
+            className="aspect-[3/2] w-full rounded-xl object-contain"
           />
         </div>
       </Reveal>

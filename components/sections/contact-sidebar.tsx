@@ -14,14 +14,16 @@ export function ContactSidebar() {
   return (
     <aside className="space-y-5 lg:sticky lg:top-28">
       <div className="overflow-hidden rounded-2xl border border-border bg-card">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/ingested/flagship-owner/malmok-map.jpg"
-          alt="Map of Aruba showing where Flagship Aruba sails"
-          loading="lazy"
-          decoding="async"
-          className="aspect-[4/3] w-full object-cover"
-        />
+        <div className="bg-muted p-3">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/ingested/flagship-owner/malmok-map.jpg"
+            alt="Map of Aruba showing where Flagship Aruba sails"
+            loading="lazy"
+            decoding="async"
+            className="aspect-[3/2] w-full rounded-lg object-contain"
+          />
+        </div>
         <div className="p-4">
           <Button asChild size="sm" className="w-full">
             <a href={directions} target="_blank" rel="noopener noreferrer">
