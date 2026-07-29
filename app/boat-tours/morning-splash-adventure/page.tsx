@@ -97,7 +97,8 @@ export default function MorningSplashAdventurePage() {
                   alt="A sea turtle swimming in clear turquoise water"
                   loading="lazy"
                   decoding="async"
-                  className="aspect-[4/5] w-full object-cover object-center"
+                  style={{ objectPosition: "28% center" }}
+                  className="aspect-[4/5] w-full object-cover"
                 />
               </div>
             </Reveal>

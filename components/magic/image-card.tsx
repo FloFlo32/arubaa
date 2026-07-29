@@ -32,8 +32,9 @@ export function ImageCard({
   eyebrow?: string;
   className?: string;
   ratio?: string;
-  /** Use for tall/portrait source photos so the subject isn't cropped off the top or bottom. */
-  objectPosition?: "center" | "top" | "bottom";
+  /** CSS object-position value, e.g. "center", "bottom", "30% 50%". Use for
+   * off-center subjects so cropping a wide/tall box doesn't cut them off. */
+  objectPosition?: string;
 }) {
   const inner = (
     <>
@@ -44,12 +45,8 @@ export function ImageCard({
           alt={alt}
           loading="lazy"
           decoding="async"
-          className={cn(
-            "size-full object-cover transition-transform duration-500 group-hover:scale-[1.04] motion-reduce:transition-none",
-            objectPosition === "bottom" && "object-bottom",
-            objectPosition === "top" && "object-top",
-            objectPosition === "center" && "object-center"
-          )}
+          style={{ objectPosition }}
+          className="size-full object-cover transition-transform duration-500 group-hover:scale-[1.04] motion-reduce:transition-none"
         />
       </div>
       <div className="flex shrink-0 flex-col gap-2 p-5">

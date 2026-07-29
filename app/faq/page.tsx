@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { HelpCircle, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Navbar } from "@/components/sections/navbar";
 import { Footer } from "@/components/sections/footer";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import { PhotoHero } from "@/components/magic/photo-hero";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
+import { BookNowButton } from "@/components/widget/book-now-button";
 
 export const metadata: Metadata = {
   title: "FAQ",
@@ -60,21 +61,15 @@ export default function FaqPage() {
     <>
       <Navbar />
       <main className="flex-1">
-        <section className="container-px mx-auto max-w-3xl pt-28 pb-8 text-center">
-          <Reveal>
-            <Badge variant="accent">
-              <HelpCircle className="size-3.5" /> Before you book
-            </Badge>
-            <h1 className="mt-6 text-balance text-4xl font-bold sm:text-5xl">
-              Frequently Asked Questions
-            </h1>
-            <p className="mt-4 text-lg text-muted-foreground">
-              Everything you need to know before stepping aboard.
-            </p>
-          </Reveal>
-        </section>
+        <PhotoHero
+          eyebrow="Before you book"
+          title="Frequently Asked Questions"
+          body="Everything you need to know before stepping aboard."
+          src="/ingested/flagshiparubaa/guest-f.webp"
+          alt="A group of guests laughing together aboard the schooner"
+        />
 
-        <section className="container-px mx-auto max-w-3xl pb-24">
+        <section className="container-px mx-auto max-w-3xl pb-24 pt-16">
           <RevealGroup className="mt-6 space-y-4" stagger={0.05}>
             {faqs.map((f) => (
               <RevealItem key={f.q} className="rounded-2xl border border-border bg-card p-6">
@@ -89,11 +84,14 @@ export default function FaqPage() {
             <p className="max-w-md text-muted-foreground">
               Our crew is happy to help by phone, email or WhatsApp.
             </p>
-            <Button asChild size="lg">
-              <Link href="/contact">
-                Contact Us <ArrowRight className="size-4" />
-              </Link>
-            </Button>
+            <div className="flex flex-wrap items-center justify-center gap-3">
+              <BookNowButton />
+              <Button asChild size="lg" variant="outline">
+                <Link href="/contact">
+                  Contact Us <ArrowRight className="size-4" />
+                </Link>
+              </Button>
+            </div>
           </Reveal>
         </section>
       </main>

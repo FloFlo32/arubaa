@@ -8,7 +8,7 @@ const moments: {
   description: string;
   href: string;
   src: string;
-  objectPosition?: "center" | "top" | "bottom";
+  objectPosition?: string;
 }[] = [
   {
     eyebrow: "Moment 01",
@@ -56,8 +56,7 @@ const moments: {
     description:
       "Some evenings the whole sky turns pink and gold as we sail back in.",
     href: "/boat-tours/sunset-stars-cruise",
-    src: "/ingested/flagship-owner/ship-sunset-dramatic.jpg",
-    objectPosition: "bottom" as const,
+    src: "/ingested/flagship-owner/ship-sunset-dramatic-wide.jpg",
   },
   {
     eyebrow: "Moment 07",

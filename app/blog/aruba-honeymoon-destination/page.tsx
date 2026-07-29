@@ -34,9 +34,9 @@ export default function BlogPostPage() {
             <div className="overflow-hidden rounded-2xl border border-border">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/ingested/flagship-owner/ship-sunset-dramatic.jpg"
+                src="/ingested/flagship-owner/ship-sunset-dramatic-wide.jpg"
                 alt="A dramatic pink sunset over the water off Aruba's coast"
-                className="aspect-[16/9] w-full object-cover object-bottom"
+                className="aspect-[16/9] w-full object-cover"
               />
             </div>
           </Reveal>

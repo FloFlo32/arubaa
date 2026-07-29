@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Waves, ShipWheel, Sparkles, ArrowRight } from "lucide-react";
+import { Ruler, ArrowRight } from "lucide-react";
 import { Navbar } from "@/components/sections/navbar";
 import { Footer } from "@/components/sections/footer";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { PhotoHero } from "@/components/magic/photo-hero";
 import { Reveal } from "@/components/magic/reveal";
+import { snorkelSites } from "@/lib/snorkel-sites";
 
 export const metadata: Metadata = {
   title: "Snorkel Sites",
@@ -27,106 +27,45 @@ export default function SnorkelSitesPage() {
           alt="A sea turtle swimming in clear turquoise water off Aruba's coast"
         />
 
-        <section id="boca-catalina" className="container-px mx-auto max-w-6xl py-16 sm:py-20 scroll-mt-24">
-          <div className="grid items-center gap-10 md:grid-cols-2 md:gap-14">
-            <Reveal>
-              <div className="overflow-hidden rounded-3xl border border-border bg-muted">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/ingested/flagshiparuba/img-009.webp"
-                  alt="A rocky cove and turquoise water along Aruba's northwest coast"
-                  loading="lazy"
-                  decoding="async"
-                  className="aspect-[5/4] w-full object-cover object-center"
-                />
-              </div>
-            </Reveal>
-            <Reveal delay={0.08}>
-              <span className="grid size-11 place-items-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/15">
-                <Waves className="size-5" />
-              </span>
-              <p className="mt-4 text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground">
-                Site one
-              </p>
-              <h2 className="mt-2 text-balance text-3xl font-bold sm:text-4xl">Boca Catalina Reefs</h2>
-              <p className="mt-4 max-w-lg text-pretty text-muted-foreground">
-                A calm, shallow cove close to shore, thick with tropical fish and easy
-                for every skill level to enjoy. It is one of our regular stops on the
-                Morning Splash Adventure.
-              </p>
-            </Reveal>
-          </div>
-        </section>
-
-        <section id="malmok-beach" className="container-px mx-auto max-w-6xl py-16 sm:py-20 scroll-mt-24">
-          <div className="grid items-center gap-10 md:grid-cols-2 md:gap-14">
-            <Reveal delay={0.08} className="order-2 md:order-1">
-              <span className="grid size-11 place-items-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/15">
-                <Sparkles className="size-5" />
-              </span>
-              <p className="mt-4 text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground">
-                Site two
-              </p>
-              <h2 className="mt-2 text-balance text-3xl font-bold sm:text-4xl">Malmok Beach</h2>
-              <p className="mt-4 max-w-lg text-pretty text-muted-foreground">
-                One of Aruba&apos;s top snorkel sites, with clear water and easy access
-                close to shore. A favorite spot on the northwest coast for spotting
-                colorful reef fish.
-              </p>
-            </Reveal>
-            <Reveal className="order-1 md:order-2">
-              <div className="overflow-hidden rounded-3xl border border-border bg-muted">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/ingested/flagshiparubaa/malmok-beach.webp"
-                  alt="The turquoise coastline and rocky shore at Malmok Beach in Aruba"
-                  loading="lazy"
-                  decoding="async"
-                  className="aspect-[5/4] w-full object-cover object-center"
-                />
-              </div>
-            </Reveal>
-          </div>
-        </section>
-
-        <section id="antilla-wreck" className="container-px mx-auto max-w-6xl py-16 sm:py-20 scroll-mt-24">
-          <div className="grid items-center gap-10 md:grid-cols-2 md:gap-14">
-            <Reveal>
-              <div className="overflow-hidden rounded-3xl border border-border bg-muted">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/ingested/flagshiparubaa/ss-antilla-wreck-aerial.webp"
-                  alt="Aerial view of the SS Antilla shipwreck resting in Aruba's turquoise water"
-                  loading="lazy"
-                  decoding="async"
-                  className="aspect-[5/4] w-full object-cover object-center"
-                />
-              </div>
-            </Reveal>
-            <Reveal delay={0.08}>
-              <span className="grid size-11 place-items-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/15">
-                <ShipWheel className="size-5" />
-              </span>
-              <p className="mt-4 text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground">
-                Site three
-              </p>
-              <h2 className="mt-2 text-balance text-3xl font-bold sm:text-4xl">
-                SS Antilla Shipwreck
-              </h2>
-              <p className="mt-4 max-w-lg text-pretty text-muted-foreground">
-                Aruba&apos;s most famous snorkel site: a WWII-era freighter resting in
-                shallow water, now one of the largest shipwrecks in the Caribbean and
-                home to a rich mix of marine life.
-              </p>
-            </Reveal>
+        <section className="container-px mx-auto max-w-6xl py-20 sm:py-24">
+          <div className="space-y-6">
+            {snorkelSites.map((s, i) => (
+              <Reveal key={s.slug} delay={i * 0.06}>
+                <div className="grid gap-0 overflow-hidden rounded-3xl border border-border bg-card md:grid-cols-[1.1fr_1.4fr]">
+                  <div className="relative aspect-[4/3] overflow-hidden bg-muted md:aspect-auto">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={s.heroImage}
+                      alt={s.heroAlt}
+                      loading="lazy"
+                      decoding="async"
+                      className="size-full object-cover object-center"
+                    />
+                  </div>
+                  <div className="flex flex-col justify-center gap-4 p-7 sm:p-9">
+                    <h2 className="font-display text-2xl font-bold sm:text-3xl">{s.title}</h2>
+                    <span className="flex w-fit items-center gap-1.5 text-sm text-muted-foreground">
+                      <Ruler className="size-4" /> {s.depth} · {s.tagline}
+                    </span>
+                    <p className="text-pretty text-muted-foreground">{s.body}</p>
+                    <div>
+                      <Button asChild>
+                        <Link href={`/snorkel-sites/${s.slug}`}>
+                          Site Details <ArrowRight className="size-4" />
+                        </Link>
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              </Reveal>
+            ))}
           </div>
         </section>
 
         <section className="container-px mx-auto max-w-6xl pb-24">
           <Reveal>
             <div className="relative overflow-hidden rounded-3xl border border-border bg-card px-6 py-16 text-center sm:px-12">
-              <Badge variant="accent" className="mx-auto">Ready to go</Badge>
-              <h2 className="mx-auto mt-4 max-w-2xl text-balance text-4xl font-bold sm:text-5xl">
+              <h2 className="mx-auto max-w-2xl text-balance text-4xl font-bold sm:text-5xl">
                 See all three sites in one trip
               </h2>
               <p className="mx-auto mt-4 max-w-lg text-pretty text-muted-foreground">

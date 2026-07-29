@@ -118,11 +118,10 @@ export default function SunsetStarsCruisePage() {
               description="Room to relax with friends, family or a date."
             />
             <ImageCard
-              src="/ingested/flagshiparubaa/schooner-pink-sunset.webp"
+              src="/ingested/flagship-owner/schooner-pink-sunset-wide.jpg"
               alt="The schooner silhouetted under a pink sunset sky"
               title="Golden Hour"
               description="Front-row views as the sun drops toward the horizon."
-              objectPosition="bottom"
             />
             <ImageCard
               src="/ingested/flagshiparuba/img-006.webp"

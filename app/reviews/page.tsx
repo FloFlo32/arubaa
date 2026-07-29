@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Star, MessageCircle, ArrowRight } from "lucide-react";
+import { MessageCircle, ArrowRight } from "lucide-react";
 import { Navbar } from "@/components/sections/navbar";
 import { Footer } from "@/components/sections/footer";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
+import { PhotoHero } from "@/components/magic/photo-hero";
 
 export const metadata: Metadata = {
   title: "Reviews",
@@ -32,23 +32,15 @@ export default function ReviewsPage() {
     <>
       <Navbar />
       <main className="flex-1">
-        <section className="container-px mx-auto max-w-3xl pt-28 pb-12 text-center">
-          <Reveal>
-            <Badge variant="accent">
-              <Star className="size-3.5" /> Reviews
-            </Badge>
-            <h1 className="mt-6 text-balance text-4xl font-bold sm:text-5xl">
-              We&apos;re still writing our story
-            </h1>
-            <p className="mt-4 text-lg text-muted-foreground">
-              Flagship Aruba is a young, family-run crew. We don&apos;t have a wall of
-              reviews to show off yet, but here&apos;s what we can promise every guest who
-              comes aboard, and where you can check for yourself.
-            </p>
-          </Reveal>
-        </section>
+        <PhotoHero
+          eyebrow="Reviews"
+          title="We're still writing our story"
+          body="Flagship Aruba is a young, family-run crew. We don't have a wall of reviews to show off yet, but here's what we can promise every guest who comes aboard."
+          src="/ingested/flagship-owner/guest-drinks-three.jpg"
+          alt="Guests smiling with drinks aboard the schooner"
+        />
 
-        <section className="container-px mx-auto max-w-5xl pb-16">
+        <section className="container-px mx-auto max-w-5xl pb-16 pt-16">
           <RevealGroup className="grid gap-6 md:grid-cols-3" stagger={0.08}>
             {highlights.map((h) => (
               <RevealItem

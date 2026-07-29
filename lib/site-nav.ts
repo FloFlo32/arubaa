@@ -22,9 +22,9 @@ const primaryNavBase: NavItem[] = [
     key: "snorkel-sites",
     href: "/snorkel-sites",
     children: [
-      { key: "boca-catalina", href: "/snorkel-sites#boca-catalina" },
-      { key: "malmok-beach", href: "/snorkel-sites#malmok-beach" },
-      { key: "antilla-wreck", href: "/snorkel-sites#antilla-wreck" },
+      { key: "boca-catalina", href: "/snorkel-sites/boca-catalina" },
+      { key: "malmok-beach", href: "/snorkel-sites/malmok-beach" },
+      { key: "antilla-wreck", href: "/snorkel-sites/antilla-wreck" },
     ],
   },
   {

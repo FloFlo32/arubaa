@@ -44,8 +44,7 @@ export const posts: {
     excerpt:
       "Consistent sunshine, calm water and a small-island pace. Here's why so many couples end up choosing Aruba.",
     date: "2026-02-20",
-    image: "/ingested/flagship-owner/ship-sunset-dramatic.jpg",
-    imageObjectPosition: "object-bottom",
+    image: "/ingested/flagship-owner/ship-sunset-dramatic-wide.jpg",
   },
   {
     slug: "is-aruba-expensive",

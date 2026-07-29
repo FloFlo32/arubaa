@@ -10,7 +10,7 @@ const sites = [
     title: "SS Antilla Shipwreck",
     description:
       "A WWII-era wreck resting in Aruba's clear water, one of the largest shipwrecks in the Caribbean.",
-    href: "/snorkel-sites#antilla-wreck",
+    href: "/snorkel-sites/antilla-wreck",
     src: "/ingested/flagshiparubaa/ss-antilla-wreck-aerial.webp",
     alt: "Aerial view of the SS Antilla shipwreck resting in Aruba's turquoise water",
     span: "sm:col-span-2",
@@ -20,7 +20,7 @@ const sites = [
     title: "Boca Catalina",
     description:
       "A calm, shallow reef close to shore, thick with tropical fish and easy for every skill level.",
-    href: "/snorkel-sites#boca-catalina",
+    href: "/snorkel-sites/boca-catalina",
     src: "/ingested/flagshiparubaa/snorkeler-boca-catalina.webp",
     alt: "A snorkeler smiling at the camera in the clear turquoise water off Boca Catalina",
     span: "",
@@ -30,7 +30,7 @@ const sites = [
     title: "Malmok Beach",
     description:
       "One of Aruba's top snorkel spots, with clear water close to shore and easy access.",
-    href: "/snorkel-sites#malmok-beach",
+    href: "/snorkel-sites/malmok-beach",
     src: "/ingested/flagshiparubaa/malmok-beach.webp",
     alt: "The turquoise coastline and rocky shore at Malmok Beach in Aruba",
     span: "",

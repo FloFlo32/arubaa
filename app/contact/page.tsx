@@ -3,9 +3,10 @@ import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 import { brand } from "@/brand.config";
 import { Navbar } from "@/components/sections/navbar";
 import { Footer } from "@/components/sections/footer";
-import { Badge } from "@/components/ui/badge";
+import { PhotoHero } from "@/components/magic/photo-hero";
 import { Map } from "@/components/sections/map";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
+import { BookNowButton } from "@/components/widget/book-now-button";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -44,18 +45,15 @@ export default function ContactPage() {
     <>
       <Navbar />
       <main className="flex-1">
-        <section className="container-px mx-auto max-w-3xl pt-28 pb-12 text-center">
-          <Reveal>
-            <Badge variant="accent">Get in touch</Badge>
-            <h1 className="mt-6 text-balance text-4xl font-bold sm:text-5xl">Contact Us</h1>
-            <p className="mt-4 text-lg text-muted-foreground">
-              Questions about a boat tour, or just want to say hello? Reach out any way
-              that&apos;s easiest for you.
-            </p>
-          </Reveal>
-        </section>
+        <PhotoHero
+          eyebrow="Get in touch"
+          title="Contact Us"
+          body="Questions about a boat tour, or just want to say hello? Reach out any way that's easiest for you."
+          src="/ingested/flagshiparubaa/guest-d.webp"
+          alt="Guests toasting with drinks aboard the schooner"
+        />
 
-        <section className="container-px mx-auto max-w-5xl pb-16">
+        <section className="container-px mx-auto max-w-5xl pb-16 pt-16">
           <RevealGroup className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4" stagger={0.06}>
             {channels.map((c) => (
               <RevealItem key={c.label}>
@@ -76,6 +74,10 @@ export default function ContactPage() {
               </RevealItem>
             ))}
           </RevealGroup>
+
+          <Reveal delay={0.1} className="mt-10 flex justify-center">
+            <BookNowButton label="Skip the Wait, Book Now" />
+          </Reveal>
         </section>
 
         <Map />
