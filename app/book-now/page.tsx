@@ -10,6 +10,7 @@ import { Badge } from "@/components/ui/badge";
 import { ImageCard } from "@/components/magic/image-card";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
 import { AuroraBackground } from "@/components/magic/aurora-background";
+import { BookNowButton } from "@/components/widget/book-now-button";
 
 export const metadata: Metadata = {
   title: "Book Now",
@@ -63,9 +64,12 @@ export default function BookNowPage() {
               </Reveal>
               <Reveal delay={0.12}>
                 <p className="mt-6 max-w-md text-lg text-muted-foreground">
-                  Three tours to choose from, all departing MooMba Beach Bar. Call,
-                  WhatsApp or email us to lock in your date.
+                  Three tours to choose from, all departing MooMba Beach Bar. Book
+                  instantly below, or call, WhatsApp or email us to lock in your date.
                 </p>
+              </Reveal>
+              <Reveal delay={0.16} className="mt-8">
+                <BookNowButton />
               </Reveal>
             </div>
 

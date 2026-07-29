@@ -52,6 +52,23 @@ const secondaryNavBase: NavChild[] = [
   { key: "contact", href: "/contact" },
 ];
 
+const footerInfoBase: NavChild[] = [
+  { key: "blog", href: "/blog" },
+  { key: "deals", href: "/deals" },
+  { key: "reviews", href: "/reviews" },
+  { key: "faq", href: "/faq" },
+  { key: "contact", href: "/contact" },
+];
+
+const footerMenuBase: NavChild[] = [
+  { key: "boat-tours", href: "/boat-tours" },
+  { key: "morning-splash", href: "/boat-tours/morning-splash-adventure" },
+  { key: "afternoon-pirate", href: "/boat-tours/afternoon-pirate-party" },
+  { key: "sunset-stars", href: "/boat-tours/sunset-stars-cruise" },
+  { key: "snorkel-sites", href: "/snorkel-sites" },
+  { key: "about", href: "/about" },
+];
+
 const bookNowBase: NavChild = { key: "book-now", href: "/book-now" };
 
 const legalNavBase: NavChild[] = [
@@ -78,6 +95,8 @@ const t: Record<string, Record<LocaleCode, string>> = {
   "antilla-wreck": { en: "SS Antilla Shipwreck", es: "Naufragio Del SS Antilla", nl: "Scheepswrak SS Antilla", de: "Schiffswrack SS Antilla", it: "Relitto SS Antilla", br: "Naufrágio Do SS Antilla", se: "Vraket SS Antilla" },
 
   gallery: { en: "Gallery", es: "Galería", nl: "Galerij", de: "Galerie", it: "Galleria", br: "Galeria", se: "Galleri" },
+  blog: { en: "Blog", es: "Blog", nl: "Blog", de: "Blog", it: "Blog", br: "Blog", se: "Blogg" },
+  deals: { en: "Deals", es: "Ofertas", nl: "Aanbiedingen", de: "Angebote", it: "Offerte", br: "Promoções", se: "Erbjudanden" },
   faq: { en: "FAQ", es: "Preguntas Frecuentes", nl: "Veelgestelde Vragen", de: "Häufige Fragen", it: "Domande Frequenti", br: "Perguntas Frequentes", se: "Vanliga Frågor" },
   contact: { en: "Contact", es: "Contacto", nl: "Contact", de: "Kontakt", it: "Contatti", br: "Contato", se: "Kontakt" },
 
@@ -101,6 +120,14 @@ export function getPrimaryNav(locale: LocaleCode) {
 
 export function getSecondaryNav(locale: LocaleCode) {
   return secondaryNavBase.map((c) => ({ label: label(c.key, locale), href: localizePath(locale, c.href) }));
+}
+
+export function getFooterMenu(locale: LocaleCode) {
+  return footerMenuBase.map((c) => ({ label: label(c.key, locale), href: localizePath(locale, c.href) }));
+}
+
+export function getFooterInfo(locale: LocaleCode) {
+  return footerInfoBase.map((c) => ({ label: label(c.key, locale), href: localizePath(locale, c.href) }));
 }
 
 export function getBookNow(locale: LocaleCode) {

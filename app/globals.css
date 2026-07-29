@@ -54,6 +54,11 @@
   --aurora-1: oklch(0.7 0.2 var(--brand-hue));
   --aurora-2: oklch(0.72 0.18 calc(var(--brand-hue) + 60));
   --aurora-3: oklch(0.75 0.16 calc(var(--brand-hue) - 50));
+
+  /* Secondary accent — bright sky blue, fixed hue (205) independent of --brand-hue.
+     Used to punctuate icons/buttons/CTAs so they don't all read as one flat primary tone. */
+  --ocean: oklch(0.68 0.14 205);
+  --ocean-foreground: oklch(0.16 0.03 205);
 }
 
 .dark {
@@ -88,6 +93,9 @@
   --aurora-1: oklch(0.65 0.22 var(--brand-hue));
   --aurora-2: oklch(0.68 0.2 calc(var(--brand-hue) + 60));
   --aurora-3: oklch(0.7 0.18 calc(var(--brand-hue) - 50));
+
+  --ocean: oklch(0.72 0.13 205);
+  --ocean-foreground: oklch(0.14 0.02 205);
 }
 
 /* Map tokens → Tailwind theme so you can use bg-primary, text-muted-foreground… */
@@ -114,6 +122,8 @@
   --color-aurora-1: var(--aurora-1);
   --color-aurora-2: var(--aurora-2);
   --color-aurora-3: var(--aurora-3);
+  --color-ocean: var(--ocean);
+  --color-ocean-foreground: var(--ocean-foreground);
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);

@@ -78,6 +78,39 @@ export function TripAdvisorIcon({ className }: { className?: string }) {
   );
 }
 
+export function ShipMarkIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 32 24" fill="none" aria-hidden className={cn("h-8 w-auto shrink-0", className)}>
+      <g fill="currentColor">
+        <path d="M13 3 L13 17 L21.5 17 Z" />
+        <path d="M19 7.5 L14.5 17 L26 17 Z" />
+        <path d="M4.5 17 L27 17 L29 16.2 L24.5 20.3 Q15 22.3 7.5 20.3 Z" />
+      </g>
+      <line x1="13" y1="3" x2="27.3" y2="16.6" stroke="currentColor" strokeWidth="0.4" />
+      <path d="M3 20.8 Q16 18 30 20.8" stroke="currentColor" strokeWidth="0.9" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+/** Circular crest version of the ship mark: a rope-bordered seal with the
+ * schooner silhouette, echoing Flagship Aruba's own logo badge. Used
+ * anywhere the mark stands alone (language gate, footer flourish). */
+export function ShipSealIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 100 100" fill="none" aria-hidden className={cn("h-16 w-16 shrink-0", className)}>
+      <circle cx="50" cy="50" r="47" stroke="currentColor" strokeWidth="1.5" strokeDasharray="2.6 3.4" />
+      <circle cx="50" cy="50" r="40" stroke="currentColor" strokeWidth="0.75" opacity="0.6" />
+      <g fill="currentColor">
+        <path d="M40 30 L40 56 L58 56 Z" />
+        <path d="M53 38 L45 56 L66 56 Z" />
+        <path d="M25 56 L72 56 L76 54.5 L67 62.5 Q50 66.5 36 62.5 Z" />
+      </g>
+      <line x1="40" y1="30" x2="67" y2="55" stroke="currentColor" strokeWidth="0.6" />
+      <path d="M22 63 Q50 58 78 63" stroke="currentColor" strokeWidth="1.1" strokeLinecap="round" />
+    </svg>
+  );
+}
+
 export function WhatsAppIcon({ className }: { className?: string }) {
   return (
     <svg

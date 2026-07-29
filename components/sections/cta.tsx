@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { GridPattern } from "@/components/magic/grid-pattern";
 import { Reveal } from "@/components/magic/reveal";
 import { BorderBeam } from "@/components/magic/border-beam";
+import { BookNowButton } from "@/components/widget/book-now-button";
 
 export function CTA() {
   return (
@@ -20,11 +20,7 @@ export function CTA() {
             Party, or the Sunset & Stars Cruise.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Button asChild size="lg">
-              <Link href="/book-now">
-                Book Now <ArrowRight className="size-4" />
-              </Link>
-            </Button>
+            <BookNowButton />
             <Button asChild size="lg" variant="outline">
               <Link href="/boat-tours">See Boat Tours</Link>
             </Button>

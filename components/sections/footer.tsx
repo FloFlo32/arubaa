@@ -2,10 +2,10 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import { brand } from "@/brand.config";
-import { InstagramIcon } from "@/components/icons";
-import { getPrimaryNav, getLegalNav } from "@/lib/site-nav";
+import { InstagramIcon, ShipMarkIcon } from "@/components/icons";
+import { getFooterMenu, getFooterInfo, getLegalNav } from "@/lib/site-nav";
 import { getLocaleFromPathname, localizePath, type LocaleCode } from "@/lib/i18n";
 
 const socials = [{ href: brand.social.instagram, label: "Instagram", Icon: InstagramIcon }];
@@ -30,71 +30,103 @@ const rights: Record<LocaleCode, string> = {
   se: "Flagship Aruba. Alla rättigheter förbehållna.",
 };
 
+const menuHeading: Record<LocaleCode, string> = {
+  en: "Menu", es: "Menú", nl: "Menu", de: "Menü", it: "Menu", br: "Menu", se: "Meny",
+};
+const infoHeading: Record<LocaleCode, string> = {
+  en: "Information", es: "Información", nl: "Informatie", de: "Informationen", it: "Informazioni", br: "Informações", se: "Information",
+};
+const connectHeading: Record<LocaleCode, string> = {
+  en: "Connect", es: "Contacto", nl: "Contact", de: "Kontakt", it: "Contatti", br: "Conecte-se", se: "Kontakt",
+};
+
 export function Footer() {
   const pathname = usePathname();
   const locale = getLocaleFromPathname(pathname);
-  const primaryNav = getPrimaryNav(locale);
+  const menu = getFooterMenu(locale);
+  const info = getFooterInfo(locale);
   const legalNav = getLegalNav(locale);
   const homeHref = localizePath(locale, "/");
 
   return (
-    <footer className="mt-auto border-t border-white/10 bg-neutral-950 text-neutral-300">
-      <div className="container-px mx-auto max-w-7xl py-14">
-        <div className="grid gap-10 lg:grid-cols-[1.3fr_1fr_1fr_1fr_1fr]">
-          <div>
-            <Link href={homeHref} aria-label="Flagship Aruba home">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/flagship-aruba-logo.webp" alt="Flagship Aruba" className="h-14 w-auto" />
-            </Link>
-            <p className="mt-4 max-w-xs text-sm text-neutral-400">{tagline[locale]}</p>
-            <div className="mt-5 flex flex-wrap gap-2">
-              {socials.map((s) => (
-                <a
-                  key={s.label}
-                  href={s.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={s.label}
-                  className="grid size-9 cursor-pointer place-items-center rounded-full border border-white/15 text-neutral-400 transition-colors hover:border-primary/50 hover:bg-primary/15 hover:text-primary"
-                >
-                  <s.Icon className="size-4" />
-                </a>
-              ))}
-            </div>
-            <div className="mt-5 space-y-2">
-              <a href={`tel:${brand.contact.phone}`} className="flex cursor-pointer items-center gap-2 text-sm text-neutral-400 transition-colors hover:text-white">
-                <Phone className="size-4 text-primary" /> +297 567 7637
-              </a>
-              <a href={`mailto:${brand.social.email}`} className="flex cursor-pointer items-center gap-2 text-sm text-neutral-400 transition-colors hover:text-white">
-                <Mail className="size-4 text-primary" /> {brand.social.email}
-              </a>
-            </div>
+    <footer className="mt-auto bg-primary text-primary-foreground">
+      <div className="container-px mx-auto grid max-w-6xl gap-10 py-14 md:grid-cols-[1.3fr_1fr_1fr_1fr]">
+        <div>
+          <Link href={homeHref} className="flex items-center gap-2 cursor-pointer" aria-label="Flagship Aruba home">
+            <ShipMarkIcon className="h-8 text-primary-foreground" />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/flagship-aruba-logo.webp" alt="Flagship Aruba" className="h-11 w-auto" />
+          </Link>
+          <p className="mt-4 max-w-xs text-sm text-primary-foreground/75">{tagline[locale]}</p>
+          <div className="mt-5 space-y-2.5 text-sm text-primary-foreground/80">
+            <p className="flex items-center gap-2">
+              <MapPin className="size-4 shrink-0 text-ocean" /> All cruises depart from MooMba Beach Bar, Palm Beach.
+            </p>
+            <a href={`tel:${brand.contact.phone}`} className="flex cursor-pointer items-center gap-2 transition-colors hover:text-primary-foreground">
+              <Phone className="size-4 shrink-0 text-ocean" /> +297 567 7637
+            </a>
+            <a href={`mailto:${brand.social.email}`} className="flex cursor-pointer items-center gap-2 transition-colors hover:text-primary-foreground">
+              <Mail className="size-4 shrink-0 text-ocean" /> {brand.social.email}
+            </a>
           </div>
+        </div>
 
-          {primaryNav.map((section) => (
-            <div key={section.href}>
-              <Link href={section.href} className="cursor-pointer font-display text-sm font-semibold text-white transition-colors hover:text-primary">
-                {section.label}
-              </Link>
-              <ul className="mt-4 space-y-2.5">
-                {section.children.map((l) => (
-                  <li key={l.href}>
-                    <Link href={l.href} className="cursor-pointer text-sm text-neutral-400 transition-colors hover:text-white">
-                      {l.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+        <div>
+          <h4 className="font-display text-sm font-semibold uppercase tracking-wide">{menuHeading[locale]}</h4>
+          <ul className="mt-4 space-y-2.5">
+            {menu.map((l) => (
+              <li key={l.href}>
+                <Link href={l.href} className="cursor-pointer text-sm text-primary-foreground/80 transition-colors hover:text-primary-foreground">
+                  {l.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="font-display text-sm font-semibold uppercase tracking-wide">{infoHeading[locale]}</h4>
+          <ul className="mt-4 space-y-2.5">
+            {info.map((l) => (
+              <li key={l.href}>
+                <Link href={l.href} className="cursor-pointer text-sm text-primary-foreground/80 transition-colors hover:text-primary-foreground">
+                  {l.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="font-display text-sm font-semibold uppercase tracking-wide">{connectHeading[locale]}</h4>
+          <div className="mt-4 flex flex-wrap gap-2">
+            {socials.map((s) => (
+              <a
+                key={s.label}
+                href={s.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={s.label}
+                className="grid size-9 cursor-pointer place-items-center rounded-full border border-primary-foreground/20 text-primary-foreground/80 transition-colors hover:border-ocean/60 hover:bg-ocean/15 hover:text-ocean"
+              >
+                <s.Icon className="size-4" />
+              </a>
+            ))}
+          </div>
+          <Link
+            href={localizePath(locale, "/book-now")}
+            className="mt-5 inline-flex cursor-pointer items-center justify-center rounded-full bg-ocean px-5 py-2.5 text-sm font-semibold text-ocean-foreground transition-transform duration-200 hover:scale-105"
+          >
+            Book Now
+          </Link>
         </div>
       </div>
-      <div className="border-t border-white/10">
-        <div className="container-px mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 py-6 sm:flex-row">
-          <p className="text-sm text-neutral-500">&copy; {rights[locale]}</p>
+      <div className="border-t border-primary-foreground/15">
+        <div className="container-px mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 py-6 sm:flex-row">
+          <p className="text-sm text-primary-foreground/70">&copy; {rights[locale]}</p>
           <div className="flex gap-5">
             {legalNav.map((l) => (
-              <Link key={l.href} href={l.href} className="cursor-pointer text-sm text-neutral-500 transition-colors hover:text-white">
+              <Link key={l.href} href={l.href} className="cursor-pointer text-sm text-primary-foreground/70 transition-colors hover:text-primary-foreground">
                 {l.label}
               </Link>
             ))}

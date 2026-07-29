@@ -4,6 +4,7 @@ import * as React from "react";
 import { useRouter } from "next/navigation";
 import { US, GB, ES, NL, DE, IT, BR, SE } from "country-flag-icons/react/3x2";
 import { cn } from "@/lib/utils";
+import { ShipSealIcon } from "@/components/icons";
 import { type LocaleCode } from "@/lib/i18n";
 
 const STORAGE_KEY = "flagship-aruba-language";
@@ -74,21 +75,22 @@ export function LanguageGate() {
           __html: `try{if(localStorage.getItem('${STORAGE_KEY}')){var g=document.getElementById('language-gate');if(g)g.style.display='none';}}catch(e){}`,
         }}
       />
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src="/ingested/flagshiparubaa/schooner-turquoise-anchor.webp"
-        alt=""
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        poster="/videos/posters/hero-guests-waving.jpg"
         aria-hidden="true"
         className="absolute inset-0 size-full object-cover"
-      />
+      >
+        <source src="/videos/hero-guests-waving.mp4" type="video/mp4" />
+      </video>
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/45 to-black/75" />
 
       <div className="container-px relative z-10 w-full max-w-lg">
         <div className="rounded-3xl border border-white/20 bg-primary/25 p-8 text-center shadow-2xl shadow-black/40 backdrop-blur-2xl sm:p-10">
-          <div className="mx-auto grid h-16 w-28 place-items-center rounded-2xl bg-black p-2 shadow-lg">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/flagship-aruba-logo.webp" alt="Flagship Aruba" className="h-full w-auto object-contain" />
-          </div>
+          <ShipSealIcon className="mx-auto h-20 w-20 text-white drop-shadow-lg" />
 
           <h1 className="mt-6 text-balance text-3xl font-bold text-white sm:text-4xl">
             Ahoy!

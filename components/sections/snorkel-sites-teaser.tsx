@@ -21,8 +21,8 @@ const sites = [
     description:
       "A calm, shallow reef close to shore, thick with tropical fish and easy for every skill level.",
     href: "/snorkel-sites#boca-catalina",
-    src: "/ingested/flagshiparuba/img-009.webp",
-    alt: "A rocky cove and turquoise water along Aruba's northwest coast",
+    src: "/ingested/flagshiparubaa/snorkeler-boca-catalina.webp",
+    alt: "A snorkeler smiling at the camera in the clear turquoise water off Boca Catalina",
     span: "",
     ratio: "aspect-[4/3]",
   },

@@ -7,12 +7,14 @@ import { Menu, X, ChevronDown, Phone } from "lucide-react";
 import { brand } from "@/brand.config";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { ShipMarkIcon } from "@/components/icons";
 import { getPrimaryNav, getSecondaryNav, getBookNow } from "@/lib/site-nav";
 import { getLocaleFromPathname, localizePath } from "@/lib/i18n";
 
 function Logo({ href, className }: { href: string; className?: string }) {
   return (
     <Link href={href} className={cn("flex items-center gap-2 shrink-0 cursor-pointer", className)} aria-label="Flagship Aruba home">
+      <ShipMarkIcon className="h-7 text-primary" />
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src="/flagship-aruba-logo.webp" alt="Flagship Aruba" className="h-10 w-auto" />
     </Link>

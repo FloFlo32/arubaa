@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Clock, GlassWater, Stars, ArrowRight, Check } from "lucide-react";
+import { Clock, GlassWater, Stars, Check } from "lucide-react";
 import { Navbar } from "@/components/sections/navbar";
 import { Footer } from "@/components/sections/footer";
 import { Button } from "@/components/ui/button";
@@ -9,6 +9,8 @@ import { PhotoHero } from "@/components/magic/photo-hero";
 import { ImageCard } from "@/components/magic/image-card";
 import { AutoSlider } from "@/components/magic/auto-slider";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
+import { BookNowButton } from "@/components/widget/book-now-button";
+import { OtherAdventuresSidebar } from "@/components/sections/other-adventures-sidebar";
 
 export const metadata: Metadata = {
   title: "Sunset & Stars Cruise",
@@ -60,6 +62,7 @@ export default function SunsetStarsCruisePage() {
         </section>
 
         <section className="container-px mx-auto max-w-6xl pb-16 sm:pb-20">
+          <div className="grid gap-10 lg:grid-cols-[1fr_280px]">
           <div className="grid gap-10 md:grid-cols-2 md:items-center">
             <Reveal>
               <Badge variant="accent">A relaxed evening</Badge>
@@ -83,11 +86,7 @@ export default function SunsetStarsCruisePage() {
                 Please arrive 30 minutes before departure.
               </p>
               <div className="mt-8">
-                <Button asChild size="lg">
-                  <Link href="/book-now">
-                    Book This Cruise <ArrowRight className="size-4" />
-                  </Link>
-                </Button>
+                <BookNowButton activityId="" label="Book This Cruise" />
               </div>
             </Reveal>
             <Reveal delay={0.1}>
@@ -102,6 +101,8 @@ export default function SunsetStarsCruisePage() {
                 />
               </div>
             </Reveal>
+          </div>
+          <OtherAdventuresSidebar excludeSlug="sunset-stars-cruise" />
           </div>
         </section>
 

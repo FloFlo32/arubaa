@@ -29,11 +29,11 @@ const moments = [
   },
   {
     eyebrow: "Moment 04",
-    title: "The Shipwreck",
+    title: "Marine Life",
     description:
-      "Snorkel above the SS Antilla, one of the largest shipwrecks in the Caribbean.",
-    href: "/snorkel-sites#antilla-wreck",
-    src: "/ingested/flagshiparubaa/ss-antilla-wreck-aerial.webp",
+      "Sea turtles, tropical fish and coral, all within arm's reach of the boat.",
+    href: "/snorkel-sites",
+    src: "/ingested/flagshiparubaa/snorkel-sea-turtle.webp",
   },
   {
     eyebrow: "Moment 05",

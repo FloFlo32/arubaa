@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Clock, MapPin, GlassWater, ArrowRight, Check } from "lucide-react";
+import { Clock, MapPin, GlassWater, Check } from "lucide-react";
 import { Navbar } from "@/components/sections/navbar";
 import { Footer } from "@/components/sections/footer";
 import { Button } from "@/components/ui/button";
@@ -9,6 +9,8 @@ import { PhotoHero } from "@/components/magic/photo-hero";
 import { ImageCard } from "@/components/magic/image-card";
 import { AutoSlider } from "@/components/magic/auto-slider";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
+import { BookNowButton } from "@/components/widget/book-now-button";
+import { OtherAdventuresSidebar } from "@/components/sections/other-adventures-sidebar";
 
 export const metadata: Metadata = {
   title: "Morning Splash Adventure",
@@ -60,6 +62,7 @@ export default function MorningSplashAdventurePage() {
         </section>
 
         <section className="container-px mx-auto max-w-6xl pb-16 sm:pb-20">
+          <div className="grid gap-10 lg:grid-cols-[1fr_280px]">
           <div className="grid gap-10 md:grid-cols-2 md:items-center">
             <Reveal>
               <Badge variant="accent">The full trip</Badge>
@@ -83,11 +86,7 @@ export default function MorningSplashAdventurePage() {
                 Please arrive 30 minutes before departure.
               </p>
               <div className="mt-8">
-                <Button asChild size="lg">
-                  <Link href="/book-now">
-                    Book This Tour <ArrowRight className="size-4" />
-                  </Link>
-                </Button>
+                <BookNowButton activityId="" label="Book This Tour" />
               </div>
             </Reveal>
             <Reveal delay={0.1}>
@@ -102,6 +101,8 @@ export default function MorningSplashAdventurePage() {
                 />
               </div>
             </Reveal>
+          </div>
+          <OtherAdventuresSidebar excludeSlug="morning-splash-adventure" />
           </div>
         </section>
 
