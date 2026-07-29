@@ -14,7 +14,7 @@ import { getLocaleFromPathname, localizePath } from "@/lib/i18n";
 function Logo({ href, className }: { href: string; className?: string }) {
   return (
     <Link href={href} className={cn("flex items-center gap-2 shrink-0 cursor-pointer", className)} aria-label="Flagship Aruba home">
-      <ShipMarkIcon className="h-7 text-primary" />
+      <ShipMarkIcon className="h-7 text-primary-foreground" />
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src="/flagship-aruba-logo.webp" alt="Flagship Aruba" className="h-10 w-auto" />
     </Link>
@@ -57,7 +57,7 @@ export function Navbar() {
       <div className="container-px mx-auto max-w-7xl">
         <nav
           className={cn(
-            "flex h-16 items-center justify-between gap-3 rounded-full border border-white/10 bg-neutral-950/90 px-4 shadow-lg shadow-black/20 backdrop-blur-xl transition-all duration-300 sm:px-5",
+            "flex h-16 items-center justify-between gap-3 rounded-full border border-primary-foreground/10 bg-primary/95 px-4 shadow-lg shadow-black/20 backdrop-blur-xl transition-all duration-300 sm:px-5",
             scrolled ? "shadow-xl shadow-black/30" : ""
           )}
           onMouseLeave={scheduleClose}
@@ -78,7 +78,7 @@ export function Navbar() {
                     href={item.href}
                     className={cn(
                       "flex cursor-pointer items-center gap-1 rounded-full px-3.5 py-2 text-sm font-medium transition-colors hover:bg-white/10 hover:text-white",
-                      active ? "text-primary" : "text-neutral-300"
+                      active ? "text-ocean" : "text-primary-foreground/75"
                     )}
                     aria-current={active ? "page" : undefined}
                     aria-expanded={hasChildren ? activeMenu === item.label : undefined}
@@ -137,7 +137,7 @@ export function Navbar() {
                   aria-current={active ? "page" : undefined}
                   className={cn(
                     "cursor-pointer rounded-full px-3 py-2 text-sm transition-colors hover:bg-white/10 hover:text-white",
-                    active ? "text-primary" : "text-neutral-400"
+                    active ? "text-ocean" : "text-primary-foreground/60"
                   )}
                 >
                   {l.label}
@@ -153,7 +153,7 @@ export function Navbar() {
             <Button
               variant="ghost"
               size="icon"
-              className="text-neutral-300 hover:bg-white/10 hover:text-white lg:hidden"
+              className="text-primary-foreground/80 hover:bg-white/10 hover:text-white lg:hidden"
               aria-label="Toggle menu"
               onClick={() => setOpen((o) => !o)}
             >

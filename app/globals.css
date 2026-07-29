@@ -15,45 +15,48 @@
 
 :root {
   /* brand:hue:start */
-  --brand-hue: 235; /* set by brand.config.ts */
+  --brand-hue: 250; /* navy — set by brand.config.ts */
 /* brand:hue:end */
+
+  /* Warm neutral hue for cream surfaces, independent of the navy brand hue. */
+  --cream-hue: 75;
 
   /* radius — brand:corners controls this via `npm run brand` */
   --radius: 0.75rem;
 
-  /* Neutrals tuned with a hint of brand hue (cool, not dead gray) */
-  --background: oklch(0.99 0.004 var(--brand-hue));
-  --foreground: oklch(0.18 0.02 var(--brand-hue));
+  /* Cream neutrals (warm, not cool gray) */
+  --background: oklch(0.97 0.018 var(--cream-hue));
+  --foreground: oklch(0.22 0.03 var(--brand-hue));
 
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.18 0.02 var(--brand-hue));
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.18 0.02 var(--brand-hue));
+  --card: oklch(0.995 0.01 var(--cream-hue));
+  --card-foreground: oklch(0.22 0.03 var(--brand-hue));
+  --popover: oklch(0.995 0.01 var(--cream-hue));
+  --popover-foreground: oklch(0.22 0.03 var(--brand-hue));
 
-  /* Brand primary scale — all derived from --brand-hue */
-  --primary: oklch(0.58 0.2 var(--brand-hue));
-  --primary-foreground: oklch(0.99 0.01 var(--brand-hue));
+  /* Brand primary scale — navy, derived from --brand-hue */
+  --primary: oklch(0.28 0.07 var(--brand-hue));
+  --primary-foreground: oklch(0.98 0.015 var(--cream-hue));
 
-  --secondary: oklch(0.96 0.01 var(--brand-hue));
-  --secondary-foreground: oklch(0.25 0.03 var(--brand-hue));
+  --secondary: oklch(0.94 0.02 var(--cream-hue));
+  --secondary-foreground: oklch(0.26 0.04 var(--brand-hue));
 
-  --muted: oklch(0.96 0.008 var(--brand-hue));
-  --muted-foreground: oklch(0.52 0.02 var(--brand-hue));
+  --muted: oklch(0.94 0.016 var(--cream-hue));
+  --muted-foreground: oklch(0.48 0.03 var(--brand-hue));
 
-  --accent: oklch(0.95 0.03 var(--brand-hue));
-  --accent-foreground: oklch(0.25 0.05 var(--brand-hue));
+  --accent: oklch(0.9 0.03 var(--cream-hue));
+  --accent-foreground: oklch(0.26 0.05 var(--brand-hue));
 
   --destructive: oklch(0.58 0.22 25);
   --destructive-foreground: oklch(0.99 0.01 25);
 
-  --border: oklch(0.91 0.01 var(--brand-hue));
-  --input: oklch(0.91 0.01 var(--brand-hue));
-  --ring: oklch(0.58 0.2 var(--brand-hue));
+  --border: oklch(0.88 0.016 var(--cream-hue));
+  --input: oklch(0.88 0.016 var(--cream-hue));
+  --ring: oklch(0.28 0.07 var(--brand-hue));
 
   /* Decorative gradient stops for hero/aurora effects */
-  --aurora-1: oklch(0.7 0.2 var(--brand-hue));
-  --aurora-2: oklch(0.72 0.18 calc(var(--brand-hue) + 60));
-  --aurora-3: oklch(0.75 0.16 calc(var(--brand-hue) - 50));
+  --aurora-1: oklch(0.55 0.13 var(--brand-hue));
+  --aurora-2: oklch(0.65 0.13 calc(var(--brand-hue) + 40));
+  --aurora-3: oklch(0.72 0.13 205);
 
   /* Secondary accent — bright sky blue, fixed hue (205) independent of --brand-hue.
      Used to punctuate icons/buttons/CTAs so they don't all read as one flat primary tone. */

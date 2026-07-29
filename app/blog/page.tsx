@@ -6,6 +6,7 @@ import { Footer } from "@/components/sections/footer";
 import { PhotoHero } from "@/components/magic/photo-hero";
 import { RevealGroup, RevealItem } from "@/components/magic/reveal";
 import { posts } from "@/lib/blog-posts";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -37,7 +38,10 @@ export default function BlogPage() {
                       alt={p.title}
                       loading="lazy"
                       decoding="async"
-                      className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      className={cn(
+                        "aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105",
+                        p.imageObjectPosition
+                      )}
                     />
                   </div>
                   <p className="mt-4 flex items-center gap-1.5 text-xs text-muted-foreground">

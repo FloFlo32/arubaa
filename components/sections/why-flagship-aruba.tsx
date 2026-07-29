@@ -1,21 +1,21 @@
-import { Ship, Utensils, Heart } from "lucide-react";
+import { Waves, Utensils, Anchor } from "lucide-react";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
 
 const features = [
   {
-    icon: Ship,
-    title: "A real wooden pirate ship",
-    body: "No modern catamarans here. Our schooner is a beautifully crafted wooden vessel built to look and feel like the real thing.",
+    icon: Anchor,
+    title: "Premium snorkel sites",
+    body: "The WWII shipwreck SS Antilla, Boca Catalina and Malmok Reef, all in one trip on our pirate-style schooner.",
   },
   {
     icon: Utensils,
-    title: "Everything's included",
-    body: "Snorkel gear, unlimited drinks and Caribbean bites come standard on every trip, no add-ons to think about.",
+    title: "Open bar and local bites",
+    body: "Drinks and Caribbean-style food come standard on every cruise. No add-ons, no upcharges.",
   },
   {
-    icon: Heart,
-    title: "Started by three friends",
-    body: "We're a small, local crew who turned a childhood joke about owning a pirate ship into a real one.",
+    icon: Waves,
+    title: "The rope swing finale",
+    body: "Every trip ends the same way: a proper rope swing off the ship into the clear Caribbean water.",
   },
 ];
 
@@ -29,12 +29,12 @@ export function WhyFlagshipAruba() {
               Why sail with us
             </span>
             <h2 className="mt-3 text-balance text-4xl font-bold sm:text-5xl">
-              Three friends, one dream, one ship.
+              A pirate-style schooner, a witty crew, and no shortage of rum.
             </h2>
             <p className="mt-4 max-w-lg text-primary-foreground/85">
-              Flagship Aruba started as a childhood joke between three friends about
-              owning a pirate ship someday. Today, that ship is real, and it&apos;s the
-              one you&apos;ll be stepping onto.
+              Flagship Aruba runs a genuine pirate-style schooner to Aruba&apos;s best
+              snorkel sites, with a crew guests describe as friendly, witty, and
+              genuinely fun to spend an afternoon with.
             </p>
 
             <RevealGroup className="mt-10 space-y-4" stagger={0.08}>
@@ -66,7 +66,7 @@ export function WhyFlagshipAruba() {
               />
               <div className="absolute inset-x-4 bottom-4 rounded-2xl border border-white/20 bg-black/50 p-4 backdrop-blur-md">
                 <p className="font-display text-sm font-semibold text-white">
-                  &ldquo;A childhood joke, now a real pirate ship.&rdquo;
+                  &ldquo;A pirate-style schooner, a laid-back crew, and three of Aruba&apos;s best snorkel sites.&rdquo;
                 </p>
               </div>
             </div>
