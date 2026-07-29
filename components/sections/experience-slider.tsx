@@ -13,11 +13,11 @@ const moments = [
   },
   {
     eyebrow: "Moment 02",
-    title: "Off the Bow",
+    title: "Suited Up and Ready",
     description:
-      "Jump straight off the schooner into the clear Caribbean water.",
+      "Vests on, masks ready. The best part of the trip is one step away.",
     href: "/boat-tours/morning-splash-adventure",
-    src: "/ingested/flagshiparuba/img-006.webp",
+    src: "/ingested/flagship-owner/guest-snorkel-vests-trio.jpg",
   },
   {
     eyebrow: "Moment 03",
@@ -29,11 +29,11 @@ const moments = [
   },
   {
     eyebrow: "Moment 04",
-    title: "Marine Life",
+    title: "Her Name on the Stern",
     description:
-      "Sea turtles, tropical fish and coral, all within arm's reach of the boat.",
-    href: "/snorkel-sites",
-    src: "/ingested/flagshiparubaa/snorkel-sea-turtle.webp",
+      "FLAGSHIP ARUBA, painted across the ship you'll actually be sailing on.",
+    href: "/about#the-restoration",
+    src: "/ingested/flagship-owner/ship-transom-blue-sky.jpg",
   },
   {
     eyebrow: "Moment 05",
@@ -45,11 +45,11 @@ const moments = [
   },
   {
     eyebrow: "Moment 06",
-    title: "Golden Hour",
+    title: "Sky on Fire",
     description:
-      "Watch the sky turn pink and gold as we sail back to shore.",
+      "Some evenings the whole sky turns pink and gold as we sail back in.",
     href: "/boat-tours/sunset-stars-cruise",
-    src: "/ingested/flagshiparubaa/schooner-pink-sunset.webp",
+    src: "/ingested/flagship-owner/ship-sunset-dramatic.jpg",
   },
   {
     eyebrow: "Moment 07",
