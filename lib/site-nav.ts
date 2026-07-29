@@ -38,16 +38,12 @@ const primaryNavBase: NavItem[] = [
   {
     key: "private-charters",
     href: "/private-charters",
-    children: [
-      { key: "reviews", href: "/reviews" },
-      { key: "contact", href: "/contact" },
-    ],
+    children: [],
   },
 ];
 
 const secondaryNavBase: NavChild[] = [
   { key: "gallery", href: "/gallery" },
-  { key: "reviews", href: "/reviews" },
   { key: "faq", href: "/faq" },
   { key: "contact", href: "/contact" },
 ];

@@ -7,7 +7,15 @@ import { Footer } from "@/components/sections/footer";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { PhotoHero } from "@/components/magic/photo-hero";
+import { Gallery } from "@/components/magic/gallery";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
+
+const partyPhotos = [
+  { src: "/ingested/flagshiparubaa/guest-f.webp", alt: "A bachelorette group posing together on deck" },
+  { src: "/ingested/flagshiparubaa/guest-g.webp", alt: "Guests dancing together at golden hour" },
+  { src: "/ingested/flagshiparubaa/guest-d.webp", alt: "Guests toasting with drinks at the onboard bar" },
+  { src: "/ingested/flagship-owner/ladyblack-jump.jpg", alt: "A guest jumping off the bow into the ocean" },
+];
 
 export const metadata: Metadata = {
   title: "Private Charters",
@@ -73,6 +81,19 @@ export default function PrivateCharterPage() {
               </RevealItem>
             ))}
           </RevealGroup>
+        </section>
+
+        <section className="container-px mx-auto max-w-6xl pb-16 sm:pb-20">
+          <Reveal className="max-w-2xl">
+            <h2 className="text-3xl font-bold sm:text-4xl">Your group, your energy</h2>
+            <p className="mt-3 text-pretty text-muted-foreground">
+              Bachelorette parties, birthdays, reunions: every charter looks a little
+              different once it&apos;s just your crowd on board.
+            </p>
+          </Reveal>
+          <Reveal delay={0.08} className="mt-8">
+            <Gallery images={partyPhotos} />
+          </Reveal>
         </section>
 
         <section className="container-px mx-auto max-w-6xl pb-24">

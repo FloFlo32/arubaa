@@ -4,21 +4,12 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Reveal } from "@/components/magic/reveal";
 import { BookNowButton } from "@/components/widget/book-now-button";
+import { HeroSlideshow } from "@/components/sections/hero-slideshow";
 
 export function Hero() {
   return (
     <section className="relative flex min-h-[90vh] items-center overflow-hidden pt-24 sm:pt-28">
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        poster="/videos/posters/hero-guests-waving.jpg"
-        aria-hidden="true"
-        className="absolute inset-0 size-full object-cover"
-      >
-        <source src="/videos/hero-guests-waving.mp4" type="video/mp4" />
-      </video>
+      <HeroSlideshow />
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/70" />
 
       <div className="container-px relative z-10 mx-auto max-w-3xl py-24 text-center text-white">

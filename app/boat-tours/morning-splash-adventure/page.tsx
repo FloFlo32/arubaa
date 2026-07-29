@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { Clock, MapPin, GlassWater, Check } from "lucide-react";
+import { Clock, MapPin, GlassWater, Users, Check } from "lucide-react";
 import { Navbar } from "@/components/sections/navbar";
 import { Footer } from "@/components/sections/footer";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { PhotoHero } from "@/components/magic/photo-hero";
 import { ImageCard } from "@/components/magic/image-card";
@@ -11,6 +9,7 @@ import { AutoSlider } from "@/components/magic/auto-slider";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
 import { BookNowButton } from "@/components/widget/book-now-button";
 import { OtherAdventuresSidebar } from "@/components/sections/other-adventures-sidebar";
+import { RelatedTours } from "@/components/sections/related-tours";
 
 export const metadata: Metadata = {
   title: "Morning Splash Adventure",
@@ -22,6 +21,7 @@ const details = [
   { icon: Clock, label: "9am – 1pm", sub: "4 hours" },
   { icon: MapPin, label: "3 snorkel stops", sub: "Boca Catalina, Antilla, Malmok" },
   { icon: GlassWater, label: "Drinks + snacks", sub: "Included" },
+  { icon: Users, label: "All ages welcome", sub: "Max 24 guests aboard" },
 ];
 
 const included = [
@@ -46,7 +46,7 @@ export default function MorningSplashAdventurePage() {
         />
 
         <section className="container-px mx-auto max-w-6xl py-16 sm:py-20">
-          <RevealGroup className="grid gap-4 sm:grid-cols-3" stagger={0.06}>
+          <RevealGroup className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4" stagger={0.06}>
             {details.map((d) => (
               <RevealItem key={d.label} className="flex items-center gap-3 rounded-2xl border border-border bg-card p-5">
                 <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/15">
@@ -125,31 +125,15 @@ export default function MorningSplashAdventurePage() {
               description="Jump straight in between snorkel stops."
             />
             <ImageCard
-              src="/ingested/flagshiparubaa/schooner-turquoise-anchor.webp"
-              alt="The Flagship Aruba schooner under sail"
+              src="/ingested/flagship-owner/ladyblack-transom.jpg"
+              alt="The Flagship Aruba schooner's name painted on the stern"
               title="The Ship"
               description="A traditional wooden schooner, built to feel like the real thing."
             />
           </AutoSlider>
         </section>
 
-        <section className="container-px mx-auto max-w-6xl pb-24">
-          <Reveal className="flex flex-col items-center gap-4 text-center">
-            <h2 className="text-3xl font-bold sm:text-4xl">Prefer an evening trip?</h2>
-            <p className="max-w-md text-muted-foreground">
-              Our Sunset & Stars Cruise trades snorkeling for an open bar and a sky full
-              of stars.
-            </p>
-            <div className="flex flex-wrap items-center justify-center gap-3">
-              <Button asChild size="lg" variant="outline">
-                <Link href="/boat-tours/sunset-stars-cruise">See Sunset & Stars Cruise</Link>
-              </Button>
-              <Button asChild size="lg" variant="outline">
-                <Link href="/boat-tours">Back to All Boat Tours</Link>
-              </Button>
-            </div>
-          </Reveal>
-        </section>
+        <RelatedTours excludeSlug="morning-splash-adventure" />
       </main>
       <Footer />
     </>

@@ -14,7 +14,7 @@ import { getLocaleFromPathname, localizePath } from "@/lib/i18n";
 function Logo({ href, className }: { href: string; className?: string }) {
   return (
     <Link href={href} className={cn("flex items-center gap-2 shrink-0 cursor-pointer", className)} aria-label="Flagship Aruba home">
-      <ShipMarkIcon className="h-7 text-primary-foreground" />
+      <ShipMarkIcon className="h-7 text-ocean" />
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src="/flagship-aruba-logo.webp" alt="Flagship Aruba" className="h-10 w-auto" />
     </Link>
@@ -112,13 +112,6 @@ export function Navbar() {
                             </Link>
                           ))}
                         </div>
-                        <Link
-                          href={item.href}
-                          onClick={() => setActiveMenu(null)}
-                          className="mt-2 block cursor-pointer rounded-lg px-3 py-2 text-sm font-semibold text-primary transition-colors hover:bg-primary/10"
-                        >
-                          View all {item.label} →
-                        </Link>
                       </div>
                     </div>
                   )}

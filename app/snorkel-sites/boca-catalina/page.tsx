@@ -7,6 +7,7 @@ import { PhotoHero } from "@/components/magic/photo-hero";
 import { Reveal } from "@/components/magic/reveal";
 import { BookNowButton } from "@/components/widget/book-now-button";
 import { SnorkelSitesSidebar } from "@/components/sections/snorkel-sites-sidebar";
+import { RelatedSites } from "@/components/sections/related-sites";
 import { snorkelSites } from "@/lib/snorkel-sites";
 
 const site = snorkelSites.find((s) => s.slug === "boca-catalina")!;
@@ -100,6 +101,8 @@ export default function BocaCatalinaPage() {
             </Link>
           </Reveal>
         </section>
+
+        <RelatedSites excludeSlug="boca-catalina" />
       </main>
       <Footer />
     </>

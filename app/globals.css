@@ -15,11 +15,11 @@
 
 :root {
   /* brand:hue:start */
-  --brand-hue: 250; /* navy — set by brand.config.ts */
+  --brand-hue: 243; /* navy — set by brand.config.ts */
 /* brand:hue:end */
 
   /* Warm neutral hue for cream surfaces, independent of the navy brand hue. */
-  --cream-hue: 75;
+  --cream-hue: 71.2;
 
   /* radius — brand:corners controls this via `npm run brand` */
   --radius: 0.75rem;

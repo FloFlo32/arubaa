@@ -4,11 +4,22 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { brand } from "@/brand.config";
-import { InstagramIcon, ShipMarkIcon } from "@/components/icons";
+import { InstagramIcon, FacebookIcon, TikTokIcon, WhatsAppIcon, ShipMarkIcon } from "@/components/icons";
 import { getFooterMenu, getFooterInfo, getLegalNav } from "@/lib/site-nav";
 import { getLocaleFromPathname, localizePath, type LocaleCode } from "@/lib/i18n";
 
-const socials = [{ href: brand.social.instagram, label: "Instagram", Icon: InstagramIcon }];
+const socials = [
+  { href: brand.social.instagram, label: "Instagram", Icon: InstagramIcon },
+  { href: brand.social.facebook, label: "Facebook", Icon: FacebookIcon },
+  { href: brand.social.tiktok, label: "TikTok", Icon: TikTokIcon },
+  { href: `https://wa.me/${brand.contact.whatsapp}`, label: "WhatsApp", Icon: WhatsAppIcon },
+].filter((s) => s.href);
+
+const partners = [
+  { href: "https://www.viator.com", label: "Viator", src: "/partners/viator.svg" },
+  { href: "https://www.tripadvisor.com", label: "TripAdvisor", src: "/partners/tripadvisor.svg" },
+  { href: "https://www.getyourguide.com", label: "GetYourGuide", src: "/partners/getyourguide.svg" },
+];
 
 const tagline: Record<LocaleCode, string> = {
   en: "A traditional wooden schooner for snorkeling adventures and sunset cruises on Aruba's turquoise coast.",
@@ -37,7 +48,10 @@ const infoHeading: Record<LocaleCode, string> = {
   en: "Information", es: "Información", nl: "Informatie", de: "Informationen", it: "Informazioni", br: "Informações", se: "Information",
 };
 const connectHeading: Record<LocaleCode, string> = {
-  en: "Connect", es: "Contacto", nl: "Contact", de: "Kontakt", it: "Contatti", br: "Conecte-se", se: "Kontakt",
+  en: "Follow Us", es: "Síguenos", nl: "Volg Ons", de: "Folgen Sie Uns", it: "Seguici", br: "Siga-nos", se: "Följ Oss",
+};
+const workWithHeading: Record<LocaleCode, string> = {
+  en: "We Work With", es: "Trabajamos Con", nl: "Wij Werken Samen Met", de: "Wir Arbeiten Mit", it: "Lavoriamo Con", br: "Trabalhamos Com", se: "Vi Samarbetar Med",
 };
 
 export function Footer() {
@@ -53,7 +67,7 @@ export function Footer() {
       <div className="container-px mx-auto grid max-w-6xl gap-10 py-14 md:grid-cols-[1.3fr_1fr_1fr_1fr]">
         <div>
           <Link href={homeHref} className="flex items-center gap-2 cursor-pointer" aria-label="Flagship Aruba home">
-            <ShipMarkIcon className="h-8 text-primary-foreground" />
+            <ShipMarkIcon className="h-8 text-ocean" />
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/flagship-aruba-logo.webp" alt="Flagship Aruba" className="h-11 w-auto" />
           </Link>
@@ -119,6 +133,28 @@ export function Footer() {
           >
             Book Now
           </Link>
+        </div>
+      </div>
+      <div className="border-t border-primary-foreground/15 py-8">
+        <div className="container-px mx-auto flex max-w-6xl flex-col items-center gap-4 sm:flex-row sm:justify-between">
+          <p className="text-xs font-medium uppercase tracking-[0.2em] text-primary-foreground/60">
+            {workWithHeading[locale]}
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-6">
+            {partners.map((p) => (
+              <a
+                key={p.label}
+                href={p.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={p.label}
+                className="cursor-pointer opacity-70 brightness-0 invert transition-opacity hover:opacity-100"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={p.src} alt={p.label} className="h-5 w-auto sm:h-6" />
+              </a>
+            ))}
+          </div>
         </div>
       </div>
       <div className="border-t border-primary-foreground/15">

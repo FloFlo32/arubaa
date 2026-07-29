@@ -29,7 +29,7 @@ export function WhyFlagshipAruba() {
               Why sail with us
             </span>
             <h2 className="mt-3 text-balance text-4xl font-bold sm:text-5xl">
-              A pirate-style schooner, a witty crew, and no shortage of rum.
+              A pirate-style schooner, a <span className="text-ocean">witty crew</span>, and no shortage of rum.
             </h2>
             <p className="mt-4 max-w-lg text-primary-foreground/85">
               Flagship Aruba runs a genuine pirate-style schooner to Aruba&apos;s best
@@ -41,7 +41,7 @@ export function WhyFlagshipAruba() {
               {features.map((f) => (
                 <RevealItem key={f.title}>
                   <div className="flex items-start gap-4 rounded-2xl border border-primary-foreground/15 bg-primary-foreground/10 p-5">
-                    <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-primary-foreground/15">
+                    <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-ocean/20 text-ocean">
                       <f.icon className="size-5" />
                     </span>
                     <div>

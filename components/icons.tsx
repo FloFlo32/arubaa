@@ -78,16 +78,19 @@ export function TripAdvisorIcon({ className }: { className?: string }) {
   );
 }
 
+/** Simple single-sail dinghy mark, matching Flagship Aruba's own logo icon
+ * (mast + flag, one sail, a hull, waves below). Used in the navbar and footer. */
 export function ShipMarkIcon({ className }: { className?: string }) {
   return (
-    <svg viewBox="0 0 32 24" fill="none" aria-hidden className={cn("h-8 w-auto shrink-0", className)}>
+    <svg viewBox="0 0 40 34" fill="none" aria-hidden className={cn("h-8 w-auto shrink-0", className)}>
       <g fill="currentColor">
-        <path d="M13 3 L13 17 L21.5 17 Z" />
-        <path d="M19 7.5 L14.5 17 L26 17 Z" />
-        <path d="M4.5 17 L27 17 L29 16.2 L24.5 20.3 Q15 22.3 7.5 20.3 Z" />
+        <path d="M20 3 L27 5.5 L20 8 Z" />
+        <path d="M20 8 L20 19 L7 20 Z" />
+        <path d="M4 20 L36 20 L31 26 Q20 29 9 26 Z" />
       </g>
-      <line x1="13" y1="3" x2="27.3" y2="16.6" stroke="currentColor" strokeWidth="0.4" />
-      <path d="M3 20.8 Q16 18 30 20.8" stroke="currentColor" strokeWidth="0.9" strokeLinecap="round" />
+      <line x1="20" y1="3" x2="20" y2="20" stroke="currentColor" strokeWidth="1" />
+      <path d="M2 29 Q20 25 38 29" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
+      <path d="M5 32.5 Q20 29.2 35 32.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
     </svg>
   );
 }

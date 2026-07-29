@@ -57,6 +57,8 @@ export const brand = {
     /** owner/repo — used by the deploy/validate scripts to target the right GitHub repo. */
     github: "FloFlo32/arubaa",
     instagram: "https://www.instagram.com/flagshiparuba",
+    facebook: "https://www.facebook.com/profile.php?id=61591875877954",
+    tiktok: "https://www.tiktok.com/@flagshiparuba",
     email: "info@flagshiparuba.com",
   },
 

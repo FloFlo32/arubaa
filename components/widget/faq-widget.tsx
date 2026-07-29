@@ -75,7 +75,7 @@ export function FaqWidget() {
         aria-label={open ? "Close assistant" : "Open FAQ assistant"}
         aria-expanded={open}
         className={cn(
-          "fixed bottom-5 right-5 z-50 grid size-14 place-items-center rounded-full bg-primary text-primary-foreground shadow-lg shadow-primary/30 transition-transform duration-200 hover:scale-105 active:scale-95 motion-reduce:transition-none",
+          "fixed bottom-5 right-5 z-50 grid size-14 place-items-center rounded-full bg-ocean text-ocean-foreground shadow-lg shadow-ocean/40 transition-transform duration-200 hover:scale-105 active:scale-95 motion-reduce:transition-none",
           open && "rotate-90"
         )}
       >
@@ -88,20 +88,20 @@ export function FaqWidget() {
         aria-label={`${brand.name} assistant`}
         aria-hidden={!open}
         className={cn(
-          "fixed bottom-24 right-5 z-50 flex w-[min(24rem,calc(100vw-2.5rem))] flex-col overflow-hidden rounded-2xl border border-border bg-popover text-popover-foreground shadow-2xl shadow-primary/10 transition-all duration-200 motion-reduce:transition-none",
+          "fixed bottom-40 right-5 z-50 flex w-[min(24rem,calc(100vw-2.5rem))] flex-col overflow-hidden rounded-2xl border border-border bg-popover text-popover-foreground shadow-2xl shadow-primary/20 transition-all duration-200 motion-reduce:transition-none",
           open
             ? "pointer-events-auto translate-y-0 opacity-100"
             : "pointer-events-none translate-y-3 opacity-0"
         )}
         style={{ maxHeight: "min(32rem, calc(100vh - 8rem))" }}
       >
-        <header className="flex items-center gap-2.5 border-b border-border px-4 py-3">
-          <span className="grid size-8 place-items-center rounded-lg bg-primary/10 text-primary">
+        <header className="flex items-center gap-2.5 bg-primary px-4 py-3.5 text-primary-foreground">
+          <span className="grid size-8 place-items-center rounded-lg bg-ocean/20 text-ocean">
             <Sparkles className="size-4" />
           </span>
           <div className="leading-tight">
             <p className="text-sm font-semibold">{brand.name} assistant</p>
-            <p className="text-xs text-muted-foreground">Answers from our FAQ</p>
+            <p className="text-xs text-primary-foreground/70">Answers from our FAQ</p>
           </div>
         </header>
 
@@ -115,7 +115,7 @@ export function FaqWidget() {
                 className={cn(
                   "max-w-[85%] whitespace-pre-wrap rounded-2xl px-3.5 py-2 text-sm",
                   m.role === "user"
-                    ? "rounded-br-sm bg-primary text-primary-foreground"
+                    ? "rounded-br-sm bg-ocean text-ocean-foreground"
                     : "rounded-bl-sm bg-muted text-foreground"
                 )}
               >
