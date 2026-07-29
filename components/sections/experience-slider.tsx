@@ -2,7 +2,14 @@ import { Reveal } from "@/components/magic/reveal";
 import { AutoSlider } from "@/components/magic/auto-slider";
 import { ImageCard } from "@/components/magic/image-card";
 
-const moments = [
+const moments: {
+  eyebrow: string;
+  title: string;
+  description: string;
+  href: string;
+  src: string;
+  objectPosition?: "center" | "top" | "bottom";
+}[] = [
   {
     eyebrow: "Moment 01",
     title: "Reef Snorkeling",
@@ -29,11 +36,11 @@ const moments = [
   },
   {
     eyebrow: "Moment 04",
-    title: "Her Name on the Stern",
+    title: "Golden Hour Crew",
     description:
-      "FLAGSHIP ARUBA, painted across the ship you'll actually be sailing on.",
-    href: "/about#the-restoration",
-    src: "/ingested/flagship-owner/ship-transom-blue-sky.jpg",
+      "The music comes out and the whole boat ends up on deck for the ride back in.",
+    href: "/boat-tours/sunset-stars-cruise",
+    src: "/ingested/flagshiparubaa/guest-g.webp",
   },
   {
     eyebrow: "Moment 05",
@@ -50,6 +57,7 @@ const moments = [
       "Some evenings the whole sky turns pink and gold as we sail back in.",
     href: "/boat-tours/sunset-stars-cruise",
     src: "/ingested/flagship-owner/ship-sunset-dramatic.jpg",
+    objectPosition: "bottom" as const,
   },
   {
     eyebrow: "Moment 07",
@@ -89,6 +97,7 @@ export function ExperienceSlider() {
               description={m.description}
               href={m.href}
               className="h-full"
+              objectPosition={m.objectPosition}
             />
           ))}
         </AutoSlider>

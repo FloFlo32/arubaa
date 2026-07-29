@@ -22,6 +22,7 @@ export function ImageCard({
   eyebrow,
   className,
   ratio = "aspect-[4/3]",
+  objectPosition = "center",
 }: {
   src: string;
   alt: string;
@@ -31,6 +32,8 @@ export function ImageCard({
   eyebrow?: string;
   className?: string;
   ratio?: string;
+  /** Use for tall/portrait source photos so the subject isn't cropped off the top or bottom. */
+  objectPosition?: "center" | "top" | "bottom";
 }) {
   const inner = (
     <>
@@ -41,7 +44,12 @@ export function ImageCard({
           alt={alt}
           loading="lazy"
           decoding="async"
-          className="size-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.04] motion-reduce:transition-none"
+          className={cn(
+            "size-full object-cover transition-transform duration-500 group-hover:scale-[1.04] motion-reduce:transition-none",
+            objectPosition === "bottom" && "object-bottom",
+            objectPosition === "top" && "object-top",
+            objectPosition === "center" && "object-center"
+          )}
         />
       </div>
       <div className="flex shrink-0 flex-col gap-2 p-5">

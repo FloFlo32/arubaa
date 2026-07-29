@@ -122,6 +122,7 @@ export default function SunsetStarsCruisePage() {
               alt="The schooner silhouetted under a pink sunset sky"
               title="Golden Hour"
               description="Front-row views as the sun drops toward the horizon."
+              objectPosition="bottom"
             />
             <ImageCard
               src="/ingested/flagshiparuba/img-006.webp"

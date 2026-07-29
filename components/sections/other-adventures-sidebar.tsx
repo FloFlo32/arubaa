@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Clock } from "lucide-react";
 import { BookNowButton } from "@/components/widget/book-now-button";
+import { cn } from "@/lib/utils";
 
 const allAdventures = [
   {
@@ -23,6 +24,7 @@ const allAdventures = [
     time: "5:30pm – 7:30pm",
     href: "/boat-tours/sunset-stars-cruise",
     src: "/ingested/flagshiparubaa/schooner-pink-sunset.webp",
+    objectPosition: "bottom" as const,
   },
   {
     slug: "private-charters",
@@ -61,7 +63,10 @@ export function OtherAdventuresSidebar({ excludeSlug }: { excludeSlug: string })
                   alt={a.title}
                   loading="lazy"
                   decoding="async"
-                  className="size-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  className={cn(
+                    "size-full object-cover transition-transform duration-300 group-hover:scale-110",
+                    a.objectPosition === "bottom" && "object-bottom"
+                  )}
                 />
               </div>
               <div className="min-w-0">
