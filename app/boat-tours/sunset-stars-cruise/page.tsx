@@ -105,7 +105,7 @@ export default function SunsetStarsCruisePage() {
               <p className="mt-6 text-sm text-muted-foreground">
                 Please arrive 30 minutes before departure.
               </p>
-              <p className="mt-4 text-lg font-bold text-primary">From $90 per adult</p>
+              <p className="mt-4 text-lg font-bold text-ocean">From $90 per adult</p>
               <div className="mt-4">
                 <BookNowButton activityId="8ff35752-c22a-41f6-b142-4679aa1d1fb4" label="Book This Cruise" />
               </div>
@@ -114,11 +114,12 @@ export default function SunsetStarsCruisePage() {
               <div className="overflow-hidden rounded-3xl border border-border bg-muted">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/ingested/flagshiparubaa/schooner-turquoise-anchor.webp"
-                  alt="The Flagship Aruba schooner under sail at dusk"
+                  src="/ingested/flagshiparubaa/hammock-relax.webp"
+                  alt="Guests relaxing with drinks in the bow netting as the schooner sails"
                   loading="lazy"
                   decoding="async"
-                  className="aspect-[4/5] w-full object-cover object-center"
+                  style={{ objectPosition: "30% center" }}
+                  className="aspect-[4/5] w-full object-cover"
                 />
               </div>
             </Reveal>

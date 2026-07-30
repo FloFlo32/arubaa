@@ -115,7 +115,7 @@ export default function BoatToursPage() {
                         <Clock className="size-4" /> {t.time}
                       </span>
                       <p className="text-pretty text-muted-foreground">{t.body}</p>
-                      <p className="text-lg font-bold text-primary">{t.price}</p>
+                      <p className="text-lg font-bold text-ocean">{t.price}</p>
                       <div className="mt-2 flex flex-wrap gap-3">
                         <Button asChild variant="outline">
                           <Link href={t.href}>

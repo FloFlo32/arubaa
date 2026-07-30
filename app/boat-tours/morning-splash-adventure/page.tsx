@@ -104,7 +104,7 @@ export default function MorningSplashAdventurePage() {
               <p className="mt-6 text-sm text-muted-foreground">
                 Please arrive 30 minutes before departure.
               </p>
-              <p className="mt-4 text-lg font-bold text-primary">From $98 per adult</p>
+              <p className="mt-4 text-lg font-bold text-ocean">From $98 per adult</p>
               <div className="mt-4">
                 <BookNowButton activityId="01083159-5861-4408-b78d-22c81e19faa4" label="Book This Tour" />
               </div>
@@ -113,11 +113,10 @@ export default function MorningSplashAdventurePage() {
               <div className="overflow-hidden rounded-3xl border border-border bg-muted">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/ingested/flagshiparubaa/snorkel-sea-turtle.webp"
-                  alt="A sea turtle swimming in clear turquoise water"
+                  src="/ingested/flagshiparubaa/snorkel-couple-turtle.webp"
+                  alt="Guests snorkeling alongside a sea turtle in clear turquoise water"
                   loading="lazy"
                   decoding="async"
-                  style={{ objectPosition: "28% center" }}
                   className="aspect-[4/5] w-full object-cover"
                 />
               </div>

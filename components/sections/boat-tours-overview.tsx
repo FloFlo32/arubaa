@@ -5,6 +5,7 @@ import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
 const tours = [
   {
     eyebrow: "Morning",
+    tag: "Gear Included",
     title: "Morning Splash Adventure",
     time: "9am to 1pm · 4 hours",
     price: "From $98 per adult",
@@ -15,6 +16,7 @@ const tours = [
   },
   {
     eyebrow: "Afternoon",
+    tag: "Open Bar",
     title: "Afternoon Pirate Party",
     time: "1:30pm to 5pm · 3.5 hours",
     price: "From $86 per adult",
@@ -25,6 +27,7 @@ const tours = [
   },
   {
     eyebrow: "Sunset",
+    tag: "Premium Cocktails",
     title: "Sunset & Stars Cruise",
     time: "5:30pm to 7:30pm · 2 hours",
     price: "From $90 per adult",
@@ -54,7 +57,7 @@ export function BoatToursOverview() {
           <RevealItem key={t.title}>
             <Link
               href={t.href}
-              className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/5 cursor-pointer"
+              className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:-translate-y-1.5 hover:border-primary/20 hover:shadow-xl hover:shadow-primary/10 cursor-pointer"
             >
               <div className="relative aspect-[16/10] overflow-hidden bg-muted">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -63,8 +66,11 @@ export function BoatToursOverview() {
                   alt={t.alt}
                   loading="lazy"
                   decoding="async"
-                  className="size-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.04]"
+                  className="size-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.06]"
                 />
+                <span className="absolute left-3 top-3 rounded-full bg-primary/90 px-3 py-1 text-xs font-semibold text-primary-foreground backdrop-blur-sm">
+                  {t.tag}
+                </span>
               </div>
               <div className="flex flex-1 flex-col gap-2 p-6">
                 <span className="text-xs font-medium uppercase tracking-[0.16em] text-primary">
@@ -78,7 +84,7 @@ export function BoatToursOverview() {
                   <Clock className="size-3.5" /> {t.time}
                 </p>
                 <p className="text-sm text-muted-foreground">{t.body}</p>
-                <p className="mt-1 text-sm font-semibold text-primary">{t.price}</p>
+                <p className="mt-1 text-lg font-bold text-ocean">{t.price}</p>
               </div>
             </Link>
           </RevealItem>

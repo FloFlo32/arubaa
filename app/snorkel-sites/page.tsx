@@ -45,7 +45,7 @@ export default function SnorkelSitesPage() {
                 const reversed = i % 2 === 1;
                 return (
                   <Reveal key={s.slug} delay={i * 0.06}>
-                    <div className="grid gap-0 overflow-hidden rounded-3xl border border-border bg-card md:grid-cols-2">
+                    <div className="group grid gap-0 overflow-hidden rounded-3xl border border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-xl hover:shadow-primary/10 md:grid-cols-2">
                       <div
                         className={cn(
                           "relative aspect-[4/3] overflow-hidden bg-muted md:aspect-auto",
@@ -58,14 +58,18 @@ export default function SnorkelSitesPage() {
                           alt={s.heroAlt}
                           loading="lazy"
                           decoding="async"
-                          className="size-full object-cover object-center"
+                          className="size-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.06]"
                         />
+                        <span className="absolute left-3 top-3 rounded-full bg-primary/90 px-3 py-1 text-xs font-semibold text-primary-foreground backdrop-blur-sm">
+                          {s.depth} deep
+                        </span>
                       </div>
                       <div className={cn("flex flex-col justify-center gap-4 p-7 sm:p-9", reversed && "md:order-1")}>
                         <span className="grid size-11 place-items-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/15">
                           <Icon className="size-5" />
                         </span>
                         <h2 className="font-display text-2xl font-bold sm:text-3xl">{s.title}</h2>
+                        <p className="text-sm font-medium text-primary">{s.tagline}</p>
                         <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 text-sm text-muted-foreground">
                           <span className="flex items-center gap-1.5">
                             <Ruler className="size-4" /> {s.depth}

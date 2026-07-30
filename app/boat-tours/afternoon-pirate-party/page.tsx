@@ -105,7 +105,7 @@ export default function AfternoonPiratePartyPage() {
               <p className="mt-6 text-sm text-muted-foreground">
                 Please arrive 30 minutes before departure.
               </p>
-              <p className="mt-4 text-lg font-bold text-primary">From $86 per adult</p>
+              <p className="mt-4 text-lg font-bold text-ocean">From $86 per adult</p>
               <div className="mt-4">
                 <BookNowButton activityId="47611e71-4496-4915-99ef-816cb4ec6fe2" label="Book This Tour" />
               </div>
