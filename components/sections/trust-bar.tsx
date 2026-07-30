@@ -1,26 +1,26 @@
-import { Ship, Fish, Utensils, Users } from "lucide-react";
+import { Star, Users, Utensils, Compass } from "lucide-react";
 import { RevealGroup, RevealItem } from "@/components/magic/reveal";
 
 const stats = [
   {
-    icon: Ship,
-    value: "1",
-    label: "Traditional wooden schooner, built to look like a real pirate ship",
-  },
-  {
-    icon: Fish,
-    value: "3",
-    label: "Snorkel sites in rotation, from calm reef to WWII shipwreck",
-  },
-  {
-    icon: Utensils,
-    value: "3",
-    label: "Boat tours to choose from, morning splash to sunset and stars",
+    icon: Star,
+    value: "5-Star",
+    label: "Google rating from guests who sailed with us",
   },
   {
     icon: Users,
+    value: "1,000+",
+    label: "Happy guests welcomed aboard",
+  },
+  {
+    icon: Utensils,
+    value: "Open Bar",
+    label: "Included on our afternoon and sunset cruises",
+  },
+  {
+    icon: Compass,
     value: "3",
-    label: "Friends who turned a childhood dream into a real crew",
+    label: "Unique adventures, from morning snorkel to sunset sail",
   },
 ];
 

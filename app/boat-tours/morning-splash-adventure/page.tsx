@@ -85,7 +85,8 @@ export default function MorningSplashAdventurePage() {
               <p className="mt-4 text-sm text-muted-foreground">
                 Please arrive 30 minutes before departure.
               </p>
-              <div className="mt-8">
+              <p className="mt-4 text-lg font-bold text-primary">From $98 per adult</p>
+              <div className="mt-4">
                 <BookNowButton activityId="" label="Book This Tour" />
               </div>
             </Reveal>

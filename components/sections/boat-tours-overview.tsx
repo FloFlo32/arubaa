@@ -7,6 +7,7 @@ const tours = [
     eyebrow: "Morning",
     title: "Morning Splash Adventure",
     time: "9am – 1pm · 4 hours",
+    price: "From $98 per adult",
     body: "Three snorkel stops, gear included, unlimited drinks and Caribbean snacks aboard our traditional schooner.",
     href: "/boat-tours/morning-splash-adventure",
     img: "/ingested/flagshiparuba/img-008.webp",
@@ -16,6 +17,7 @@ const tours = [
     eyebrow: "Afternoon",
     title: "Afternoon Pirate Party",
     time: "1:30pm – 5pm · 3.5 hours",
+    price: "From $86 per adult",
     body: "Two premium snorkel stops, a Caribbean-style lunch, open bar, rope swing and island music.",
     href: "/boat-tours/afternoon-pirate-party",
     img: "/ingested/flagshiparubaa/guest-e.webp",
@@ -25,6 +27,7 @@ const tours = [
     eyebrow: "Sunset",
     title: "Sunset & Stars Cruise",
     time: "5:30pm – 7:30pm · 2 hours",
+    price: "From $90 per adult",
     body: "An open bar, Caribbean bites and two swimming stops as the sky turns to stars over the water.",
     href: "/boat-tours/sunset-stars-cruise",
     img: "/ingested/flagshiparubaa/schooner-sunset-guests.webp",
@@ -75,6 +78,7 @@ export function BoatToursOverview() {
                   <Clock className="size-3.5" /> {t.time}
                 </p>
                 <p className="text-sm text-muted-foreground">{t.body}</p>
+                <p className="mt-1 text-sm font-semibold text-primary">{t.price}</p>
               </div>
             </Link>
           </RevealItem>

@@ -36,7 +36,15 @@ export const faqs = [
     a: "Our captain chooses from Boca Catalina, Malmok Beach and the SS Antilla shipwreck based on conditions that day. The Morning Splash Adventure covers all three; the Afternoon Pirate Party covers two.",
   },
   {
+    q: "Do the boats have bathrooms onboard?",
+    a: "Yes, our schooner has an onboard bathroom for your comfort during the cruise.",
+  },
+  {
+    q: "Are there strong currents at the snorkeling sites?",
+    a: "Aruba's snorkel sites sit along the calm, protected western coast, so conditions are generally mild and beginner-friendly. Our crew always checks the day's conditions and picks the best spots for visibility and comfort.",
+  },
+  {
     q: "How do I book, and where can I see pricing?",
-    a: "Contact us by phone, WhatsApp or email and our crew will confirm current pricing and availability for your dates.",
+    a: "Starting prices are listed on each tour page. Contact us by phone, WhatsApp or email and our crew will confirm exact pricing and availability for your dates.",
   },
 ];
