@@ -26,7 +26,7 @@ export function HeroSlideshow() {
   }, []);
 
   return (
-    <div className="absolute inset-0 size-full overflow-hidden" aria-hidden="true">
+    <div className="absolute inset-0 size-full overflow-hidden bg-primary" aria-hidden="true">
       {slides.map((s, i) => (
         <div
           key={s.src}
