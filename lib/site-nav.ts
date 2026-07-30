@@ -6,11 +6,11 @@ import { type LocaleCode, localizePath } from "@/lib/i18n";
  * are locale-prefixed at render time via localizePath().
  */
 export type NavChild = { key: string; href: string };
-export type NavItem = { key: string; href: string; children: NavChild[] };
+export type NavItem = { key: string; href: string; children: NavChild[]; action?: "inquiry" };
 
 const primaryNavBase: NavItem[] = [
   {
-    key: "boat-tours",
+    key: "cruises",
     href: "/boat-tours",
     children: [
       { key: "morning-splash", href: "/boat-tours/morning-splash-adventure" },
@@ -24,15 +24,11 @@ const primaryNavBase: NavItem[] = [
     children: [],
   },
   {
-    key: "about",
-    href: "/about",
+    key: "private-parties",
+    href: "",
     children: [],
+    action: "inquiry",
   },
-];
-
-const secondaryNavBase: NavChild[] = [
-  { key: "faq", href: "/faq" },
-  { key: "contact", href: "/contact" },
 ];
 
 const footerInfoBase: NavChild[] = [
@@ -60,7 +56,9 @@ const legalNavBase: NavChild[] = [
 /** label translations, keyed by nav item key */
 const t: Record<string, Record<LocaleCode, string>> = {
   "boat-tours": { en: "Boat Tours", es: "Excursiones En Barco", nl: "Boottochten", de: "Bootstouren", it: "Escursioni In Barca", br: "Passeios De Barco", se: "Båtturer" },
-  "snorkel-sites": { en: "Snorkel Sites", es: "Sitios De Snorkel", nl: "Snorkelplekken", de: "Schnorchelplätze", it: "Siti Per Snorkeling", br: "Locais De Mergulho", se: "Snorkelplatser" },
+  cruises: { en: "Cruises", es: "Cruceros", nl: "Cruises", de: "Kreuzfahrten", it: "Crociere", br: "Cruzeiros", se: "Kryssningar" },
+  "snorkel-sites": { en: "Our Snorkel Sites", es: "Sitios De Snorkel", nl: "Snorkelplekken", de: "Schnorchelplätze", it: "Siti Per Snorkeling", br: "Locais De Mergulho", se: "Snorkelplatser" },
+  "private-parties": { en: "Private Parties", es: "Fiestas Privadas", nl: "Privéfeesten", de: "Private Feiern", it: "Feste Private", br: "Festas Privadas", se: "Privata Fester" },
   about: { en: "About Us", es: "Sobre Nosotros", nl: "Over Ons", de: "Über Uns", it: "Chi Siamo", br: "Sobre Nós", se: "Om Oss" },
 
   "morning-splash": { en: "Morning Snorkel Tour", es: "Aventura Matutina", nl: "Ochtend Avontuur", de: "Morgenabenteuer", it: "Avventura Del Mattino", br: "Aventura Matinal", se: "Morgonäventyr" },
@@ -82,15 +80,12 @@ export function getPrimaryNav(locale: LocaleCode) {
   return primaryNavBase.map((item) => ({
     label: label(item.key, locale),
     href: localizePath(locale, item.href),
+    action: item.action,
     children: item.children.map((c) => ({
       label: label(c.key, locale),
       href: localizePath(locale, c.href),
     })),
   }));
-}
-
-export function getSecondaryNav(locale: LocaleCode) {
-  return secondaryNavBase.map((c) => ({ label: label(c.key, locale), href: localizePath(locale, c.href) }));
 }
 
 export function getFooterMenu(locale: LocaleCode) {
@@ -111,6 +106,5 @@ export function getLegalNav(locale: LocaleCode) {
 
 // Backwards-compatible English-only exports (used by pages that don't yet pass a locale).
 export const primaryNav = getPrimaryNav("en");
-export const secondaryNav = getSecondaryNav("en");
 export const bookNow = getBookNow("en");
 export const legalNav = getLegalNav("en");

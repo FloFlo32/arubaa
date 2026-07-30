@@ -8,7 +8,7 @@ import { brand } from "@/brand.config";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ShipMarkIcon } from "@/components/icons";
-import { getPrimaryNav, getSecondaryNav, getBookNow } from "@/lib/site-nav";
+import { getPrimaryNav, getBookNow } from "@/lib/site-nav";
 import { getLocaleFromPathname, localizePath } from "@/lib/i18n";
 
 function Logo({ href, className }: { href: string; className?: string }) {
@@ -25,7 +25,6 @@ export function Navbar() {
   const pathname = usePathname();
   const locale = getLocaleFromPathname(pathname);
   const primaryNav = getPrimaryNav(locale);
-  const secondaryNav = getSecondaryNav(locale);
   const bookNow = getBookNow(locale);
   const homeHref = localizePath(locale, "/");
   const [scrolled, setScrolled] = React.useState(false);
@@ -50,7 +49,7 @@ export function Navbar() {
     closeTimer.current = setTimeout(() => setActiveMenu(null), 150);
   };
 
-  const isActive = (href: string) => pathname === href;
+  const isActive = (href: string) => href && pathname === href;
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 w-full pt-3">
@@ -68,6 +67,20 @@ export function Navbar() {
             {primaryNav.map((item) => {
               const active = isActive(item.href);
               const hasChildren = item.children.length > 0;
+
+              if (item.action === "inquiry") {
+                return (
+                  <button
+                    key={item.label}
+                    type="button"
+                    data-yetti-activity=""
+                    className="cursor-pointer rounded-full px-3.5 py-2 text-sm font-medium text-primary-foreground/75 transition-colors hover:bg-white/10 hover:text-white"
+                  >
+                    {item.label}
+                  </button>
+                );
+              }
+
               return (
                 <div
                   key={item.label}
@@ -120,26 +133,13 @@ export function Navbar() {
             })}
           </div>
 
-          <div className="hidden items-center gap-1 xl:flex">
-            {secondaryNav.map((l) => {
-              const active = isActive(l.href);
-              return (
-                <Link
-                  key={l.href}
-                  href={l.href}
-                  aria-current={active ? "page" : undefined}
-                  className={cn(
-                    "cursor-pointer rounded-full px-3 py-2 text-sm transition-colors hover:bg-white/10 hover:text-white",
-                    active ? "text-ocean" : "text-primary-foreground/60"
-                  )}
-                >
-                  {l.label}
-                </Link>
-              );
-            })}
-          </div>
-
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-3">
+            <a
+              href={`tel:${brand.contact.phone}`}
+              className="hidden cursor-pointer items-center gap-1.5 text-sm font-medium text-primary-foreground/80 transition-colors hover:text-white xl:flex"
+            >
+              <Phone className="size-3.5 text-ocean" /> +297 567 7637
+            </a>
             <Button
               data-yetti-activity=""
               size="sm"
@@ -166,6 +166,21 @@ export function Navbar() {
             {primaryNav.map((item) => {
               const active = isActive(item.href);
               const hasChildren = item.children.length > 0;
+
+              if (item.action === "inquiry") {
+                return (
+                  <button
+                    key={item.label}
+                    type="button"
+                    data-yetti-activity=""
+                    onClick={() => setOpen(false)}
+                    className="block cursor-pointer rounded-md border-b border-border/60 px-3 py-3 text-left text-base font-medium text-foreground"
+                  >
+                    {item.label}
+                  </button>
+                );
+              }
+
               if (!hasChildren) {
                 return (
                   <Link
@@ -210,22 +225,6 @@ export function Navbar() {
                     </div>
                   )}
                 </div>
-              );
-            })}
-            {secondaryNav.map((l) => {
-              const active = isActive(l.href);
-              return (
-                <Link
-                  key={l.href}
-                  href={l.href}
-                  onClick={() => setOpen(false)}
-                  className={cn(
-                    "cursor-pointer rounded-md px-3 py-3 text-base hover:bg-accent",
-                    active ? "text-primary" : "text-foreground/80"
-                  )}
-                >
-                  {l.label}
-                </Link>
               );
             })}
             <a
