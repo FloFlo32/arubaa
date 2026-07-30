@@ -123,14 +123,12 @@ export default function MorningSplashAdventurePage() {
               alt="A guest jumps from the schooner into the ocean"
               title="Off the Bow"
               description="Jump straight in between snorkel stops."
-              ratio="aspect-[16/9]"
             />
             <ImageCard
               src="/ingested/flagship-owner/ladyblack-transom.jpg"
               alt="The Flagship Aruba schooner's name painted on the stern"
               title="The Ship"
               description="A traditional wooden schooner, built to feel like the real thing."
-              ratio="aspect-[3/2]"
             />
           </AutoSlider>
         </section>
