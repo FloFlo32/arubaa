@@ -3,6 +3,8 @@ import { LanguageGate } from "@/components/sections/language-gate";
 import { Hero } from "@/components/sections/hero";
 import { TrustBar } from "@/components/sections/trust-bar";
 import { BoatToursOverview } from "@/components/sections/boat-tours-overview";
+import { SnorkelSitesPreview } from "@/components/sections/snorkel-sites-preview";
+import { WhyFlagshipAruba } from "@/components/sections/why-flagship-aruba";
 import { ReviewsTeaser } from "@/components/sections/reviews-teaser";
 import { CTA } from "@/components/sections/cta";
 import { BlogTeaser } from "@/components/sections/blog-teaser";
@@ -17,6 +19,8 @@ export default function Home() {
         <Hero />
         <TrustBar />
         <BoatToursOverview />
+        <SnorkelSitesPreview />
+        <WhyFlagshipAruba />
         <ReviewsTeaser />
         <CTA />
         <BlogTeaser />
