@@ -64,7 +64,7 @@ export default function BlogPostPage() {
             <p>
               That clarity is one reason Aruba&apos;s reefs are so popular with
               snorkelers who want to actually learn what they&apos;re looking at.
-              It&apos;s also why so many guests on our Afternoon Pirate Party end up
+              It&apos;s also why so many guests on our Afternoon Snorkel Tour end up
               spending longer in the water than they planned.
             </p>
             <p>

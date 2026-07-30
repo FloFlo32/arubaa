@@ -115,8 +115,8 @@ export default function BlogPostPage() {
 
             <h2>See Them All in One Trip</h2>
             <p>
-              Our Morning Splash Adventure visits all three sites, while the Afternoon
-              Pirate Party visits the SS Antilla and Boca Catalina, the two most
+              Our Morning Snorkel Tour visits all three sites, while the Afternoon
+              Snorkel Tour visits the SS Antilla and Boca Catalina, the two most
               popular stops, as part of a cruise that also includes an open bar, live
               music, and the famous rope swing. It&apos;s the best way to experience
               these sites for yourself, with a party atmosphere that keeps the energy

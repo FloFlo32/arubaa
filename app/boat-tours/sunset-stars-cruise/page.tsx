@@ -8,7 +8,7 @@ import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
 import { BookNowButton } from "@/components/widget/book-now-button";
 
 export const metadata: Metadata = {
-  title: "Sunset & Stars Cruise",
+  title: "Sunset Cruise",
   description:
     "A 2-hour evening sail with Flagship Aruba: open bar, Caribbean bites, swimming stops and stargazing over the water.",
 };
@@ -43,11 +43,11 @@ export default function SunsetStarsCruisePage() {
       <Navbar />
       <main className="flex-1">
         <PhotoHero
-          eyebrow="Sunset & Stars Cruise"
+          eyebrow="Sunset Cruise"
           title="An evening on the water"
           body="Unwind as the sun dips below the horizon, with local bites, drinks and ocean breezes for couples, families and friends."
-          src="/ingested/flagshiparuba/img-009.webp"
-          alt="Aruba's rocky turquoise coastline at golden hour"
+          src="/ingested/flagship-owner/ship-sunset-dramatic-wide.jpg"
+          alt="The Flagship Aruba schooner silhouetted against a dramatic sunset sky"
         />
 
         <section className="container-px mx-auto max-w-6xl py-16 sm:py-20">
@@ -114,11 +114,10 @@ export default function SunsetStarsCruisePage() {
               <div className="overflow-hidden rounded-3xl border border-border bg-muted">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/ingested/flagshiparubaa/hammock-relax.webp"
-                  alt="Guests relaxing with drinks in the bow netting as the schooner sails"
+                  src="/ingested/flagship-owner/schooner-pink-sunset-wide.jpg"
+                  alt="The Flagship Aruba schooner sailing under a pink sunset sky"
                   loading="lazy"
                   decoding="async"
-                  style={{ objectPosition: "30% center" }}
                   className="aspect-[4/5] w-full object-cover"
                 />
               </div>

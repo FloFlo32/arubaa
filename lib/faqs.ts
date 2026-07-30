@@ -13,11 +13,11 @@ export const faqs = [
   },
   {
     q: "How long are the tours?",
-    a: "The Morning Splash Adventure runs 4 hours, the Afternoon Pirate Party runs 3.5 hours, and the Sunset & Stars Cruise runs 2 hours.",
+    a: "The Morning Snorkel Tour runs 4 hours, the Afternoon Snorkel Tour runs 3.5 hours, and the Sunset Cruise runs 2 hours.",
   },
   {
     q: "Is there an open bar?",
-    a: "Yes! Our Afternoon Pirate Party and Sunset & Stars Cruise include an open bar with a selection of local drinks, beer, wine, and soft drinks.",
+    a: "Yes! Our Afternoon Snorkel Tour and Sunset Cruise include an open bar with a selection of local drinks, beer, wine, and soft drinks.",
   },
   {
     q: "Can I book a private tour?",

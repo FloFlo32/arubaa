@@ -8,7 +8,7 @@ import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
 import { BookNowButton } from "@/components/widget/book-now-button";
 
 export const metadata: Metadata = {
-  title: "Morning Splash Adventure",
+  title: "Morning Snorkel Tour",
   description:
     "A 4-hour morning snorkeling adventure aboard Flagship Aruba's traditional schooner: 3 snorkel stops, gear, drinks and snacks included.",
 };
@@ -42,7 +42,7 @@ export default function MorningSplashAdventurePage() {
       <Navbar />
       <main className="flex-1">
         <PhotoHero
-          eyebrow="Morning Splash Adventure"
+          eyebrow="Morning Snorkel Tour"
           title="Start your day in the water"
           body="Three snorkel stops through crystal-clear water and vibrant marine life, with gear, drinks and snacks included."
           src="/ingested/flagshiparuba/img-008.webp"

@@ -8,7 +8,7 @@ import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
 import { BookNowButton } from "@/components/widget/book-now-button";
 
 export const metadata: Metadata = {
-  title: "Afternoon Pirate Party",
+  title: "Afternoon Snorkel Tour",
   description:
     "A 3.5-hour afternoon cruise with Flagship Aruba: two premium snorkel stops, a Caribbean-style lunch, open bar, rope swing and island music.",
 };
@@ -43,7 +43,7 @@ export default function AfternoonPiratePartyPage() {
       <Navbar />
       <main className="flex-1">
         <PhotoHero
-          eyebrow="Afternoon Pirate Party"
+          eyebrow="Afternoon Snorkel Tour"
           title="A lively midday cruise"
           body="Music, a rope swing, premium snorkel spots and an open bar, for guests who want more energy in their afternoon."
           src="/ingested/flagship-owner/afternoon-coastline.jpg"
@@ -114,11 +114,12 @@ export default function AfternoonPiratePartyPage() {
               <div className="overflow-hidden rounded-3xl border border-border bg-muted">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/ingested/flagshiparubaa/guest-d.webp"
-                  alt="Guests toasting with drinks at the onboard bar"
+                  src="/ingested/flagshiparubaa/hammock-relax.webp"
+                  alt="Guests relaxing with drinks in the bow netting as the schooner sails"
                   loading="lazy"
                   decoding="async"
-                  className="aspect-[4/5] w-full object-cover object-center"
+                  style={{ objectPosition: "30% center" }}
+                  className="aspect-[4/5] w-full object-cover"
                 />
               </div>
             </Reveal>

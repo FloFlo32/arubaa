@@ -32,7 +32,7 @@ export default function SnorkelSitesPage() {
         <PhotoHero
           eyebrow="Where we sail"
           title="Snorkel Sites"
-          body="Our Morning Splash Adventure visits a rotation of Aruba's best snorkel spots, from calm reef to WWII shipwreck."
+          body="Our Morning Snorkel Tour visits a rotation of Aruba's best snorkel spots, from calm reef to WWII shipwreck."
           src="/ingested/flagshiparubaa/snorkel-sea-turtle.webp"
           alt="A sea turtle swimming in clear turquoise water off Aruba's coast"
         />
@@ -96,12 +96,12 @@ export default function SnorkelSitesPage() {
           <Reveal>
             <SectionCTA
               title="See all three sites in one trip"
-              body="Our Morning Splash Adventure visits Boca Catalina, Malmok Beach and the SS Antilla, with gear, drinks and snacks included."
+              body="Our Morning Snorkel Tour visits Boca Catalina, Malmok Beach and the SS Antilla, with gear, drinks and snacks included."
               image="/ingested/flagshiparubaa/snorkeler-boca-catalina.webp"
             >
               <Button asChild size="lg" className="bg-ocean text-primary hover:bg-ocean/90">
                 <Link href="/boat-tours/morning-splash-adventure">
-                  See the Morning Splash Adventure <ArrowRight className="size-4" />
+                  See the Morning Snorkel Tour <ArrowRight className="size-4" />
                 </Link>
               </Button>
             </SectionCTA>

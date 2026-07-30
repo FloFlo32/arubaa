@@ -8,16 +8,16 @@ laid-back fun aboard a charming schooner. Tours depart from the pier in front
 of MooMba Beach Bar on Palm Beach, Aruba.
 
 ## Boat tours
-- Morning Splash Adventure: 9am-1pm (4 hours), from $98 per adult. Three
+- Morning Snorkel Tour: 9am-1pm (4 hours), from $98 per adult. Three
   snorkel stops (Boca Catalina, SS Antilla shipwreck, Malmok Beach), snorkel
   gear included, unlimited soft drinks/juices/water, Caribbean snacks, live
   music. Arrive 30 minutes before departure.
-- Afternoon Pirate Party: 1:30pm-5pm (3.5 hours), from $86 per adult. Two
+- Afternoon Snorkel Tour: 1:30pm-5pm (3.5 hours), from $86 per adult. Two
   premium snorkel stops chosen daily by the captain (usually Boca Catalina
   and Malmok), snorkel gear included, Caribbean-style lunch, open bar (soft
   drinks, warm drinks, juices, cocktails), rope swing, island music. Arrive
   30 minutes before departure.
-- Sunset & Stars Cruise: 5:30pm-7:30pm (2 hours), from $90 per adult. Open
+- Sunset Cruise: 5:30pm-7:30pm (2 hours), from $90 per adult. Open
   bar (soft drinks, juices, cocktails, snacks), Caribbean-inspired food, two
   swimming stops, music, and stargazing as the sky darkens. Suitable for
   couples, honeymooners, families and friends.
@@ -45,11 +45,11 @@ Q: Do the boats have bathrooms onboard?
 A: Yes, the schooner has an onboard bathroom.
 
 Q: How long are the tours?
-A: The Morning Splash Adventure runs 4 hours, the Afternoon Pirate Party
-runs 3.5 hours, and the Sunset & Stars Cruise runs 2 hours.
+A: The Morning Snorkel Tour runs 4 hours, the Afternoon Snorkel Tour
+runs 3.5 hours, and the Sunset Cruise runs 2 hours.
 
 Q: Is there an open bar?
-A: Yes, the Afternoon Pirate Party and Sunset & Stars Cruise include an open
+A: Yes, the Afternoon Snorkel Tour and Sunset Cruise include an open
 bar with local drinks, beer, wine, and soft drinks.
 
 Q: Can I book a private tour?

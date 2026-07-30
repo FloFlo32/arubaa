@@ -13,7 +13,7 @@ import { TrustSidebar } from "@/components/sections/trust-sidebar";
 export const metadata: Metadata = {
   title: "Boat Tours",
   description:
-    "Three boat tours out of Aruba aboard our traditional wooden schooner: the Morning Splash Adventure, the Afternoon Pirate Party, and the Sunset & Stars Cruise.",
+    "Three boat tours out of Aruba aboard our traditional wooden schooner: the Morning Snorkel Tour, the Afternoon Snorkel Tour, and the Sunset Cruise.",
 };
 
 const stats = [
@@ -25,18 +25,18 @@ const stats = [
 
 const tours = [
   {
-    title: "Morning Splash Adventure",
+    title: "Morning Snorkel Tour",
     tag: "Gear Included",
     time: "9am to 1pm · 4 hours",
     price: "From $98 per adult",
     body: "Three snorkel stops, gear included, unlimited drinks and Caribbean snacks. A full day of adventure before lunch.",
     href: "/boat-tours/morning-splash-adventure",
     activityId: "01083159-5861-4408-b78d-22c81e19faa4",
-    img: "/ingested/flagshiparuba/img-008.webp",
-    alt: "A snorkeler smiles at the camera in clear turquoise water off Aruba's coast",
+    img: "/ingested/flagshiparubaa/snorkel-couple-turtle.webp",
+    alt: "Guests snorkeling alongside a sea turtle in clear turquoise water",
   },
   {
-    title: "Afternoon Pirate Party",
+    title: "Afternoon Snorkel Tour",
     tag: "Open Bar",
     time: "1:30pm to 5pm · 3.5 hours",
     price: "From $86 per adult",
@@ -47,7 +47,7 @@ const tours = [
     alt: "A large group of guests cheering together aboard the schooner",
   },
   {
-    title: "Sunset & Stars Cruise",
+    title: "Sunset Cruise",
     tag: "Premium Cocktails",
     time: "5:30pm to 7:30pm · 2 hours",
     price: "From $90 per adult",

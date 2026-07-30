@@ -36,7 +36,7 @@ export default function BlogPostPage() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/ingested/flagshiparubaa/afternoon-pirate-party.webp"
-                alt="Guests enjoying the Afternoon Pirate Party cruise aboard the schooner"
+                alt="Guests enjoying the Afternoon Snorkel Tour cruise aboard the schooner"
                 className="aspect-[16/9] w-full object-cover"
               />
             </div>
@@ -47,14 +47,14 @@ export default function BlogPostPage() {
               Picture this: warm Caribbean wind in your hair, a cold drink in your hand,
               live music pumping the speakers, and the most legendary shipwreck in the
               Caribbean just below the surface. That&apos;s an afternoon aboard Flagship
-              Aruba&apos;s Afternoon Pirate Party, and it&apos;s every bit as epic as it
+              Aruba&apos;s Afternoon Snorkel Tour, and it&apos;s every bit as epic as it
               sounds. Here&apos;s exactly what to expect from the moment you step on
               board.
             </p>
 
             <h2>What Is the Afternoon Snorkel Tour?</h2>
             <p>
-              The Afternoon Pirate Party is Flagship Aruba&apos;s most popular cruise,
+              The Afternoon Snorkel Tour is Flagship Aruba&apos;s most popular cruise,
               and it&apos;s not hard to see why. Running for 3.5 hours on the
               crystal-blue waters off Aruba&apos;s northwest coast, this tour blends
               world-class snorkeling with an open bar, live music, rope swings, and a
@@ -164,7 +164,7 @@ export default function BlogPostPage() {
 
             <h2>Is It Right for You?</h2>
             <p>
-              The Afternoon Pirate Party is ideal for anyone who wants to experience
+              The Afternoon Snorkel Tour is ideal for anyone who wants to experience
               Aruba&apos;s best snorkeling while having a genuinely fun, social time on
               the water. It&apos;s a great fit for solo travellers looking to meet
               people, couples wanting something more energetic than a sunset cruise, and
@@ -172,9 +172,9 @@ export default function BlogPostPage() {
             </p>
             <p>
               It&apos;s not the tour for you if you&apos;re looking for a quiet, intimate
-              experience: for that, the Morning Splash Adventure or a private charter
+              experience: for that, the Morning Snorkel Tour or a private charter
               would be a better match. But if you want the full Aruba experience in one
-              unforgettable afternoon, the Afternoon Pirate Party delivers every time.
+              unforgettable afternoon, the Afternoon Snorkel Tour delivers every time.
             </p>
           </Reveal>
 
@@ -186,7 +186,7 @@ export default function BlogPostPage() {
             >
               <Button asChild size="lg" className="bg-ocean text-primary hover:bg-ocean/90">
                 <Link href="/boat-tours/afternoon-pirate-party">
-                  Book the Afternoon Pirate Party <ArrowRight className="size-4" />
+                  Book the Afternoon Snorkel Tour <ArrowRight className="size-4" />
                 </Link>
               </Button>
             </SectionCTA>
