@@ -1,43 +1,34 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Anchor, Users, Ship, ArrowRight, Hammer } from "lucide-react";
+import { Anchor, Compass, Heart, Sparkles, ArrowRight } from "lucide-react";
 import { Navbar } from "@/components/sections/navbar";
 import { Footer } from "@/components/sections/footer";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { PhotoHero } from "@/components/magic/photo-hero";
-import { Gallery } from "@/components/magic/gallery";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
-
-const restorationPhotos = [
-  { src: "/ingested/flagship-owner/restoration-owner-portrait.jpg", alt: "One of Flagship Aruba's owners standing beside the schooner during restoration work" },
-  { src: "/ingested/flagship-owner/restoration-worker-mask.jpg", alt: "A crew member preparing the hull during restoration" },
-  { src: "/ingested/flagship-owner/restoration-worker-drilling.jpg", alt: "A crew member working on deck rigging during restoration" },
-  { src: "/ingested/flagship-owner/restoration-worker-thumbsup.jpg", alt: "A crew member giving a thumbs up during the restoration project" },
-  { src: "/ingested/flagship-owner/ship-transom-flagship-name.jpg", alt: "The Flagship Aruba schooner's stern, freshly painted with the ship's name" },
-];
 
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Flagship Aruba started as a childhood joke between three friends about owning a pirate ship. Now it's real.",
+    "Flagship Aruba delivers a memorable mix of adventure, snorkeling, and laid-back fun aboard a charming schooner.",
 };
 
 const values = [
   {
-    icon: Users,
-    title: "Three friends, one dream",
-    body: "We grew up joking about owning a pirate ship someday. Today, that ship is the one you'll be stepping onto.",
+    icon: Compass,
+    title: "Authentic Adventures",
+    body: "We sail aboard a charming schooner, delivering an experience you won't find anywhere else in Aruba.",
   },
   {
-    icon: Ship,
-    title: "A real wooden schooner",
-    body: "Not a modern catamaran dressed up for photos. Ours is a genuinely wooden vessel, built to feel like the real thing.",
+    icon: Heart,
+    title: "Passionate Crew",
+    body: "Our friendly, witty crew makes every guest feel like family with their warmth, humor, and deep love for the sea.",
   },
   {
-    icon: Anchor,
-    title: "MooMba Beach, Palm Beach",
-    body: "We depart from the pier in front of MooMba Beach Bar, an easy walk from most Palm Beach resorts.",
+    icon: Sparkles,
+    title: "Unforgettable Memories",
+    body: "From snorkeling pristine reefs to rope-swinging into turquoise waters, we create moments that last a lifetime.",
   },
 ];
 
@@ -76,14 +67,14 @@ export default function AboutPage() {
                 Our story
               </p>
               <h2 className="mt-2 text-balance text-3xl font-bold sm:text-4xl">
-                Three friends, one dream
+                Flagship Aruba
               </h2>
               <p className="mt-4 max-w-lg text-pretty text-muted-foreground">
-                Flagship Aruba was founded by three lifelong friends with maritime
-                backgrounds who shared a love of the ocean and a childhood joke about
-                someday owning a pirate ship of their own. They turned that joke into a
-                real, beautifully crafted wooden vessel, and built a crew around sharing
-                the same sense of adventure with every guest who comes aboard.
+                Flagship Aruba delivers a memorable mix of adventure, snorkeling, and
+                laid-back fun aboard a charming schooner. We&apos;re proud to be one of
+                Aruba&apos;s top-rated boat tour operators, offering guests an authentic
+                Caribbean experience with premium snorkeling spots, an open bar, and
+                unforgettable entertainment.
               </p>
               <p className="mt-4 max-w-lg text-pretty text-muted-foreground">
                 All of our cruises depart from the pier in front of MooMba Beach Bar on
@@ -91,28 +82,6 @@ export default function AboutPage() {
               </p>
             </Reveal>
           </div>
-        </section>
-
-        <section id="the-restoration" className="container-px mx-auto max-w-6xl py-16 sm:py-20 scroll-mt-24">
-          <Reveal className="max-w-2xl">
-            <Badge variant="accent">
-              <Hammer className="size-3.5" /> A labor of love
-            </Badge>
-            <h2 className="mt-4 text-balance text-3xl font-bold sm:text-4xl">
-              We restored her ourselves
-            </h2>
-            <p className="mt-4 text-pretty text-muted-foreground">
-              Before Flagship Aruba could carry her first guests, our crew spent weeks
-              hand-restoring the schooner: sanding and repainting the hull, rebuilding
-              rigging, and repainting her name across the stern. We still do the
-              maintenance ourselves, because a wooden ship this old only stays this
-              beautiful if you take care of her like family.
-            </p>
-          </Reveal>
-
-          <Reveal delay={0.1} className="mt-10">
-            <Gallery images={restorationPhotos} />
-          </Reveal>
         </section>
 
         <section className="container-px mx-auto max-w-6xl py-16 sm:py-20">

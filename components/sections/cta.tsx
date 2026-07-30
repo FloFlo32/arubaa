@@ -19,17 +19,23 @@ export function CTA() {
           <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/85 to-primary/50" />
           <div className="relative z-10">
             <span className="inline-flex items-center gap-1.5 rounded-full bg-ocean/20 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.2em] text-ocean ring-1 ring-ocean/30">
-              Spots go fast
+              Group or private
             </span>
             <h2 className="mx-auto mt-5 max-w-xl text-balance text-4xl font-bold text-primary-foreground sm:text-5xl">
-              Ready to set sail?
+              We Sail for You
             </h2>
             <p className="mx-auto mt-4 max-w-lg text-pretty text-primary-foreground/85">
-              Reserve your spot on the Morning Splash Adventure, the Afternoon Pirate
-              Party, or the Sunset & Stars Cruise.
+              Join one of our legendary group cruises or book the entire boat for your
+              own private charter. Perfect for birthdays, anniversaries, corporate
+              events, or any occasion worth celebrating at sea.
             </p>
+            <ul className="mx-auto mt-6 flex max-w-md flex-col gap-2 text-left text-sm text-primary-foreground/85">
+              <li>Private charters available for any group size</li>
+              <li>Custom itineraries & open bar included</li>
+              <li>Premium snorkeling & rope swing adventures</li>
+            </ul>
             <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <BookNowButton />
+              <BookNowButton label="Group Inquiry" />
               <Button
                 asChild
                 size="lg"

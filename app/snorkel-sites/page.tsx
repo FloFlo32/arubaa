@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { PhotoHero } from "@/components/magic/photo-hero";
 import { Reveal } from "@/components/magic/reveal";
 import { SectionCTA } from "@/components/sections/section-cta";
+import { BookNowButton } from "@/components/widget/book-now-button";
 import { snorkelSites } from "@/lib/snorkel-sites";
 
 export const metadata: Metadata = {
@@ -50,11 +51,7 @@ export default function SnorkelSitesPage() {
                     </span>
                     <p className="text-pretty text-muted-foreground">{s.body}</p>
                     <div>
-                      <Button asChild>
-                        <Link href={`/snorkel-sites/${s.slug}`}>
-                          Site Details <ArrowRight className="size-4" />
-                        </Link>
-                      </Button>
+                      <BookNowButton />
                     </div>
                   </div>
                 </div>

@@ -1,15 +1,11 @@
 import type { Metadata } from "next";
-import { Clock, MapPin, Music, Users, Check } from "lucide-react";
+import { Clock, MapPin, Music, Users, Check, Sparkles } from "lucide-react";
 import { Navbar } from "@/components/sections/navbar";
 import { Footer } from "@/components/sections/footer";
 import { Badge } from "@/components/ui/badge";
 import { PhotoHero } from "@/components/magic/photo-hero";
-import { ImageCard } from "@/components/magic/image-card";
-import { AutoSlider } from "@/components/magic/auto-slider";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
 import { BookNowButton } from "@/components/widget/book-now-button";
-import { OtherAdventuresSidebar } from "@/components/sections/other-adventures-sidebar";
-import { RelatedTours } from "@/components/sections/related-tours";
 
 export const metadata: Metadata = {
   title: "Afternoon Pirate Party",
@@ -18,7 +14,7 @@ export const metadata: Metadata = {
 };
 
 const details = [
-  { icon: Clock, label: "1:30pm – 5:00pm", sub: "3.5 hours" },
+  { icon: Clock, label: "1:30pm to 5:00pm", sub: "3.5 hours" },
   { icon: MapPin, label: "2 snorkel stops", sub: "Boca Catalina, Malmok" },
   { icon: Music, label: "Rope swing + music", sub: "Caribbean rhythms onboard" },
   { icon: Users, label: "Thrill-seekers welcome", sub: "Max 24 guests aboard" },
@@ -30,6 +26,15 @@ const included = [
   "Open bar: unlimited soft drinks, warm drinks, juices and cocktails",
   "Two snorkel stops, chosen daily by the captain",
   "Rope swing into the ocean",
+];
+
+const highlights = [
+  "Rope swinging into turquoise Caribbean waters",
+  "Visit the WWII shipwreck SS Antilla",
+  "Premium snorkeling at Boca Catalina",
+  "Open bar with local drinks and bites",
+  "Live music and festive vibes",
+  "Friendly, witty crew that makes it unforgettable",
 ];
 
 export default function AfternoonPiratePartyPage() {
@@ -61,8 +66,7 @@ export default function AfternoonPiratePartyPage() {
           </RevealGroup>
         </section>
 
-        <section className="container-px mx-auto max-w-6xl pb-16 sm:pb-20">
-          <div className="grid gap-10 lg:grid-cols-[1fr_280px]">
+        <section className="container-px mx-auto max-w-6xl pb-24">
           <div className="grid gap-10 md:grid-cols-2 md:items-center">
             <Reveal>
               <Badge variant="accent">The full trip</Badge>
@@ -75,14 +79,30 @@ export default function AfternoonPiratePartyPage() {
                 Caribbean-style lunch comes out, the rope swing sees plenty of use, and
                 island music keeps the deck lively the whole way.
               </p>
-              <ul className="mt-6 space-y-2.5">
+
+              <h3 className="mt-6 text-sm font-semibold uppercase tracking-[0.15em] text-muted-foreground">
+                What&apos;s Included
+              </h3>
+              <ul className="mt-3 space-y-2.5">
                 {included.map((i) => (
                   <li key={i} className="flex items-center gap-2.5 text-sm text-muted-foreground">
                     <Check className="size-4 shrink-0 text-primary" /> {i}
                   </li>
                 ))}
               </ul>
-              <p className="mt-4 text-sm text-muted-foreground">
+
+              <h3 className="mt-6 text-sm font-semibold uppercase tracking-[0.15em] text-muted-foreground">
+                Highlights
+              </h3>
+              <ul className="mt-3 space-y-2.5">
+                {highlights.map((h) => (
+                  <li key={h} className="flex items-start gap-2.5 text-sm text-muted-foreground">
+                    <Sparkles className="mt-0.5 size-4 shrink-0 text-primary" /> {h}
+                  </li>
+                ))}
+              </ul>
+
+              <p className="mt-6 text-sm text-muted-foreground">
                 Please arrive 30 minutes before departure.
               </p>
               <p className="mt-4 text-lg font-bold text-primary">From $86 per adult</p>
@@ -103,43 +123,7 @@ export default function AfternoonPiratePartyPage() {
               </div>
             </Reveal>
           </div>
-          <OtherAdventuresSidebar excludeSlug="afternoon-pirate-party" />
-          </div>
         </section>
-
-        <section className="container-px mx-auto max-w-6xl pb-24">
-          <Reveal className="max-w-2xl">
-            <h2 className="text-3xl font-bold sm:text-4xl">More from this tour</h2>
-          </Reveal>
-          <AutoSlider className="mt-10" itemClassName="w-[82%] sm:w-[46%] lg:w-[31%]">
-            <ImageCard
-              src="/ingested/flagshiparuba/img-009.webp"
-              alt="A rocky cove and turquoise water along Aruba's northwest coast"
-              title="Boca Catalina"
-              description="A calm reef, great for every skill level."
-            />
-            <ImageCard
-              src="/ingested/flagshiparubaa/malmok-beach.webp"
-              alt="The turquoise coastline at Malmok Beach"
-              title="Malmok"
-              description="Clear water and easy access close to shore."
-            />
-            <ImageCard
-              src="/ingested/flagshiparubaa/snorkel-sea-turtle.webp"
-              alt="A sea turtle swimming in clear turquoise water"
-              title="Marine Life"
-              description="Colorful reef fish and the occasional turtle at every stop."
-            />
-            <ImageCard
-              src="/ingested/flagshiparubaa/guest-g.webp"
-              alt="Guests dancing and celebrating together on deck"
-              title="Island Music"
-              description="Caribbean rhythms and a lively crowd the whole way."
-            />
-          </AutoSlider>
-        </section>
-
-        <RelatedTours excludeSlug="afternoon-pirate-party" />
       </main>
       <Footer />
     </>

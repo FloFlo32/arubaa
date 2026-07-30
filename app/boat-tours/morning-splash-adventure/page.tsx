@@ -1,15 +1,11 @@
 import type { Metadata } from "next";
-import { Clock, MapPin, GlassWater, Users, Check } from "lucide-react";
+import { Clock, MapPin, GlassWater, Users, Check, Sparkles } from "lucide-react";
 import { Navbar } from "@/components/sections/navbar";
 import { Footer } from "@/components/sections/footer";
 import { Badge } from "@/components/ui/badge";
 import { PhotoHero } from "@/components/magic/photo-hero";
-import { ImageCard } from "@/components/magic/image-card";
-import { AutoSlider } from "@/components/magic/auto-slider";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
 import { BookNowButton } from "@/components/widget/book-now-button";
-import { OtherAdventuresSidebar } from "@/components/sections/other-adventures-sidebar";
-import { RelatedTours } from "@/components/sections/related-tours";
 
 export const metadata: Metadata = {
   title: "Morning Splash Adventure",
@@ -18,7 +14,7 @@ export const metadata: Metadata = {
 };
 
 const details = [
-  { icon: Clock, label: "9am – 1pm", sub: "4 hours" },
+  { icon: Clock, label: "9am to 1pm", sub: "4 hours" },
   { icon: MapPin, label: "3 snorkel stops", sub: "Boca Catalina, Antilla, Malmok" },
   { icon: GlassWater, label: "Drinks + snacks", sub: "Included" },
   { icon: Users, label: "All ages welcome", sub: "Max 24 guests aboard" },
@@ -30,6 +26,14 @@ const included = [
   "Unlimited soft drinks, juices and water",
   "Caribbean snacks",
   "Live music and crew entertainment",
+];
+
+const highlights = [
+  "Crystal-clear waters with vibrant marine life",
+  "Visit Boca Catalina & Malmok Beach",
+  "Professional crew with safety instruction",
+  "Perfect for beginners and experienced snorkelers",
+  "Sunny vibes and relaxed atmosphere",
 ];
 
 export default function MorningSplashAdventurePage() {
@@ -61,8 +65,7 @@ export default function MorningSplashAdventurePage() {
           </RevealGroup>
         </section>
 
-        <section className="container-px mx-auto max-w-6xl pb-16 sm:pb-20">
-          <div className="grid gap-10 lg:grid-cols-[1fr_280px]">
+        <section className="container-px mx-auto max-w-6xl pb-24">
           <div className="grid gap-10 md:grid-cols-2 md:items-center">
             <Reveal>
               <Badge variant="accent">The full trip</Badge>
@@ -75,14 +78,30 @@ export default function MorningSplashAdventurePage() {
                 Malmok Beach. Mask, snorkel and fins are included, and our crew keeps
                 unlimited drinks and Caribbean snacks coming the whole way.
               </p>
-              <ul className="mt-6 space-y-2.5">
+
+              <h3 className="mt-6 text-sm font-semibold uppercase tracking-[0.15em] text-muted-foreground">
+                What&apos;s Included
+              </h3>
+              <ul className="mt-3 space-y-2.5">
                 {included.map((i) => (
                   <li key={i} className="flex items-center gap-2.5 text-sm text-muted-foreground">
                     <Check className="size-4 shrink-0 text-primary" /> {i}
                   </li>
                 ))}
               </ul>
-              <p className="mt-4 text-sm text-muted-foreground">
+
+              <h3 className="mt-6 text-sm font-semibold uppercase tracking-[0.15em] text-muted-foreground">
+                Highlights
+              </h3>
+              <ul className="mt-3 space-y-2.5">
+                {highlights.map((h) => (
+                  <li key={h} className="flex items-start gap-2.5 text-sm text-muted-foreground">
+                    <Sparkles className="mt-0.5 size-4 shrink-0 text-primary" /> {h}
+                  </li>
+                ))}
+              </ul>
+
+              <p className="mt-6 text-sm text-muted-foreground">
                 Please arrive 30 minutes before departure.
               </p>
               <p className="mt-4 text-lg font-bold text-primary">From $98 per adult</p>
@@ -104,37 +123,7 @@ export default function MorningSplashAdventurePage() {
               </div>
             </Reveal>
           </div>
-          <OtherAdventuresSidebar excludeSlug="morning-splash-adventure" />
-          </div>
         </section>
-
-        <section className="container-px mx-auto max-w-6xl pb-24">
-          <Reveal className="max-w-2xl">
-            <h2 className="text-3xl font-bold sm:text-4xl">More from this tour</h2>
-          </Reveal>
-          <AutoSlider className="mt-10" itemClassName="w-[82%] sm:w-[46%] lg:w-[31%]" controls={false}>
-            <ImageCard
-              src="/ingested/flagshiparuba/img-009.webp"
-              alt="A rocky cove and turquoise water along Aruba's northwest coast"
-              title="Boca Catalina"
-              description="A calm, shallow reef, great for every skill level."
-            />
-            <ImageCard
-              src="/ingested/flagshiparuba/img-006.webp"
-              alt="A guest jumps from the schooner into the ocean"
-              title="Off the Bow"
-              description="Jump straight in between snorkel stops."
-            />
-            <ImageCard
-              src="/ingested/flagship-owner/ladyblack-transom.jpg"
-              alt="The Flagship Aruba schooner's name painted on the stern"
-              title="The Ship"
-              description="A traditional wooden schooner, built to feel like the real thing."
-            />
-          </AutoSlider>
-        </section>
-
-        <RelatedTours excludeSlug="morning-splash-adventure" />
       </main>
       <Footer />
     </>

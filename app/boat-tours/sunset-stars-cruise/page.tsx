@@ -1,15 +1,11 @@
 import type { Metadata } from "next";
-import { Clock, GlassWater, Stars, Users, Check } from "lucide-react";
+import { Clock, GlassWater, Stars, Users, Check, Sparkles } from "lucide-react";
 import { Navbar } from "@/components/sections/navbar";
 import { Footer } from "@/components/sections/footer";
 import { Badge } from "@/components/ui/badge";
 import { PhotoHero } from "@/components/magic/photo-hero";
-import { ImageCard } from "@/components/magic/image-card";
-import { AutoSlider } from "@/components/magic/auto-slider";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
 import { BookNowButton } from "@/components/widget/book-now-button";
-import { OtherAdventuresSidebar } from "@/components/sections/other-adventures-sidebar";
-import { RelatedTours } from "@/components/sections/related-tours";
 
 export const metadata: Metadata = {
   title: "Sunset & Stars Cruise",
@@ -18,7 +14,7 @@ export const metadata: Metadata = {
 };
 
 const details = [
-  { icon: Clock, label: "5:30pm – 7:30pm", sub: "2 hours" },
+  { icon: Clock, label: "5:30pm to 7:30pm", sub: "2 hours" },
   { icon: GlassWater, label: "Open bar", sub: "Cocktails, soft drinks, juices" },
   { icon: Stars, label: "Stargazing", sub: "As night falls" },
   { icon: Users, label: "Couples & families", sub: "Max 24 guests aboard" },
@@ -30,6 +26,15 @@ const included = [
   "Two swimming stops",
   "Music and entertainment",
   "Scenic sunset sailing along Aruba's coastline",
+];
+
+const highlights = [
+  "Watch the sun dip below the Caribbean horizon",
+  "Savor local Aruban bites and premium drinks",
+  "Gentle ocean breezes and relaxing music",
+  "Perfect for couples, friends, or special occasions",
+  "Sail under the emerging stars",
+  "Unforgettable golden-hour photo opportunities",
 ];
 
 export default function SunsetStarsCruisePage() {
@@ -61,8 +66,7 @@ export default function SunsetStarsCruisePage() {
           </RevealGroup>
         </section>
 
-        <section className="container-px mx-auto max-w-6xl pb-16 sm:pb-20">
-          <div className="grid gap-10 lg:grid-cols-[1fr_280px]">
+        <section className="container-px mx-auto max-w-6xl pb-24">
           <div className="grid gap-10 md:grid-cols-2 md:items-center">
             <Reveal>
               <Badge variant="accent">A relaxed evening</Badge>
@@ -75,14 +79,30 @@ export default function SunsetStarsCruisePage() {
                 the sky turns from sunset orange to a blanket of stars over the water.
                 It suits couples, honeymooners, families and groups of friends alike.
               </p>
-              <ul className="mt-6 space-y-2.5">
+
+              <h3 className="mt-6 text-sm font-semibold uppercase tracking-[0.15em] text-muted-foreground">
+                What&apos;s Included
+              </h3>
+              <ul className="mt-3 space-y-2.5">
                 {included.map((i) => (
                   <li key={i} className="flex items-center gap-2.5 text-sm text-muted-foreground">
                     <Check className="size-4 shrink-0 text-primary" /> {i}
                   </li>
                 ))}
               </ul>
-              <p className="mt-4 text-sm text-muted-foreground">
+
+              <h3 className="mt-6 text-sm font-semibold uppercase tracking-[0.15em] text-muted-foreground">
+                Highlights
+              </h3>
+              <ul className="mt-3 space-y-2.5">
+                {highlights.map((h) => (
+                  <li key={h} className="flex items-start gap-2.5 text-sm text-muted-foreground">
+                    <Sparkles className="mt-0.5 size-4 shrink-0 text-primary" /> {h}
+                  </li>
+                ))}
+              </ul>
+
+              <p className="mt-6 text-sm text-muted-foreground">
                 Please arrive 30 minutes before departure.
               </p>
               <p className="mt-4 text-lg font-bold text-primary">From $90 per adult</p>
@@ -103,37 +123,7 @@ export default function SunsetStarsCruisePage() {
               </div>
             </Reveal>
           </div>
-          <OtherAdventuresSidebar excludeSlug="sunset-stars-cruise" />
-          </div>
         </section>
-
-        <section className="container-px mx-auto max-w-6xl pb-24">
-          <Reveal className="max-w-2xl">
-            <h2 className="text-3xl font-bold sm:text-4xl">More from this cruise</h2>
-          </Reveal>
-          <AutoSlider className="mt-10" itemClassName="w-[82%] sm:w-[46%] lg:w-[31%]" controls={false}>
-            <ImageCard
-              src="/ingested/flagshiparubaa/schooner-sunset-guests.webp"
-              alt="Guests aboard the schooner at sunset"
-              title="Good Company"
-              description="Room to relax with friends, family or a date."
-            />
-            <ImageCard
-              src="/ingested/flagship-owner/schooner-pink-sunset-wide.jpg"
-              alt="The schooner silhouetted under a pink sunset sky"
-              title="Golden Hour"
-              description="Front-row views as the sun drops toward the horizon."
-            />
-            <ImageCard
-              src="/ingested/flagshiparuba/img-006.webp"
-              alt="A guest jumps from the schooner into the ocean"
-              title="Swimming Stops"
-              description="Two chances to cool off along the way."
-            />
-          </AutoSlider>
-        </section>
-
-        <RelatedTours excludeSlug="sunset-stars-cruise" />
       </main>
       <Footer />
     </>

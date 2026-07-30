@@ -21,34 +21,22 @@ const primaryNavBase: NavItem[] = [
   {
     key: "snorkel-sites",
     href: "/snorkel-sites",
-    children: [
-      { key: "boca-catalina", href: "/snorkel-sites/boca-catalina" },
-      { key: "malmok-beach", href: "/snorkel-sites/malmok-beach" },
-      { key: "antilla-wreck", href: "/snorkel-sites/antilla-wreck" },
-    ],
+    children: [],
   },
   {
     key: "about",
     href: "/about",
     children: [],
   },
-  {
-    key: "private-charters",
-    href: "/private-charters",
-    children: [],
-  },
 ];
 
 const secondaryNavBase: NavChild[] = [
-  { key: "gallery", href: "/gallery" },
   { key: "faq", href: "/faq" },
   { key: "contact", href: "/contact" },
 ];
 
 const footerInfoBase: NavChild[] = [
   { key: "blog", href: "/blog" },
-  { key: "deals", href: "/deals" },
-  { key: "reviews", href: "/reviews" },
   { key: "faq", href: "/faq" },
   { key: "contact", href: "/contact" },
 ];
@@ -74,22 +62,12 @@ const t: Record<string, Record<LocaleCode, string>> = {
   "boat-tours": { en: "Boat Tours", es: "Excursiones En Barco", nl: "Boottochten", de: "Bootstouren", it: "Escursioni In Barca", br: "Passeios De Barco", se: "Båtturer" },
   "snorkel-sites": { en: "Snorkel Sites", es: "Sitios De Snorkel", nl: "Snorkelplekken", de: "Schnorchelplätze", it: "Siti Per Snorkeling", br: "Locais De Mergulho", se: "Snorkelplatser" },
   about: { en: "About Us", es: "Sobre Nosotros", nl: "Over Ons", de: "Über Uns", it: "Chi Siamo", br: "Sobre Nós", se: "Om Oss" },
-  "our-story": { en: "Our Story", es: "Nuestra Historia", nl: "Ons Verhaal", de: "Unsere Geschichte", it: "La Nostra Storia", br: "Nossa História", se: "Vår Historia" },
-  "the-restoration": { en: "The Restoration", es: "La Restauración", nl: "De Restauratie", de: "Die Restaurierung", it: "Il Restauro", br: "A Restauração", se: "Restaureringen" },
-  "private-charters": { en: "Private Charters", es: "Chárteres Privados", nl: "Privé Charters", de: "Private Charter", it: "Noleggi Privati", br: "Fretamentos Privados", se: "Privata Charter" },
-  reviews: { en: "Reviews", es: "Opiniones", nl: "Beoordelingen", de: "Bewertungen", it: "Recensioni", br: "Avaliações", se: "Recensioner" },
 
   "morning-splash": { en: "Morning Splash Adventure", es: "Aventura Matutina", nl: "Ochtend Avontuur", de: "Morgenabenteuer", it: "Avventura Del Mattino", br: "Aventura Matinal", se: "Morgonäventyr" },
   "afternoon-pirate": { en: "Afternoon Pirate Party", es: "Fiesta Pirata Vespertina", nl: "Middag Piratenfeest", de: "Nachmittags-Piratenparty", it: "Festa Pirata Del Pomeriggio", br: "Festa Pirata Vespertina", se: "Eftermiddagens Piratfest" },
   "sunset-stars": { en: "Sunset & Stars Cruise", es: "Crucero Atardecer Y Estrellas", nl: "Zonsondergang & Sterrencruise", de: "Sonnenuntergangs- Und Sternenfahrt", it: "Crociera Tramonto E Stelle", br: "Cruzeiro Pôr Do Sol E Estrelas", se: "Solnedgång Och Stjärnkryssning" },
 
-  "boca-catalina": { en: "Boca Catalina", es: "Boca Catalina", nl: "Boca Catalina", de: "Boca Catalina", it: "Boca Catalina", br: "Boca Catalina", se: "Boca Catalina" },
-  "malmok-beach": { en: "Malmok Beach", es: "Malmok Beach", nl: "Malmok Beach", de: "Malmok Beach", it: "Malmok Beach", br: "Malmok Beach", se: "Malmok Beach" },
-  "antilla-wreck": { en: "SS Antilla Shipwreck", es: "Naufragio Del SS Antilla", nl: "Scheepswrak SS Antilla", de: "Schiffswrack SS Antilla", it: "Relitto SS Antilla", br: "Naufrágio Do SS Antilla", se: "Vraket SS Antilla" },
-
-  gallery: { en: "Gallery", es: "Galería", nl: "Galerij", de: "Galerie", it: "Galleria", br: "Galeria", se: "Galleri" },
   blog: { en: "Blog", es: "Blog", nl: "Blog", de: "Blog", it: "Blog", br: "Blog", se: "Blogg" },
-  deals: { en: "Deals", es: "Ofertas", nl: "Aanbiedingen", de: "Angebote", it: "Offerte", br: "Promoções", se: "Erbjudanden" },
   faq: { en: "FAQ", es: "Preguntas Frecuentes", nl: "Veelgestelde Vragen", de: "Häufige Fragen", it: "Domande Frequenti", br: "Perguntas Frequentes", se: "Vanliga Frågor" },
   contact: { en: "Contact", es: "Contacto", nl: "Contact", de: "Kontakt", it: "Contatti", br: "Contato", se: "Kontakt" },
 

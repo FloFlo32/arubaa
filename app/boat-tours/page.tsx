@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 const tours = [
   {
     title: "Morning Splash Adventure",
-    time: "9am – 1pm · 4 hours",
+    time: "9am to 1pm · 4 hours",
     price: "From $98 per adult",
     body: "Three snorkel stops, gear included, unlimited drinks and Caribbean snacks. A full day of adventure before lunch.",
     href: "/boat-tours/morning-splash-adventure",
@@ -26,7 +26,7 @@ const tours = [
   },
   {
     title: "Afternoon Pirate Party",
-    time: "1:30pm – 5pm · 3.5 hours",
+    time: "1:30pm to 5pm · 3.5 hours",
     price: "From $86 per adult",
     body: "Two premium snorkel stops, a Caribbean-style lunch, open bar, rope swing and island music for a livelier afternoon.",
     href: "/boat-tours/afternoon-pirate-party",
@@ -35,7 +35,7 @@ const tours = [
   },
   {
     title: "Sunset & Stars Cruise",
-    time: "5:30pm – 7:30pm · 2 hours",
+    time: "5:30pm to 7:30pm · 2 hours",
     price: "From $90 per adult",
     body: "An open bar, Caribbean bites, two swimming stops, and stargazing as the sky darkens over the water.",
     href: "/boat-tours/sunset-stars-cruise",
