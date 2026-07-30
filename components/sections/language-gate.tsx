@@ -4,7 +4,6 @@ import * as React from "react";
 import { useRouter } from "next/navigation";
 import { US, GB, ES, NL, DE, IT, BR, SE } from "country-flag-icons/react/3x2";
 import { cn } from "@/lib/utils";
-import { ShipSealIcon } from "@/components/icons";
 import { HeroSlideshow } from "@/components/sections/hero-slideshow";
 import { type LocaleCode } from "@/lib/i18n";
 
@@ -81,7 +80,12 @@ export function LanguageGate() {
 
       <div className="container-px relative z-10 w-full max-w-lg">
         <div className="rounded-3xl border border-white/20 bg-primary/25 p-8 text-center shadow-2xl shadow-black/40 backdrop-blur-2xl sm:p-10">
-          <ShipSealIcon className="mx-auto h-20 w-20 text-white drop-shadow-lg" />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/flagship-aruba-logo.webp"
+            alt="Flagship Aruba"
+            className="mx-auto h-14 w-auto drop-shadow-lg sm:h-16"
+          />
 
           <h1 className="mt-6 text-balance text-3xl font-bold text-white sm:text-4xl">
             Ahoy!
