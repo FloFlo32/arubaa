@@ -1,7 +1,6 @@
 "use client";
 
 import * as React from "react";
-import { cn } from "@/lib/utils";
 
 const slides = [
   { src: "/ingested/flagshiparubaa/boat-aerial-turquoise.webp", alt: "The Flagship Aruba schooner sailing over turquoise water" },
@@ -11,56 +10,35 @@ const slides = [
   { src: "/ingested/flagshiparubaa/schooner-turquoise-anchor.webp", alt: "The Flagship Aruba schooner anchored in turquoise water" },
 ];
 
-const SLIDE_DURATION = 3000;
-const FADE_DURATION = 600;
-const TOTAL_MS = SLIDE_DURATION + FADE_DURATION * 2;
+const SLIDE_DURATION = 5000;
+const FADE_DURATION = 1500;
 
-/** Hero background reel: Ken Burns zoom/pan per slide, fading through black
- * between slides, matching flagshiparuba.getyetti.com's hero animation. */
+/** Hero background reel: all slides stay mounted (so nothing ever pops in
+ * mid-transition) and simply cross-dissolve via opacity, each with its own
+ * slow, continuous Ken Burns zoom running independently of the fade. */
 export function HeroSlideshow() {
   const [index, setIndex] = React.useState(0);
-  const [fading, setFading] = React.useState(false);
 
   React.useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    let slideTimer: ReturnType<typeof setTimeout>;
-    let fadeTimer: ReturnType<typeof setTimeout>;
-
-    const scheduleNext = () => {
-      slideTimer = setTimeout(() => {
-        setFading(true);
-        fadeTimer = setTimeout(() => {
-          setIndex((i) => (i + 1) % slides.length);
-          setFading(false);
-          scheduleNext();
-        }, FADE_DURATION);
-      }, SLIDE_DURATION);
-    };
-
-    scheduleNext();
-    return () => {
-      clearTimeout(slideTimer);
-      clearTimeout(fadeTimer);
-    };
+    const id = setInterval(() => setIndex((i) => (i + 1) % slides.length), SLIDE_DURATION);
+    return () => clearInterval(id);
   }, []);
 
   return (
     <div className="absolute inset-0 size-full overflow-hidden" aria-hidden="true">
-      <div
-        key={index}
-        className={cn(
-          "absolute -inset-[10%] size-[120%] bg-cover bg-center motion-reduce:animate-none",
-          index % 2 === 0 ? "animate-kenburns-a" : "animate-kenburns-b"
-        )}
-        style={{
-          backgroundImage: `url(${slides[index].src})`,
-          animationDuration: `${TOTAL_MS}ms`,
-        }}
-      />
-      <div
-        className="pointer-events-none absolute inset-0 z-10 bg-black transition-opacity ease-in-out"
-        style={{ opacity: fading ? 1 : 0, transitionDuration: `${FADE_DURATION}ms` }}
-      />
+      {slides.map((s, i) => (
+        <div
+          key={s.src}
+          className="absolute -inset-[6%] size-[112%] animate-kenburns-loop bg-cover bg-center motion-reduce:animate-none"
+          style={{
+            backgroundImage: `url(${s.src})`,
+            opacity: i === index ? 1 : 0,
+            transition: `opacity ${FADE_DURATION}ms ease-in-out`,
+            animationDelay: `${i * -4000}ms`,
+          }}
+        />
+      ))}
     </div>
   );
 }

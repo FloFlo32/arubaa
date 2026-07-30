@@ -145,16 +145,11 @@
   --animate-marquee-vertical: marquee-vertical var(--marquee-duration, 40s) linear infinite;
   --animate-shimmer: shimmer 2.5s linear infinite;
   --animate-beam: beam 3s ease-in-out infinite;
-  --animate-kenburns-a: kenburns-a 4200ms linear forwards;
-  --animate-kenburns-b: kenburns-b 4200ms linear forwards;
+  --animate-kenburns-loop: kenburns-loop 16s ease-in-out infinite alternate;
 
-  @keyframes kenburns-a {
-    from { transform: scale(1) translate(-2%, -1%); }
-    to { transform: scale(1.08) translate(2%, 1%); }
-  }
-  @keyframes kenburns-b {
-    from { transform: scale(1) translate(2%, -1%); }
-    to { transform: scale(1.08) translate(-2%, 1%); }
+  @keyframes kenburns-loop {
+    from { transform: scale(1) translate(0, 0); }
+    to { transform: scale(1.1) translate(-2%, -1%); }
   }
   @keyframes aurora {
     0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
