@@ -1,6 +1,7 @@
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { brand } from "@/brand.config";
+import { activities } from "@/lib/activities";
 
 export const runtime = "nodejs";
 
@@ -38,11 +39,21 @@ export async function POST(req: Request) {
   }
 
   const knowledge = await loadKnowledge();
+  const activityList = activities.map((a) => `${a.name} = ${a.id}`).join("\n");
   const system = [
     `You are the friendly FAQ assistant for ${brand.name}.`,
     `Answer questions using ONLY the knowledge base below. Be concise, warm, and concrete.`,
     `If the answer isn't in the knowledge base, say you're not sure and suggest contacting ${brand.social.email}. Never invent facts, prices, or features.`,
     `Reply in plain text (short paragraphs or bullet points). Do not mention "the knowledge base".`,
+    ``,
+    `You are provided with the following activities. Use the exact ID after "=" when a guest asks about that specific activity.`,
+    activityList,
+    ``,
+    `When your reply is about ONE specific activity from the list above, end your reply with a booking button on its own line using its exact ID:`,
+    `<button data-yetti-activity="ACTIVITY_ID">Book Now</button>`,
+    `When the guest's request is general and not about one specific activity above, end your reply with:`,
+    `<button data-yetti-activity="">Book Now</button>`,
+    `Only ever use IDs from the list above, never invent one. Include at most one button per reply.`,
     ``,
     `=== KNOWLEDGE BASE ===`,
     knowledge,

@@ -3,7 +3,7 @@
 import * as React from "react";
 import { X } from "lucide-react";
 
-const WIDGET_URL = "https://yetti.ai/widget/wk_sOvB-aQO0C6HwJgPfDybdg0irlC0_Jg5";
+const WIDGET_URL = "https://yetti.ai/widget/wk_teVJTzgRRrGsQLTzyceJUYzfeijrqA0n";
 
 /**
  * Global Yetti booking modal. Any element on the page with a

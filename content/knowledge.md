@@ -24,6 +24,12 @@ of MooMba Beach Bar on Palm Beach, Aruba.
 - Private charters are available for any group size, with custom itineraries
   and open bar included. Contact the crew for availability and pricing.
 
+## Other bookable activities
+- Buki Di Pret and Local Promo are also bookable activities. If a guest asks
+  about either by name, confirm it can be booked and offer the booking
+  button; for specifics beyond what's listed here, suggest contacting the
+  crew directly.
+
 ## Snorkel sites
 - Boca Catalina: a calm, shallow bay with crystal-clear water, perfect for
   beginners and experienced snorkelers alike.

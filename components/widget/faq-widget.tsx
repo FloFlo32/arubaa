@@ -8,6 +8,37 @@ import { cn } from "@/lib/utils";
 
 type Msg = { role: "user" | "assistant"; content: string };
 
+const BOOK_BUTTON_RE = /<button data-yetti-activity="([^"]*)">\s*Book Now\s*<\/button>/g;
+
+/** Splits an assistant message on the model's `<button data-yetti-activity="...">`
+ * tag and renders it as a real clickable button (caught by the global
+ * YettiBookingWidget click listener), so the rest of the text stays plain. */
+function renderMessage(content: string) {
+  const parts: React.ReactNode[] = [];
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+  BOOK_BUTTON_RE.lastIndex = 0;
+  let key = 0;
+  while ((match = BOOK_BUTTON_RE.exec(content))) {
+    const text = content.slice(lastIndex, match.index).trim();
+    if (text) parts.push(<span key={key++}>{text}</span>);
+    parts.push(
+      <button
+        key={key++}
+        type="button"
+        data-yetti-activity={match[1]}
+        className="mt-1 inline-flex cursor-pointer items-center justify-center rounded-full bg-ocean px-4 py-1.5 text-xs font-semibold text-ocean-foreground transition-transform duration-150 hover:scale-105"
+      >
+        Book Now
+      </button>
+    );
+    lastIndex = BOOK_BUTTON_RE.lastIndex;
+  }
+  const rest = content.slice(lastIndex).trim();
+  if (rest) parts.push(<span key={key++}>{rest}</span>);
+  return parts.length ? parts : content;
+}
+
 /**
  * AI FAQ widget — floating assistant grounded in content/knowledge.md.
  * Streams from /api/chat (OpenAI). Mounted globally in app/layout.tsx.
@@ -113,13 +144,17 @@ export function FaqWidget() {
             >
               <div
                 className={cn(
-                  "max-w-[85%] whitespace-pre-wrap rounded-2xl px-3.5 py-2 text-sm",
+                  "flex max-w-[85%] flex-col items-start gap-2 whitespace-pre-wrap rounded-2xl px-3.5 py-2 text-sm",
                   m.role === "user"
                     ? "rounded-br-sm bg-ocean text-ocean-foreground"
                     : "rounded-bl-sm bg-muted text-foreground"
                 )}
               >
-                {m.content || (busy && i === messages.length - 1 ? <Dots /> : null)}
+                {m.content
+                  ? renderMessage(m.content)
+                  : busy && i === messages.length - 1
+                    ? <Dots />
+                    : null}
               </div>
             </div>
           ))}
