@@ -107,7 +107,7 @@ export default function AfternoonPiratePartyPage() {
               </p>
               <p className="mt-4 text-lg font-bold text-primary">From $86 per adult</p>
               <div className="mt-4">
-                <BookNowButton activityId="" label="Book This Tour" />
+                <BookNowButton activityId="47611e71-4496-4915-99ef-816cb4ec6fe2" label="Book This Tour" />
               </div>
             </Reveal>
             <Reveal delay={0.1}>

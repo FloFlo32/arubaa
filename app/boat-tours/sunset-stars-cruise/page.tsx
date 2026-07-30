@@ -107,7 +107,7 @@ export default function SunsetStarsCruisePage() {
               </p>
               <p className="mt-4 text-lg font-bold text-primary">From $90 per adult</p>
               <div className="mt-4">
-                <BookNowButton activityId="" label="Book This Cruise" />
+                <BookNowButton activityId="8ff35752-c22a-41f6-b142-4679aa1d1fb4" label="Book This Cruise" />
               </div>
             </Reveal>
             <Reveal delay={0.1}>

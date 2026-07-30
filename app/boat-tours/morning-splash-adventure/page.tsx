@@ -106,7 +106,7 @@ export default function MorningSplashAdventurePage() {
               </p>
               <p className="mt-4 text-lg font-bold text-primary">From $98 per adult</p>
               <div className="mt-4">
-                <BookNowButton activityId="" label="Book This Tour" />
+                <BookNowButton activityId="01083159-5861-4408-b78d-22c81e19faa4" label="Book This Tour" />
               </div>
             </Reveal>
             <Reveal delay={0.1}>
