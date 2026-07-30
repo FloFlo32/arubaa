@@ -1,89 +1,55 @@
-import Link from "next/link";
-import { ArrowRight, Waves, Fish, Anchor } from "lucide-react";
+import { MapPin } from "lucide-react";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
-import { Button } from "@/components/ui/button";
-
-const sites = [
-  {
-    slug: "boca-catalina",
-    title: "Boca Catalina",
-    tagline: "Calm, shallow and easy for every skill level",
-    icon: Waves,
-    src: "/ingested/flagshiparubaa/coastline-cliff-sunset.webp",
-    alt: "The rocky Aruba coastline near Boca Catalina at dusk with the schooner offshore",
-  },
-  {
-    slug: "malmok-beach",
-    title: "Malmok Reef",
-    tagline: "A livelier reef with a bit more current",
-    icon: Fish,
-    src: "/ingested/flagship-owner/kitesurf-coastline.jpg",
-    alt: "Aerial view of the turquoise water and coastline near Malmok, Aruba",
-  },
-  {
-    slug: "antilla-wreck",
-    title: "SS Antilla Shipwreck",
-    tagline: "One of the largest shipwrecks in the Caribbean",
-    icon: Anchor,
-    src: "/ingested/flagshiparuba/img-010.webp",
-    alt: "Aerial view of the SS Antilla shipwreck resting in Aruba's turquoise water",
-  },
-];
+import { BookNowButton } from "@/components/widget/book-now-button";
+import { snorkelSites } from "@/lib/snorkel-sites";
 
 export function SnorkelSitesPreview() {
   return (
-    <section className="relative overflow-hidden bg-muted/40 py-20 sm:py-24">
-      <div className="container-px relative mx-auto max-w-6xl">
-        <Reveal>
-          <span className="text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground">
-            Where we sail
-          </span>
-          <h2 className="mt-3 text-4xl font-bold sm:text-5xl">Our Snorkel Sites</h2>
-          <p className="mt-3 max-w-xl text-muted-foreground">
-            Discover Aruba&apos;s most beautiful underwater worlds.
-          </p>
-        </Reveal>
+    <section className="container-px mx-auto max-w-6xl py-20 sm:py-24">
+      <Reveal className="mx-auto max-w-2xl text-center">
+        <span className="text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground">
+          Where we sail
+        </span>
+        <h2 className="mt-3 text-4xl font-bold sm:text-5xl">Our Snorkel Sites</h2>
+        <p className="mt-3 text-muted-foreground">
+          Discover Aruba&apos;s most beautiful underwater worlds.
+        </p>
+      </Reveal>
 
-        <RevealGroup className="mt-10 grid gap-6 sm:grid-cols-3" stagger={0.08}>
-          {sites.map((s) => (
-            <RevealItem key={s.slug}>
-              <Link
-                href="/snorkel-sites"
-                className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-primary/20 hover:shadow-xl hover:shadow-primary/10 cursor-pointer"
-              >
-                <div className="relative aspect-[4/3] overflow-hidden bg-muted">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={s.src}
-                    alt={s.alt}
-                    loading="lazy"
-                    decoding="async"
-                    className="size-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.06]"
-                  />
-                  <span className="absolute left-3 top-3 grid size-10 place-items-center rounded-full bg-primary/90 text-primary-foreground backdrop-blur-sm">
-                    <s.icon className="size-4.5" />
-                  </span>
-                </div>
-                <div className="flex flex-1 flex-col gap-1.5 p-6">
-                  <h3 className="flex items-start justify-between gap-2 font-display text-lg font-semibold">
-                    {s.title}
-                    <ArrowRight className="mt-0.5 size-4 shrink-0 text-muted-foreground transition-transform duration-200 group-hover:translate-x-0.5" />
-                  </h3>
-                  <p className="text-sm text-pretty text-muted-foreground">{s.tagline}</p>
-                </div>
-              </Link>
+      <div className="mt-12 grid items-center gap-10 lg:grid-cols-2">
+        <RevealGroup className="space-y-4" stagger={0.08}>
+          {snorkelSites.map((s) => (
+            <RevealItem
+              key={s.slug}
+              className="flex items-start gap-4 rounded-2xl border border-border bg-card p-6"
+            >
+              <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/15">
+                <MapPin className="size-5" />
+              </span>
+              <div>
+                <h3 className="font-display text-lg font-semibold">{s.title}</h3>
+                <p className="mt-1 text-sm text-pretty text-muted-foreground">{s.tagline}</p>
+              </div>
             </RevealItem>
           ))}
         </RevealGroup>
 
-        <Reveal delay={0.1} className="mt-10 text-center">
-          <Button asChild size="lg" variant="outline">
-            <Link href="/snorkel-sites">
-              Explore Snorkel Sites <ArrowRight className="size-4" />
-            </Link>
-          </Button>
+        <Reveal delay={0.1} className="overflow-hidden rounded-3xl border border-border shadow-md">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/ingested/flagship-owner/guest-snorkel-vests-trio.jpg"
+            alt="Guests wearing snorkel masks and life vests in the clear water off Aruba"
+            loading="lazy"
+            decoding="async"
+            className="aspect-[4/5] w-full object-cover sm:aspect-square"
+          />
         </Reveal>
       </div>
+
+      <Reveal delay={0.14} className="mt-12 flex flex-col items-center gap-4 text-center">
+        <p className="text-muted-foreground">Ready to explore these sites for yourself?</p>
+        <BookNowButton label="Book Your Snorkel Adventure" />
+      </Reveal>
     </section>
   );
 }
