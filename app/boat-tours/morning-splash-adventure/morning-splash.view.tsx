@@ -19,7 +19,7 @@ export function MorningSplashAdventurePage({ locale = "en" as LocaleCode }: { lo
           eyebrow={t.heroEyebrow}
           title={t.heroTitle}
           body={t.heroBody}
-          src="/ingested/flagshiparubaa/snorkel-couple-turtle.webp"
+          src="/ingested/flagshiparubaa/snorkel-selfie.webp"
           alt={t.heroAlt}
         />
 

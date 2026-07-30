@@ -1,8 +1,6 @@
 import { Anchor, Waves, Fish, Compass } from "lucide-react";
 import { Navbar } from "@/components/sections/navbar";
 import { Footer } from "@/components/sections/footer";
-import { AuroraBackground } from "@/components/magic/aurora-background";
-import { GridPattern } from "@/components/magic/grid-pattern";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
 import { BookNowButton } from "@/components/widget/book-now-button";
 import { snorkelSites } from "@/lib/snorkel-sites";
@@ -22,8 +20,17 @@ export function SnorkelSitesPage({ locale = "en" as LocaleCode }: { locale?: Loc
       <Navbar />
       <main className="flex-1">
         <section className="relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-24">
-          <AuroraBackground />
-          <GridPattern className="opacity-30" />
+          <div className="absolute inset-0 -z-10">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/ingested/flagshiparubaa/malmok-beach.webp"
+              alt=""
+              aria-hidden="true"
+              className="size-full object-cover"
+              style={{ objectPosition: "0% 65%" }}
+            />
+            <div className="absolute inset-0 bg-background/80" />
+          </div>
           <div className="container-px relative mx-auto max-w-2xl text-center">
             <Reveal>
               <span className="mx-auto grid size-14 place-items-center rounded-2xl bg-primary/10 text-primary ring-1 ring-primary/15">
