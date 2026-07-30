@@ -73,8 +73,8 @@ export function WhyFlagshipAruba({ locale = "en" as LocaleCode }: { locale?: Loc
             <BorderBeam colorFrom="var(--color-ocean)" colorTo="var(--color-aurora-2)" />
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/ingested/flagshiparubaa/aerial-yacht-reef.webp"
-              alt="Aerial view of the Flagship Aruba schooner anchored over a coral reef in turquoise water"
+              src="/ingested/flagshiparubaa/guest-c.webp"
+              alt="A parent and child snorkeling together with the Flagship Aruba schooner visible in the background"
               loading="lazy"
               decoding="async"
               className="aspect-[4/5] w-full object-cover sm:aspect-square"

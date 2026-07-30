@@ -68,7 +68,7 @@ export function MorningSplashAdventurePage({ locale = "en" as LocaleCode }: { lo
               <div className="overflow-hidden rounded-3xl border border-border bg-muted">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/ingested/flagshiparuba/img-008.webp"
+                  src="/ingested/flagshiparubaa/guest-a.webp"
                   alt={t.sideImageAlt}
                   loading="lazy"
                   decoding="async"

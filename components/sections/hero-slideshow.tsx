@@ -10,6 +10,9 @@ const slides = [
   { src: "/ingested/flagshiparubaa/schooner-turquoise-anchor.webp", alt: "The Flagship Aruba schooner anchored in turquoise water" },
   { src: "/ingested/flagshiparubaa/ss-antilla-wreck-aerial.webp", alt: "Aerial view of the SS Antilla shipwreck resting in Aruba's turquoise water" },
   { src: "/ingested/flagshiparubaa/schooner-pink-sunset.webp", alt: "The schooner silhouetted under a vivid pink and orange sunset sky" },
+  { src: "/ingested/flagshiparubaa/snorkel-hero-1.webp", alt: "Guests snorkeling beside a sea turtle next to the Flagship schooner" },
+  { src: "/ingested/flagshiparubaa/snorkel-hero-2.webp", alt: "A snorkeler swimming past a sea turtle near the Flagship schooner" },
+  { src: "/ingested/flagshiparubaa/sunset-cruise-reference.webp", alt: "The Flagship Aruba schooner with guests aboard under a fiery sunset sky" },
 ];
 
 const SLIDE_DURATION = 5000;

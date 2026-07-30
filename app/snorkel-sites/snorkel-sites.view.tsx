@@ -1,7 +1,8 @@
-import { Anchor, Waves, Fish } from "lucide-react";
+import { Anchor, Waves, Fish, Compass } from "lucide-react";
 import { Navbar } from "@/components/sections/navbar";
 import { Footer } from "@/components/sections/footer";
 import { AuroraBackground } from "@/components/magic/aurora-background";
+import { GridPattern } from "@/components/magic/grid-pattern";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
 import { BookNowButton } from "@/components/widget/book-now-button";
 import { snorkelSites } from "@/lib/snorkel-sites";
@@ -20,19 +21,37 @@ export function SnorkelSitesPage({ locale = "en" as LocaleCode }: { locale?: Loc
     <>
       <Navbar />
       <main className="flex-1">
-        <section className="relative overflow-hidden pt-32 pb-16 sm:pt-40 sm:pb-20">
+        <section className="relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-24">
           <AuroraBackground />
+          <GridPattern className="opacity-30" />
           <div className="container-px relative mx-auto max-w-2xl text-center">
             <Reveal>
-              <h1 className="text-gradient text-balance text-5xl font-bold sm:text-6xl">
+              <span className="mx-auto grid size-14 place-items-center rounded-2xl bg-primary/10 text-primary ring-1 ring-primary/15">
+                <Compass className="size-6" />
+              </span>
+              <h1 className="mt-5 text-gradient text-balance text-5xl font-bold sm:text-6xl">
                 {t.title}
               </h1>
               <p className="mt-4 text-lg text-pretty text-muted-foreground">{t.subtitle}</p>
             </Reveal>
+
+            <RevealGroup className="mt-8 flex flex-wrap items-center justify-center gap-3" stagger={0.06}>
+              {snorkelSites.map((s) => {
+                const Icon = siteIcons[s.slug] ?? Anchor;
+                return (
+                  <RevealItem
+                    key={s.slug}
+                    className="flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm font-medium text-foreground shadow-sm"
+                  >
+                    <Icon className="size-4 text-primary" /> {s.title[locale]}
+                  </RevealItem>
+                );
+              })}
+            </RevealGroup>
           </div>
         </section>
 
-        <section className="container-px relative mx-auto max-w-6xl pb-24">
+        <section className="container-px relative mx-auto max-w-6xl pb-24 pt-20 sm:pt-24">
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <RevealGroup className="space-y-4" stagger={0.08}>
               {snorkelSites.map((s) => {
