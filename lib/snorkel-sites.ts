@@ -1,41 +1,21 @@
 export const snorkelSites = [
   {
-    slug: "boca-catalina",
-    title: "Boca Catalina",
-    tagline: "Calm, shallow and easy for every skill level",
-    heroImage: "/ingested/flagshiparubaa/coastline-cliff-sunset.webp",
-    heroAlt: "The rocky Aruba coastline near Boca Catalina with the schooner offshore",
-    secondaryImage: "/ingested/flagshiparubaa/snorkeler-boca-catalina.webp",
-    secondaryAlt: "A snorkeler smiling at the camera in the clear turquoise water off Boca Catalina",
-    depth: "3 to 15 ft",
-    goodFor: "Beginners, kids, first-time snorkelers",
-    body: "Boca Catalina is a small, sheltered cove close to shore. The water is shallow enough that nervous swimmers can stand up if they need a break, and the cove blocks most of the current, so visibility stays good even when other spots are choppy. It's our default stop for families and anyone snorkeling for the first time.",
-  },
-  {
-    slug: "malmok-beach",
-    title: "Malmok Beach",
-    tagline: "A livelier reef with a bit more current",
-    heroImage: "/ingested/flagshiparubaa/malmok-beach.webp",
-    heroAlt: "The turquoise coastline and rocky shore at Malmok Beach in Aruba",
-    secondaryImage: "/ingested/flagship-owner/kitesurf-coastline.jpg",
-    secondaryAlt: "Aerial view of the coastline near Malmok, Aruba",
-    depth: "5 to 20 ft",
-    goodFor: "Guests comfortable in open water",
-    body: "Malmok sits along a rockier stretch of Aruba's northwest coast and has more structure for fish to hide in than Boca Catalina, which means more to see. It's also a well-known windsurfing and kitesurfing stretch, so the water here has a bit more life to it, both above and below the surface.",
-    mapImage: "/ingested/flagship-owner/malmok-map.jpg",
-    mapAlt: "Map of Aruba with the Malmok area circled",
-  },
-  {
     slug: "antilla-wreck",
     title: "SS Antilla Shipwreck",
-    tagline: "One of the largest shipwrecks in the Caribbean",
-    heroImage: "/ingested/flagshiparubaa/ss-antilla-wreck-aerial.webp",
-    heroAlt: "Aerial view of the SS Antilla shipwreck resting in Aruba's turquoise water",
-    secondaryImage: "/ingested/flagshiparubaa/snorkel-sea-turtle.webp",
-    secondaryAlt: "A sea turtle swimming near the wreck site in clear turquoise water",
-    depth: "20 to 60 ft",
-    goodFor: "Anyone who wants a real piece of history",
-    body: "The SS Antilla was a German freighter scuttled by her own crew at the outbreak of World War II rather than let her be seized. She now rests in Aruba's shallow water as one of the largest shipwrecks in the Caribbean, her hull broken into sections that make for dramatic snorkeling and even more dramatic photos.",
+    tagline:
+      "Explore the famous WWII German freighter, one of the Caribbean's most iconic wreck dives, home to colorful coral and tropical fish.",
+  },
+  {
+    slug: "boca-catalina",
+    title: "Boca Catalina",
+    tagline:
+      "A calm, shallow bay with crystal-clear water perfect for beginners and experienced snorkelers alike, teeming with sea life.",
+  },
+  {
+    slug: "malmok-reef",
+    title: "Malmok Reef",
+    tagline:
+      "Vibrant coral formations and abundant marine life make this one of Aruba's premier snorkeling destinations along the northwest coast.",
   },
 ] as const;
 
