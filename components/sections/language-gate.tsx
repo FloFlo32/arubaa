@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { US, GB, ES, NL, DE, IT, BR, SE } from "country-flag-icons/react/3x2";
 import { cn } from "@/lib/utils";
 import { ShipSealIcon } from "@/components/icons";
+import { HeroSlideshow } from "@/components/sections/hero-slideshow";
 import { type LocaleCode } from "@/lib/i18n";
 
 const STORAGE_KEY = "flagship-aruba-language";
@@ -75,17 +76,7 @@ export function LanguageGate() {
           __html: `try{if(localStorage.getItem('${STORAGE_KEY}')){var g=document.getElementById('language-gate');if(g)g.style.display='none';}}catch(e){}`,
         }}
       />
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        poster="/videos/posters/hero-guests-waving.jpg"
-        aria-hidden="true"
-        className="absolute inset-0 size-full object-cover"
-      >
-        <source src="/videos/hero-guests-waving.mp4" type="video/mp4" />
-      </video>
+      <HeroSlideshow />
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/45 to-black/75" />
 
       <div className="container-px relative z-10 w-full max-w-lg">
