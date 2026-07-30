@@ -31,19 +31,13 @@ const primaryNavBase: NavItem[] = [
   },
 ];
 
-const footerInfoBase: NavChild[] = [
-  { key: "blog", href: "/blog" },
+const quickLinksBase: NavChild[] = [
+  { key: "home", href: "/" },
+  { key: "boat-tours", href: "/boat-tours" },
+  { key: "about", href: "/about" },
+  { key: "snorkel-sites", href: "/snorkel-sites" },
   { key: "faq", href: "/faq" },
   { key: "contact", href: "/contact" },
-];
-
-const footerMenuBase: NavChild[] = [
-  { key: "boat-tours", href: "/boat-tours" },
-  { key: "morning-splash", href: "/boat-tours/morning-splash-adventure" },
-  { key: "afternoon-pirate", href: "/boat-tours/afternoon-pirate-party" },
-  { key: "sunset-stars", href: "/boat-tours/sunset-stars-cruise" },
-  { key: "snorkel-sites", href: "/snorkel-sites" },
-  { key: "about", href: "/about" },
 ];
 
 const bookNowBase: NavChild = { key: "book-now", href: "/book-now" };
@@ -60,6 +54,7 @@ const t: Record<string, Record<LocaleCode, string>> = {
   "snorkel-sites": { en: "Our Snorkel Sites", es: "Sitios De Snorkel", nl: "Snorkelplekken", de: "Schnorchelplätze", it: "Siti Per Snorkeling", br: "Locais De Mergulho", se: "Snorkelplatser" },
   "private-parties": { en: "Private Parties", es: "Fiestas Privadas", nl: "Privéfeesten", de: "Private Feiern", it: "Feste Private", br: "Festas Privadas", se: "Privata Fester" },
   about: { en: "About Us", es: "Sobre Nosotros", nl: "Over Ons", de: "Über Uns", it: "Chi Siamo", br: "Sobre Nós", se: "Om Oss" },
+  home: { en: "Home", es: "Inicio", nl: "Home", de: "Startseite", it: "Home", br: "Início", se: "Hem" },
 
   "morning-splash": { en: "Morning Snorkel Tour", es: "Aventura Matutina", nl: "Ochtend Avontuur", de: "Morgenabenteuer", it: "Avventura Del Mattino", br: "Aventura Matinal", se: "Morgonäventyr" },
   "afternoon-pirate": { en: "Afternoon Snorkel Tour", es: "Fiesta Pirata Vespertina", nl: "Middag Piratenfeest", de: "Nachmittags-Piratenparty", it: "Festa Pirata Del Pomeriggio", br: "Festa Pirata Vespertina", se: "Eftermiddagens Piratfest" },
@@ -88,12 +83,8 @@ export function getPrimaryNav(locale: LocaleCode) {
   }));
 }
 
-export function getFooterMenu(locale: LocaleCode) {
-  return footerMenuBase.map((c) => ({ label: label(c.key, locale), href: localizePath(locale, c.href) }));
-}
-
-export function getFooterInfo(locale: LocaleCode) {
-  return footerInfoBase.map((c) => ({ label: label(c.key, locale), href: localizePath(locale, c.href) }));
+export function getQuickLinks(locale: LocaleCode) {
+  return quickLinksBase.map((c) => ({ label: label(c.key, locale), href: localizePath(locale, c.href) }));
 }
 
 export function getBookNow(locale: LocaleCode) {

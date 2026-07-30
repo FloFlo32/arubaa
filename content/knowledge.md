@@ -76,6 +76,6 @@ phone, WhatsApp or email to confirm exact pricing and availability.
 
 ## Contact
 - WhatsApp: 2975677637
-- Phone: +297 567 7637
+- Phone: +297 566 2568
 - Email: info@flagshiparuba.com
 - Location: MooMba Beach Bar, Palm Beach, Aruba

@@ -1,6 +1,6 @@
 import { Check } from "lucide-react";
 import { Reveal } from "@/components/magic/reveal";
-import { BookNowButton } from "@/components/widget/book-now-button";
+import { Button } from "@/components/ui/button";
 import { type LocaleCode } from "@/lib/i18n";
 
 const copy: Record<LocaleCode, { title: string; body: string; perks: string[]; button: string }> = {
@@ -105,7 +105,9 @@ export function CTA({ locale = "en" as LocaleCode }: { locale?: LocaleCode }) {
               ))}
             </ul>
             <div className="mt-9 flex justify-center">
-              <BookNowButton label={t.button} />
+              <Button data-inquiry-form size="lg" className="cursor-pointer bg-ocean text-primary hover:bg-ocean/90">
+                {t.button}
+              </Button>
             </div>
           </div>
         </div>

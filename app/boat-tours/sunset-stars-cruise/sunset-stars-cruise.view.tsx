@@ -1,18 +1,15 @@
-import { Clock, GlassWater, Stars, Users, Check, Sparkles } from "lucide-react";
+import { Check, Sparkles } from "lucide-react";
 import { Navbar } from "@/components/sections/navbar";
 import { Footer } from "@/components/sections/footer";
 import { Badge } from "@/components/ui/badge";
 import { PhotoHero } from "@/components/magic/photo-hero";
-import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
+import { Reveal } from "@/components/magic/reveal";
 import { BookNowButton } from "@/components/widget/book-now-button";
 import { type LocaleCode } from "@/lib/i18n";
 import { sunsetStarsCruiseContent } from "./sunset-stars-cruise.content";
 
-const detailIcons = [Clock, GlassWater, Stars, Users];
-
 export function SunsetStarsCruisePage({ locale = "en" as LocaleCode }: { locale?: LocaleCode }) {
   const t = sunsetStarsCruiseContent[locale];
-  const details = t.details.map((d, i) => ({ ...d, icon: detailIcons[i] }));
 
   return (
     <>
@@ -22,27 +19,11 @@ export function SunsetStarsCruisePage({ locale = "en" as LocaleCode }: { locale?
           eyebrow={t.heroEyebrow}
           title={t.heroTitle}
           body={t.heroBody}
-          src="/ingested/flagship-owner/ship-sunset-dramatic-wide.jpg"
+          src="/ingested/flagshiparubaa/sunset-cruise-reference.webp"
           alt={t.heroAlt}
         />
 
-        <section className="container-px mx-auto max-w-6xl py-16 sm:py-20">
-          <RevealGroup className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4" stagger={0.06}>
-            {details.map((d) => (
-              <RevealItem key={d.label} className="flex items-center gap-3 rounded-2xl border border-border bg-card p-5">
-                <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/15">
-                  <d.icon className="size-5" />
-                </span>
-                <div>
-                  <p className="font-semibold">{d.label}</p>
-                  <p className="text-xs text-muted-foreground">{d.sub}</p>
-                </div>
-              </RevealItem>
-            ))}
-          </RevealGroup>
-        </section>
-
-        <section className="container-px mx-auto max-w-6xl pb-24">
+        <section className="container-px mx-auto max-w-6xl py-16 sm:py-20 pb-24">
           <div className="grid gap-10 md:grid-cols-2 md:items-center">
             <Reveal>
               <Badge variant="accent">{t.sectionBadge}</Badge>
@@ -87,7 +68,7 @@ export function SunsetStarsCruisePage({ locale = "en" as LocaleCode }: { locale?
               <div className="overflow-hidden rounded-3xl border border-border bg-muted">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/ingested/flagship-owner/schooner-pink-sunset-wide.jpg"
+                  src="/ingested/flagship-owner/ship-sunset-dramatic-wide.jpg"
                   alt={t.imageAlt}
                   loading="lazy"
                   decoding="async"

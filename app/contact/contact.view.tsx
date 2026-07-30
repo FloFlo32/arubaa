@@ -15,7 +15,7 @@ export function ContactPage({ locale = "en" as LocaleCode }: { locale?: LocaleCo
     {
       icon: Phone,
       label: t.channelLabels.call,
-      value: "+297 567 7637",
+      value: "+297 566 2568",
       href: `tel:${brand.contact.phone}`,
     },
     {

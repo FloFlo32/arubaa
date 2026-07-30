@@ -52,8 +52,8 @@ export function ReviewsTeaser({ locale = "en" as LocaleCode }: { locale?: Locale
         <div className="relative min-h-[220px] sm:min-h-full">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/ingested/flagshiparubaa/schooner-sunset-guests.webp"
-            alt="Guests aboard the Flagship Aruba schooner"
+            src="/ingested/flagship-owner/ladyblack-jump.jpg"
+            alt="A guest leaping off the Flagship Aruba schooner's rope swing into the turquoise water"
             loading="lazy"
             decoding="async"
             className="absolute inset-0 size-full object-cover"

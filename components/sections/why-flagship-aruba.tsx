@@ -2,7 +2,8 @@ import Link from "next/link";
 import { Compass, Heart, Sparkles, ArrowRight } from "lucide-react";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
 import { Button } from "@/components/ui/button";
-import { GridPattern } from "@/components/magic/grid-pattern";
+import { AuroraBackground } from "@/components/magic/aurora-background";
+import { BorderBeam } from "@/components/magic/border-beam";
 import { type LocaleCode, localizePath } from "@/lib/i18n";
 import { aboutContent } from "@/app/about/about.content";
 
@@ -65,42 +66,63 @@ export function WhyFlagshipAruba({ locale = "en" as LocaleCode }: { locale?: Loc
   const values = aboutContent[locale].values.map((v, i) => ({ ...v, icon: valueIcons[i] }));
   return (
     <section className="relative overflow-hidden bg-primary py-20 text-primary-foreground sm:py-24">
-      <GridPattern className="opacity-20" />
+      <AuroraBackground />
       <div className="container-px relative z-10 mx-auto max-w-6xl">
-        <Reveal className="mx-auto max-w-2xl text-center">
-          <span className="text-xs font-medium uppercase tracking-[0.2em] text-primary-foreground/70">
-            {t.eyebrow}
-          </span>
-          <h2 className="mt-3 text-balance text-4xl font-bold sm:text-5xl">
-            {t.title}
-          </h2>
-          <p className="mt-3 text-pretty text-primary-foreground/85">
-            {t.subtitle}
-          </p>
-        </Reveal>
+        <div className="grid items-center gap-12 lg:grid-cols-[1fr_1.15fr] lg:gap-16">
+          <Reveal className="relative overflow-hidden rounded-3xl shadow-2xl shadow-black/30">
+            <BorderBeam colorFrom="var(--color-ocean)" colorTo="var(--color-aurora-2)" />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/ingested/flagshiparubaa/aerial-yacht-reef.webp"
+              alt="Aerial view of the Flagship Aruba schooner anchored over a coral reef in turquoise water"
+              loading="lazy"
+              decoding="async"
+              className="aspect-[4/5] w-full object-cover sm:aspect-square"
+            />
+          </Reveal>
 
-        <RevealGroup className="mt-10 grid gap-5 md:grid-cols-3" stagger={0.08}>
-          {values.map((v) => (
-            <RevealItem
-              key={v.title}
-              className="flex flex-col rounded-2xl border border-primary-foreground/15 bg-primary-foreground/10 p-7"
-            >
-              <span className="grid size-12 place-items-center rounded-xl bg-ocean/20 text-ocean ring-1 ring-ocean/30">
-                <v.icon className="size-6" />
+          <div>
+            <Reveal>
+              <span className="text-xs font-medium uppercase tracking-[0.2em] text-primary-foreground/70">
+                {t.eyebrow}
               </span>
-              <h3 className="mt-5 text-xl font-semibold">{v.title}</h3>
-              <p className="mt-2 text-sm text-primary-foreground/80">{v.body}</p>
-            </RevealItem>
-          ))}
-        </RevealGroup>
+              <h2 className="mt-3 text-balance text-4xl font-bold sm:text-5xl">
+                {t.title}
+              </h2>
+              <p className="mt-3 max-w-lg text-pretty text-primary-foreground/85">
+                {t.subtitle}
+              </p>
+            </Reveal>
 
-        <Reveal delay={0.1} className="mt-10 text-center">
-          <Button asChild size="lg" className="bg-ocean text-primary hover:bg-ocean/90">
-            <Link href={localizePath(locale, "/about")}>
-              {t.cta} <ArrowRight className="size-4" />
-            </Link>
-          </Button>
-        </Reveal>
+            <RevealGroup className="mt-9 space-y-1" stagger={0.08}>
+              {values.map((v, i) => (
+                <RevealItem
+                  key={v.title}
+                  className="group flex items-start gap-5 border-t border-primary-foreground/15 py-5 transition-colors duration-300 first:border-t-0 hover:bg-primary-foreground/[0.04]"
+                >
+                  <span className="font-display text-3xl font-bold text-primary-foreground/20 transition-colors duration-300 group-hover:text-ocean/60">
+                    0{i + 1}
+                  </span>
+                  <span className="mt-1 grid size-11 shrink-0 place-items-center rounded-xl bg-ocean/20 text-ocean ring-1 ring-ocean/30">
+                    <v.icon className="size-5" />
+                  </span>
+                  <div>
+                    <h3 className="text-lg font-semibold">{v.title}</h3>
+                    <p className="mt-1 text-sm text-pretty text-primary-foreground/75">{v.body}</p>
+                  </div>
+                </RevealItem>
+              ))}
+            </RevealGroup>
+
+            <Reveal delay={0.1} className="mt-9">
+              <Button asChild size="lg" className="bg-ocean text-primary hover:bg-ocean/90">
+                <Link href={localizePath(locale, "/about")}>
+                  {t.cta} <ArrowRight className="size-4" />
+                </Link>
+              </Button>
+            </Reveal>
+          </div>
+        </div>
       </div>
     </section>
   );

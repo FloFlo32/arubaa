@@ -7,14 +7,12 @@ import { Menu, X, ChevronDown, Phone } from "lucide-react";
 import { brand } from "@/brand.config";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { ShipMarkIcon } from "@/components/icons";
 import { getPrimaryNav, getBookNow } from "@/lib/site-nav";
 import { getLocaleFromPathname, localizePath } from "@/lib/i18n";
 
 function Logo({ href, className }: { href: string; className?: string }) {
   return (
     <Link href={href} className={cn("flex items-center gap-2 shrink-0 cursor-pointer", className)} aria-label="Flagship Aruba home">
-      <ShipMarkIcon className="h-7 text-ocean" />
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src="/flagship-aruba-logo.webp" alt="Flagship Aruba" className="h-10 w-auto" />
     </Link>
@@ -138,7 +136,7 @@ export function Navbar() {
               href={`tel:${brand.contact.phone}`}
               className="hidden cursor-pointer items-center gap-1.5 text-sm font-medium text-primary-foreground/80 transition-colors hover:text-white xl:flex"
             >
-              <Phone className="size-3.5 text-ocean" /> +297 567 7637
+              <Phone className="size-3.5 text-ocean" /> +297 566 2568
             </a>
             <Button
               data-yetti-activity=""
@@ -231,7 +229,7 @@ export function Navbar() {
               href={`tel:${brand.contact.phone}`}
               className="mt-2 flex cursor-pointer items-center gap-2 rounded-md px-3 py-3 text-base text-primary"
             >
-              <Phone className="size-4" /> +297 567 7637
+              <Phone className="size-4" /> +297 566 2568
             </a>
             <Button
               data-yetti-activity=""
