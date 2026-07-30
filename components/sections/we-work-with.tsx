@@ -1,10 +1,11 @@
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
+import { ViatorLogoIcon, TripAdvisorLogoIcon, GetYourGuideLogoIcon } from "@/components/icons";
 
 const partners = [
   {
     href: "https://www.viator.com",
     label: "Viator",
-    src: "/partners/viator.svg",
+    Icon: ViatorLogoIcon,
     color: "oklch(0.62 0.16 45)",
     tint: "oklch(0.62 0.16 45 / 0.1)",
     border: "oklch(0.62 0.16 45 / 0.25)",
@@ -12,7 +13,7 @@ const partners = [
   {
     href: "https://www.tripadvisor.com",
     label: "TripAdvisor",
-    src: "/partners/tripadvisor.svg",
+    Icon: TripAdvisorLogoIcon,
     color: "oklch(0.6 0.15 155)",
     tint: "oklch(0.6 0.15 155 / 0.1)",
     border: "oklch(0.6 0.15 155 / 0.25)",
@@ -20,7 +21,7 @@ const partners = [
   {
     href: "https://www.getyourguide.com",
     label: "GetYourGuide",
-    src: "/partners/getyourguide.svg",
+    Icon: GetYourGuideLogoIcon,
     color: "oklch(0.6 0.19 25)",
     tint: "oklch(0.6 0.19 25 / 0.1)",
     border: "oklch(0.6 0.19 25 / 0.25)",
@@ -46,8 +47,7 @@ export function WeWorkWith() {
               className="flex cursor-pointer items-center justify-center gap-3 rounded-2xl border p-6 transition-transform duration-200 hover:-translate-y-1"
               style={{ backgroundColor: p.tint, borderColor: p.border }}
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={p.src} alt={p.label} className="h-7 w-auto" style={{ color: p.color }} />
+              <p.Icon className="h-7" style={{ color: p.color }} />
             </a>
           </RevealItem>
         ))}

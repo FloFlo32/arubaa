@@ -69,16 +69,26 @@ export function SnorkelSitesTeaser() {
         ))}
 
         <Reveal delay={0.18} className="sm:col-span-2">
-          <div className="relative flex h-full flex-col justify-center gap-5 overflow-hidden rounded-2xl bg-primary p-8 text-primary-foreground sm:flex-row sm:items-center sm:justify-between">
-            <GridPattern className="opacity-20" />
-            <BorderBeam colorFrom="var(--color-ocean)" colorTo="var(--color-aurora-2)" />
-            <div className="relative z-10 flex items-start gap-4">
-              <span className="grid size-12 shrink-0 place-items-center rounded-xl bg-ocean/20 text-ocean ring-1 ring-ocean/30">
+          <div className="grid h-full overflow-hidden rounded-2xl bg-primary text-primary-foreground sm:grid-cols-[1fr_1.1fr]">
+            <div className="relative min-h-[220px] sm:min-h-full">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/ingested/flagshiparubaa/boat-aerial-turquoise.webp"
+                alt="Aerial view of the Flagship Aruba schooner sailing over turquoise water"
+                loading="lazy"
+                decoding="async"
+                className="absolute inset-0 size-full object-cover"
+              />
+            </div>
+            <div className="relative flex flex-col items-center gap-4 overflow-hidden p-8 text-center sm:p-10">
+              <GridPattern className="opacity-20" />
+              <BorderBeam colorFrom="var(--color-ocean)" colorTo="var(--color-aurora-2)" />
+              <span className="relative z-10 grid size-12 shrink-0 place-items-center rounded-xl bg-ocean/20 text-ocean ring-1 ring-ocean/30">
                 <Compass className="size-6" />
               </span>
-              <div>
+              <div className="relative z-10">
                 <h3 className="text-xl font-bold">See all three in one trip</h3>
-                <p className="mt-2 max-w-md text-sm text-pretty text-primary-foreground/80">
+                <p className="mt-2 text-sm text-pretty text-primary-foreground/80">
                   You don&apos;t have to pick just one. Our Morning Splash Adventure
                   visits the calm reef at Boca Catalina, the clear water off Malmok
                   Beach, and the WWII-era SS Antilla shipwreck, all in a single
@@ -87,18 +97,18 @@ export function SnorkelSitesTeaser() {
                   for the best visibility.
                 </p>
               </div>
-            </div>
-            <div className="relative z-10 flex shrink-0 flex-wrap gap-2.5">
-              <Button
-                asChild
-                variant="outline"
-                className="border-primary-foreground/30 bg-transparent text-primary-foreground hover:bg-white/10 hover:text-primary-foreground"
-              >
-                <Link href="/snorkel-sites">
-                  See All Sites <ArrowRight className="size-4" />
-                </Link>
-              </Button>
-              <BookNowButton size="default" />
+              <div className="relative z-10 flex w-full flex-col gap-2.5 sm:w-auto sm:flex-row">
+                <Button
+                  asChild
+                  variant="outline"
+                  className="border-primary-foreground/30 bg-transparent text-primary-foreground hover:bg-white/10 hover:text-primary-foreground"
+                >
+                  <Link href="/snorkel-sites">
+                    See All Sites <ArrowRight className="size-4" />
+                  </Link>
+                </Button>
+                <BookNowButton size="default" className="bg-ocean text-ocean-foreground hover:bg-ocean/90" />
+              </div>
             </div>
           </div>
         </Reveal>

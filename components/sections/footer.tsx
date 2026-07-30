@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { brand } from "@/brand.config";
-import { InstagramIcon, FacebookIcon, TikTokIcon, WhatsAppIcon, ShipMarkIcon } from "@/components/icons";
+import { InstagramIcon, FacebookIcon, TikTokIcon, WhatsAppIcon, ShipMarkIcon, ViatorLogoIcon, TripAdvisorLogoIcon, GetYourGuideLogoIcon } from "@/components/icons";
 import { getFooterMenu, getFooterInfo, getLegalNav } from "@/lib/site-nav";
 import { getLocaleFromPathname, localizePath, type LocaleCode } from "@/lib/i18n";
 
@@ -16,9 +16,9 @@ const socials = [
 ].filter((s) => s.href);
 
 const partners = [
-  { href: "https://www.viator.com", label: "Viator", src: "/partners/viator.svg", color: "oklch(0.7 0.14 45)" },
-  { href: "https://www.tripadvisor.com", label: "TripAdvisor", src: "/partners/tripadvisor.svg", color: "oklch(0.68 0.14 155)" },
-  { href: "https://www.getyourguide.com", label: "GetYourGuide", src: "/partners/getyourguide.svg", color: "oklch(0.68 0.17 25)" },
+  { href: "https://www.viator.com", label: "Viator", Icon: ViatorLogoIcon },
+  { href: "https://www.tripadvisor.com", label: "TripAdvisor", Icon: TripAdvisorLogoIcon },
+  { href: "https://www.getyourguide.com", label: "GetYourGuide", Icon: GetYourGuideLogoIcon },
 ];
 
 const tagline: Record<LocaleCode, string> = {
@@ -151,8 +151,7 @@ export function Footer() {
                 aria-label={p.label}
                 className="flex cursor-pointer items-center rounded-xl border border-primary-foreground/15 bg-primary-foreground/5 px-4 py-2 transition-colors hover:bg-primary-foreground/10"
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={p.src} alt={p.label} className="h-5 w-auto sm:h-6" style={{ color: p.color }} />
+                <p.Icon className="h-5 text-primary-foreground/90 sm:h-6" />
               </a>
             ))}
           </div>

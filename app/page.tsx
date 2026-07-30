@@ -8,6 +8,7 @@ import { Refreshments } from "@/components/sections/refreshments";
 import { SnorkelSitesTeaser } from "@/components/sections/snorkel-sites-teaser";
 import { WhyFlagshipAruba } from "@/components/sections/why-flagship-aruba";
 import { Comparison } from "@/components/sections/comparison";
+import { WhatWeProvide } from "@/components/sections/what-we-provide";
 import { ExperienceSlider } from "@/components/sections/experience-slider";
 import { VideoShowcase } from "@/components/sections/video-showcase";
 import { FindUs } from "@/components/sections/find-us";
@@ -34,6 +35,7 @@ export default function Home() {
         <SnorkelSitesTeaser />
         <WhyFlagshipAruba />
         <Comparison />
+        <WhatWeProvide />
         <ExperienceSlider />
         <VideoShowcase />
         <FindUs />

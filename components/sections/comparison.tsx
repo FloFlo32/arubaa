@@ -1,9 +1,10 @@
-import { Check, X, Scale, ArrowRight } from "lucide-react";
+import { Check, X, Scale, ArrowRight, Ship, Users } from "lucide-react";
 import Link from "next/link";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
 import { Badge } from "@/components/ui/badge";
 import { BookNowButton } from "@/components/widget/book-now-button";
 import { Button } from "@/components/ui/button";
+import { GridPattern } from "@/components/magic/grid-pattern";
 
 const rows = [
   {
@@ -49,13 +50,37 @@ export function Comparison() {
         </p>
       </Reveal>
 
-      <Reveal delay={0.06} className="mx-auto mt-10 grid max-w-2xl grid-cols-3 gap-3">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/ingested/flagship-owner/ladyblack-transom.jpg" alt="The Flagship Aruba schooner" loading="lazy" decoding="async" className="aspect-square w-full rounded-2xl border border-border object-cover" />
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/ingested/flagshiparubaa/guest-d.webp" alt="Guests at the open bar" loading="lazy" decoding="async" className="aspect-square w-full rounded-2xl border border-border object-cover" />
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/ingested/flagshiparubaa/snorkeler-boca-catalina.webp" alt="A guest snorkeling in clear water" loading="lazy" decoding="async" className="aspect-square w-full rounded-2xl border border-border object-cover" />
+      <Reveal delay={0.06} className="mx-auto mt-10 grid max-w-2xl grid-cols-2 gap-4">
+        <div className="overflow-hidden rounded-2xl border border-border">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/ingested/flagship-owner/ladyblack-transom.jpg"
+            alt="The Flagship Aruba schooner, a traditional wooden sailing vessel"
+            loading="lazy"
+            decoding="async"
+            className="aspect-[4/3] w-full object-cover"
+          />
+          <div className="flex items-center gap-2 bg-card p-3">
+            <Check className="size-4 shrink-0 text-[oklch(0.55_0.13_150)]" />
+            <p className="text-sm font-semibold text-foreground">Our schooner, max 24 guests</p>
+          </div>
+        </div>
+        <div className="overflow-hidden rounded-2xl border border-dashed border-border">
+          <div className="relative flex aspect-[4/3] items-center justify-center bg-muted">
+            <GridPattern className="opacity-40" />
+            <div className="relative flex flex-col items-center gap-1.5 text-muted-foreground">
+              <div className="flex items-center gap-1.5">
+                <Ship className="size-7" />
+                <Users className="size-7" />
+              </div>
+              <span className="text-xs font-medium">50+ passengers</span>
+            </div>
+          </div>
+          <div className="flex items-center gap-2 bg-card p-3">
+            <X className="size-4 shrink-0 text-[oklch(0.62_0.16_25)]" />
+            <p className="text-sm text-muted-foreground">Typical big-group tour boats</p>
+          </div>
+        </div>
       </Reveal>
 
       <RevealGroup className="mx-auto mt-10 max-w-2xl divide-y divide-border overflow-hidden rounded-2xl border border-border" stagger={0.06}>
