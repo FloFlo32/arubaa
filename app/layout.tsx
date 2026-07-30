@@ -6,6 +6,7 @@ import { ThemeScript } from "@/components/theme-provider";
 import { FaqWidget } from "@/components/widget/faq-widget";
 import { WhatsAppWidget } from "@/components/widget/whatsapp-widget";
 import { YettiBookingWidget } from "@/components/widget/yetti-booking-widget";
+import { PrivateCharterInquiry } from "@/components/widget/private-charter-inquiry";
 
 const siteUrl = `https://${brand.domain}`;
 
@@ -46,6 +47,7 @@ export default function RootLayout({
         <FaqWidget />
         <WhatsAppWidget />
         <YettiBookingWidget />
+        <PrivateCharterInquiry />
       </body>
     </html>
   );

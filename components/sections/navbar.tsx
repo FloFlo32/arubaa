@@ -73,7 +73,7 @@ export function Navbar() {
                   <button
                     key={item.label}
                     type="button"
-                    data-yetti-activity=""
+                    data-inquiry-form
                     className="cursor-pointer rounded-full px-3.5 py-2 text-sm font-medium text-primary-foreground/75 transition-colors hover:bg-white/10 hover:text-white"
                   >
                     {item.label}
@@ -172,7 +172,7 @@ export function Navbar() {
                   <button
                     key={item.label}
                     type="button"
-                    data-yetti-activity=""
+                    data-inquiry-form
                     onClick={() => setOpen(false)}
                     className="block cursor-pointer rounded-md border-b border-border/60 px-3 py-3 text-left text-base font-medium text-foreground"
                   >
